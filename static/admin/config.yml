@@ -1,0 +1,49 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "content: create {{collection}} “{{slug}}”"
+    update: "content: update {{collection}} “{{slug}}”"
+    delete: "content: delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] content: upload “{{path}}”"
+    deleteMedia: "[skip ci] content: delete “{{path}}”"
+
+media_folder: static/img
+public_folder: /img
+local_backend: true
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/content/home.md"
+        label: "Home"
+        name: "home"
+        id: "home"
+        fields:
+          - { label: "Key", name: "Key", widget: "hidden", default: "home" }
+          - { label: "Title", name: "title", widget: "string" }
+      - file: "src/content/about.md"
+        label: "About"
+        name: "about"
+        id: "about"
+        fields:
+          - { label: "Key", name: "Key", widget: "hidden", default: "about" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Sub Title Left", name: "subtitleLeft", widget: "string" }
+          - {
+              label: "Sub Title Right",
+              name: "subtitleRight",
+              widget: "string",
+            }
+          - { label: "Banner Image", name: "banner", widget: "image" }
+          - {
+              label: "Our Story",
+              name: "ourStories",
+              widget: "list",
+              fields:
+                [
+                  { label: "Year", name: "year", widget: number },
+                  { label: "Description", name: "description", widget: string },
+                ],
+            }

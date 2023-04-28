@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-test",
+  "name": "icx-landing-page",
   "version": "1.0.0",
   "private": true,
-  "description": "gatsby-test",
-  "author": "hasbifadillah",
+  "description": "ICX Landing",
+  "author": "ICX Dev Team",
   "keywords": [
-    "gatsby"
+    "icx"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "cms-proxy": "netlify-cms-proxy-server"
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
@@ -25,8 +26,10 @@
     "gatsby-plugin-sharp": "^5.9.0",
     "gatsby-plugin-sitemap": "^6.9.0",
     "gatsby-source-filesystem": "^5.9.0",
+    "gatsby-transformer-remark": "^6.9.0",
     "gatsby-transformer-sharp": "^5.9.0",
     "netlify-cms-app": "^2.15.72",
+    "netlify-cms-proxy-server": "^1.3.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
