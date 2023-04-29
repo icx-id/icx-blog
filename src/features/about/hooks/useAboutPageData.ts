@@ -1,14 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby";
+import { AboutDataType } from "../types";
 
-type AboutPageData = {
-  title: string;
-  subtitleLeft: string;
-  subtitleRight: string;
-  banner: string;
-  ourStory: Array<{ year: number; description: string }>;
-};
-
-const useAboutPage = (): AboutPageData => {
+export const useAboutPageData = (): AboutDataType => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
       query ABOUT_PAGE_QUERY {
@@ -29,10 +22,11 @@ const useAboutPage = (): AboutPageData => {
       }
     `
   );
+
   const { nodes = [] } = allMarkdownRemark || {};
-  const { frontmatter: data } = nodes[0];
+  const { frontmatter: data = {} } = nodes[0] || {};
 
   return data;
 };
 
-export default useAboutPage;
+export default useAboutPageData;

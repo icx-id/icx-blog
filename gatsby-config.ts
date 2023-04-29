@@ -2,7 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: "ICX - Unlock your new level investment",
+    title: "Unlock your new level investment",
+    description: "",
     siteUrl: "https://www.icx.id",
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -10,13 +11,18 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-mdx",
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.ts`,
+      },
+    },
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {
