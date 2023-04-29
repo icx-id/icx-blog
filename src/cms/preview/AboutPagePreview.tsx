@@ -2,6 +2,7 @@ import React from "react";
 import { PreviewTemplateComponentProps } from "netlify-cms-core";
 import { About } from "../../features/about";
 import { AboutDataType } from "../../features/about/types";
+import PageContainer from "../../components/PageContainer";
 
 const AboutPagePreview: React.FC<PreviewTemplateComponentProps> = ({
   entry,
@@ -15,7 +16,11 @@ const AboutPagePreview: React.FC<PreviewTemplateComponentProps> = ({
     ourStories: entry.getIn(["data", "ourStories"]),
   };
 
-  return <About data={data} />;
+  return (
+    <PageContainer>
+      <About data={data} />
+    </PageContainer>
+  );
 };
 
 export default AboutPagePreview;
