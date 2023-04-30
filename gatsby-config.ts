@@ -18,6 +18,7 @@ const config: GatsbyConfig = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-mantine",
+    "gatsby-plugin-fix-fouc",
     {
       resolve: "gatsby-plugin-netlify-cms",
       options: {

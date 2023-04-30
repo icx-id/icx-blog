@@ -3961,7 +3961,7 @@ callsites@^3.0.0:
   resolved "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
-camel-case@^4.1.2:
+camel-case@^4, camel-case@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npmjs.org/camel-case/-/camel-case-4.1.2.tgz#9728072a954f805228225a6deea6b38461e1bd5a"
   integrity sha512-gxGWBrTT1JuMx6R+o5PTXMmUnhnVzLQ9SNutD4YqKtI6ap897t3tKECYla6gCWEkplXnlNybEkZg9GEGxKFCgw==
@@ -6317,6 +6317,13 @@ gatsby-parcel-config@^1.9.0:
     "@parcel/runtime-js" "2.8.3"
     "@parcel/transformer-js" "2.8.3"
     "@parcel/transformer-json" "2.8.3"
+
+gatsby-plugin-fix-fouc@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/gatsby-plugin-fix-fouc/-/gatsby-plugin-fix-fouc-1.0.2.tgz#f3f9f533613897a141d3127237c14c7720d5178e"
+  integrity sha512-IpyGLNBW3UqlNY4P2RRmb82eEUvu0pPvskealrd2CG4V4BOVEXvDp6Ofp2DdbYrkViZAE27EtnabpALFEbAi/Q==
+  dependencies:
+    camel-case "^4"
 
 gatsby-plugin-google-gtag@^5.9.0:
   version "5.9.0"
