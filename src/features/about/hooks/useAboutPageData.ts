@@ -1,5 +1,5 @@
-import { graphql, useStaticQuery } from "gatsby";
-import { AboutDataType } from "../types";
+import { graphql, useStaticQuery } from 'gatsby';
+import { AboutDataType } from '../types';
 
 export const useAboutPageData = (): AboutDataType => {
   const { allMarkdownRemark } = useStaticQuery(
@@ -20,7 +20,7 @@ export const useAboutPageData = (): AboutDataType => {
           }
         }
       }
-    `
+    `,
   );
 
   const { nodes = [] } = allMarkdownRemark || {};

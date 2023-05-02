@@ -1,14 +1,15 @@
-import React, { PropsWithChildren } from "react";
-import { MantineProvider } from "@mantine/core";
-import Footer from "./Footer";
+import React, { PropsWithChildren } from 'react';
+import { MantineProvider } from '@mantine/core';
+import { Footer } from './Footer';
+import { Navbar } from './Navbar';
 
-const PageContainer: React.FC<PropsWithChildren> = ({ children }) => {
+export const PageContainer: React.FC<PropsWithChildren> = ({ children }) => {
   return (
     <MantineProvider
       withGlobalStyles
       withNormalizeCSS
       theme={{
-        fontFamily: "Inter, Open Sans, sans serif",
+        fontFamily: 'Inter, Open Sans, sans serif',
         components: {
           Container: {
             defaultProps: {
@@ -22,12 +23,10 @@ const PageContainer: React.FC<PropsWithChildren> = ({ children }) => {
             },
           },
         },
-      }}
-    >
+      }}>
+      <Navbar />
       {children}
       <Footer />
     </MantineProvider>
   );
 };
-
-export default PageContainer;

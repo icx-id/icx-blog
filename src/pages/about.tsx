@@ -1,17 +1,12 @@
-import React from "react";
-import type { HeadFC, PageProps } from "gatsby";
-import PageContainer from "../components/PageContainer";
-import SiteMetadata from "../components/SiteMetadata";
-import { About, useAboutPageData } from "../features/about";
+import React from 'react';
+import type { HeadFC, PageProps } from 'gatsby';
+import { About, useAboutPageData } from '../features/about';
+import { SiteMetadata } from '~/components';
 
 const AboutPage: React.FC<PageProps> = () => {
   const data = useAboutPageData();
 
-  return (
-    <PageContainer>
-      <About data={data} />
-    </PageContainer>
-  );
+  return <About data={data} />;
 };
 
 export default AboutPage;
