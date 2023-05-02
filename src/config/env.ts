@@ -1,8 +1,8 @@
 import { createEnv } from '@t3-oss/env-core';
 import { z } from 'zod';
 
-const urlRegex: RegExp =
-  /^(http(s)?\:\/\/)?(localhost|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(:\d+)?(\/.*)?$/;
+const urlRegex =
+  /^(http(s)?:\/\/)?((localhost)|(([a-zA-Z0-9]+(-[a-zA-Z0-9]+)*\.)+[a-zA-Z]{2,}))(:(\d+))?(\/.*)?$/;
 
 export const env = createEnv({
   /*
@@ -12,7 +12,7 @@ export const env = createEnv({
   clientPrefix: 'GATSBY_',
   server: {},
   client: {
-    GATSBY_API_URL: z.string().min(1).regex(urlRegex),
+    GATSBY_API_URL: z.string().min(1).regex(urlRegex, 'The given string is not a URL'),
   },
   /**
    * What object holds the environment variables at runtime.
