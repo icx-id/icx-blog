@@ -1,13 +1,12 @@
 import React from 'react';
 import { GatsbyBrowser } from 'gatsby';
 import { RootProvider } from '~/providers';
-import { Navbar } from '~/components/Navbar';
+import { PageContainer } from '~/components';
 
 export const wrapRootElement: GatsbyBrowser['wrapRootElement'] = ({ element }) => {
   return (
     <RootProvider>
-      <Navbar />
-      {element}
+      <PageContainer>{element}</PageContainer>
     </RootProvider>
   );
 };
