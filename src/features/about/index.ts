@@ -1,3 +1,3 @@
-export { About } from "./components/About";
+export { About } from './components/About';
 
-export { useAboutPageData } from "./hooks/useAboutPageData";
+export { useAboutPageData } from './hooks/useAboutPageData';
