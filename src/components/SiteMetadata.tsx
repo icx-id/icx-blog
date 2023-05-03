@@ -1,7 +1,7 @@
-import React from "react";
-import useSiteMetadata from "../hooks/useSiteMetadata";
+import React from 'react';
+import useSiteMetadata from '../hooks/useSiteMetadata';
 
-const SiteMetadata: React.FC<{ title?: string }> = ({ title = "ICX" }) => {
+export const SiteMetadata: React.FC<{ title?: string }> = ({ title = 'ICX' }) => {
   const { title: defaultTitle, description } = useSiteMetadata();
   return (
     <>
@@ -14,11 +14,7 @@ const SiteMetadata: React.FC<{ title?: string }> = ({ title = "ICX" }) => {
 
       {/* styles */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossOrigin="use-credentials"
-      />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="use-credentials" />
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet"
@@ -26,5 +22,3 @@ const SiteMetadata: React.FC<{ title?: string }> = ({ title = "ICX" }) => {
     </>
   );
 };
-
-export default SiteMetadata;

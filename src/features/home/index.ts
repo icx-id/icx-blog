@@ -1,3 +1,3 @@
-export { Home } from "./components/Home";
+export { Home } from './components/Home';
 
-export { useHomePageData } from "./hooks/useHomePageData";
+export { useHomePageData } from './hooks/useHomePageData';

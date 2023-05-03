@@ -1,6 +1,6 @@
-import React from "react";
-import { HomeDataType } from "../types";
-import { Container, Text } from "@mantine/core";
+import React from 'react';
+import { HomeDataType } from '../types';
+import { Container, Text } from '@mantine/core';
 
 export const Home: React.FC<{ data: HomeDataType }> = ({ data }) => {
   const { title } = data;
