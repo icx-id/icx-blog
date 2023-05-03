@@ -23,6 +23,10 @@ spec:
             - name: tz
               mountPath: /etc/localtime
               subPath: Jakarta
+         command:
+            - /bin/sh
+            - '-c'
+            - yarn serve
      volumes:
        - name: tz
          configMap:
@@ -38,7 +42,7 @@ metadata:
 spec:
   ports:
     - port: 443
-      targetPort: 8000
+      targetPort: 9000
   selector:
     app: icx-landing-page
 
@@ -68,4 +72,4 @@ spec:
               service: 
                 name: icx-landing-page-service
                 port:
-                  number: 8000
+                  number: 9000
