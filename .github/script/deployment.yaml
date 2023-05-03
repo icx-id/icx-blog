@@ -38,7 +38,7 @@ metadata:
 spec:
   ports:
     - port: 443
-      targetPort: 80
+      targetPort: 8000
   selector:
     app: icx-landing-page
 
@@ -68,4 +68,4 @@ spec:
               service: 
                 name: icx-landing-page-service
                 port:
-                  number: 80
+                  number: 8000
