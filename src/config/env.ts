@@ -13,6 +13,10 @@ export const env = createEnv({
   server: {},
   client: {
     GATSBY_API_URL: z.string().min(1).regex(urlRegex, 'The given string is not a URL'),
+    GATSBY_SHOW_COMING_SOON: z
+      .string()
+      .refine(s => s === 'true' || s === 'false')
+      .transform(s => s === 'true'),
   },
   /**
    * What object holds the environment variables at runtime.
@@ -20,5 +24,6 @@ export const env = createEnv({
    */
   runtimeEnvStrict: {
     GATSBY_API_URL: process.env.GATSBY_API_URL,
+    GATSBY_SHOW_COMING_SOON: process.env.GATSBY_SHOW_COMING_SOON,
   },
 });
