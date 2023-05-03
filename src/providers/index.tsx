@@ -28,6 +28,28 @@ export const RootProvider: React.FC<PropsWithChildren> = ({ children }) => {
                   },
                 },
               },
+              Button: {
+                defaultProps: {
+                  sx: {
+                    ':active': {
+                      transform: 'none',
+                      opacity: 0.9,
+                    },
+                    transition: 'opacity 100ms linear',
+                  },
+                },
+              },
+              ActionIcon: {
+                defaultProps: {
+                  sx: {
+                    ':active': {
+                      transform: 'none',
+                      opacity: 0.9,
+                    },
+                    transition: 'opacity 100ms linear',
+                  },
+                },
+              },
             },
           }}>
           {children}
