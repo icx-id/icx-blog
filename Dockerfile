@@ -1,4 +1,4 @@
-FROM --platform=linux/x86_64 node:18-slim AS builder
+FROM node:18-slim AS builder
 
 RUN apt-get update && apt-get install -y nginx
 
