@@ -9,7 +9,7 @@ COPY . .
 RUN yarn install --frozen-lockfile
 RUN yarn build
 
-COPY ./docker/default.conf /etc/nginx/sites-available/default
+EXPOSE 9000
 
 EXPOSE 80
 
