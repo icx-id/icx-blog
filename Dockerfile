@@ -10,8 +10,7 @@ RUN yarn run build
 FROM nginx:1.18-alpine AS deploy
 
 WORKDIR /usr/share/nginx/html
-RUN rm -rf ./*
-COPY --from=build /app/public .
+COPY ./docker/default.conf /etc/nginx/sites-available/default
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 EXPOSE 9000
