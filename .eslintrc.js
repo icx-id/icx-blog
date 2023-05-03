@@ -1,8 +1,8 @@
 module.exports = {
   settings: {
     react: {
-      version: "detect"
-    }
+      version: 'detect',
+    },
   },
   root: true,
   extends: ['plugin:react/recommended'],
@@ -30,6 +30,7 @@ module.exports = {
         ],
         'react/jsx-curly-brace-presence': ['error', { props: 'never' }],
         radix: 'off',
+        'no-console': 'warn',
       },
     },
   ],
