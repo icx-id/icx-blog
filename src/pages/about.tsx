@@ -1,6 +1,6 @@
 import React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
-import { OurStorySection, SummarySection, useAboutPageData } from '~/features/about';
+import { NewsSection, OurStorySection, SummarySection, useAboutPageData } from '~/features/about';
 import { SiteMetadata } from '~/components';
 import { Box, Container } from '@mantine/core';
 
@@ -11,6 +11,7 @@ const AboutPage: React.FC<PageProps> = () => {
     <Box sx={{ overflow: 'hidden' }}>
       <SummarySection />
       <OurStorySection />
+      <NewsSection />
     </Box>
   );
 };

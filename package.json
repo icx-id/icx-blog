@@ -28,6 +28,7 @@
     "@mdx-js/react": "^2.3.0",
     "@t3-oss/env-core": "^0.2.2",
     "@tanstack/react-query": "^4.29.5",
+    "date-fns": "^2.30.0",
     "dotenv": "^16.0.3",
     "formik": "^2.2.9",
     "gatsby": "^5.9.0",
