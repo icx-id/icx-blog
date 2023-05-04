@@ -17,7 +17,7 @@ export const OurStorySection = () => {
 
         <MediaQuery smallerThan="sm" styles={{ marginTop: '0' }}>
           <Grid mt="2.5em" gutter="xl">
-            <Grid.Col md={8} sm={12}>
+            <Grid.Col md={10} sm={12}>
               <AboutContainer>
                 <MediaQuery smallerThan="md" styles={{ border: '0', padding: '1em 0.5em 0' }}>
                   <Grid sx={{ borderTop: '2px solid #E0E5E6', padding: '2em 0' }}>
@@ -45,8 +45,7 @@ export const OurStorySection = () => {
                         borderBottom: '2px solid #E0E5E6',
                       }}>
                       <Grid.Col md={10} sm={12} sx={{ paddingLeft: '2.5em' }}>
-                        Indonesia Crowdfunding Exchange formerly known as LandX is a securities
-                        crowdfunding platform that connects founders and investors.
+                        LandX was launched as a securities crowdfunding platform
                       </Grid.Col>
                     </MediaQuery>
                   </Grid>
@@ -66,7 +65,7 @@ export const OurStorySection = () => {
                           borderRight: '2px solid #E0E5E6',
                           paddingLeft: 0,
                         }}>
-                        <Text sx={{ fontSize: '1.25em', fontWeight: 'bold' }}>2019</Text>
+                        <Text sx={{ fontSize: '1.25em', fontWeight: 'bold' }}>2020</Text>
                       </Grid.Col>
                     </MediaQuery>
                     <MediaQuery
@@ -77,8 +76,8 @@ export const OurStorySection = () => {
                         borderBottom: '2px solid #E0E5E6',
                       }}>
                       <Grid.Col md={10} sm={12} sx={{ paddingLeft: '2.5em' }}>
-                        Indonesia Crowdfunding Exchange formerly known as LandX is a securities
-                        crowdfunding platform that connects founders and investors.
+                        Received Fintech Equity Crowdfunding(ECF) license from The Indonesia
+                        Financial Services Authority or commonly known as OJK
                       </Grid.Col>
                     </MediaQuery>
                   </Grid>
@@ -98,7 +97,7 @@ export const OurStorySection = () => {
                           borderRight: '2px solid #E0E5E6',
                           paddingLeft: 0,
                         }}>
-                        <Text sx={{ fontSize: '1.25em', fontWeight: 'bold' }}>2019</Text>
+                        <Text sx={{ fontSize: '1.25em', fontWeight: 'bold' }}>2021</Text>
                       </Grid.Col>
                     </MediaQuery>
                     <MediaQuery
@@ -109,8 +108,7 @@ export const OurStorySection = () => {
                         borderBottom: '2px solid #E0E5E6',
                       }}>
                       <Grid.Col md={10} sm={12} sx={{ paddingLeft: '2.5em' }}>
-                        Indonesia Crowdfunding Exchange formerly known as LandX is a securities
-                        crowdfunding platform that connects founders and investors.
+                        Reached a total of 150 billion IDR fundraised in Equity
                       </Grid.Col>
                     </MediaQuery>
                   </Grid>
@@ -130,7 +128,7 @@ export const OurStorySection = () => {
                           borderRight: '2px solid #E0E5E6',
                           paddingLeft: 0,
                         }}>
-                        <Text sx={{ fontSize: '1.25em', fontWeight: 'bold' }}>2019</Text>
+                        <Text sx={{ fontSize: '1.25em', fontWeight: 'bold' }}>2022</Text>
                       </Grid.Col>
                     </MediaQuery>
                     <MediaQuery
@@ -141,8 +139,9 @@ export const OurStorySection = () => {
                         borderBottom: '2px solid #E0E5E6',
                       }}>
                       <Grid.Col md={10} sm={12} sx={{ paddingLeft: '2.5em' }}>
-                        Indonesia Crowdfunding Exchange formerly known as LandX is a securities
-                        crowdfunding platform that connects founders and investors.
+                        Awarded the “Best Crowdfunding Platform” by ALUDI & Dunia Fintech while
+                        reaching more than 89.000 users and helping to raise an addition of 1750+ in
+                        employment
                       </Grid.Col>
                     </MediaQuery>
                   </Grid>
@@ -162,7 +161,7 @@ export const OurStorySection = () => {
                           borderRight: '2px solid #E0E5E6',
                           paddingLeft: 0,
                         }}>
-                        <Text sx={{ fontSize: '1.25em', fontWeight: 'bold' }}>2019</Text>
+                        <Text sx={{ fontSize: '1.25em', fontWeight: 'bold' }}>2023</Text>
                       </Grid.Col>
                     </MediaQuery>
                     <MediaQuery
@@ -173,8 +172,7 @@ export const OurStorySection = () => {
                         borderBottom: '2px solid #E0E5E6',
                       }}>
                       <Grid.Col md={10} sm={12} sx={{ paddingLeft: '2.5em' }}>
-                        Indonesia Crowdfunding Exchange formerly known as LandX is a securities
-                        crowdfunding platform that connects founders and investors.
+                        LandX rebranded themselves in to Indonesia Crowdfunding Exchange(ICX)
                       </Grid.Col>
                     </MediaQuery>
                   </Grid>
@@ -183,27 +181,25 @@ export const OurStorySection = () => {
             </Grid.Col>
             <Grid.Col md={3} sm={12}>
               <Flex h="100%" align="center" justify="center" pos="relative">
-                <MediaQuery largerThan="md" styles={{ display: 'none' }}>
-                  <Box
-                    sx={{
-                      position: 'absolute',
-                      width: '100%',
-                      height: '70%',
-                      background: 'black',
-                      bottom: 0,
-                    }}
-                  />
-                </MediaQuery>
-                <Box px="1.5em">
-                  <MediaQuery smallerThan="md" styles={{ marginLeft: 'auto', marginRight: 'auto' }}>
-                    <Image
-                      src={ourStory}
-                      radius="md"
-                      ml="auto"
-                      sx={{ objectFit: 'cover', flexShrink: 0 }}
+                <MediaQuery largerThan="0" styles={{ display: 'none' }}>
+                  <Box>
+                    <Box
+                      sx={{
+                        position: 'absolute',
+                        width: '100%',
+                        height: '70%',
+                        background: 'black',
+                        bottom: 0,
+                      }}
                     />
-                  </MediaQuery>
-                </Box>
+                    <Box px="1.5em">
+                      <img
+                        src={ourStory}
+                        style={{ objectFit: 'cover', flexShrink: 0, height: '100%' }}
+                      />
+                    </Box>
+                  </Box>
+                </MediaQuery>
               </Flex>
             </Grid.Col>
           </Grid>

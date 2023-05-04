@@ -18,7 +18,7 @@ const newsData = [
   {
     title: 'Even Your Allergist Is Now Investing in Start-Ups',
     image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz014y1iuhnWcmiTVVYU9UzAqG8TZMrZXWMN9S_VE5Pu8_JX6QNUV21DYLWQFPDc321A&usqp=CAU',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/TechCrunch_logo.svg/1200px-TechCrunch_logo.svg.png',
     publishDate: subDays(new Date(), 331),
     description: `The once-clubby world of start-up deal making known as
     “angel investing” has had an influx of new participants....`,
@@ -28,7 +28,7 @@ const newsData = [
     title: `AngelList Venture takes on rare
     capital at a $4 billion valuation`,
     image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz014y1iuhnWcmiTVVYU9UzAqG8TZMrZXWMN9S_VE5Pu8_JX6QNUV21DYLWQFPDc321A&usqp=CAU',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Fortune_magazine_logo_2016.svg/1280px-Fortune_magazine_logo_2016.svg.png',
     publishDate: subDays(new Date(), 613),
     description: `After seven years since its last financing round, AngelList
     Venture has raised new capital, according to sources
