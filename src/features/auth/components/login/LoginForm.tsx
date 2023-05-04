@@ -63,9 +63,9 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onSubmitSuccess }) => {
 
   return (
     <>
-      <MediaQuery smallerThan="md" styles={{ flex: 1 }}>
-        <Stack>
-          <Stack sx={{ flex: 1 }}>
+      <MediaQuery smallerThan="md" styles={{ justifyContent: 'space-between' }}>
+        <Stack sx={{ height: '100%' }}>
+          <Stack>
             <Flex>
               <Text weight="bold" size="24px">
                 Welcome to

@@ -86,6 +86,7 @@ export class AxiosManager {
       error.response?.status === 401 &&
       error.response?.data?.errors.includes('access token is invalid')
     ) {
+      // eslint-disable-next-line no-console
       console.warn(
         `Are you sure you use axiosWithToken for ${originalRequest.method?.toUpperCase()} /${
           originalRequest.url

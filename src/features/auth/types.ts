@@ -19,3 +19,8 @@ export interface AuthResponse {
   status?: string;
   user: User;
 }
+
+export interface VerificationRequest {
+  status: string;
+  verificationToken: string;
+}
