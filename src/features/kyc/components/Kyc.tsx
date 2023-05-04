@@ -1,64 +1,78 @@
-import {
-  Box,
-  Button,
-  Container,
-  Image,
-  Text,
-  createStyles,
-  rem,
-} from "@mantine/core";
-import React from "react";
-
-const useStyles = createStyles((theme) => ({
-  //   footer: {
-  //     marginTop: rem(120),
-  //     paddingTop: `calc(${theme.spacing.xl} * 2)`,
-  //     paddingBottom: `calc(${theme.spacing.xl} * 2)`,
-  //     backgroundColor: theme.colors.dark[6],
-  //     borderTop: `${rem(1)} solid ${
-  //       theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[2]
-  //     }`,
-  //   },
-  image: {
-    width: rem(800),
-    backgroundColor: theme.colors.green,
-  },
-  button: {
-    backgroundColor: "#00C48F",
-  },
-  title: {
-    fontSize: rem(38),
-  },
-  subtitle: {
-    fontSize: rem(22),
-  },
-}));
+import React, { useState } from 'react';
+import { KycIntroduction } from './KycIntroduction';
+import { KycPickIdentityPhoto } from './KycPickIdentityPhoto';
+import { KycPickSelfiePhoto } from './KycPickSelfiePhoto';
+import { KycUploadProgress } from './KycUploadProgress';
+import { KycFormIdentity } from './KycFormIdentity';
+import { KycFormAddress } from './KycFormAddress';
+import { KycFormResidenceAddress } from './KycFormResidenceAddress';
+import { KycFormSummary } from './KycFormSummary';
+import { KycSuccessSubmit } from './KycSuccessSubmit';
+import { Formik } from 'formik';
+import { KycFormProps } from '../types';
 
 interface KycProps {}
 
 export const Kyc: React.FC<KycProps> = () => {
-  const { classes } = useStyles();
+  const [activeState, setActiveState] = useState<string>('INTRODUCTION');
   return (
-    <Box bg="#EEFFF2" h="87.2vh" py={rem(50)}>
-      <Container h="100%">
-        <Box
-          style={{
-            display: "flex",
-            gap: rem(49),
-            background: "#FFF",
-            height: "100%",
-          }}
-        >
-          <Box className={classes.image} />
-          <Box>
-            <Text className={classes.title}>Isi Biodata Pribadi</Text>
-            <Text className={classes.subtitle}>
-              Biodata pribadi Anda diperlukan untuk membuka akun investasi
-            </Text>
-            <Button className={classes.button}>Selanjutnya</Button>
-          </Box>
-        </Box>
-      </Container>
-    </Box>
+    <Formik<KycFormProps>
+      initialValues={{
+        ktpImage: null,
+        selfieImage: null,
+        fullName: '',
+        nik: '',
+        dateOfBirth: new Date('1970-01-01'),
+        placeOfBirth: '',
+        gender: 'male',
+        religion: '',
+      }}
+      onSubmit={value => console.log(value)}>
+      <React.Fragment>
+        {activeState === 'INTRODUCTION' && (
+          <KycIntroduction onNextStep={() => setActiveState('IDENTITY-PHOTO')} />
+        )}
+        {activeState === 'IDENTITY-PHOTO' && (
+          <KycPickIdentityPhoto onSubmit={() => setActiveState('UPLOAD-PROGRESS')} />
+        )}
+        {activeState === 'UPLOAD-PROGRESS' && (
+          <KycUploadProgress onFinishCheckImage={() => setActiveState('IDENTITY-FORM')} />
+        )}
+
+        {activeState === 'IDENTITY-FORM' && (
+          <KycFormIdentity
+            onSubmit={() => setActiveState('SELFIE-PHOTO')}
+            goBack={() => setActiveState('IDENTITY-PHOTO')}
+          />
+        )}
+
+        {activeState === 'SELFIE-PHOTO' && (
+          <KycPickSelfiePhoto
+            onSubmit={() => setActiveState('ADDRESS-FORM')}
+            goBack={() => setActiveState('IDENTITY-FORM')}
+          />
+        )}
+
+        {activeState === 'ADDRESS-FORM' && (
+          <KycFormAddress
+            onSubmit={() => setActiveState('RESIDENCE-ADDRESS-FORM')}
+            goBack={() => setActiveState('IDENTITY-FORM')}
+          />
+        )}
+        {activeState === 'RESIDENCE-ADDRESS-FORM' && (
+          <KycFormResidenceAddress
+            onSubmit={() => setActiveState('SUMMARY-FORM')}
+            goBack={() => setActiveState('ADDRESS-FORM')}
+          />
+        )}
+        {activeState === 'SUMMARY-FORM' && (
+          <KycFormSummary
+            onSubmit={() => setActiveState('SUCCESS-SUBMIT')}
+            goBack={() => setActiveState('RESIDENCE-ADDRESS-FORM')}
+          />
+        )}
+        {activeState === 'SUCCESS-SUBMIT' && <KycSuccessSubmit />}
+      </React.Fragment>
+    </Formik>
   );
 };

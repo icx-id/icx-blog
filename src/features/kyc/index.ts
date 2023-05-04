@@ -1,1 +1,1 @@
-export { Kyc } from "./components/Kyc";
+export { Kyc } from './components/Kyc';
