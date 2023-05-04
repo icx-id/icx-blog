@@ -2,7 +2,7 @@ import React from 'react';
 import { GatsbyBrowser } from 'gatsby';
 import { RootProvider } from '~/providers';
 import { PageContainer } from '~/components';
-import '@fontsource/inter';
+import '@fontsource/inter/400.css';
 
 const noNavbarFooterPaths = ['/login', '/register'];
 
