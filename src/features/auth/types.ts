@@ -12,3 +12,10 @@ export interface User {
   };
   investorProfile: string;
 }
+
+export interface AuthResponse {
+  access_token: string;
+  refresh_token: string;
+  status?: string;
+  user: User;
+}
