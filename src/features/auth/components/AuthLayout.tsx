@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import { Box, Button, Center, Flex, Grid, Image, MediaQuery, Text } from '@mantine/core';
+import { Box, Button, Flex, Grid, MediaQuery, Text } from '@mantine/core';
 import phoneImage from '~/images/auth-phone.webp';
 import { IoChevronBack } from 'react-icons/io5';
 
@@ -23,7 +23,7 @@ export const AuthLayout: React.FC<PropsWithChildren> = ({ children }) => {
             </Flex>
           </MediaQuery>
 
-          {children}
+          <Box sx={{ flex: 1 }}>{children}</Box>
         </Grid.Col>
       </MediaQuery>
 
