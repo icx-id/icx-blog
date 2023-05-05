@@ -99,6 +99,14 @@ const useStyles = createStyles(theme => ({
     transition: 'background-color 100ms linear',
   },
 
+  imageStyle: {
+    [theme.fn.smallerThan('sm')]: {
+      width: 216,
+      height: 216,
+      borderRadius: 10,
+    },
+  },
+
   hiddenMobile: {
     [theme.fn.smallerThan('md')]: {
       display: 'none',
@@ -143,12 +151,17 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
           mx="auto"
           withControls={false}
           mt={56}
+          slideGap="xl"
           className={classes.hiddenDesktop}
           getEmblaApi={setEmbla}>
           {props.flows.map(flow => (
             <Carousel.Slide key={flow.title}>
               <Flex direction="column" align="center" sx={{ height: '100%' }}>
-                <GatsbyImage image={getImage(flow.image)!} alt={flow.title} />
+                <GatsbyImage
+                  image={getImage(flow.image)!}
+                  alt={flow.title}
+                  className={classes.imageStyle}
+                />
                 <Text className={classes.flowTitle}>{flow.title}</Text>
                 <Text className={classes.flowSubtitle}>{flow.description}</Text>
               </Flex>

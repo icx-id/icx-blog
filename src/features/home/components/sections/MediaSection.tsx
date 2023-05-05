@@ -8,8 +8,10 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 const useStyles = createStyles(theme => ({
   root: {
     paddingTop: 144,
+    paddingBottom: 265,
     [theme.fn.smallerThan('md')]: {
       paddingTop: 103,
+      paddingBottom: 232,
     },
   },
 
