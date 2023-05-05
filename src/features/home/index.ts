@@ -1,3 +1,3 @@
 export { Home } from './components/Home';
-
-export { useHomePageData } from './hooks/useHomePageData';
+export { useHomeStaticQuery } from './hooks/useHomeStaticQuery';
+export type { HomeStaticQueryProps } from './types';
