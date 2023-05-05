@@ -31,6 +31,7 @@
     "@t3-oss/env-core": "^0.2.2",
     "@tabler/icons-react": "^2.17.0",
     "@tanstack/react-query": "^4.29.5",
+    "date-fns": "^2.30.0",
     "dotenv": "^16.0.3",
     "embla-carousel-react": "^8.0.0-rc03",
     "formik": "^2.2.9",
