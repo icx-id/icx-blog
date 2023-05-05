@@ -18,15 +18,11 @@ spec:
      containers:
        - name: icx-landing-page
          image: asia-southeast2-docker.pkg.dev/landx-id/icx-ar/icx-landing-page:latest
-         imagePullPolicy: Always
-         volumeMounts:
-            - name: tz
-              mountPath: /etc/localtime
-              subPath: Jakarta
-     volumes:
-       - name: tz
-         configMap:
-            name: tz
+         envFrom:
+            - secretRef:
+                name: icx-landing-page-secret
+         ports:
+         - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -37,7 +33,7 @@ metadata:
     app: icx-landing-page
 spec:
   ports:
-    - port: 443
+    - port: 80
       targetPort: 80
   selector:
     app: icx-landing-page
@@ -63,7 +59,7 @@ spec:
       http:
         paths:
           - path: /
-            pathType: ImplementationSpecific
+            pathType: Prefix
             backend:
               service: 
                 name: icx-landing-page-service

@@ -6,6 +6,7 @@ dotenv.config({
 });
 
 const config: GatsbyConfig = {
+  trailingSlash: 'never',
   siteMetadata: {
     title: 'Unlock your new level investment',
     description: '',
