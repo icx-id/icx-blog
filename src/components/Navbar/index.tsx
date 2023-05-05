@@ -3,9 +3,7 @@ import {
   Box,
   Burger,
   Button,
-  Center,
   Container,
-  Drawer,
   Group,
   Header,
   Menu,
@@ -20,7 +18,6 @@ import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { navbarMenus, NavbarMenu } from './static/menus';
-import { IconChevronDown } from '@tabler/icons-react';
 
 // --------------------------------------- styles
 
@@ -87,12 +84,9 @@ export const Navbar: FC<PropsWithChildren> = () => {
   );
   const [menuOpened, { toggle: toggleMenu, close: closeMenu, open: openMenu }] =
     useDisclosure(false);
-  // const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
-  // const [opened, { toggle }] = useDisclosure(false);
-  // const [userMenuOpened, setUserMenuOpened] = useState(false);
 
   const [isScrolled, setScrolled] = useState(false);
-  const [handleDropdown, setHandleDropdown] = useState('');
+  const [handleDropdown] = useState('');
 
   const { classes } = useStyles({ isScrolled });
 

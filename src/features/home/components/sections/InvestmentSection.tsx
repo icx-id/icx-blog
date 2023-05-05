@@ -22,10 +22,9 @@ const useStyles = createStyles(theme => ({
     color: '#fff',
     backgroundColor: '#000',
     paddingTop: 156,
-    paddingBottom: 158,
+    paddingBottom: 58,
     [theme.fn.smallerThan('md')]: {
       paddingTop: 77,
-      paddingBottom: 84,
     },
   },
 
@@ -128,10 +127,10 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
           <Text className={classes.subtitle}>{props.subtitle}</Text>
         </Stack>
 
-        <Grid gutter={120} mt={120} className={(classes.gridWrapper, classes.hiddenMobile)}>
+        <Grid gutter={32} mt={120} className={(classes.gridWrapper, classes.hiddenMobile)}>
           {props.flows.map(flow => (
             <Grid.Col key={flow.title} xs={12} md={6}>
-              <Flex direction="column" align="center" sx={{ height: '100%' }}>
+              <Flex direction="column" align="center" sx={{ height: '100%', marginBottom: 100 }}>
                 <GatsbyImage image={getImage(flow.image)!} alt={flow.title} />
                 <Text className={classes.flowTitle}>{flow.title}</Text>
                 <Text className={classes.flowSubtitle}>{flow.description}</Text>
