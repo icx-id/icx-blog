@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { MediaSectionProps } from '../../types';
 import { Box, Container, Grid, Group, Stack, Text, createStyles } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 // ----------------------------------------- styles
 
@@ -71,7 +71,7 @@ export const MediaSection: FC<MediaSectionProps> = ({ ...props }) => {
           {props.medias.map(media => (
             <GatsbyImage
               key={media.mediaName}
-              image={getImage(media.logo)!}
+              image={media.logo.childImageSharp.gatsbyImageData}
               alt={media.mediaName}
             />
           ))}
@@ -83,7 +83,10 @@ export const MediaSection: FC<MediaSectionProps> = ({ ...props }) => {
               key={media.mediaName}
               span={6}
               sx={{ display: 'flex', justifyContent: 'center' }}>
-              <GatsbyImage image={getImage(media.logo)!} alt={media.mediaName} />
+              <GatsbyImage
+                image={media.logo.childImageSharp.gatsbyImageData}
+                alt={media.mediaName}
+              />
             </Grid.Col>
           ))}
         </Grid>

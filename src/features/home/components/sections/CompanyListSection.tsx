@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { CompanyListSectionProps } from '../../types';
 import { Box, Container, Grid, Text, createStyles } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 // --------------------------------------- styles
 
@@ -49,7 +49,10 @@ export const CompanyListSection: FC<CompanyListSectionProps> = ({ ...props }) =>
             </Text>
           </Grid.Col>
           <Grid.Col xs={12} md="auto">
-            <GatsbyImage image={getImage(props.imageDesktop)!} alt="company-list" />
+            <GatsbyImage
+              image={props.imageDesktop.childImageSharp.gatsbyImageData}
+              alt="company-list"
+            />
           </Grid.Col>
         </Grid>
       </Container>

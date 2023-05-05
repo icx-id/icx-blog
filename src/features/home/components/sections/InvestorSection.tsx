@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { InvestorSectionProps } from '../../types';
 import { Box, Container, Grid, Stack, Text, createStyles } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 // ------------------------------------------ styles
 
@@ -122,7 +122,7 @@ export const InvestorSection: FC<InvestorSectionProps> = ({ ...props }) => {
           <Grid.Col xs={12} md={6}>
             <Box className={classes.groupWrapper}>
               <GatsbyImage
-                image={getImage(props.fundraising.background)!}
+                image={props.fundraising.background.childImageSharp.gatsbyImageData}
                 alt="fundraising"
                 className={classes.bgImage}
               />
@@ -135,7 +135,7 @@ export const InvestorSection: FC<InvestorSectionProps> = ({ ...props }) => {
           <Grid.Col xs={12} md={6}>
             <Box className={classes.groupWrapper}>
               <GatsbyImage
-                image={getImage(props.employment.background)!}
+                image={props.employment.background.childImageSharp.gatsbyImageData}
                 alt="employment"
                 className={classes.bgImage}
               />

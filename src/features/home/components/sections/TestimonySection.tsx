@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import { TestimonySectionProps } from '../../types';
 import { Box, Container, Grid, Group, Stack, Text, createStyles } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
 // -------------------------------------- styles
@@ -193,7 +193,10 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
           </Grid.Col>
           <Grid.Col xs={4} sx={{ backgroundColor: '#D6E6FC' }}>
             <Box className={classes.imageWrapper}>
-              <GatsbyImage image={getImage(props.testimonies[active].image)!} alt="testimony" />
+              <GatsbyImage
+                image={props.testimonies[active].image.childImageSharp.gatsbyImageData}
+                alt="testimony"
+              />
             </Box>
           </Grid.Col>
         </Grid>
@@ -202,7 +205,7 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
           <Box className={classes.imageBackground}>
             <Box className={classes.imageWrapper}>
               <GatsbyImage
-                image={getImage(props.testimonies[active].image)!}
+                image={props.testimonies[active].image.childImageSharp.gatsbyImageData}
                 style={{ borderRadius: '8px', height: 300 }}
                 alt="testimony"
               />
@@ -210,7 +213,7 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
           </Box>
           <Box mt={109}>
             <GatsbyImage
-              image={getImage(props.testimonies[active].authorImage)!}
+              image={props.testimonies[active].authorImage.childImageSharp.gatsbyImageData}
               style={{ width: 75, height: 75 }}
               alt="author"
             />

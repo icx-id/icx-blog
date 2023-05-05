@@ -11,7 +11,7 @@ import {
   Text,
   createStyles,
 } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { Carousel, Embla } from '@mantine/carousel';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
@@ -139,7 +139,7 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
           {props.flows.map(flow => (
             <Grid.Col key={flow.title} xs={12} md={6}>
               <Flex direction="column" align="center" sx={{ height: '100%', marginBottom: 100 }}>
-                <GatsbyImage image={getImage(flow.image)!} alt={flow.title} />
+                <GatsbyImage image={flow.image.childImageSharp.gatsbyImageData} alt={flow.title} />
                 <Text className={classes.flowTitle}>{flow.title}</Text>
                 <Text className={classes.flowSubtitle}>{flow.description}</Text>
               </Flex>
@@ -158,7 +158,7 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
             <Carousel.Slide key={flow.title}>
               <Flex direction="column" align="center" sx={{ height: '100%' }}>
                 <GatsbyImage
-                  image={getImage(flow.image)!}
+                  image={flow.image.childImageSharp.gatsbyImageData}
                   alt={flow.title}
                   className={classes.imageStyle}
                 />

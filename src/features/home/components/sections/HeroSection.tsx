@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Box, Container, Grid, Group, Stack, Text, createStyles } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { HeroSectionProps } from '../../types';
 
 // --------------------------------------- styles
@@ -85,7 +85,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
               <Group spacing="xl" align="center" noWrap className={classes.download}>
                 {props.download.map(({ logo, link, name }) => (
                   <Box key={link}>
-                    <GatsbyImage image={getImage(logo)!} alt={name} />
+                    <GatsbyImage image={logo.childImageSharp.gatsbyImageData} alt={name} />
                   </Box>
                 ))}
               </Group>
@@ -101,7 +101,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
               },
             })}>
             <Box className={classes.appImage}>
-              <GatsbyImage image={getImage(props.appImage)!} alt="icx-app" />
+              <GatsbyImage image={props.appImage.childImageSharp.gatsbyImageData} alt="icx-app" />
             </Box>
           </Grid.Col>
         </Grid>
