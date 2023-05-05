@@ -111,6 +111,7 @@ export const Footer: React.FC = () => {
                     src="/img/instagram.png"
                     height={24}
                     width={24}
+                    onClick={() => window.open('https://www.instagram.com/landx.id/', '_blank')}
                   />
                 </Box>
               </Box>
@@ -196,7 +197,7 @@ export const Footer: React.FC = () => {
                     <Image
                       src="/img/playstore-logo.png"
                       height={mobileScreen ? 'auto' : 55}
-                      width={mobileScreen ? 270 : 'auto'}
+                      width={mobileScreen ? 220 : 'auto'}
                       mb="sm"
                       sx={{ cursor: 'pointer' }}
                       fit="contain"
@@ -204,7 +205,7 @@ export const Footer: React.FC = () => {
                     <Image
                       src="/img/appstore-logo.png"
                       height={mobileScreen ? 'auto' : 55}
-                      width={mobileScreen ? 270 : 'auto'}
+                      width={mobileScreen ? 220 : 'auto'}
                       sx={{ cursor: 'pointer' }}
                       fit="contain"
                     />
