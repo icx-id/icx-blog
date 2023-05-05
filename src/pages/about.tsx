@@ -4,9 +4,10 @@ import { About, useAboutPageData } from '../features/about';
 import { SiteMetadata } from '~/components';
 
 const AboutPage: React.FC<PageProps> = () => {
-  const data = useAboutPageData();
+  // const data = useAboutPageData();
 
-  return <About data={data} />;
+  // return <About data={data} />;
+  return <About data={null} />;
 };
 
 export default AboutPage;

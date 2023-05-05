@@ -21,6 +21,16 @@ export const PageContainer: React.FC<PropsWithChildren> = ({ children }) => {
                 xl: 1920,
               },
             },
+            styles: theme => {
+              return {
+                root: {
+                  padding: '0 90px',
+                  [theme.fn.smallerThan('md')]: {
+                    padding: '0 24px',
+                  },
+                },
+              };
+            },
           },
         },
       }}>

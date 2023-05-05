@@ -1,15 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
-
-import { Home, useHomePageData } from '../features/home';
 import { SiteMetadata } from '~/components';
-
-const HomePage: React.FC<PageProps> = () => {
-  const data = useHomePageData();
-
-  return <Home data={data} />;
-};
-
-export default HomePage;
+import { Home } from '~/features/home';
 
 export const Head: HeadFC = () => <SiteMetadata />;
+
+const HomePage: FC<PageProps> = props => <Home {...props} />;
+
+export default HomePage;
