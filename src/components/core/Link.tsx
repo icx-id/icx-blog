@@ -4,11 +4,24 @@ import { Link as GatsbyLink } from 'gatsby';
 
 interface LinkProps extends TextProps {
   to: string;
+  color?: string;
 }
 
-export const Link: React.FC<LinkProps & PropsWithChildren> = ({ to, children, ...props }) => {
+export const Link: React.FC<LinkProps & PropsWithChildren> = ({
+  to,
+  children,
+  color = 'brand',
+  ...props
+}) => {
   return (
-    <Text weight="600" component={GatsbyLink} color="brand" to={to} w="fit-content" {...props}>
+    <Text
+      weight="600"
+      sx={{ cursor: 'pointer' }}
+      component={GatsbyLink}
+      color={color}
+      to={to}
+      w="fit-content"
+      {...props}>
       {children}
     </Text>
   );

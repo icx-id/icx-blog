@@ -23,6 +23,46 @@ collections:
         fields:
           - { label: "Key", name: "Key", widget: "hidden", default: "home" }
           - { label: "Title", name: "title", widget: "string" }
+      - file: "src/content/kebijakan-privasi.md"
+        label: "Kebijakan Privasi"
+        name: "kebijakan-privasi"
+        id: "kebijakan-privasi"
+        fields:
+          - { label: "Key", name: "Key", widget: "hidden", default: "kebijakan-privasi" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - file: "src/content/isms.md"
+        label: "ISMS"
+        name: "isms"
+        id: "isms"
+        fields:
+          - { label: "Key", name: "Key", widget: "hidden", default: "isms" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - file: "src/content/mitigasi-risiko.md"
+        label: "Mitigasi Risiko"
+        name: "mitigasi-risiko"
+        id: "mitigasi-risiko"
+        fields:
+          - { label: "Key", name: "Key", widget: "hidden", default: "mitigasi-risiko" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - file: "src/content/syarat-dan-ketentuan.md"
+        label: "Syarat dan Ketentuan"
+        name: "syarat-dan-ketentuan"
+        id: "syarat-dan-ketentuan"
+        fields:
+          - { label: "Key", name: "Key", widget: "hidden", default: "syarat-dan-ketentuan" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
+      - file: "src/content/sla.md"
+        label: "SLA"
+        name: "sla"
+        id: "sla"
+        fields:
+          - { label: "Key", name: "Key", widget: "hidden", default: "sla" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Content", name: "content", widget: "markdown" }
       - file: "src/content/about.md"
         label: "About"
         name: "about"
