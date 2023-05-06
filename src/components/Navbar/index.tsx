@@ -18,6 +18,7 @@ import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { navbarMenus, NavbarMenu } from './static/menus';
+import { useLocation } from '@reach/router';
 
 // --------------------------------------- styles
 
@@ -30,9 +31,9 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
     zIndex: 5,
     width: '100%',
     overflow: 'hidden',
-    backgroundColor: 'transparent',
+    backgroundColor: 'white',
     transition: 'all 0.3s',
-    boxShadow: isScrolled ? '0px 4px 74px rgba(0, 0, 0, 0.05)' : 'initial',
+    // boxShadow: isScrolled ? '0px 4px 74px rgba(0, 0, 0, 0.05)' : 'initial',
   },
 
   unstyledLink: {
@@ -81,11 +82,13 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
 
 export const Navbar: FC<PropsWithChildren> = () => {
   const theme = useMantineTheme();
+  const location = useLocation();
   const isMobile = useMediaQuery(
     `(max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`,
   );
   const [menuOpened, { toggle: toggleMenu, close: closeMenu, open: openMenu }] =
     useDisclosure(false);
+  const navbarWhite = location.pathname.includes('/tata-kelola');
 
   const [isScrolled, setScrolled] = useState(false);
   const [handleDropdown] = useState('');
@@ -121,7 +124,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
           sx={{ borderBottom: 'initial', backgroundColor: 'initial' }}>
           <Group position="apart" sx={{ height: '100%' }}>
             <Link to="/" style={{ color: 'initial', textDecoration: 'initial' }}>
-              {isScrolled ? (
+              {isScrolled || navbarWhite ? (
                 <StaticImage
                   src="../../images/icx-navbar-logo-dark.png"
                   alt="icx-navbar-logo"
@@ -141,7 +144,11 @@ export const Navbar: FC<PropsWithChildren> = () => {
             <Group spacing={48} className={classes.hiddenMobile}>
               {navbarMenus.map(({ id, name, pathname }: NavbarMenu) => (
                 <Link key={id} to={pathname} className={classes.unstyledLink}>
-                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
+                  <Text
+                    size={16}
+                    fw={600}
+                    lh="22px"
+                    color={isScrolled || navbarWhite ? '#000' : '#fff'}>
                     {name}
                   </Text>
                 </Link>
