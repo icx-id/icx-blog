@@ -1,8 +1,22 @@
 import React, { FC, useState } from 'react';
 import { TestimonySectionProps } from '../../types';
-import { Box, Container, Grid, Group, Stack, Text, createStyles } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import {
+  Box,
+  Container,
+  Grid,
+  Group,
+  Image,
+  MediaQuery,
+  Stack,
+  Text,
+  createStyles,
+  em,
+  getBreakpointValue,
+} from '@mantine/core';
+import { GatsbyImage, StaticImage } from 'gatsby-plugin-image';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import GradientPurple from '../../../../images/gradient-purple.png';
+import { useMediaQuery } from '@mantine/hooks';
 
 // -------------------------------------- styles
 
@@ -17,73 +31,66 @@ const useStyles = createStyles(theme => ({
   },
 
   description: {
-    maxWidth: 898,
+    maxWidth: 650,
     paddingRight: 100,
-    fontSize: 40,
+    fontSize: 24,
     fontWeight: 600,
-    lineHeight: '57px',
-    [theme.fn.smallerThan('lg')]: {
-      fontSize: 32,
-      lineHeight: '40px',
-    },
+    lineHeight: '32px',
     [theme.fn.smallerThan('md')]: {
-      fontSize: 20,
-      lineHeight: '28px',
+      fontSize: 18,
+      lineHeight: '24px',
       paddingRight: 0,
     },
   },
 
   author: {
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: 600,
-    lineHeight: '32px',
+    lineHeight: '24px',
     [theme.fn.smallerThan('md')]: {
-      fontSize: 16,
-      lineHeight: '25px',
+      fontSize: 14,
+      lineHeight: '20px',
     },
   },
 
   company: {
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: 400,
-    lineHeight: '32px',
+    lineHeight: '24px',
     [theme.fn.smallerThan('md')]: {
-      fontSize: 16,
-      lineHeight: '25px',
+      fontSize: 14,
+      lineHeight: '20px',
     },
   },
 
   imageBackground: {
     maxWidth: 'calc(100% + 48px)',
     height: '320px',
-    marginLeft: -24,
-    marginRight: -24,
+    // marginLeft: -24,
+    // marginRight: -24,
     backgroundColor: '#D6E6FC',
     position: 'relative',
   },
 
-  imageWrapper: {
-    maxWidth: 390,
-    marginLeft: -60,
-    marginTop: 50,
-    marginBottom: 50,
-    [theme.fn.smallerThan('md')]: {
-      width: 280,
-      height: 300,
-      borderRadius: '8px',
-      position: 'absolute',
-      top: 60,
-      left: '50%',
-      transform: 'translateX(-50%)',
-      marginLeft: 0,
-      marginTop: 0,
-      marginBottom: 0,
-    },
+  imageWrapperDesktop: {
+    width: 380,
+    position: 'absolute',
+    top: '50%',
+    left: -60,
+    transform: 'translateY(-50%)',
+    zIndex: 1,
+  },
+
+  imageWrapperMobile: {
+    position: 'absolute',
+    bottom: -40,
+    left: '50%',
+    transform: 'translateX(-50%)',
   },
 
   iconWrapper: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     borderRadius: '50%',
     display: 'flex',
     justifyContent: 'center',
@@ -109,7 +116,7 @@ const useStyles = createStyles(theme => ({
 
 const LineNavigator: FC<any> = ({ classes, testimonies, active, onClickPrev, onClickNext }) => {
   return (
-    <Group spacing="xl" pt={40}>
+    <Group spacing="xl" pt={24}>
       <Group>
         <Box
           className={classes.iconWrapper}
@@ -136,24 +143,29 @@ const LineNavigator: FC<any> = ({ classes, testimonies, active, onClickPrev, onC
           <IconChevronRight color={active < testimonies.length - 1 ? '#000' : 'lightgrey'} />
         </Box>
       </Group>
-      <Group spacing={0} maw={300} noWrap className={classes.hiddenMobile}>
-        {testimonies.map((testi: any, index: any) => (
-          <Box
-            key={testi.author}
-            sx={{
-              height: '4px',
-              width: `calc(300px / ${testimonies.length})`,
-              backgroundColor: active === index ? '#00C48F' : '#C1FFEE',
-            }}
-          />
-        ))}
-      </Group>
+      <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
+        <Group spacing={0} maw={300} noWrap>
+          {testimonies.map((testi: any, index: any) => (
+            <Box
+              key={testi.author}
+              sx={{
+                height: '4px',
+                width: `calc(300px / ${testimonies.length})`,
+                backgroundColor: active === index ? '#00C48F' : '#C1FFEE',
+              }}
+            />
+          ))}
+        </Group>
+      </MediaQuery>
     </Group>
   );
 };
 
 export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
-  const { classes } = useStyles();
+  const { classes, theme } = useStyles();
+  const isMobile = useMediaQuery(
+    `(max-width: ${em(getBreakpointValue(theme.breakpoints.sm) - 1)})`,
+  );
 
   const [active, setActive] = useState(0);
 
@@ -171,17 +183,96 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
 
   return (
     <Box className={classes.root}>
-      <Container size="xl">
-        <Grid align="center" className={classes.hiddenMobile}>
-          <Grid.Col xs="auto">
-            <Stack spacing="xl">
-              <Text className={classes.description}>{props.testimonies[active].description}</Text>
-              <Text className={classes.author}>
-                {props.testimonies[active].author},{' '}
-                <Text span className={classes.company}>
-                  {props.testimonies[active].company}
+      <Container size="ll">
+        <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
+          <Grid gutter={0}>
+            <Grid.Col xs="auto" pos="relative">
+              <Stack spacing="xl" justify="center" h="100%">
+                <Text className={classes.description}>{props.testimonies[active].description}</Text>
+                <Text className={classes.author}>
+                  {props.testimonies[active].author},&nbsp;
+                  <Text span className={classes.company}>
+                    {props.testimonies[active].company}
+                  </Text>
                 </Text>
-              </Text>
+                <LineNavigator
+                  classes={classes}
+                  testimonies={props.testimonies}
+                  active={active}
+                  onClickPrev={onClickPrev}
+                  onClickNext={onClickNext}
+                />
+              </Stack>
+            </Grid.Col>
+            <Grid.Col xs={4} sx={{ position: 'relative' }}>
+              <Box
+                w="calc(100% + 64px)"
+                h={600}
+                bg="red"
+                pos="relative"
+                sx={{ overflow: 'hidden' }}>
+                <StaticImage
+                  src="../../../../images/gradient-purple.png"
+                  alt="gradient-purple"
+                  style={{ width: 850, height: '100%' }}
+                />
+              </Box>
+              <Box className={classes.imageWrapperDesktop}>
+                {/* <GatsbyImage
+                image={props.testimonies[active].image.childImageSharp.gatsbyImageData}
+                alt="testimony"
+              /> */}
+                <Image src={props.testimonies[active].image} />
+              </Box>
+            </Grid.Col>
+          </Grid>
+        </MediaQuery>
+
+        <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+          <Box>
+            <Box pos="relative">
+              <Box
+                w="calc(100% + 48px)"
+                h={isMobile ? 225 : 320}
+                ml={-24}
+                pos="relative"
+                sx={{ overflow: 'hidden', backgroundColor: '#D6E6FC' }}>
+                <StaticImage
+                  src="../../../../images/gradient-purple.png"
+                  alt="gradient-purple"
+                  style={{ width: 360, height: '100%' }}
+                />
+              </Box>
+              <Box className={classes.imageWrapperMobile}>
+                {/* <GatsbyImage
+                image={props.testimonies[active].image.childImageSharp.gatsbyImageData}
+                style={{ borderRadius: '8px', height: 300 }}
+                alt="testimony"
+              /> */}
+                <Image
+                  src={props.testimonies[active].image}
+                  width={isMobile ? 200 : 290}
+                  height={isMobile ? 225 : 312}
+                  sx={{ img: { borderRadius: '10px' } }}
+                />
+              </Box>
+            </Box>
+            <Box mt={96}>
+              {/* <GatsbyImage
+              image={props.testimonies[active].authorImage.childImageSharp.gatsbyImageData}
+              style={{ width: 75, height: 75 }}
+              alt="author"
+            /> */}
+              <Image src={props.testimonies[active].authorImage} maw={50} mah={50} />
+            </Box>
+            <Box mt={32}>
+              <Text className={classes.description}>{props.testimonies[active].description}</Text>
+            </Box>
+            <Box mt={16}>
+              <Text className={classes.author}>{props.testimonies[active].author},</Text>
+              <Text className={classes.company}>{props.testimonies[active].company}</Text>
+            </Box>
+            <Box>
               <LineNavigator
                 classes={classes}
                 testimonies={props.testimonies}
@@ -189,49 +280,9 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
                 onClickPrev={onClickPrev}
                 onClickNext={onClickNext}
               />
-            </Stack>
-          </Grid.Col>
-          <Grid.Col xs={4} sx={{ backgroundColor: '#D6E6FC' }}>
-            <Box className={classes.imageWrapper}>
-              <GatsbyImage image={getImage(props.testimonies[active].image)!} alt="testimony" />
-            </Box>
-          </Grid.Col>
-        </Grid>
-
-        <Box className={classes.hiddenDesktop}>
-          <Box className={classes.imageBackground}>
-            <Box className={classes.imageWrapper}>
-              <GatsbyImage
-                image={getImage(props.testimonies[active].image)!}
-                style={{ borderRadius: '8px', height: 300 }}
-                alt="testimony"
-              />
             </Box>
           </Box>
-          <Box mt={109}>
-            <GatsbyImage
-              image={getImage(props.testimonies[active].authorImage)!}
-              style={{ width: 75, height: 75 }}
-              alt="author"
-            />
-          </Box>
-          <Box mt={50}>
-            <Text className={classes.description}>{props.testimonies[active].description}</Text>
-          </Box>
-          <Box mt={34}>
-            <Text className={classes.author}>{props.testimonies[active].author},</Text>
-            <Text className={classes.company}>{props.testimonies[active].company}</Text>
-          </Box>
-          <Box>
-            <LineNavigator
-              classes={classes}
-              testimonies={props.testimonies}
-              active={active}
-              onClickPrev={onClickPrev}
-              onClickNext={onClickNext}
-            />
-          </Box>
-        </Box>
+        </MediaQuery>
       </Container>
     </Box>
   );

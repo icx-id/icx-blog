@@ -1,36 +1,29 @@
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
 
+// TODO: enable when using gatsby image
+// type Image = {
+//   childImageSharp: {
+//     gatsbyImageData: IGatsbyImageData;
+//   };
+// };
+
+type Image = string;
+
 export type HeroSectionProps = {
   title: string;
   subtitle: string;
-  appImage: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
+  appImage: Image;
   download: {
     name: string;
-    logo: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
+    logo: Image;
     link: string;
   }[];
 };
 
 export type CompanyListSectionProps = {
   title: string;
-  imageDesktop: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
-  imageMobile: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
+  imageDesktop: Image;
+  imageMobile: Image;
 };
 
 export type TestimonySectionProps = {
@@ -38,18 +31,10 @@ export type TestimonySectionProps = {
   subtitle: string;
   testimonies: {
     author: string;
-    authorImage: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
+    authorImage: Image;
     company: string;
     description: string;
-    image: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
+    image: Image;
   }[];
 };
 
@@ -59,11 +44,7 @@ export type InvestmentSectionProps = {
   flows: {
     title: string;
     description: string;
-    image: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
+    image: Image;
   }[];
 };
 
@@ -73,33 +54,17 @@ export type InvestorSectionProps = {
   fundraising: {
     count: string;
     label: string;
-    background: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
+    background: Image;
   };
   employment: {
     count: string;
     label: string;
-    background: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
+    background: Image;
   };
   investor: {
     title: string;
-    imageDesktop: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
-    imageMobile: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
+    imageDesktop: Image;
+    imageMobile: Image;
   };
 };
 
@@ -108,11 +73,7 @@ export type MediaSectionProps = {
   subtitle: string;
   medias: {
     mediaName: string;
-    logo: {
-      childImageSharp: {
-        gatsbyImageData: IGatsbyImageData;
-      };
-    };
+    logo: Image;
   }[];
 };
 

@@ -1,15 +1,15 @@
 import React, { FC } from 'react';
 import { CompanyListSectionProps } from '../../types';
-import { Box, Container, Grid, Text, createStyles } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Box, Container, Grid, Image, Text, createStyles } from '@mantine/core';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 // --------------------------------------- styles
 
 const useStyles = createStyles(theme => ({
   root: {
-    paddingTop: '144px',
+    paddingTop: '200px',
     [theme.fn.smallerThan('md')]: {
-      paddingTop: '96px',
+      paddingTop: '144px',
     },
   },
 
@@ -21,14 +21,14 @@ const useStyles = createStyles(theme => ({
   },
 
   title: {
-    maxWidth: 585,
-    fontSize: 32,
-    fontWeight: 500,
-    lineHeight: '40px',
+    maxWidth: 500,
+    fontSize: 24,
+    fontWeight: 600,
+    lineHeight: '32px',
     [theme.fn.smallerThan('md')]: {
-      maxWidth: 305,
-      fontSize: 16,
-      lineHeight: '22px',
+      maxWidth: 360,
+      fontSize: 18,
+      lineHeight: '24px',
       textAlign: 'center',
     },
   },
@@ -41,15 +41,17 @@ export const CompanyListSection: FC<CompanyListSectionProps> = ({ ...props }) =>
 
   return (
     <Box className={classes.root}>
-      <Container size="xl">
-        <Grid gutter={32} gutterMd={16} align="center">
-          <Grid.Col xs={12} md="auto" className={classes.centerMobile}>
-            <Text className={classes.title} maw={585}>
-              {props.title}
-            </Text>
+      <Container size="ll">
+        <Grid gutter={32} align="center">
+          <Grid.Col xs={12} md="content" className={classes.centerMobile}>
+            <Text className={classes.title}>{props.title}</Text>
           </Grid.Col>
           <Grid.Col xs={12} md="auto">
-            <GatsbyImage image={getImage(props.imageDesktop)!} alt="company-list" />
+            {/* <GatsbyImage
+              image={props.imageDesktop.childImageSharp.gatsbyImageData}
+              alt="company-list"
+            /> */}
+            <Image src={props.imageDesktop} />
           </Grid.Col>
         </Grid>
       </Container>

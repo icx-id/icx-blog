@@ -41,9 +41,11 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
     display: 'block',
     padding: `${rem(10)} ${rem(22)}`,
     borderRadius: theme.radius.md,
-    transition: 'background-color 100ms linear',
+    transition: 'all 100ms linear',
     ':hover': {
-      backgroundColor: isScrolled ? theme.colors.gray[2] : theme.colors.dark[6],
+      opacity: 0.8,
+      textDecoration: `solid underline ${isScrolled ? '#000' : '#fff'} 2px`,
+      textUnderlineOffset: 4,
     },
   },
 
@@ -54,8 +56,8 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
   },
 
   icxLogo: {
-    width: 91.3,
-    height: 42.4,
+    width: 86,
+    height: 40,
     [theme.fn.smallerThan('md')]: {
       width: 56,
       height: 26,
@@ -63,13 +65,13 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
   },
 
   hiddenMobile: {
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan('md')]: {
       display: 'none',
     },
   },
 
   hiddenDesktop: {
-    [theme.fn.largerThan('sm')]: {
+    [theme.fn.largerThan('md')]: {
       display: 'none',
     },
   },
@@ -113,7 +115,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
 
   return (
     <Box id="fixed-navbar" className={classes.root}>
-      <Container size="xl">
+      <Container size="ll">
         <Header
           height={isMobile ? 64 : 80}
           sx={{ borderBottom: 'initial', backgroundColor: 'initial' }}>
@@ -139,14 +141,14 @@ export const Navbar: FC<PropsWithChildren> = () => {
             <Group spacing={48} className={classes.hiddenMobile}>
               {navbarMenus.map(({ id, name, pathname }: NavbarMenu) => (
                 <Link key={id} to={pathname} className={classes.unstyledLink}>
-                  <Text size={18} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
+                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
                     {name}
                   </Text>
                 </Link>
               ))}
             </Group>
 
-            <Group spacing={24} className={classes.hiddenMobile}>
+            {/* <Group spacing={24} className={classes.hiddenMobile}>
               <Button
                 variant="outline"
                 className={classes.buttonSize}
@@ -170,7 +172,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
                   Login
                 </Text>
               </Button>
-            </Group>
+            </Group> */}
 
             <Menu
               width={260}

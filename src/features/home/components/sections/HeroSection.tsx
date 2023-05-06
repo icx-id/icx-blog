@@ -1,48 +1,81 @@
 import React, { FC } from 'react';
-import { Box, Container, Grid, Group, Stack, Text, createStyles } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import {
+  Box,
+  Container,
+  Flex,
+  Grid,
+  Group,
+  Image,
+  Stack,
+  Text,
+  TypographyStylesProvider,
+  createStyles,
+} from '@mantine/core';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { HeroSectionProps } from '../../types';
 
 // --------------------------------------- styles
 
 const useStyles = createStyles(theme => ({
   root: {
-    minHeight: '101vh',
+    height: '100vh',
     color: '#fff',
     backgroundColor: '#000',
+    [theme.fn.smallerThan('md')]: {
+      height: 'auto',
+    },
+  },
+
+  container: {
+    height: '100%',
+    paddingTop: 80,
+    [theme.fn.smallerThan('md')]: {
+      paddingTop: 64,
+    },
+  },
+
+  absoluteVerticalCenter: {
+    position: 'absolute',
+    left: 0,
+    top: '50%',
+    transform: 'translateY(-50%)',
+    [theme.fn.smallerThan('md')]: {
+      position: 'relative',
+    },
   },
 
   copywriting: {
-    marginTop: '30vh',
+    width: '100%',
+    alignItems: 'flex-start',
     [theme.fn.smallerThan('md')]: {
-      marginTop: '180px',
+      alignItems: 'center',
     },
   },
 
   title: {
-    fontSize: 72,
+    color: 'inherit',
+    maxWidth: 600,
+    fontSize: 56,
     fontWeight: 600,
-    lineHeight: '78px',
-    maxWidth: 800,
+    lineHeight: '72px',
     [theme.fn.smallerThan('md')]: {
-      fontSize: 34,
+      maxWidth: 'initial',
+      fontSize: 32,
       lineHeight: '40px',
       textAlign: 'center',
-      maxWidth: 'initial',
     },
   },
 
   subtitle: {
-    fontSize: 32,
+    maxWidth: 500,
+    fontSize: 24,
     fontWeight: 400,
-    lineHeight: '42px',
-    maxWidth: 590,
+    lineHeight: '32px',
     [theme.fn.smallerThan('md')]: {
+      maxWidth: 300,
       fontSize: 16,
       lineHeight: '24px',
       textAlign: 'center',
-      maxWidth: 'initial',
-      mx: 'auto',
     },
   },
 
@@ -53,10 +86,14 @@ const useStyles = createStyles(theme => ({
   },
 
   appImage: {
-    maxWidth: '390px',
+    width: '390px',
     position: 'absolute',
     left: 60,
     bottom: -50,
+    [theme.fn.smallerThan('lg')]: {
+      width: 'auto',
+      maxWidth: '390px',
+    },
     [theme.fn.smallerThan('md')]: {
       position: 'relative',
       left: '50%',
@@ -72,28 +109,32 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
 
   return (
     <Box className={classes.root}>
-      <Container size="xl">
-        <Grid sx={{ minHeight: '101vh' }}>
-          <Grid.Col xs={12} md={6} sx={{ height: 'fit-content' }}>
-            <Stack spacing="xl" className={classes.copywriting}>
-              <Text className={classes.title}>
-                Unlocking Your
-                <br />
-                Next Level Investment
-              </Text>
-              <Text className={classes.subtitle}>{props.subtitle}</Text>
-              <Group spacing="xl" align="center" noWrap className={classes.download}>
-                {props.download.map(({ logo, link, name }) => (
-                  <Box key={link}>
-                    <GatsbyImage image={getImage(logo)!} alt={name} />
-                  </Box>
-                ))}
-              </Group>
-            </Stack>
+      <Container size="ll" className={classes.container}>
+        <Grid gutter={0} sx={{ height: '100%', position: 'relative' }}>
+          <Grid.Col xs={12} md={7}>
+            <Flex
+              align={{ xs: 'flex-start', md: 'center' }}
+              justify={{ xs: 'center', md: 'flex-start' }}
+              sx={{ height: '100%' }}>
+              <Stack spacing={32} className={classes.copywriting}>
+                <TypographyStylesProvider className={classes.title}>
+                  <div dangerouslySetInnerHTML={{ __html: props.title }} />
+                </TypographyStylesProvider>
+                <Text className={classes.subtitle}>{props.subtitle}</Text>
+                <Group spacing="xl" align="center" noWrap className={classes.download}>
+                  {props.download.map(({ logo, link, name }) => (
+                    <Box key={link}>
+                      {/* <GatsbyImage image={logo.childImageSharp.gatsbyImageData} alt={name} /> */}
+                      <Image src={logo} maw={200} mah={59} />
+                    </Box>
+                  ))}
+                </Group>
+              </Stack>
+            </Flex>
           </Grid.Col>
           <Grid.Col
             xs={12}
-            md={6}
+            md={5}
             sx={theme => ({
               position: 'relative',
               [theme.fn.smallerThan('md')]: {
@@ -101,7 +142,8 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
               },
             })}>
             <Box className={classes.appImage}>
-              <GatsbyImage image={getImage(props.appImage)!} alt="icx-app" />
+              {/* <GatsbyImage image={props.appImage.childImageSharp.gatsbyImageData} alt="icx-app" /> */}
+              <Image src={props.appImage} />
             </Box>
           </Grid.Col>
         </Grid>
