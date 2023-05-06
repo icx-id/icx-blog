@@ -8,6 +8,7 @@
     "icx"
   ],
   "scripts": {
+    "preinstall": "yarn run clean",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "NODE_OPTIONS=--max-old-space-size=4096 gatsby build",
