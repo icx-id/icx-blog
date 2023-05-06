@@ -33,7 +33,7 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
     overflow: 'hidden',
     backgroundColor: 'white',
     transition: 'all 0.3s',
-    // boxShadow: isScrolled ? '0px 4px 74px rgba(0, 0, 0, 0.05)' : 'initial',
+    boxShadow: isScrolled ? '0px 4px 74px rgba(0, 0, 0, 0.05)' : 'initial',
   },
 
   unstyledLink: {
