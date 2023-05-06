@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className={classes.footer}>
-      <Container size="lg" pb={mobileScreen ? 42 : 84}>
+      <Container size="ll" pb={mobileScreen ? 42 : 84}>
         <Box sx={{ marginBottom: '2rem' }}>
           <Image src="/img/logo-white.png" height={44} width={95} />
         </Box>
@@ -381,7 +381,7 @@ export const Footer: React.FC = () => {
         </Box>
       </Container>
       <Box sx={{ backgroundColor: '#000' }} py={24}>
-        <Container size="lg">
+        <Container size="ll">
           <Text fz={mobileScreen ? 8 : 14} fw={400} color="#FFF">
             {mobileScreen ? (
               <Center>© 2023 PT ICX bangun Indonesia. All Rights Reserved.</Center>
