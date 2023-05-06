@@ -62,9 +62,9 @@ const config: GatsbyConfig = {
     },
     {
       resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: ['gatsby-remark-relative-images-v2', 'gatsby-remark-images'],
-      },
+      // options: {
+      //   plugins: ['gatsby-remark-relative-images-v2', 'gatsby-remark-images'],
+      // },
     },
     {
       resolve: 'gatsby-plugin-mdx',

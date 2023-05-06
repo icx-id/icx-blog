@@ -1,7 +1,18 @@
 import React, { FC } from 'react';
 import { InvestorSectionProps } from '../../types';
-import { Box, Container, Grid, Stack, Text, createStyles } from '@mantine/core';
+import {
+  Box,
+  Container,
+  Grid,
+  Image,
+  Stack,
+  Text,
+  createStyles,
+  em,
+  getBreakpointValue,
+} from '@mantine/core';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { useMediaQuery } from '@mantine/hooks';
 
 // ------------------------------------------ styles
 
@@ -14,51 +25,47 @@ const useStyles = createStyles(theme => ({
   },
 
   title: {
-    maxWidth: 900,
-    fontSize: 48,
+    maxWidth: 700,
+    fontSize: 40,
     fontWeight: 600,
-    lineHeight: '58px',
+    lineHeight: '54px',
     textAlign: 'center',
     marginLeft: 'auto',
     marginRight: 'auto',
     [theme.fn.smallerThan('md')]: {
       fontSize: 24,
-      lineHeight: '28px',
+      lineHeight: '32px',
+      maxWidth: 400,
     },
   },
 
   subtitle: {
-    maxWidth: 919,
-    marginTop: 45,
-    fontSize: 24,
+    maxWidth: 650,
+    marginTop: 32,
+    fontSize: 22,
     fontWeight: 400,
-    lineHeight: '29px',
+    lineHeight: '32px',
     textAlign: 'center',
-    marginLeft: 'auto',
-    marginRight: 'auto',
     [theme.fn.smallerThan('md')]: {
-      marginTop: 26,
-      fontSize: 14,
-      lineHeight: '17px',
+      marginTop: 24,
+      fontSize: 16,
+      lineHeight: '20px',
+      maxWidth: 400,
     },
   },
 
   gridWrapper: {
-    marginTop: 176,
+    marginTop: 96,
     [theme.fn.smallerThan('md')]: {
-      marginTop: 106,
+      marginTop: 64,
     },
   },
 
   textCount: {
-    fontSize: 48,
+    fontSize: 36,
     fontWeight: 600,
-    lineHeight: '58px',
+    lineHeight: '48px',
     color: '#fff',
-    [theme.fn.smallerThan('xl')]: {
-      fontSize: 40,
-      lineHeight: '48px',
-    },
     [theme.fn.smallerThan('lg')]: {
       fontSize: 32,
       lineHeight: '40px',
@@ -99,7 +106,7 @@ const useStyles = createStyles(theme => ({
 
   textWrapper: {
     position: 'absolute',
-    left: 50,
+    left: 40,
     top: '50%',
     transform: 'translateY(-50%)',
   },
@@ -108,37 +115,60 @@ const useStyles = createStyles(theme => ({
 // ------------------------------------------ components
 
 export const InvestorSection: FC<InvestorSectionProps> = ({ ...props }) => {
-  const { classes } = useStyles();
+  const { classes, theme } = useStyles();
+  const isMobile = useMediaQuery(
+    `(max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`,
+  );
 
   return (
     <Box className={classes.root}>
-      <Container size="xl">
-        <Stack>
+      <Container size="ll">
+        <Stack spacing={0} align="center">
           <Text className={classes.title}>{props.title}</Text>
           <Text className={classes.subtitle}>{props.subtitle}</Text>
         </Stack>
 
-        <Grid className={classes.gridWrapper}>
-          <Grid.Col xs={12} md={6}>
+        <Grid gutter={isMobile ? 24 : 80} className={classes.gridWrapper}>
+          <Grid.Col xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Box className={classes.groupWrapper}>
-              <GatsbyImage
+              {/* <GatsbyImage
                 image={props.fundraising.background.childImageSharp.gatsbyImageData}
                 alt="fundraising"
                 className={classes.bgImage}
-              />
+              /> */}
+              <Box
+                sx={{
+                  [theme.fn.smallerThan('md')]: {
+                    maxHeight: 200,
+                    overflow: 'hidden',
+                    borderRadius: '40px',
+                  },
+                }}>
+                <Image src={props.fundraising.background} />
+              </Box>
               <Stack spacing={0} className={classes.textWrapper}>
                 <Text className={classes.textCount}>{props.fundraising.count}</Text>
                 <Text className={classes.textLabel}>{props.fundraising.label}</Text>
               </Stack>
             </Box>
           </Grid.Col>
-          <Grid.Col xs={12} md={6}>
+          <Grid.Col xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Box className={classes.groupWrapper}>
-              <GatsbyImage
+              {/* <GatsbyImage
                 image={props.employment.background.childImageSharp.gatsbyImageData}
                 alt="employment"
                 className={classes.bgImage}
-              />
+              /> */}
+              <Box
+                sx={{
+                  [theme.fn.smallerThan('md')]: {
+                    maxHeight: 200,
+                    overflow: 'hidden',
+                    borderRadius: '40px',
+                  },
+                }}>
+                <Image src={props.employment.background} />
+              </Box>
               <Stack spacing={0} className={classes.textWrapper}>
                 <Text className={classes.textCount}>{props.employment.count}</Text>
                 <Text className={classes.textLabel}>{props.employment.label}</Text>

@@ -1,7 +1,7 @@
 ---
 key: home
 heroSection:
-  title: Unlocking Your Next Level Investment
+  title: Unlocking Your<br />Next Level Investment
   subtitle: Get a chance to invest in reliable businesses you trust, today
   appImage: /img/icx-app.png
   download:
@@ -39,8 +39,8 @@ testimonySection:
       image: /img/testimony-image.png
 investmentSection:
   title: This Is the New Way of Investing
-  subtitle: With ICX, you now have the way to invest in promising startups and
-    private businesses. Here’s why we are differentt
+  subtitle: <span>With ICX</span>, you now have the way to invest in promising
+    startups and private businesses. Here’s what give us an edge.
   flows:
     - title: It’s Easy and Convenient
       description: ICX provides you with a simple and safe way of investing to various
