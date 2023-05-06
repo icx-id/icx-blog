@@ -31,7 +31,7 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
     zIndex: 5,
     width: '100%',
     overflow: 'hidden',
-    backgroundColor: 'white',
+    backgroundColor: 'transparent',
     transition: 'all 0.3s',
     boxShadow: isScrolled ? '0px 4px 74px rgba(0, 0, 0, 0.05)' : 'initial',
   },
