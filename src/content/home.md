@@ -3,13 +3,13 @@ key: home
 heroSection:
   title: Unlocking Your<br />Next Level Investment
   subtitle: Get a chance to invest in reliable businesses you trust, today
-  appImage: /img/icx-app.png
+  appImage: /img/app-preview.png
   download:
     - name: Google Play
-      logo: /img/google-play.png
+      logo: /img/google-play-soon.png
       link: https://play.google.com
     - name: App Store
-      logo: /img/app-store.png
+      logo: /img/app-store-soon.png
       link: https://www.apple.com/id/app-store
 companyListSection:
   title: Trusted companies that has successfully been listed through ICX
@@ -30,13 +30,10 @@ testimonySection:
       image: /img/testimony-image.png
     - author: Sumarny Elizabeth Manurung
       authorImage: /img/testimony-author.png
-      company: SPIL Ventures
-      description: “As a new CVC of PT Salam Pacific Indonesia Lines, a shipping line
-        based in Indonesia, SPIL Ventures are thrilled to have discovered ICX.
-        We look forward to potential collaborations in the future, as we believe
-        they have the expertise to turn innovative ideas into successful
-        ventures.”
-      image: /img/testimony-image.png
+      company: Kenangan Capital
+      description: “ICX give startups access to investors from various backgrounds
+        that is able to bring different strategic values to companies!”
+      image: /img/testimony-kenangan.png
 investmentSection:
   title: This Is the New Way of Investing
   subtitle: <span>With ICX</span>, you now have the way to invest in promising
@@ -45,19 +42,19 @@ investmentSection:
     - title: It’s Easy and Convenient
       description: ICX provides you with a simple and safe way of investing to various
         businesses in Indonesia, whether it’s established or startups.
-      image: /img/investment-img1.png
+      image: /img/investment-icon1.png
     - title: Own Your Dream Business
       description: You can now contribute to the businesses you trust through Equity
         Crowdfunding.
-      image: /img/investment-img2.png
+      image: /img/investment-icon2.png
     - title: Get Passive Income
       description: A clear and concise view of how  ICX enables you to contribute to
         businesses that you trust and help them off the ground.
-      image: /img/investment-img3.png
+      image: /img/investment-icon3.png
     - title: Get Passive Income
       description: A clear and concise view of how  ICX enables you to contribute to
         businesses that you trust and help them off the ground.
-      image: /img/investment-img4.png
+      image: /img/investment-icon4.png
 investorSection:
   title: We Have Been Empowering Businesses That Contributes to Indonesia’s Economy
   subtitle: Previously known as LandX, ICX have successfully help to
@@ -84,9 +81,7 @@ mediaSection:
     - mediaName: CNN
       logo: /img/cnn.png
     - mediaName: Sindo News
-      logo: /img/sindonews.png
-    - mediaName: Sindo News
-      logo: /img/sindonews.png
+      logo: /img/sindo-news.png
     - mediaName: Kompas
       logo: /img/kompas.png
     - mediaName: Berita Satu

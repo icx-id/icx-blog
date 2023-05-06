@@ -9,7 +9,8 @@ const AboutPage: React.FC<PageProps> = () => {
     <Box sx={{ overflow: 'hidden' }}>
       <SummarySection />
       <OurStorySection />
-      <NewsSection />
+      {/* TODO: enable when ready */}
+      {/* <NewsSection /> */}
     </Box>
   );
 };

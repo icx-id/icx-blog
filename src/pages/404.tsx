@@ -6,7 +6,7 @@ import { SiteMetadata } from '~/components';
 const NotFoundPage: React.FC = () => {
   return (
     <div style={{ height: '80vh' }}>
-      <Container size="md" h="80vh">
+      <Container size="ll">
         <Image src="/img/logo.png" alt="ICX" maw={100} mb={50} />
         <Text fz="xl" fw="bold">
           Page not found

@@ -18,9 +18,9 @@ import { useMediaQuery } from '@mantine/hooks';
 
 const useStyles = createStyles(theme => ({
   root: {
-    paddingTop: 200,
+    paddingTop: 176,
     [theme.fn.smallerThan('md')]: {
-      paddingTop: 103,
+      paddingTop: 96,
     },
   },
 
@@ -71,8 +71,8 @@ const useStyles = createStyles(theme => ({
       lineHeight: '40px',
     },
     [theme.fn.smallerThan('sm')]: {
-      fontSize: 24,
-      lineHeight: '29px',
+      fontSize: 20,
+      lineHeight: '24px',
     },
   },
 
@@ -82,8 +82,8 @@ const useStyles = createStyles(theme => ({
     lineHeight: '29px',
     color: '#fff',
     [theme.fn.smallerThan('md')]: {
-      fontSize: 16,
-      lineHeight: '19px',
+      fontSize: 14,
+      lineHeight: '20px',
     },
   },
 
@@ -116,9 +116,11 @@ const useStyles = createStyles(theme => ({
 
 export const InvestorSection: FC<InvestorSectionProps> = ({ ...props }) => {
   const { classes, theme } = useStyles();
+
   const isMobile = useMediaQuery(
     `(max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`,
   );
+  const isSmallMobile = useMediaQuery(`(max-width: ${em(500)})`);
 
   return (
     <Box className={classes.root}>
@@ -128,7 +130,7 @@ export const InvestorSection: FC<InvestorSectionProps> = ({ ...props }) => {
           <Text className={classes.subtitle}>{props.subtitle}</Text>
         </Stack>
 
-        <Grid gutter={isMobile ? 24 : 80} className={classes.gridWrapper}>
+        <Grid gutter={isMobile ? 16 : 80} className={classes.gridWrapper}>
           <Grid.Col xs={12} md={6} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Box className={classes.groupWrapper}>
               {/* <GatsbyImage
@@ -139,9 +141,9 @@ export const InvestorSection: FC<InvestorSectionProps> = ({ ...props }) => {
               <Box
                 sx={{
                   [theme.fn.smallerThan('md')]: {
-                    maxHeight: 200,
+                    maxHeight: 160,
                     overflow: 'hidden',
-                    borderRadius: '40px',
+                    borderRadius: isSmallMobile ? '10px' : '40px',
                   },
                 }}>
                 <Image src={props.fundraising.background} />
@@ -162,9 +164,9 @@ export const InvestorSection: FC<InvestorSectionProps> = ({ ...props }) => {
               <Box
                 sx={{
                   [theme.fn.smallerThan('md')]: {
-                    maxHeight: 200,
+                    maxHeight: 160,
                     overflow: 'hidden',
-                    borderRadius: '40px',
+                    borderRadius: isSmallMobile ? '10px' : '40px',
                   },
                 }}>
                 <Image src={props.employment.background} />

@@ -18,6 +18,7 @@ import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { navbarMenus, NavbarMenu } from './static/menus';
+import { NavbarProps } from '../types';
 
 // --------------------------------------- styles
 
@@ -79,7 +80,7 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
 
 // --------------------------------------- components
 
-export const Navbar: FC<PropsWithChildren> = () => {
+export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = false }) => {
   const theme = useMantineTheme();
   const isMobile = useMediaQuery(
     `(max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`,
@@ -87,7 +88,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
   const [menuOpened, { toggle: toggleMenu, close: closeMenu, open: openMenu }] =
     useDisclosure(false);
 
-  const [isScrolled, setScrolled] = useState(false);
+  const [isScrolled, setScrolled] = useState(navbarSolid);
   const [handleDropdown] = useState('');
 
   const { classes } = useStyles({ isScrolled });
@@ -107,6 +108,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
   };
 
   useEffect(() => {
+    setScrolled(true);
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -121,16 +123,16 @@ export const Navbar: FC<PropsWithChildren> = () => {
           sx={{ borderBottom: 'initial', backgroundColor: 'initial' }}>
           <Group position="apart" sx={{ height: '100%' }}>
             <Link to="/" style={{ color: 'initial', textDecoration: 'initial' }}>
-              {isScrolled ? (
+              {!isScrolled && !navbarSolid ? (
                 <StaticImage
-                  src="../../images/icx-navbar-logo-dark.png"
+                  src="../../images/icx-navbar-logo.png"
                   alt="icx-navbar-logo"
                   placeholder="blurred"
                   className={classes.icxLogo}
                 />
               ) : (
                 <StaticImage
-                  src="../../images/icx-navbar-logo.png"
+                  src="../../images/icx-navbar-logo-dark.png"
                   alt="icx-navbar-logo"
                   placeholder="blurred"
                   className={classes.icxLogo}
@@ -141,7 +143,11 @@ export const Navbar: FC<PropsWithChildren> = () => {
             <Group spacing={48} className={classes.hiddenMobile}>
               {navbarMenus.map(({ id, name, pathname }: NavbarMenu) => (
                 <Link key={id} to={pathname} className={classes.unstyledLink}>
-                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
+                  <Text
+                    size={16}
+                    fw={600}
+                    lh="22px"
+                    color={!isScrolled && !navbarSolid ? '#fff' : '#000'}>
                     {name}
                   </Text>
                 </Link>
@@ -183,7 +189,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
               withinPortal>
               <Menu.Target>
                 <Burger
-                  color={isScrolled ? '#000' : '#fff'}
+                  color={!isScrolled && !navbarSolid ? '#fff' : '#000'}
                   opened={menuOpened}
                   onClick={toggleMenu}
                   className={classes.hiddenDesktop}
