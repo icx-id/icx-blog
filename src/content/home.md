@@ -28,7 +28,7 @@ testimonySection:
         they have the expertise to turn innovative ideas into successful
         ventures.”
       image: /img/testimony-image.png
-    - author: Sumarny Elizabeth Manurung
+    - author: Fandy
       authorImage: /img/testimony-author.png
       company: Kenangan Capital
       description: “ICX give startups access to investors from various backgrounds
