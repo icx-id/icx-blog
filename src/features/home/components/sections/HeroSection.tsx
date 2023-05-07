@@ -125,6 +125,23 @@ const useStyles = createStyles(theme => ({
       transform: 'translateX(-50%)',
     },
   },
+
+  appImageVisible: {
+    width: '390px',
+    position: 'absolute',
+    left: 60,
+    bottom: -50,
+    zIndex: 2,
+    [theme.fn.smallerThan('lg')]: {
+      width: 'auto',
+      maxWidth: '390px',
+    },
+    [theme.fn.smallerThan('md')]: {
+      position: 'relative',
+      left: '50%',
+      transform: 'translateX(-50%)',
+    },
+  },
 }));
 
 // -------------------------------------- components
@@ -133,51 +150,109 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
   const { classes } = useStyles();
 
   return (
-    <Box className={classes.root}>
-      <Container size="ll" className={classes.container}>
-        <Grid gutter={0} sx={{ height: '100%', position: 'relative' }}>
-          <MediaQuery smallerThan="md" styles={{ paddingTop: 70 }}>
-            <Grid.Col xs={12} md={7}>
-              <Flex
-                align={{ xs: 'flex-start', md: 'center' }}
-                justify={{ xs: 'center', md: 'flex-start' }}
-                sx={{ height: '100%' }}>
-                <Stack spacing={32} className={classes.copywriting}>
-                  <TypographyStylesProvider className={classes.title}>
-                    <div dangerouslySetInnerHTML={{ __html: props.title }} />
-                  </TypographyStylesProvider>
-                  <Text className={classes.subtitle}>{props.subtitle}</Text>
-                  <Group spacing="xl" align="center" noWrap className={classes.download}>
-                    {props.download.map(({ logo, link, name }) => (
-                      <Box key={link}>
-                        {/* <GatsbyImage image={logo.childImageSharp.gatsbyImageData} alt={name} /> */}
-                        <Image src={logo} alt={name} maw={200} mah={59} />
-                      </Box>
-                    ))}
-                  </Group>
-                </Stack>
-              </Flex>
+    <Box pos="relative">
+      <Box className={classes.root}>
+        <Container size="ll" className={classes.container}>
+          <Grid gutter={0} sx={{ height: '100%', position: 'relative', visibility: 'hidden' }}>
+            <MediaQuery smallerThan="md" styles={{ paddingTop: 70 }}>
+              <Grid.Col xs={12} md={7}>
+                <Flex
+                  align={{ xs: 'flex-start', md: 'center' }}
+                  justify={{ xs: 'center', md: 'flex-start' }}
+                  sx={{ height: '100%' }}>
+                  <Stack spacing={32} className={classes.copywriting}>
+                    <TypographyStylesProvider className={classes.title}>
+                      <div dangerouslySetInnerHTML={{ __html: props.title }} />
+                    </TypographyStylesProvider>
+                    <Text className={classes.subtitle}>{props.subtitle}</Text>
+                    <Group spacing="xl" align="center" noWrap className={classes.download}>
+                      {props.download.map(({ logo, link, name }) => (
+                        <Box key={link}>
+                          {/* <GatsbyImage image={logo.childImageSharp.gatsbyImageData} alt={name} /> */}
+                          <Image src={logo} alt={name} maw={200} mah={59} />
+                        </Box>
+                      ))}
+                    </Group>
+                  </Stack>
+                </Flex>
+              </Grid.Col>
+            </MediaQuery>
+            <Grid.Col
+              xs={12}
+              md={5}
+              sx={theme => ({
+                position: 'relative',
+                [theme.fn.smallerThan('md')]: {
+                  padding: '0 32px',
+                },
+              })}>
+              <Box className={classes.appImage}>
+                {/* <GatsbyImage image={props.appImage.childImageSharp.gatsbyImageData} alt="icx-app" /> */}
+                <Image src={props.appImage} />
+              </Box>
             </Grid.Col>
-          </MediaQuery>
-          <Grid.Col
-            xs={12}
-            md={5}
-            sx={theme => ({
-              position: 'relative',
-              [theme.fn.smallerThan('md')]: {
-                padding: '0 32px',
-              },
-            })}>
-            <Box className={classes.appImage}>
-              {/* <GatsbyImage image={props.appImage.childImageSharp.gatsbyImageData} alt="icx-app" /> */}
-              <Image src={props.appImage} />
-            </Box>
-          </Grid.Col>
-        </Grid>
+          </Grid>
 
-        {/* Gradient */}
-        <Image src={GradientHome} width={1080} className={classes.background} />
-      </Container>
+          {/* Gradient */}
+          <Image src={GradientHome} width={1080} className={classes.background} />
+        </Container>
+      </Box>
+
+      {/* VISIBLE COMPONENT */}
+      <Box
+        sx={theme => ({
+          width: '100vw',
+          height: '100vh',
+          color: '#fff',
+          backgroundColor: '#000',
+          position: 'absolute',
+          top: 0,
+          [theme.fn.smallerThan('md')]: {
+            height: 'auto',
+          },
+        })}>
+        <Container size="ll" className={classes.container}>
+          <Grid gutter={0} sx={{ height: '100%', position: 'relative' }}>
+            <MediaQuery smallerThan="md" styles={{ paddingTop: 70 }}>
+              <Grid.Col xs={12} md={7}>
+                <Flex
+                  align={{ xs: 'flex-start', md: 'center' }}
+                  justify={{ xs: 'center', md: 'flex-start' }}
+                  sx={{ height: '100%' }}>
+                  <Stack spacing={32} className={classes.copywriting}>
+                    <TypographyStylesProvider className={classes.title}>
+                      <div dangerouslySetInnerHTML={{ __html: props.title }} />
+                    </TypographyStylesProvider>
+                    <Text className={classes.subtitle}>{props.subtitle}</Text>
+                    <Group spacing="xl" align="center" noWrap className={classes.download}>
+                      {props.download.map(({ logo, link, name }) => (
+                        <Box key={link}>
+                          {/* <GatsbyImage image={logo.childImageSharp.gatsbyImageData} alt={name} /> */}
+                          <Image src={logo} alt={name} maw={200} mah={59} />
+                        </Box>
+                      ))}
+                    </Group>
+                  </Stack>
+                </Flex>
+              </Grid.Col>
+            </MediaQuery>
+            <Grid.Col
+              xs={12}
+              md={5}
+              sx={theme => ({
+                position: 'relative',
+                [theme.fn.smallerThan('md')]: {
+                  padding: '0 32px',
+                },
+              })}>
+              <Box className={classes.appImage}>
+                {/* <GatsbyImage image={props.appImage.childImageSharp.gatsbyImageData} alt="icx-app" /> */}
+                <Image src={props.appImage} />
+              </Box>
+            </Grid.Col>
+          </Grid>
+        </Container>
+      </Box>
     </Box>
   );
 };
