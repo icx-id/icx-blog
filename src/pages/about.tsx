@@ -5,8 +5,8 @@ import { SiteMetadata } from '~/components';
 import { Box, MediaQuery, Modal } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 
-const videoLink = 'https://www.youtube.com/embed/tgbNymZ7vqY';
-const videoTitle = 'Bohemian Rhapsody | Muppet Music Video | The Muppets';
+const videoLink = 'https://www.youtube.com/embed/Y03A0VgY_ug';
+const videoTitle = 'LandX — Investasi Patungan Bisnis Semudah Belanja Online';
 
 const AboutPage: React.FC<PageProps> = () => {
   const [opened, { open: onOpenVideo, close: onCloseVideo }] = useDisclosure(false);
