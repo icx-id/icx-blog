@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
                       Telephone
                     </Text>
                     <Text className={classes.subtitle} fz={mobileScreen ? 12 : 14}>
-                      +62 21 22455061
+                      +62 21 51401627
                     </Text>
                   </Col>
                   <Col span="auto">
@@ -82,7 +82,7 @@ export const Footer: React.FC = () => {
                       WhatsApp
                     </Text>
                     <Text className={classes.subtitle} fz={mobileScreen ? 12 : 14}>
-                      +62 21 22455061
+                      +6281381862878
                     </Text>
                   </Col>
                   <Col span="auto">
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
                       Email
                     </Text>
                     <Text className={classes.subtitle} fz={mobileScreen ? 12 : 14}>
-                      cs@icx.id
+                      hello@icx.id
                     </Text>
                   </Col>
                 </Grid>
@@ -262,7 +262,7 @@ export const Footer: React.FC = () => {
               &nbsp;(selanjutnya disebut “ICX”) adalah Perusahaan yang didirikan berdasarkan Hukum
               Indonesia yang bertindak sebagai Penyelenggara Layanan Urun Dana Melalui Penawaran
               Efek Berbasis Teknologi Informasi yang telah berizin dan diawasi oleh Otoritas Jasa
-              Keuangan (OJK) berdasarkan Keputusan Dewan Komisioner OJK Nomor Kep-040/D.04/2020
+              Keuangan (OJK) berdasarkan Keputusan Dewan Komisioner OJK Nomor Kep-068/D.04/2020
               tentang Pemberian Izin Usaha Penyelenggara Layanan Urun Dana Melalui Penawaran Efek
               Berbasis Teknologi Informasi PT Numex Teknologi Indonesia. Kegiatan Investasi melalui
               Layanan Urun Dana memiliki tingkat risiko tinggi, Pemodal diwajibkan telah membaca

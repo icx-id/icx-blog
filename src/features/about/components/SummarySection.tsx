@@ -10,9 +10,8 @@ import {
   createStyles,
   Container,
 } from '@mantine/core';
-import { AboutContainer } from './AboutContainer';
 
-import SummaryVideo from '~/images/summary-video.svg';
+import SummaryVideo from '~/images/about-video-thumbnail.png';
 import PlayIcon from '~/images/play-icon.png';
 
 const BACKGROUND_COLOR = '#131E2C';
