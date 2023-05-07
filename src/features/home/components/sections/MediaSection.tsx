@@ -82,7 +82,7 @@ export const MediaSection: FC<MediaSectionProps> = ({ ...props }) => {
             //   image={media.logo.childImageSharp.gatsbyImageData}
             //   alt={media.mediaName}
             // />
-            <Image imageProps={{ loading: 'lazy' }} key={media.mediaName} src={media.logo} />
+            <Image key={media.mediaName} src={media.logo} />
           ))}
         </Group>
 
@@ -102,7 +102,6 @@ export const MediaSection: FC<MediaSectionProps> = ({ ...props }) => {
                   alt={media.mediaName}
                 /> */}
                   <Image
-                    imageProps={{ loading: 'lazy' }}
                     src={media.logo}
                     sx={{
                       position: lastItem ? 'relative' : 'initial',
