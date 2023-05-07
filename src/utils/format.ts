@@ -17,6 +17,8 @@ export const parseToPhoneNumber = (value: string) => {
     newPhoneNumber = `62${phoneNumber.substring(1)}`;
   }
 
+  newPhoneNumber = newPhoneNumber.replaceAll(' ', '');
+
   return newPhoneNumber;
 };
 

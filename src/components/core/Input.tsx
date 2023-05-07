@@ -2,14 +2,20 @@ import React from 'react';
 import {
   Input as MantineInput,
   createStyles,
-  TextInputProps as MantineInputProps,
+  TextInputProps as MantineTextInputProps,
   PasswordInput,
 } from '@mantine/core';
+import { IMaskInput } from 'react-imask';
 
-interface InputProps extends MantineInputProps {
+interface InputProps extends MantineTextInputProps {
   name: string;
   value: string | number | any;
   label?: string;
+}
+
+interface MaskInputProps extends InputProps {
+  onAccept: (value: string, mask: string) => void;
+  mask: string;
 }
 
 const useStyles = createStyles(theme => ({
@@ -25,6 +31,7 @@ export const Input: React.FC<InputProps> = ({
   onChange,
   name,
   type,
+  description,
   ...textInputProps
 }) => {
   const { classes } = useStyles();
@@ -71,6 +78,49 @@ export const Input: React.FC<InputProps> = ({
           {...textInputProps}
         />
       )}
+      <MantineInput.Description mt={4}>{description}</MantineInput.Description>
+    </MantineInput.Wrapper>
+  );
+};
+
+export const MaskInput: React.FC<MaskInputProps> = ({
+  name,
+  label,
+  error,
+  value,
+  onAccept,
+  mask,
+  description,
+  ...textInputProps
+}) => {
+  const { classes } = useStyles();
+
+  return (
+    <MantineInput.Wrapper
+      label={label}
+      error={error}
+      w="100%"
+      styles={{
+        label: {
+          fontWeight: 'bold',
+        },
+      }}>
+      <MantineInput<any>
+        component={IMaskInput}
+        mask={mask}
+        name={name}
+        variant="unstyled"
+        className={classes.input}
+        value={value}
+        onAccept={onAccept}
+        styles={{
+          input: {
+            padding: 0,
+          },
+        }}
+        {...textInputProps}
+      />
+      <MantineInput.Description mt={4}>{description}</MantineInput.Description>
     </MantineInput.Wrapper>
   );
 };

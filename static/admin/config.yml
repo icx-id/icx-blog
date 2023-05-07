@@ -2,48 +2,253 @@ backend:
   name: git-gateway
   branch: main
   commit_messages:
-    create: "content: create {{collection}} “{{slug}}”"
-    update: "content: update {{collection}} “{{slug}}”"
-    delete: "content: delete {{collection}} “{{slug}}”"
-    uploadMedia: "[skip ci] content: upload “{{path}}”"
-    deleteMedia: "[skip ci] content: delete “{{path}}”"
+    create: 'content: create {{collection}} “{{slug}}”'
+    update: 'content: update {{collection}} “{{slug}}”'
+    delete: 'content: delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] content: upload “{{path}}”'
+    deleteMedia: '[skip ci] content: delete “{{path}}”'
 
 media_folder: static/img
 public_folder: /img
 local_backend: true
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - file: "src/content/home.md"
-        label: "Home"
-        name: "home"
-        id: "home"
+      - name: 'home'
+        label: 'Home'
+        file: 'src/content/home.md'
         fields:
-          - { label: "Key", name: "Key", widget: "hidden", default: "home" }
-          - { label: "Title", name: "title", widget: "string" }
-      - file: "src/content/about.md"
-        label: "About"
-        name: "about"
-        id: "about"
+          - { name: 'key', label: 'Key', widget: 'hidden', default: 'home' }
+          - name: 'heroSection'
+            label: 'Hero Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'subtitle', label: 'Subtitle', widget: 'string' }
+              - {
+                  name: 'appImage',
+                  label: 'Apps Image',
+                  widget: 'image',
+                  required: false,
+                  allow_multiple: false,
+                  choose_url: false,
+                }
+              - name: 'download'
+                label: 'Download'
+                widget: 'list'
+                fields:
+                  - { name: 'name', label: 'Name', widget: 'string' }
+                  - {
+                      name: 'logo',
+                      label: 'Logo',
+                      widget: 'image',
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+                  - { name: 'link', label: 'Link', widget: 'string' }
+          - name: 'companyListSection'
+            label: 'Company List Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - {
+                  name: 'imageDesktop',
+                  label: 'Image Desktop',
+                  widget: 'image',
+                  required: false,
+                  allow_multiple: false,
+                  choose_url: false,
+                }
+              - {
+                  name: 'imageMobile',
+                  label: 'Image Mobile',
+                  widget: 'image',
+                  required: false,
+                  allow_multiple: false,
+                  choose_url: false,
+                }
+          - name: 'testimonySection'
+            label: 'Testimony Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'subtitle', label: 'Subtitle', widget: 'string' }
+              - name: 'testimonies'
+                label: 'Testimonies'
+                widget: 'list'
+                fields:
+                  - { name: 'author', label: 'Author', widget: 'string' }
+                  - {
+                      name: 'authorImage',
+                      label: 'Author Image',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+                  - { name: 'company', label: 'Company', widget: 'string' }
+                  - { name: 'description', label: 'Description', widget: 'string' }
+                  - {
+                      name: 'image',
+                      label: 'Image',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+          - name: 'investmentSection'
+            label: 'Investment Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'subtitle', label: 'Subtitle', widget: 'string' }
+              - name: 'flows'
+                label: 'Flows'
+                widget: 'list'
+                fields:
+                  - { name: 'title', label: 'Title', widget: 'string' }
+                  - { name: 'description', label: 'Description', widget: 'string' }
+                  - {
+                      name: 'image',
+                      label: 'Image',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+          - name: 'investorSection'
+            label: 'Investor Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'subtitle', label: 'Subtitle', widget: 'string' }
+              - name: 'fundraising'
+                label: 'Fundraising'
+                widget: 'object'
+                fields:
+                  - { name: 'count', label: 'Count', widget: 'string' }
+                  - { name: 'label', label: 'Label', widget: 'string' }
+                  - {
+                      name: 'background',
+                      label: 'Background',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+              - name: 'employment'
+                label: 'Employment'
+                widget: 'object'
+                fields:
+                  - { name: 'count', label: 'Count', widget: 'string' }
+                  - { name: 'label', label: 'Label', widget: 'string' }
+                  - {
+                      name: 'background',
+                      label: 'Background',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+              - name: 'investor'
+                label: 'Investor'
+                widget: 'object'
+                fields:
+                  - {
+                      name: 'imageDesktop',
+                      label: 'Image Desktop',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+                  - {
+                      name: 'imageMobile',
+                      label: 'Image Mobile',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+                  - { name: 'title', label: 'Title', widget: 'string' }
+          - name: 'mediaSection'
+            label: 'Media Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'subtitle', label: 'Subtitle', widget: 'string' }
+              - name: 'medias'
+                label: 'Medias'
+                widget: 'list'
+                fields:
+                  - { name: 'mediaName', label: 'Media Name', widget: 'string' }
+                  - {
+                      name: 'logo',
+                      label: 'Logo',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+      - file: 'src/content/kebijakan-privasi.md'
+        label: 'Kebijakan Privasi'
+        name: 'kebijakan-privasi'
+        id: 'kebijakan-privasi'
         fields:
-          - { label: "Key", name: "Key", widget: "hidden", default: "about" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Sub Title Left", name: "subtitleLeft", widget: "string" }
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'kebijakan-privasi' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/isms.md'
+        label: 'ISMS'
+        name: 'isms'
+        id: 'isms'
+        fields:
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'isms' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/mitigasi-risiko.md'
+        label: 'Mitigasi Risiko'
+        name: 'mitigasi-risiko'
+        id: 'mitigasi-risiko'
+        fields:
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'mitigasi-risiko' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/syarat-dan-ketentuan.md'
+        label: 'Syarat dan Ketentuan'
+        name: 'syarat-dan-ketentuan'
+        id: 'syarat-dan-ketentuan'
+        fields:
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'syarat-dan-ketentuan' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/sla.md'
+        label: 'SLA'
+        name: 'sla'
+        id: 'sla'
+        fields:
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'sla' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/about.md'
+        label: 'About'
+        name: 'about'
+        id: 'about'
+        fields:
+          - { name: 'key', label: 'Key', widget: 'hidden', default: 'about' }
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'subtitleLeft', label: 'Sub Title Left', widget: 'string' }
+          - { name: 'subtitleRight', label: 'Sub Title Right', widget: 'string' }
+          - { name: 'banner', label: 'Banner Image', widget: 'image' }
           - {
-              label: "Sub Title Right",
-              name: "subtitleRight",
-              widget: "string",
-            }
-          - { label: "Banner Image", name: "banner", widget: "image" }
-          - {
-              label: "Our Story",
-              name: "ourStories",
-              widget: "list",
+              name: 'ourStories',
+              label: 'Our Story',
+              widget: 'list',
               fields:
                 [
-                  { label: "Year", name: "year", widget: number },
-                  { label: "Description", name: "description", widget: string },
+                  { name: 'year', label: 'Year', widget: number },
+                  { name: 'description', label: 'Description', widget: string },
                 ],
             }
