@@ -63,6 +63,16 @@ const useStyles = createStyles(theme => ({
     },
   },
 
+  // company: {
+  //   fontSize: 18,
+  //   fontWeight: 400,
+  //   lineHeight: '24px',
+  //   [theme.fn.smallerThan('md')]: {
+  //     fontSize: 14,
+  //     lineHeight: '20px',
+  //   },
+  // },
+
   company: {
     paddingTop: 8,
     color: '#6B7280',
