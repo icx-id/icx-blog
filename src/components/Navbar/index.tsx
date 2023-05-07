@@ -17,7 +17,6 @@ import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { navbarMenus, NavbarMenu } from './static/menus';
-import { useLocation } from '@reach/router';
 import { NavbarProps } from '../types';
 
 // --------------------------------------- styles
@@ -82,13 +81,11 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
 
 export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = false, pathname }) => {
   const theme = useMantineTheme();
-  const location = useLocation();
   const isMobile = useMediaQuery(
     `(max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`,
   );
   const [menuOpened, { toggle: toggleMenu, close: closeMenu, open: openMenu }] =
     useDisclosure(false);
-  const navbarWhite = location.pathname.includes('/tata-kelola');
 
   const [isScrolled, setScrolled] = useState(navbarSolid);
   const [handleDropdown] = useState('');
@@ -126,16 +123,16 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
           sx={{ borderBottom: 'initial', backgroundColor: 'initial' }}>
           <Group position="apart" sx={{ height: '100%' }}>
             <Link to="/" style={{ color: 'initial', textDecoration: 'initial' }}>
-              {isScrolled || navbarWhite ? (
+              {isScrolled ? (
                 <StaticImage
-                  src="../../images/icx-navbar-logo.png"
+                  src="../../images/icx-navbar-logo-dark.png"
                   alt="icx-navbar-logo"
                   placeholder="blurred"
                   className={classes.icxLogo}
                 />
               ) : (
                 <StaticImage
-                  src="../../images/icx-navbar-logo-dark.png"
+                  src="../../images/icx-navbar-logo.png"
                   alt="icx-navbar-logo"
                   placeholder="blurred"
                   className={classes.icxLogo}
@@ -146,11 +143,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
             <Group spacing={48} className={classes.hiddenMobile}>
               {navbarMenus.map(({ id, name, pathname: path }: NavbarMenu) => (
                 <Link key={id} to={path} className={classes.unstyledLink}>
-                  <Text
-                    size={16}
-                    fw={600}
-                    lh="22px"
-                    color={isScrolled || navbarWhite ? '#000' : '#fff'}>
+                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
                     {name}
                   </Text>
                 </Link>
