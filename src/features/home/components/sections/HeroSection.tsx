@@ -15,7 +15,7 @@ import {
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { HeroSectionProps } from '../../types';
 
-import HeroMotion from '~/images/hero-motion.gif';
+import GradientHome from '~/images/gradient-hero.png';
 
 // --------------------------------------- styles
 
@@ -24,13 +24,10 @@ const useStyles = createStyles(theme => ({
     height: '100vh',
     color: '#fff',
     backgroundColor: '#000',
-    backgroundImage: `url(${HeroMotion})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: 'bottom right',
+    position: 'relative',
+    overflow: 'hidden',
     [theme.fn.smallerThan('md')]: {
       height: 'auto',
-      backgroundPosition: '82% 50%',
     },
   },
 
@@ -39,6 +36,25 @@ const useStyles = createStyles(theme => ({
     paddingTop: 80,
     [theme.fn.smallerThan('md')]: {
       paddingTop: 64,
+    },
+  },
+
+  background: {
+    maxWidth: '44vw',
+    position: 'absolute',
+    bottom: '-48%',
+    right: '20%',
+    zIndex: 1,
+    pointerEvents: 'none',
+    [theme.fn.smallerThan('md')]: {
+      maxWidth: '200vw',
+      bottom: '-10%',
+      right: '-32%',
+    },
+    [theme.fn.smallerThan('xs')]: {
+      maxWidth: '200vw',
+      bottom: '-15%',
+      right: '-32%',
     },
   },
 
@@ -98,6 +114,7 @@ const useStyles = createStyles(theme => ({
     position: 'absolute',
     left: 60,
     bottom: -50,
+    zIndex: 2,
     [theme.fn.smallerThan('lg')]: {
       width: 'auto',
       maxWidth: '390px',
@@ -134,7 +151,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
                     {props.download.map(({ logo, link, name }) => (
                       <Box key={link}>
                         {/* <GatsbyImage image={logo.childImageSharp.gatsbyImageData} alt={name} /> */}
-                        <Image src={logo} maw={200} mah={59} />
+                        <Image src={logo} alt={name} maw={200} mah={59} />
                       </Box>
                     ))}
                   </Group>
@@ -157,6 +174,9 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
             </Box>
           </Grid.Col>
         </Grid>
+
+        {/* Gradient */}
+        <Image src={GradientHome} width={1080} className={classes.background} />
       </Container>
     </Box>
   );

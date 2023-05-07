@@ -52,32 +52,26 @@ const useStyles = createStyles(theme => ({
   },
 
   author: {
-    fontSize: 18,
-    fontWeight: 600,
-    lineHeight: '24px',
-    [theme.fn.smallerThan('md')]: {
-      fontSize: 14,
-      lineHeight: '20px',
-    },
-  },
-
-  // company: {
-  //   fontSize: 18,
-  //   fontWeight: 400,
-  //   lineHeight: '24px',
-  //   [theme.fn.smallerThan('md')]: {
-  //     fontSize: 14,
-  //     lineHeight: '20px',
-  //   },
-  // },
-
-  company: {
     color: '#6B7280',
     fontSize: 16,
     fontWeight: 600,
     lineHeight: '20px',
     animation: `${fade} 0.5s ease forwards`,
     [theme.fn.smallerThan('md')]: {
+      fontSize: 14,
+      lineHeight: '20px',
+    },
+  },
+
+  company: {
+    paddingTop: 8,
+    color: '#6B7280',
+    fontSize: 16,
+    fontWeight: 600,
+    lineHeight: '20px',
+    animation: `${fade} 0.5s ease forwards`,
+    [theme.fn.smallerThan('md')]: {
+      paddingTop: 4,
       fontSize: 14,
       lineHeight: '20px',
     },
@@ -115,6 +109,10 @@ const useStyles = createStyles(theme => ({
     alignItems: 'center',
     border: '1px solid #EEE7E7',
     transition: 'background-color 100ms linear',
+    [theme.fn.smallerThan('md')]: {
+      width: 32,
+      height: 32,
+    },
   },
 
   hiddenMobile: {
@@ -134,8 +132,8 @@ const useStyles = createStyles(theme => ({
 
 const LineNavigator: FC<any> = ({ classes, testimonies, active, onClickPrev, onClickNext }) => {
   return (
-    <Group spacing="xl" pt={24}>
-      <Group>
+    <Group spacing={32} pt={32}>
+      <Group spacing={12}>
         <Box
           className={classes.iconWrapper}
           sx={{
@@ -205,20 +203,16 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
         <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
           <Grid gutter={0}>
             <Grid.Col xs="auto" pos="relative">
-              <Stack spacing="xl" justify="center" h="100%">
+              <Stack spacing={0} justify="center" h="100%">
                 <Text key={`description-${active}`} className={classes.description}>
                   {props.testimonies[active].description}
+                </Text>
+                <Text key={`author-${active}`} className={classes.author}>
+                  {props.testimonies[active].author}
                 </Text>
                 <Text key={`company-${active}`} className={classes.company}>
                   {props.testimonies[active].company}
                 </Text>
-                {/* TODO: enable testimony with author name */}
-                {/* <Text className={classes.author}>
-                  {props.testimonies[active].author},&nbsp;
-                  <Text span className={classes.company}>
-                    {props.testimonies[active].company}
-                  </Text>
-                </Text> */}
                 <LineNavigator
                   classes={classes}
                   testimonies={props.testimonies}
@@ -229,12 +223,7 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
               </Stack>
             </Grid.Col>
             <Grid.Col xs={4} sx={{ position: 'relative' }}>
-              <Box
-                w="calc(100% + 64px)"
-                h={600}
-                bg="red"
-                pos="relative"
-                sx={{ overflow: 'hidden' }}>
+              <Box w="calc(100% + 64px)" h={600} pos="relative" sx={{ overflow: 'hidden' }}>
                 <StaticImage
                   src="../../../../images/gradient-purple.png"
                   alt="gradient-purple"
@@ -295,9 +284,10 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
                 {props.testimonies[active].description}
               </Text>
             </Box>
-            <Box mt={24}>
-              {/* TODO: enable testimony with author name */}
-              {/* <Text className={classes.author}>{props.testimonies[active].author},</Text> */}
+            <Box mt={32}>
+              <Text key={`author-mobile-${active}`} className={classes.author}>
+                {props.testimonies[active].author},
+              </Text>
               <Text key={`company-mobile-${active}`} className={classes.company}>
                 {props.testimonies[active].company}
               </Text>
