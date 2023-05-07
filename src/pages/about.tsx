@@ -9,7 +9,7 @@ const videoLink = 'https://www.youtube.com/embed/tgbNymZ7vqY';
 const videoTitle = 'Bohemian Rhapsody | Muppet Music Video | The Muppets';
 
 const AboutPage: React.FC<PageProps> = () => {
-  const [opened, { open: onOpenVideo, close: onCloseVideo }] = useDisclosure(true);
+  const [opened, { open: onOpenVideo, close: onCloseVideo }] = useDisclosure(false);
 
   return (
     <>
