@@ -88,6 +88,12 @@ const config: GatsbyConfig = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: `${__dirname}/src/images/favicon.png`,
+      },
+    },
   ],
 };
 
