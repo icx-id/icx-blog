@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image, MediaQuery, Stack, Text } from '@mantine/core';
+import { Box, Container, Flex, Grid, Image, MediaQuery, Stack, Text } from '@mantine/core';
 import React from 'react';
 import { AboutContainer } from './AboutContainer';
 
@@ -11,21 +11,18 @@ export const OurStorySection = () => {
     <MediaQuery smallerThan="md" styles={{ paddingTop: '80px', paddingBottom: 40 }}>
       <Box
         sx={{ paddingTop: '128px', paddingBottom: 80, position: 'relative', background: 'white' }}>
-        <AboutContainer>
+        <Container size="ll">
           <MediaQuery smallerThan="md" styles={{ fontSize: '1.25em' }}>
             <Text fw={800} sx={{ fontSize: '2em' }}>
               Our Story
             </Text>
           </MediaQuery>
-        </AboutContainer>
-
-        <MediaQuery smallerThan="sm" styles={{ marginTop: '0' }}>
-          <Grid align="center">
-            <Grid.Col xs={12} md={8}>
-              <MediaQuery largerThan="md" styles={{ marginTop: 32 }}>
-                <Grid mt={16} gutter="xl">
-                  <Grid.Col sm={12}>
-                    <AboutContainer>
+          <MediaQuery smallerThan="sm" styles={{ marginTop: '0' }}>
+            <Grid gutter="xl">
+              <Grid.Col xs={12} md={8}>
+                <MediaQuery largerThan="md" styles={{ marginTop: 16 }}>
+                  <Grid mt={16} gutter="xl">
+                    <Grid.Col sm={12}>
                       <MediaQuery smallerThan="md" styles={{ border: '0', padding: '1em 0.5em 0' }}>
                         <Grid sx={{ borderTop: '1px solid #E0E5E6', padding: '2em 0' }}>
                           <MediaQuery
@@ -184,50 +181,50 @@ export const OurStorySection = () => {
                           </MediaQuery>
                         </Grid>
                       </MediaQuery>
-                    </AboutContainer>
-                  </Grid.Col>
-                  <Grid.Col sm={12}>
-                    <Flex h="100%" align="center" justify="center" pos="relative">
-                      <MediaQuery largerThan="0" styles={{ display: 'none' }}>
-                        <Box>
-                          <Box
-                            sx={{
-                              position: 'absolute',
-                              width: '100%',
-                              height: '70%',
-                              background: 'black',
-                              bottom: 0,
-                            }}
-                          />
-                          <Box px="1.5em">
-                            <img
-                              src={OurStory}
-                              style={{ objectFit: 'cover', flexShrink: 0, height: '100%' }}
+                    </Grid.Col>
+                    <Grid.Col sm={12}>
+                      <Flex h="100%" align="center" justify="center" pos="relative">
+                        <MediaQuery largerThan="0" styles={{ display: 'none' }}>
+                          <Box>
+                            <Box
+                              sx={{
+                                position: 'absolute',
+                                width: '100%',
+                                height: '70%',
+                                background: 'black',
+                                bottom: 0,
+                              }}
                             />
+                            <Box px="1.5em">
+                              <img
+                                src={OurStory}
+                                style={{ objectFit: 'cover', flexShrink: 0, height: '100%' }}
+                              />
+                            </Box>
                           </Box>
-                        </Box>
-                      </MediaQuery>
-                    </Flex>
-                  </Grid.Col>
-                </Grid>
-              </MediaQuery>
-            </Grid.Col>
-            <Grid.Col xs={12} md={4}>
-              <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
-                <Box>
-                  <Image maw={360} src={OurStoryImgDesktop} />
-                </Box>
-              </MediaQuery>
-              <MediaQuery largerThan="md" styles={{ display: 'none' }}>
-                <Stack align="center">
-                  <MediaQuery query="(min-width: 450px)" styles={{ maxWidth: '400px' }}>
-                    <Image maw="86vw" src={OurStoryImgMobile} />
-                  </MediaQuery>
-                </Stack>
-              </MediaQuery>
-            </Grid.Col>
-          </Grid>
-        </MediaQuery>
+                        </MediaQuery>
+                      </Flex>
+                    </Grid.Col>
+                  </Grid>
+                </MediaQuery>
+              </Grid.Col>
+              <Grid.Col xs={12} md={4}>
+                <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
+                  <Box>
+                    <Image maw={360} src={OurStoryImgDesktop} />
+                  </Box>
+                </MediaQuery>
+                <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+                  <Stack align="center">
+                    <MediaQuery query="(min-width: 450px)" styles={{ maxWidth: '400px' }}>
+                      <Image maw="86vw" src={OurStoryImgMobile} />
+                    </MediaQuery>
+                  </Stack>
+                </MediaQuery>
+              </Grid.Col>
+            </Grid>
+          </MediaQuery>
+        </Container>
       </Box>
     </MediaQuery>
   );
