@@ -181,7 +181,13 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
                       {props.download.map(({ logo, link, name }) => (
                         <Box key={link}>
                           {/* <GatsbyImage image={logo.childImageSharp.gatsbyImageData} alt={name} /> */}
-                          <Image src={logo} alt={name} maw={200} mah={59} />
+                          <Image
+                            imageProps={{ loading: 'lazy' }}
+                            src={logo}
+                            alt={name}
+                            maw={200}
+                            mah={59}
+                          />
                         </Box>
                       ))}
                     </Group>
@@ -200,7 +206,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
               })}>
               <Box className={classes.appImage}>
                 {/* <GatsbyImage image={props.appImage.childImageSharp.gatsbyImageData} alt="icx-app" /> */}
-                <Image src={props.appImage} />
+                <Image imageProps={{ loading: 'lazy' }} src={props.appImage} />
               </Box>
             </Grid.Col>
           </Grid>
@@ -265,7 +271,13 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
                       {props.download.map(({ logo, link, name }) => (
                         <Box key={link}>
                           {/* <GatsbyImage image={logo.childImageSharp.gatsbyImageData} alt={name} /> */}
-                          <Image src={logo} alt={name} maw={200} mah={59} />
+                          <Image
+                            imageProps={{ loading: 'lazy' }}
+                            src={logo}
+                            alt={name}
+                            maw={200}
+                            mah={59}
+                          />
                         </Box>
                       ))}
                     </Group>
@@ -284,7 +296,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
               })}>
               <Box className={classes.appImage}>
                 {/* <GatsbyImage image={props.appImage.childImageSharp.gatsbyImageData} alt="icx-app" /> */}
-                <Image src={props.appImage} />
+                <Image imageProps={{ loading: 'lazy' }} src={props.appImage} />
               </Box>
             </Grid.Col>
           </Grid>

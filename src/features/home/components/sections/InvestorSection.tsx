@@ -146,7 +146,7 @@ export const InvestorSection: FC<InvestorSectionProps> = ({ ...props }) => {
                     borderRadius: isSmallMobile ? '10px' : '40px',
                   },
                 }}>
-                <Image src={props.fundraising.background} />
+                <Image imageProps={{ loading: 'lazy' }} src={props.fundraising.background} />
               </Box>
               <Stack spacing={0} className={classes.textWrapper}>
                 <Text className={classes.textCount}>{props.fundraising.count}</Text>
@@ -169,7 +169,7 @@ export const InvestorSection: FC<InvestorSectionProps> = ({ ...props }) => {
                     borderRadius: isSmallMobile ? '10px' : '40px',
                   },
                 }}>
-                <Image src={props.employment.background} />
+                <Image imageProps={{ loading: 'lazy' }} src={props.employment.background} />
               </Box>
               <Stack spacing={0} className={classes.textWrapper}>
                 <Text className={classes.textCount}>{props.employment.count}</Text>

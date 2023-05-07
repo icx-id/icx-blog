@@ -156,6 +156,7 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
                 <Box>
                   {/* <GatsbyImage image={flow.image.childImageSharp.gatsbyImageData} alt={flow.title} /> */}
                   <Image
+                    imageProps={{ loading: 'lazy' }}
                     src={flow.image}
                     maw={164}
                     mah={164}
@@ -187,6 +188,7 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
                   className={classes.imageStyle}
                 /> */}
                 <Image
+                  imageProps={{ loading: 'lazy' }}
                   src={flow.image}
                   width={192}
                   height={192}

@@ -51,7 +51,7 @@ export const CompanyListSection: FC<CompanyListSectionProps> = ({ ...props }) =>
               image={props.imageDesktop.childImageSharp.gatsbyImageData}
               alt="company-list"
             /> */}
-            <Image src={props.imageDesktop} />
+            <Image imageProps={{ loading: 'lazy' }} src={props.imageDesktop} />
           </Grid.Col>
         </Grid>
       </Container>
