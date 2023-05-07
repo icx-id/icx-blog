@@ -5,28 +5,48 @@ import { KycPickSelfiePhoto } from './KycPickSelfiePhoto';
 import { KycUploadProgress } from './KycUploadProgress';
 import { KycFormIdentity } from './KycFormIdentity';
 import { KycFormAddress } from './KycFormAddress';
-import { KycFormResidenceAddress } from './KycFormResidenceAddress';
+import { KycFormAddressDomicile } from './KycFormAddressDomicile';
 import { KycFormSummary } from './KycFormSummary';
 import { KycSuccessSubmit } from './KycSuccessSubmit';
 import { Formik } from 'formik';
 import { KycFormProps } from '../types';
+import { KycFormSchema } from '../schema/KycFormSchema';
 
 interface KycProps {}
 
 export const Kyc: React.FC<KycProps> = () => {
   const [activeState, setActiveState] = useState<string>('INTRODUCTION');
+
+  const handleSubmitAddress = () => {};
+
   return (
     <Formik<KycFormProps>
       initialValues={{
         ktpImage: null,
         selfieImage: null,
+
         fullName: '',
         nik: '',
-        dateOfBirth: new Date('1970-01-01'),
+        dateOfBirth: '',
         placeOfBirth: '',
         gender: 'male',
         religion: '',
+
+        fullAddress: '',
+        provinceAddress: '',
+        cityAddress: '',
+        districtAddress: '',
+        subDistrictAddress: '',
+        postalCodeAddress: '',
+
+        domicileAddress: '',
+        domicileProvince: '',
+        domicileTown: '',
+        domicileDistrict: '',
+        domicileSubdistrict: '',
+        domicilePostalCode: '',
       }}
+      validationSchema={KycFormSchema}
       onSubmit={value => console.log(value)}>
       <React.Fragment>
         {activeState === 'INTRODUCTION' && (
@@ -55,12 +75,12 @@ export const Kyc: React.FC<KycProps> = () => {
 
         {activeState === 'ADDRESS-FORM' && (
           <KycFormAddress
-            onSubmit={() => setActiveState('RESIDENCE-ADDRESS-FORM')}
+            onSubmit={() => setActiveState('ADDRESS-DOMICILE-FORM')}
             goBack={() => setActiveState('IDENTITY-FORM')}
           />
         )}
-        {activeState === 'RESIDENCE-ADDRESS-FORM' && (
-          <KycFormResidenceAddress
+        {activeState === 'ADDRESS-DOMICILE-FORM' && (
+          <KycFormAddressDomicile
             onSubmit={() => setActiveState('SUMMARY-FORM')}
             goBack={() => setActiveState('ADDRESS-FORM')}
           />
@@ -68,7 +88,7 @@ export const Kyc: React.FC<KycProps> = () => {
         {activeState === 'SUMMARY-FORM' && (
           <KycFormSummary
             onSubmit={() => setActiveState('SUCCESS-SUBMIT')}
-            goBack={() => setActiveState('RESIDENCE-ADDRESS-FORM')}
+            goBack={() => setActiveState('ADDRESS-DOMICILE-FORM')}
           />
         )}
         {activeState === 'SUCCESS-SUBMIT' && <KycSuccessSubmit />}

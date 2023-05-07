@@ -5,12 +5,14 @@ import React, { PropsWithChildren } from 'react';
 interface PickPhotoProps {
   onChange: (file: File) => void;
   title: string;
+  error?: string;
 }
 
 export const PickPhoto: React.FC<PropsWithChildren<PickPhotoProps>> = ({
   onChange,
   title,
   children,
+  error,
 }) => {
   return (
     <Flex direction="column" h="100%" justify="center" align="center" px={rem(40)}>
@@ -29,6 +31,11 @@ export const PickPhoto: React.FC<PropsWithChildren<PickPhotoProps>> = ({
           Privasi Data
         </Chip>
       </Flex>
+      {error && (
+        <Text size={rem(12)} color="red">
+          {error}
+        </Text>
+      )}
       <Box mt={rem(20)}>
         <FileButton onChange={onChange} accept="image/png,image/jpeg">
           {props => (

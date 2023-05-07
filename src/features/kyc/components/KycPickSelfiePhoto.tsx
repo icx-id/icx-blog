@@ -13,7 +13,7 @@ interface KycPickSelfiePhotoProps {
 }
 
 export const KycPickSelfiePhoto: React.FC<KycPickSelfiePhotoProps> = ({ goBack, onSubmit }) => {
-  const { values, setFieldValue } = useFormikContext<KycFormProps>();
+  const { values, setFieldValue, errors } = useFormikContext<KycFormProps>();
 
   return (
     <KycContainer bannerType="half" bannerImage="/img/image-selfie.png">
@@ -21,7 +21,7 @@ export const KycPickSelfiePhoto: React.FC<KycPickSelfiePhotoProps> = ({ goBack, 
         <KycBreadcrumbs currentStep="3" totalStep="5" goBack={goBack} />
       </Box>
 
-      {values.selfieImage ? (
+      {values.selfieImage && !errors.selfieImage ? (
         <ResultPhoto
           title="Wajah dan foto KTP Anda sudah terlihat dengan jelas?"
           onConfirmPhoto={onSubmit}
@@ -29,7 +29,10 @@ export const KycPickSelfiePhoto: React.FC<KycPickSelfiePhotoProps> = ({ goBack, 
           resultImage={URL.createObjectURL(values.selfieImage)}
         />
       ) : (
-        <PickPhoto title="Selfie dengan KTP Anda" onChange={e => setFieldValue('selfieImage', e)}>
+        <PickPhoto
+          error={errors.selfieImage}
+          title="Selfie dengan KTP Anda"
+          onChange={e => setFieldValue('selfieImage', e)}>
           <List type="ordered" px={rem(16)} my={rem(10)} spacing={4}>
             <List.Item style={{ fontSize: rem(15) }}>
               Posisikan KTP di bawah dagu, jangan menutupi wajah

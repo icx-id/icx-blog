@@ -8,7 +8,7 @@ import {
 
 interface InputProps extends MantineInputProps {
   name: string;
-  value: string | number;
+  value: string | number | any;
   label?: string;
 }
 
@@ -37,6 +37,9 @@ export const Input: React.FC<InputProps> = ({
         label: {
           fontWeight: 'bold',
         },
+        error: {
+          paddingTop: '3px',
+        },
       }}>
       {type === 'password' ? (
         <PasswordInput
@@ -64,6 +67,7 @@ export const Input: React.FC<InputProps> = ({
               padding: 0,
             },
           }}
+          type={type}
           {...textInputProps}
         />
       )}

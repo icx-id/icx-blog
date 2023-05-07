@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Input } from '~/components/Core/Input';
 import { KycFormContainer } from './KycFormContainer';
 import { Select } from '~/components/core/Select';
@@ -9,13 +9,18 @@ import { useGetCities } from '../api/useGetCities';
 import { useGetDistricts } from '../api/useGetDistricts';
 import { useGetSubDistricts } from '../api/useGetSubDistricts';
 import { useGetPostalCodes } from '../api/useGetPostalCode';
+import { Switch, rem } from '@mantine/core';
 
-interface KycFormAddressProps {
+interface KycFormAddressDomicileProps {
   onSubmit: () => void;
   goBack: () => void;
 }
 
-export const KycFormAddress: React.FC<KycFormAddressProps> = ({ onSubmit, goBack }) => {
+export const KycFormAddressDomicile: React.FC<KycFormAddressDomicileProps> = ({
+  onSubmit,
+  goBack,
+}) => {
+  const [formDisabled, setFormDisabled] = useState<boolean>(true);
   const { handleChange, values, setFieldValue } = useFormikContext<KycFormProps>();
   const { data: provinces } = useGetProvinces();
   const { data: cities } = useGetCities(values.provinceAddress);
@@ -23,70 +28,74 @@ export const KycFormAddress: React.FC<KycFormAddressProps> = ({ onSubmit, goBack
   const { data: subDistricts } = useGetSubDistricts(values.districtAddress);
   const { data: postalCodes } = useGetPostalCodes(values.subDistrictAddress);
 
-  const handleSubmit = () => {
-    onSubmit();
-    setFieldValue('domicileAddress', values.fullAddress);
-    setFieldValue('domicileProvince', values.provinceAddress);
-    setFieldValue('domicileTown', values.cityAddress);
-    setFieldValue('domicileDistrict', values.districtAddress);
-    setFieldValue('domicileSubdistrict', values.subDistrictAddress);
-    setFieldValue('domicilePostalCode', values.postalCodeAddress);
-  };
-
   return (
     <KycFormContainer
       withBreadcrumbs
       title="Silahkan isi alamat sesuai KTP"
-      onSubmit={handleSubmit}
+      onSubmit={onSubmit}
       goBack={goBack}
       currentStep="4"
       totalStep="5">
+      <Switch
+        checked={formDisabled}
+        onChange={event => setFormDisabled(event.currentTarget.checked)}
+        label="Alamat domisili sama dengan alamat di KTP"
+        labelPosition="left"
+        mb={rem(15)}
+        w={rem(270)}
+      />
       <Input
-        name="fullAddress"
+        name="domicileAddress"
         onChange={handleChange}
-        value={values.fullAddress}
+        value={values.domicileAddress}
         label="Alamat Lengkap"
         type="text"
+        disabled={formDisabled}
       />
       <Select
         label="Provinsi"
-        value={values.provinceAddress}
-        onChange={e => setFieldValue('provinceAddress', e)}
+        value={values.domicileProvince}
+        onChange={e => setFieldValue('domicileProvince', e)}
         searchable
         nothingFound="Provinsi tidak ditemukan"
         data={provinces?.map(province => province.provinceName) || []}
+        disabled={formDisabled}
       />
       <Select
         label="Kota"
-        value={values.cityAddress}
-        onChange={e => setFieldValue('cityAddress', e)}
+        value={values.domicileTown}
+        onChange={e => setFieldValue('domicileTown', e)}
         searchable
         nothingFound="Kota tidak ditemukan"
         data={cities?.map(city => city.city) || []}
+        disabled={formDisabled}
       />
       <Select
         label="Kecamatan"
-        value={values.districtAddress}
-        onChange={e => setFieldValue('districtAddress', e)}
+        value={values.domicileDistrict}
+        onChange={e => setFieldValue('domicileDistrict', e)}
         searchable
         nothingFound="Kecamatan tidak ditemukan"
         data={districts?.map(district => district.district) || []}
+        disabled={formDisabled}
       />
       <Select
         label="Kelurahan"
-        value={values.subDistrictAddress}
-        onChange={e => setFieldValue('subDistrictAddress', e)}
+        value={values.domicileSubdistrict}
+        onChange={e => setFieldValue('domicileSubdistrict', e)}
         searchable
         nothingFound="Kelurahan tidak ditemukan"
         data={subDistricts?.map(subDistrict => subDistrict.subDistrict) || []}
+        disabled={formDisabled}
       />
       <Select
         label="Kode Pos"
-        value={values.postalCodeAddress}
-        onChange={e => setFieldValue('postalCodeAddress', e)}
+        value={values.domicilePostalCode}
+        onChange={e => setFieldValue('domicilePostalCode', e)}
         searchable
         nothingFound="Kode Pos tidak ditemukan"
         data={postalCodes?.map(postalCode => postalCode.postalCode) || []}
+        disabled={formDisabled}
       />
     </KycFormContainer>
   );

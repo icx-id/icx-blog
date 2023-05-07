@@ -6,6 +6,7 @@ interface KycFormContainerProps extends KycBreadcrumbsProps {
   title: string;
   onSubmit: () => void;
   withBreadcrumbs?: boolean;
+  buttonDisabled?: boolean;
 }
 
 export const KycFormContainer: React.FC<PropsWithChildren<KycFormContainerProps>> = ({
@@ -16,6 +17,7 @@ export const KycFormContainer: React.FC<PropsWithChildren<KycFormContainerProps>
   goBack,
   onSubmit,
   withBreadcrumbs,
+  buttonDisabled,
 }) => {
   return (
     <Box bg="#EEFFF2" mih="80vh" py={rem(50)}>
@@ -38,11 +40,7 @@ export const KycFormContainer: React.FC<PropsWithChildren<KycFormContainerProps>
           </Text>
           <Stack>
             {children}
-            <Button
-              style={{ backgroundColor: '#00C48F' }}
-              onClick={onSubmit}
-              mt={rem(10)}
-              radius={rem(15)}>
+            <Button disabled={buttonDisabled} onClick={onSubmit} mt={rem(30)} radius={rem(15)}>
               Selanjutnya
             </Button>
           </Stack>
