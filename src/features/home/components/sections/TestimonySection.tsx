@@ -3,20 +3,23 @@ import { TestimonySectionProps } from '../../types';
 import {
   Box,
   Container,
+  Flex,
   Grid,
   Group,
   Image,
   MediaQuery,
   Stack,
   Text,
+  ThemeIcon,
   createStyles,
   em,
   getBreakpointValue,
   keyframes,
 } from '@mantine/core';
-import { GatsbyImage, StaticImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 import { useMediaQuery } from '@mantine/hooks';
+import testimonyIcon from '~/images/testimony-icon.svg';
 
 // -------------------------------------- styles
 
@@ -33,6 +36,11 @@ const useStyles = createStyles(theme => ({
       paddingTop: '96px',
       paddingBottom: '71px',
     },
+  },
+
+  testimonyTitle: {
+    fontSize: 24,
+    fontWeight: 600,
   },
 
   description: {
@@ -213,6 +221,13 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
         <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
           <Grid gutter={0}>
             <Grid.Col xs="auto" pos="relative">
+              <Flex align="center">
+                <Text className={classes.testimonyTitle}>What They Said</Text>
+                <ThemeIcon variant="" ml="md" mt={4}>
+                  <Image src={testimonyIcon} />
+                </ThemeIcon>
+              </Flex>
+              <Text>Hear what people have said about ICX</Text>
               <Stack spacing={0} justify="center" h="100%">
                 <Text key={`description-${active}`} className={classes.description}>
                   {props.testimonies[active].description}
@@ -254,6 +269,15 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
         <MediaQuery largerThan="md" styles={{ display: 'none' }}>
           <Box>
             <Box pos="relative">
+              <Box ta="left" mb="md">
+                <Flex align="center">
+                  <Text className={classes.testimonyTitle}>What They Said</Text>
+                  <ThemeIcon variant="" ml="md" mt={4}>
+                    <Image src={testimonyIcon} />
+                  </ThemeIcon>
+                </Flex>
+                <Text>Hear what people have said about ICX</Text>
+              </Box>
               <Box
                 w="calc(100% + 48px)"
                 h={isMobile ? 225 : 320}

@@ -34,6 +34,11 @@ testimonySection:
       description: “ICX give startups access to investors from various backgrounds
         that is able to bring different strategic values to companies!”
       image: /img/testimony-kenangan.png
+    - author: Vincent Kusuma
+      authorImage: /img/testimony-author.png
+      company: Vilo Gelato
+      description: “Partnering with ICX has been a great help to us. Through their platform, we were able to expand our business and reach. The process was smooth, the team was helpful and we appreciate their support in raising the funds we needed to continue growing and providing quality gelato to our customers.”
+      image: /img/testimony-vilo.png
 investmentSection:
   title: This Is the New Way of Investing
   subtitle: <span>With ICX</span>, you now have the way to invest in promising
@@ -51,9 +56,8 @@ investmentSection:
       description: A clear and concise view of how  ICX enables you to contribute to
         businesses that you trust and help them off the ground.
       image: /img/investment-icon3.png
-    - title: Get Passive Income
-      description: A clear and concise view of how  ICX enables you to contribute to
-        businesses that you trust and help them off the ground.
+    - title: Easily Assess your Assets
+      description: You can monitor and even have your say to the management of the business you invested in
       image: /img/investment-icon4.png
 investorSection:
   title: We Have Been Empowering Businesses That Contributes to Indonesia’s Economy
@@ -61,11 +65,11 @@ investorSection:
     bring  projects to life, increasing employment opportunities and contributed
     to Indonesia’s economy
   fundraising:
-    count: ">Rp 230 Billion"
+    count: '>Rp 230 Billion'
     label: Total Fundraised
     background: /img/gradient-grey.png
   employment:
-    count: ">1.750"
+    count: '>1.750'
     label: Number Of Employment
     background: /img/gradient-green.png
   investor:
