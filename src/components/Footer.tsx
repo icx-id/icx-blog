@@ -155,7 +155,7 @@ export const Footer: React.FC = () => {
                     ISMS
                   </Text>
                 </Link>
-                <Link to="/tata-kelola/mitigasi-resiko" style={{ textDecoration: 'none' }}>
+                <Link to="/tata-kelola/mitigasi-risiko" style={{ textDecoration: 'none' }}>
                   <Text className={classes.content} fz={mobileScreen ? 14 : 16} mb="sm">
                     Mitigasi Resiko
                   </Text>
