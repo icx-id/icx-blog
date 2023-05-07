@@ -14,8 +14,14 @@ import {
 } from '@mantine/core';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { HeroSectionProps } from '../../types';
+import Lottie from 'react-lottie';
 
 import GradientHome from '~/images/gradient-hero.png';
+
+// eslint-disable-next-line no-restricted-imports
+import heroMotion1 from '~/features/home/assets/hero-motion1.json';
+// eslint-disable-next-line no-restricted-imports
+import heroMotion2 from '~/features/home/assets/hero-motion2.json';
 
 // --------------------------------------- styles
 
@@ -26,6 +32,7 @@ const useStyles = createStyles(theme => ({
     backgroundColor: '#000',
     position: 'relative',
     overflow: 'hidden',
+    zIndex: -1,
     [theme.fn.smallerThan('md')]: {
       height: 'auto',
     },
@@ -149,6 +156,15 @@ const useStyles = createStyles(theme => ({
 export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
   const { classes } = useStyles();
 
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: heroMotion1,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
+
   return (
     <Box pos="relative">
       <Box className={classes.root}>
@@ -192,10 +208,19 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
               </Box>
             </Grid.Col>
           </Grid>
-
-          {/* Gradient */}
-          <Image src={GradientHome} width={1080} className={classes.background} />
         </Container>
+
+        {/* Gradient */}
+        {/* <Lottie options={defaultOptions} /> */}
+        <Box
+          sx={{
+            width: '100vw',
+            height: '100%',
+            position: 'absolute',
+            top: 0,
+          }}>
+          <Lottie options={defaultOptions} />
+        </Box>
       </Box>
 
       {/* VISIBLE COMPONENT */}
@@ -204,7 +229,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
           width: '100vw',
           height: '100vh',
           color: '#fff',
-          backgroundColor: '#000',
+          backgroundColor: 'transparent',
           position: 'absolute',
           top: 0,
           [theme.fn.smallerThan('md')]: {
