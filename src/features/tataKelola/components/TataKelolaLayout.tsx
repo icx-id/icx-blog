@@ -6,6 +6,7 @@ import { Navbar } from './Navbar';
 
 export const TataKelolaLayout: React.FC<PropsWithChildren> = ({ children }) => {
   const mobileScreen = useMediaQuery('(max-width: 30em)');
+
   return (
     <Box bg="#FDFDFD" h={mobileScreen ? undefined : '80vh'}>
       <Container size="ll" h="100%">

@@ -3,22 +3,30 @@ import { TestimonySectionProps } from '../../types';
 import {
   Box,
   Container,
+  Flex,
   Grid,
   Group,
   Image,
   MediaQuery,
   Stack,
   Text,
+  ThemeIcon,
   createStyles,
   em,
   getBreakpointValue,
+  keyframes,
 } from '@mantine/core';
-import { GatsbyImage, StaticImage } from 'gatsby-plugin-image';
+import { StaticImage } from 'gatsby-plugin-image';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
-import GradientPurple from '../../../../images/gradient-purple.png';
 import { useMediaQuery } from '@mantine/hooks';
+import testimonyIcon from '~/images/testimony-icon.svg';
 
 // -------------------------------------- styles
+
+export const fade = keyframes({
+  '0%,100%': { opacity: 1 },
+  '50%': { opacity: 0.25 },
+});
 
 const useStyles = createStyles(theme => ({
   root: {
@@ -30,34 +38,58 @@ const useStyles = createStyles(theme => ({
     },
   },
 
+  testimonyTitle: {
+    fontSize: 24,
+    fontWeight: 600,
+  },
+
   description: {
     maxWidth: 650,
+    minHeight: 300,
     paddingRight: 100,
     fontSize: 24,
     fontWeight: 600,
     lineHeight: '32px',
+    animation: `${fade} 0.5s ease forwards`,
     [theme.fn.smallerThan('md')]: {
       fontSize: 18,
       lineHeight: '24px',
       paddingRight: 0,
+      minHeight: 'initial',
     },
   },
 
   author: {
-    fontSize: 18,
+    color: '#6B7280',
+    fontSize: 16,
     fontWeight: 600,
-    lineHeight: '24px',
+    lineHeight: '20px',
+    animation: `${fade} 0.5s ease forwards`,
     [theme.fn.smallerThan('md')]: {
       fontSize: 14,
       lineHeight: '20px',
     },
   },
 
+  // company: {
+  //   fontSize: 18,
+  //   fontWeight: 400,
+  //   lineHeight: '24px',
+  //   [theme.fn.smallerThan('md')]: {
+  //     fontSize: 14,
+  //     lineHeight: '20px',
+  //   },
+  // },
+
   company: {
-    fontSize: 18,
-    fontWeight: 400,
-    lineHeight: '24px',
+    paddingTop: 8,
+    color: '#6B7280',
+    fontSize: 16,
+    fontWeight: 600,
+    lineHeight: '20px',
+    animation: `${fade} 0.5s ease forwards`,
     [theme.fn.smallerThan('md')]: {
+      paddingTop: 4,
       fontSize: 14,
       lineHeight: '20px',
     },
@@ -66,8 +98,6 @@ const useStyles = createStyles(theme => ({
   imageBackground: {
     maxWidth: 'calc(100% + 48px)',
     height: '320px',
-    // marginLeft: -24,
-    // marginRight: -24,
     backgroundColor: '#D6E6FC',
     position: 'relative',
   },
@@ -97,6 +127,10 @@ const useStyles = createStyles(theme => ({
     alignItems: 'center',
     border: '1px solid #EEE7E7',
     transition: 'background-color 100ms linear',
+    [theme.fn.smallerThan('md')]: {
+      width: 32,
+      height: 32,
+    },
   },
 
   hiddenMobile: {
@@ -116,8 +150,8 @@ const useStyles = createStyles(theme => ({
 
 const LineNavigator: FC<any> = ({ classes, testimonies, active, onClickPrev, onClickNext }) => {
   return (
-    <Group spacing="xl" pt={24}>
-      <Group>
+    <Group spacing={32} pt={32}>
+      <Group spacing={12}>
         <Box
           className={classes.iconWrapper}
           sx={{
@@ -187,13 +221,22 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
         <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
           <Grid gutter={0}>
             <Grid.Col xs="auto" pos="relative">
-              <Stack spacing="xl" justify="center" h="100%">
-                <Text className={classes.description}>{props.testimonies[active].description}</Text>
-                <Text className={classes.author}>
-                  {props.testimonies[active].author},&nbsp;
-                  <Text span className={classes.company}>
-                    {props.testimonies[active].company}
-                  </Text>
+              <Flex align="center">
+                <Text className={classes.testimonyTitle}>What They Said</Text>
+                <ThemeIcon variant="" ml="md" mt={4}>
+                  <Image src={testimonyIcon} />
+                </ThemeIcon>
+              </Flex>
+              <Text>Hear what people have said about ICX</Text>
+              <Stack spacing={0} justify="center" h="100%">
+                <Text key={`description-${active}`} className={classes.description}>
+                  {props.testimonies[active].description}
+                </Text>
+                <Text key={`author-${active}`} className={classes.author}>
+                  {props.testimonies[active].author}
+                </Text>
+                <Text key={`company-${active}`} className={classes.company}>
+                  {props.testimonies[active].company}
                 </Text>
                 <LineNavigator
                   classes={classes}
@@ -205,12 +248,7 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
               </Stack>
             </Grid.Col>
             <Grid.Col xs={4} sx={{ position: 'relative' }}>
-              <Box
-                w="calc(100% + 64px)"
-                h={600}
-                bg="red"
-                pos="relative"
-                sx={{ overflow: 'hidden' }}>
+              <Box w="calc(100% + 64px)" h={600} pos="relative" sx={{ overflow: 'hidden' }}>
                 <StaticImage
                   src="../../../../images/gradient-purple.png"
                   alt="gradient-purple"
@@ -231,6 +269,15 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
         <MediaQuery largerThan="md" styles={{ display: 'none' }}>
           <Box>
             <Box pos="relative">
+              <Box ta="left" mb="md">
+                <Flex align="center">
+                  <Text className={classes.testimonyTitle}>What They Said</Text>
+                  <ThemeIcon variant="" ml="md" mt={4}>
+                    <Image src={testimonyIcon} />
+                  </ThemeIcon>
+                </Flex>
+                <Text>Hear what people have said about ICX</Text>
+              </Box>
               <Box
                 w="calc(100% + 48px)"
                 h={isMobile ? 225 : 320}
@@ -257,20 +304,27 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
                 />
               </Box>
             </Box>
-            <Box mt={96}>
-              {/* <GatsbyImage
+            {/* TODO: enable author image */}
+            {/* <Box mt={96}>
+              <GatsbyImage
               image={props.testimonies[active].authorImage.childImageSharp.gatsbyImageData}
               style={{ width: 75, height: 75 }}
               alt="author"
-            /> */}
+            />
               <Image src={props.testimonies[active].authorImage} maw={50} mah={50} />
+            </Box> */}
+            <Box mt={96}>
+              <Text key={`description-mobile-${active}`} className={classes.description}>
+                {props.testimonies[active].description}
+              </Text>
             </Box>
             <Box mt={32}>
-              <Text className={classes.description}>{props.testimonies[active].description}</Text>
-            </Box>
-            <Box mt={16}>
-              <Text className={classes.author}>{props.testimonies[active].author},</Text>
-              <Text className={classes.company}>{props.testimonies[active].company}</Text>
+              <Text key={`author-mobile-${active}`} className={classes.author}>
+                {props.testimonies[active].author},
+              </Text>
+              <Text key={`company-mobile-${active}`} className={classes.company}>
+                {props.testimonies[active].company}
+              </Text>
             </Box>
             <Box>
               <LineNavigator

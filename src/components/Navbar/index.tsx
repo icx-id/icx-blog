@@ -2,7 +2,6 @@ import React, { FC, PropsWithChildren, useEffect, useState } from 'react';
 import {
   Box,
   Burger,
-  Button,
   Container,
   Group,
   Header,
@@ -19,6 +18,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { navbarMenus, NavbarMenu } from './static/menus';
 import { useLocation } from '@reach/router';
+import { NavbarProps } from '../types';
 
 // --------------------------------------- styles
 
@@ -80,7 +80,7 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
 
 // --------------------------------------- components
 
-export const Navbar: FC<PropsWithChildren> = () => {
+export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = false, pathname }) => {
   const theme = useMantineTheme();
   const location = useLocation();
   const isMobile = useMediaQuery(
@@ -90,7 +90,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
     useDisclosure(false);
   const navbarWhite = location.pathname.includes('/tata-kelola');
 
-  const [isScrolled, setScrolled] = useState(false);
+  const [isScrolled, setScrolled] = useState(navbarSolid);
   const [handleDropdown] = useState('');
 
   const { classes } = useStyles({ isScrolled });
@@ -99,7 +99,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
     const fixedNavbar = document.getElementById('fixed-navbar');
 
     if (fixedNavbar) {
-      if (window.pageYOffset > 1 || Boolean(handleDropdown)) {
+      if (Boolean(handleDropdown) || window.pageYOffset > 1 || navbarSolid) {
         setScrolled(true);
         fixedNavbar.style.backgroundColor = '#fff';
       } else {
@@ -114,7 +114,9 @@ export const Navbar: FC<PropsWithChildren> = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [navbarSolid]);
+
+  useEffect(() => setScrolled(navbarSolid), [pathname]);
 
   return (
     <Box id="fixed-navbar" className={classes.root}>
@@ -126,14 +128,14 @@ export const Navbar: FC<PropsWithChildren> = () => {
             <Link to="/" style={{ color: 'initial', textDecoration: 'initial' }}>
               {isScrolled || navbarWhite ? (
                 <StaticImage
-                  src="../../images/icx-navbar-logo-dark.png"
+                  src="../../images/icx-navbar-logo.png"
                   alt="icx-navbar-logo"
                   placeholder="blurred"
                   className={classes.icxLogo}
                 />
               ) : (
                 <StaticImage
-                  src="../../images/icx-navbar-logo.png"
+                  src="../../images/icx-navbar-logo-dark.png"
                   alt="icx-navbar-logo"
                   placeholder="blurred"
                   className={classes.icxLogo}
@@ -142,8 +144,8 @@ export const Navbar: FC<PropsWithChildren> = () => {
             </Link>
 
             <Group spacing={48} className={classes.hiddenMobile}>
-              {navbarMenus.map(({ id, name, pathname }: NavbarMenu) => (
-                <Link key={id} to={pathname} className={classes.unstyledLink}>
+              {navbarMenus.map(({ id, name, pathname: path }: NavbarMenu) => (
+                <Link key={id} to={path} className={classes.unstyledLink}>
                   <Text
                     size={16}
                     fw={600}
@@ -190,7 +192,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
               withinPortal>
               <Menu.Target>
                 <Burger
-                  color={isScrolled ? '#000' : '#fff'}
+                  color={!isScrolled ? '#fff' : '#000'}
                   opened={menuOpened}
                   onClick={toggleMenu}
                   className={classes.hiddenDesktop}
@@ -198,9 +200,9 @@ export const Navbar: FC<PropsWithChildren> = () => {
               </Menu.Target>
               <Menu.Dropdown sx={{ color: '#fff' }}>
                 <Menu.Label>Menu</Menu.Label>
-                {navbarMenus.map(({ id, name, pathname }: NavbarMenu) => (
+                {navbarMenus.map(({ id, name, pathname: menuPath }: NavbarMenu) => (
                   <Menu.Item key={id}>
-                    <Link to={pathname} style={{ color: 'initial', textDecoration: 'initial' }}>
+                    <Link to={menuPath} style={{ color: 'initial', textDecoration: 'initial' }}>
                       <Text size={18} fw={500} lh="22px">
                         {name}
                       </Text>

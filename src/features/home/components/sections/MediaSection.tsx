@@ -1,17 +1,27 @@
 import React, { FC } from 'react';
 import { MediaSectionProps } from '../../types';
-import { Box, Container, Grid, Group, Image, Stack, Text, createStyles } from '@mantine/core';
+import {
+  Box,
+  Container,
+  Grid,
+  Group,
+  Image,
+  MediaQuery,
+  Stack,
+  Text,
+  createStyles,
+} from '@mantine/core';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 // ----------------------------------------- styles
 
 const useStyles = createStyles(theme => ({
   root: {
-    paddingTop: 200,
-    paddingBottom: 265,
+    paddingTop: 176,
+    paddingBottom: 176,
     [theme.fn.smallerThan('md')]: {
-      paddingTop: 103,
-      paddingBottom: 232,
+      paddingTop: 96,
+      paddingBottom: 96,
     },
   },
 
@@ -76,20 +86,34 @@ export const MediaSection: FC<MediaSectionProps> = ({ ...props }) => {
           ))}
         </Group>
 
-        <Grid mt={40} className={classes.hiddenDesktop}>
-          {props.medias.map(media => (
-            <Grid.Col
-              key={media.mediaName}
-              span={6}
-              sx={{ display: 'flex', justifyContent: 'center' }}>
-              {/* <GatsbyImage
-                image={media.logo.childImageSharp.gatsbyImageData}
-                alt={media.mediaName}
-              /> */}
-              <Image src={media.logo} />
-            </Grid.Col>
-          ))}
-        </Grid>
+        <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+          <Grid mt={40}>
+            {props.medias.map((media, index, arr) => {
+              const len = arr.length;
+              const lastItem = index === len - 1 && len % 2 !== 0;
+
+              return (
+                <Grid.Col
+                  key={media.mediaName}
+                  span={6}
+                  sx={{ display: 'flex', justifyContent: 'center' }}>
+                  {/* <GatsbyImage
+                  image={media.logo.childImageSharp.gatsbyImageData}
+                  alt={media.mediaName}
+                /> */}
+                  <Image
+                    src={media.logo}
+                    sx={{
+                      position: lastItem ? 'relative' : 'initial',
+                      zIndex: lastItem ? 1 : 'initial',
+                      left: lastItem ? '50%' : 0,
+                    }}
+                  />
+                </Grid.Col>
+              );
+            })}
+          </Grid>
+        </MediaQuery>
       </Container>
     </Box>
   );
