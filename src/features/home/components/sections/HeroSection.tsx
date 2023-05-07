@@ -226,7 +226,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
       {/* VISIBLE COMPONENT */}
       <Box
         sx={theme => ({
-          width: '100vw',
+          width: '98vw',
           height: '100vh',
           color: '#fff',
           backgroundColor: 'transparent',
