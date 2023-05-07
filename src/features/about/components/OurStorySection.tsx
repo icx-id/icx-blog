@@ -112,7 +112,7 @@ export const OurStorySection = () => {
                               borderBottom: '2px solid #E0E5E6',
                             }}>
                             <Grid.Col md={10} sm={12} sx={{ paddingLeft: '2.5em' }}>
-                              Reached a total of 150 billion IDR fundraised in Equity
+                              Reached a total of 150 billion IDR fundraised in equity
                             </Grid.Col>
                           </MediaQuery>
                         </Grid>
@@ -176,7 +176,7 @@ export const OurStorySection = () => {
                               borderBottom: '2px solid #E0E5E6',
                             }}>
                             <Grid.Col md={10} sm={12} sx={{ paddingLeft: '2.5em' }}>
-                              LandX rebranded themselves in to Indonesia Crowdfunding Exchange(ICX)
+                              LandX rebranded themselves into Indonesia Crowdfunding Exchange(ICX)
                             </Grid.Col>
                           </MediaQuery>
                         </Grid>
