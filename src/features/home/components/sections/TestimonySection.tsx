@@ -224,7 +224,7 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
               <Flex align="center">
                 <Text className={classes.testimonyTitle}>What They Said</Text>
                 <ThemeIcon variant="" ml="md" mt={4}>
-                  <Image imageProps={{ loading: 'lazy' }} src={testimonyIcon} />
+                  <Image src={testimonyIcon} />
                 </ThemeIcon>
               </Flex>
               <Text>Hear what people have said about ICX</Text>
@@ -260,7 +260,7 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
                 image={props.testimonies[active].image.childImageSharp.gatsbyImageData}
                 alt="testimony"
               /> */}
-                <Image imageProps={{ loading: 'lazy' }} src={props.testimonies[active].image} />
+                <Image src={props.testimonies[active].image} />
               </Box>
             </Grid.Col>
           </Grid>
@@ -273,7 +273,7 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
                 <Flex align="center">
                   <Text className={classes.testimonyTitle}>What They Said</Text>
                   <ThemeIcon variant="" ml="md" mt={4}>
-                    <Image imageProps={{ loading: 'lazy' }} src={testimonyIcon} />
+                    <Image src={testimonyIcon} />
                   </ThemeIcon>
                 </Flex>
                 <Text>Hear what people have said about ICX</Text>
@@ -297,7 +297,6 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
                 alt="testimony"
               /> */}
                 <Image
-                  imageProps={{ loading: 'lazy' }}
                   src={props.testimonies[active].image}
                   width={isMobile ? 200 : 290}
                   height={isMobile ? 225 : 312}
@@ -312,7 +311,7 @@ export const TestimonySection: FC<TestimonySectionProps> = ({ ...props }) => {
               style={{ width: 75, height: 75 }}
               alt="author"
             />
-              <Image imageProps={{ loading: 'lazy' }} src={props.testimonies[active].authorImage} maw={50} mah={50} />
+              <Image src={props.testimonies[active].authorImage} maw={50} mah={50} />
             </Box> */}
             <Box mt={96}>
               <Text key={`description-mobile-${active}`} className={classes.description}>
