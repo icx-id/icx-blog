@@ -24,10 +24,11 @@ const useStyles = createStyles(theme => ({
   root: {
     color: '#fff',
     backgroundColor: '#000',
-    paddingTop: 156,
-    paddingBottom: 58,
+    paddingTop: 160,
+    paddingBottom: 160,
     [theme.fn.smallerThan('md')]: {
-      paddingTop: 77,
+      paddingTop: 80,
+      paddingBottom: 80,
     },
   },
 
@@ -37,8 +38,8 @@ const useStyles = createStyles(theme => ({
     lineHeight: '64px',
     textAlign: 'center',
     [theme.fn.smallerThan('md')]: {
-      fontSize: 32,
-      lineHeight: '40px',
+      fontSize: 24,
+      lineHeight: '32px',
     },
   },
 
@@ -59,8 +60,9 @@ const useStyles = createStyles(theme => ({
     span: {
       fontSize: 22,
       fontWeight: 600,
+      lineHeight: '24px',
       [theme.fn.smallerThan('md')]: {
-        fontSize: 16,
+        fontSize: 14,
         lineHeight: '20px',
       },
     },
@@ -74,29 +76,28 @@ const useStyles = createStyles(theme => ({
   },
 
   flowTitle: {
-    paddingTop: 24,
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 600,
-    lineHeight: '32px',
-    textAlign: 'center',
+    lineHeight: '24px',
     [theme.fn.smallerThan('md')]: {
       paddingTop: 24,
       fontSize: 20,
       lineHeight: '24px',
+      textAlign: 'center',
     },
   },
 
   flowSubtitle: {
-    paddingTop: 24,
+    paddingTop: 16,
     maxWidth: 400,
-    fontSize: 16,
-    fontWeight: 400,
+    fontSize: 14,
+    fontWeight: 300,
     lineHeight: '20px',
-    textAlign: 'center',
     [theme.fn.smallerThan('md')]: {
       paddingTop: 16,
       fontSize: 14,
       lineHeight: '20px',
+      textAlign: 'center',
     },
   },
 
@@ -148,20 +149,24 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
           </TypographyStylesProvider>
         </Stack>
 
-        <Grid gutter={32} mt={120} className={(classes.gridWrapper, classes.hiddenMobile)}>
+        <Grid gutter={128} mt={80} px={80} className={(classes.gridWrapper, classes.hiddenMobile)}>
           {props.flows.map(flow => (
             <Grid.Col key={flow.title} xs={12} md={6}>
-              <Flex direction="column" align="center" sx={{ height: '100%', marginBottom: 100 }}>
-                {/* <GatsbyImage image={flow.image.childImageSharp.gatsbyImageData} alt={flow.title} /> */}
-                <Image
-                  src={flow.image}
-                  maw={357}
-                  height={276}
-                  sx={{ img: { borderRadius: '10px' } }}
-                />
-                <Text className={classes.flowTitle}>{flow.title}</Text>
-                <Text className={classes.flowSubtitle}>{flow.description}</Text>
-              </Flex>
+              <Group spacing={32} align="center" noWrap>
+                <Box>
+                  {/* <GatsbyImage image={flow.image.childImageSharp.gatsbyImageData} alt={flow.title} /> */}
+                  <Image
+                    src={flow.image}
+                    maw={164}
+                    mah={164}
+                    sx={{ img: { borderRadius: '10px' } }}
+                  />
+                </Box>
+                <Stack spacing={0}>
+                  <Text className={classes.flowTitle}>{flow.title}</Text>
+                  <Text className={classes.flowSubtitle}>{flow.description}</Text>
+                </Stack>
+              </Group>
             </Grid.Col>
           ))}
         </Grid>
@@ -183,8 +188,8 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
                 /> */}
                 <Image
                   src={flow.image}
-                  width={224}
-                  height={224}
+                  width={192}
+                  height={192}
                   sx={{ img: { borderRadius: '8px' } }}
                 />
                 <Text className={classes.flowTitle}>{flow.title}</Text>

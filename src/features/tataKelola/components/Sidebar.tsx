@@ -30,7 +30,7 @@ export const Sidebar = () => {
 
   return (
     <Grid.Col h="100%" span={3} style={{ borderRight: '3px solid #00A478' }}>
-      <Stack spacing={rem(25)}>
+      <Stack spacing={rem(24)}>
         {listSidebarNavigation.map((navigation, idx) => (
           <SidebarItem
             key={idx.toString()}
