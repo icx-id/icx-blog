@@ -49,7 +49,7 @@ export const OurStorySection = () => {
                               borderBottom: '2px solid #E0E5E6',
                             }}>
                             <Grid.Col md={10} sm={12} sx={{ paddingLeft: '2.5em' }}>
-                              LandX was launched as a securities crowdfunding platform
+                              LandX was launched as an equity crowdfunding platform
                             </Grid.Col>
                           </MediaQuery>
                         </Grid>
