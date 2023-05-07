@@ -49,6 +49,44 @@ export const Footer: React.FC = () => {
   return (
     <footer className={classes.footer}>
       <Container size="ll" pb={mobileScreen ? 42 : 84}>
+        <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+          <Grid mt="lg" pb={64} fz="sm" sx={{ color: 'white', textAlign: 'center' }}>
+            <Col span={6} mb={-24}>
+              <Text mb="sm">Berizin dan Diawasi Oleh</Text>
+            </Col>
+            <Col span={6} mb={-24}>
+              <Text mb="sm">Telah Terdaftar Oleh</Text>
+            </Col>
+            <Col span={6}>
+              <Image src="/img/ojk-logo.png" height={55} sx={{ cursor: 'pointer' }} fit="contain" />
+            </Col>
+            <Col span={6}>
+              <Image
+                src="/img/kemkominfo-logo.png"
+                height={55}
+                sx={{ cursor: 'pointer' }}
+                fit="contain"
+              />
+            </Col>
+            <Col span={6} mb={-24} mt={16}>
+              <Text mb="sm">Didukung Oleh</Text>
+            </Col>
+            <Col span={6} mb={-24} mt={16}>
+              <Text mb="sm">Anggota Dari</Text>
+            </Col>
+            <Col span={6}>
+              <Image src="/img/iso-logo.png" height={55} sx={{ cursor: 'pointer' }} fit="contain" />
+            </Col>
+            <Col span={6}>
+              <Image
+                src="/img/aludi-logo.png"
+                height={55}
+                sx={{ cursor: 'pointer' }}
+                fit="contain"
+              />
+            </Col>
+          </Grid>
+        </MediaQuery>
         <Box sx={{ marginBottom: '2rem' }}>
           <Image src="/img/logo-white.png" height={44} width={95} />
         </Box>
@@ -209,7 +247,7 @@ export const Footer: React.FC = () => {
                       fit="contain"
                     />
                   </Box>
-                  <MediaQuery query="(max-width: 605px)" styles={{ display: 'none' }}>
+                  <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
                     <Grid mt="lg">
                       <Col span={6}>
                         <Image
