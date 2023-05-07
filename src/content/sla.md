@@ -8,25 +8,25 @@ content: >-
   ###### Internal
 
 
-  LandX (“Platform” atau “Kami”) dan LandX.id dikelola oleh PT Numex Teknologi Indonesia.
+  ICX (“Platform” atau “Kami”) dan ICX.id dikelola oleh PT ICX BANGUN INDONESIA.
 
 
   ###### Eksternal
 
 
-  “Pengguna” atau “Anda” mengacu kepada pengguna atau pengunjung platform LandX.
+  “Pengguna” atau “Anda” mengacu kepada pengguna atau pengunjung platform ICX,
 
 
   ##### PENDAHULUAN
 
 
-  Dokumen ini adalah Service Level Agreement (“SLA”) yang menjadi acuan PT Numex Teknologi Indonesia dalam memberikan layanan kepada seluruh pengguna. Harap membaca SLA ini beserta Syarat dan Ketentuan serta Kebijakan Privasi yang memuat hak-hak Anda sebagai pengguna.
+  Dokumen ini adalah Service Level Agreement (“SLA”) yang menjadi acuan PT ICX BANGUN INDONESIA dalam memberikan layanan kepada seluruh pengguna. Harap membaca SLA ini beserta Syarat dan Ketentuan serta Kebijakan Privasi yang memuat hak-hak Anda sebagai pengguna.
 
 
-  PT Numex Teknologi Indonesia (“Kami”) berhak untuk mengubah ketentuan SLA ini apabila dibutuhkan. Salinan SLA kami dapat diperoleh dengan mengirim email permintaan ke: hello@landx.id
+  PT ICX BANGUN INDONESIA (“Kami”) berhak untuk mengubah ketentuan SLA ini apabila dibutuhkan. Salinan SLA kami dapat diperoleh dengan mengirim email permintaan ke: hello@icx.id
 
 
-  DESKRIPSI LAYANAN
+  ##### DESKRIPSI LAYANAN
 
 
   Kami merupakan penyedia layanan urun dana melalui penawaran saham berbasis teknologi informasi (equity crowdfunding) untuk mempertemukan Anda dengan penerbit yang akan menerbitkan sahamnya melalui layanan yang Kami miliki. Layanan kami terdiri dari layanan yang dapat digunakan melalui media berikut:
@@ -39,18 +39,18 @@ content: >-
 
   | --- | ---------------- | ---------------------------- | -------------------------------------------------------------------- |
 
-  | 1   | Situs LandX      | https://landx.id             | Beroperasi secara terus menerus (24 jam)                             |
+  | 1   | Situs ICX        | https://icx.id               | Beroperasi secara terus menerus (24 jam)                             |
 
   | 2   | Aplikasi Android | Aplikasi equity crowdfunding | Jam beroperasi 09.00 WIB – 17.00 WIB (Waktu untuk melakukan trading) |
 
   | 3   | Aplikasi Ios     | Aplikasi equity crowdfunding | Jam beroperasi 09.00 WIB – 17.00 WIB (Waktu untuk melakukan trading) |
 
 
-  * Untuk pelaporan dan pihak yang bertugas pada Layanan Utama No. 1 adalah divisi Customer Service pada LandX.
+  * Untuk pelaporan dan pihak yang bertugas pada Layanan Utama No. 1 adalah divisi Customer Service pada ICX.
 
-  * Untuk pelaporan dan pihak yang bertugas pada Layanan Utama No. 2 adalah divisi Customer Service pada LandX.
+  * Untuk pelaporan dan pihak yang bertugas pada Layanan Utama No. 2 adalah divisi Customer Service pada ICX.
 
-  * Untuk pelaporan dan pihak yang bertugas pada Layanan Utama No. 3 adalah divisi Customer Service pada LandX.
+  * Untuk pelaporan dan pihak yang bertugas pada Layanan Utama No. 3 adalah divisi Customer Service pada ICX.
 
 
   ### B. Layanan Pendukung
@@ -67,20 +67,20 @@ content: >-
   | 3   | Customer Service Melalui Whatsapp | WA: +62 813-8186-2878    | Jam beroperasi 09.00 WIB – 17.00 WIB (Waktu untuk melakukan trading)                          |
 
 
-  * Untuk pelaporan dan pihak yang bertugas pada Layanan Pendukung No. 1 adalah divisi Customer Service pada LandX.
+  * Untuk pelaporan dan pihak yang bertugas pada Layanan Pendukung No. 1 adalah divisi Customer Service pada ICX.
 
-  * Untuk pelaporan dan pihak yang bertugas pada Layanan Pendukung No. 2 adalah divisi Customer Service pada LandX.
+  * Untuk pelaporan dan pihak yang bertugas pada Layanan Pendukung No. 2 adalah divisi Customer Service pada ICX.
 
-  * Untuk pelaporan dan pihak yang bertugas pada Layanan Pendukung No. 3 adalah divisi Customer Service pada LandX.
+  * Untuk pelaporan dan pihak yang bertugas pada Layanan Pendukung No. 3 adalah divisi Customer Service pada ICX.
 
 
   ##### BATASAN dan RUANG LINGKUP
 
 
-  Service Level pada dokumen ini tidak berlaku dalam kondisi force majeure sebagaimana didefinisikan di bawah, sesuai pada Rencana Keberlangsungan Keamanan Informasi Sistem LandX Tahun 2020 No. 002/104.1/BOD/DP/2019 Rev. 2.
+  Service Level pada dokumen ini tidak berlaku dalam kondisi force majeure sebagaimana didefinisikan di bawah, sesuai pada Rencana Keberlangsungan Keamanan Informasi Sistem ICX Tahun 2020 No. 002/104.1/BOD/DP/2019 Rev. 2. 
 
 
-  Pemenuhan SLA pada kondisi darurat (force majeure) mengikuti standar service level seperti yang ditetapkan dalam Disaster Recovery Plan (DRP) dan Rencana Keberlangsungan Keamanan Informasi Sistem LandX Tahun 2020 No. 002/104.1/BOD/DP/2019 Rev. 2.
+  Pemenuhan SLA pada kondisi darurat (force majeure) mengikuti standar service level seperti yang ditetapkan dalam Disaster Recovery Plan (DRP) dan Rencana Keberlangsungan Keamanan Informasi Sistem ICX Tahun 2020 No. 002/104.1/BOD/DP/2019 Rev. 2.
 
 
   Yang dimaksud dengan “keadaan kahar”” atau “force majeure” adalah segala keadaan atau peristiwa yang terjadi di luar kendali dan/atau kekuasaan dari para pihak pada Service Level Agreement ini, termasuk akan tetapi tidak terbatas pada huru-hara, epidemi, kebakaran, banjir, gempa bumi, pemogokan, perang, keputusan pemerintah atau instansi berwenang, tidak berfungsinya sistem di luar kekuasaan masing-masing pihak yang menghalangi secara langsung atau tidak langsung untuk terlaksananya Service Level Agreement ini.
@@ -89,7 +89,7 @@ content: >-
   ##### PERSENTASE UPTIME TAHUNAN
 
 
-  Batas minimal uptime LandX yang berlaku adalah 99.9% dengan maksimal downtime 8 jam setiap tahun.
+  Batas minimal uptime ICX yang berlaku adalah 99.9% dengan maksimal downtime 8 jam setiap tahun.
 
 
   ##### LAIN-LAIN
