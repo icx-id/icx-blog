@@ -248,7 +248,13 @@ export const Footer: React.FC = () => {
                     />
                   </Box>
                   <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
-                    <Grid mt="lg">
+                    <Grid mt="lg" sx={{ color: 'white' }} fz="xs" ta="center">
+                      <Col span={6} mb={-24}>
+                        <Text mb="sm">Berizin dan Diawasi Oleh</Text>
+                      </Col>
+                      <Col span={6} mb={-24}>
+                        <Text mb="sm">Telah Terdaftar Oleh</Text>
+                      </Col>
                       <Col span={6}>
                         <Image
                           src="/img/ojk-logo.png"
@@ -264,6 +270,12 @@ export const Footer: React.FC = () => {
                           sx={{ cursor: 'pointer' }}
                           fit="contain"
                         />
+                      </Col>
+                      <Col span={6} mb={-24} mt={16}>
+                        <Text mb="sm">Didukung Oleh</Text>
+                      </Col>
+                      <Col span={6} mb={-24} mt={16}>
+                        <Text mb="sm">Anggota Dari</Text>
                       </Col>
                       <Col span={6}>
                         <Image
