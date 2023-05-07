@@ -15,6 +15,8 @@ import {
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { HeroSectionProps } from '../../types';
 
+import HeroMotion from '~/images/hero-motion.gif';
+
 // --------------------------------------- styles
 
 const useStyles = createStyles(theme => ({
@@ -22,8 +24,13 @@ const useStyles = createStyles(theme => ({
     height: '100vh',
     color: '#fff',
     backgroundColor: '#000',
+    backgroundImage: `url(${HeroMotion})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: 'bottom right',
     [theme.fn.smallerThan('md')]: {
       height: 'auto',
+      backgroundPosition: '82% 50%',
     },
   },
 

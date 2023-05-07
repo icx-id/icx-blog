@@ -20,6 +20,7 @@ export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, pro
 
   const navbarOptions: NavbarProps = {
     navbarSolid,
+    pathname,
   };
 
   return noNavbarFooterPaths.includes(pathname) ? (

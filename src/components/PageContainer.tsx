@@ -15,7 +15,7 @@ export const PageContainer: React.FC<PropsWithChildren & PageContainerProps> = (
 
   return (
     <>
-      <Navbar navbarSolid={navbarOptions.navbarSolid} />
+      <Navbar {...navbarOptions} />
       {children}
       <Footer />
     </>

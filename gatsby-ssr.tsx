@@ -1,8 +1,10 @@
+import '@fontsource/inter';
+
 import React from 'react';
 import { GatsbyBrowser } from 'gatsby';
 import { RootProvider } from '~/providers';
 import { PageContainer } from '~/components';
-import '@fontsource/inter';
+import { NavbarProps } from '~/components/types';
 
 const noNavbarFooterPaths = ['/login', '/register'];
 const forceBlackLogoNavbar = [
@@ -15,10 +17,11 @@ const forceBlackLogoNavbar = [
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {
   const { pathname } = props.location;
-  const isSolidNavbar = forceBlackLogoNavbar.includes(pathname);
+  const navbarSolid = forceBlackLogoNavbar.includes(pathname);
 
-  const navbarOptions = {
-    solid: isSolidNavbar,
+  const navbarOptions: NavbarProps = {
+    navbarSolid,
+    pathname,
   };
 
   return noNavbarFooterPaths.includes(pathname) ? (
