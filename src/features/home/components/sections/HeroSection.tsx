@@ -16,12 +16,8 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { HeroSectionProps } from '../../types';
 import Lottie from 'react-lottie';
 
-import GradientHome from '~/images/gradient-hero.png';
-
 // eslint-disable-next-line no-restricted-imports
 import heroMotion1 from '~/features/home/assets/hero-motion1.json';
-// eslint-disable-next-line no-restricted-imports
-import heroMotion2 from '~/features/home/assets/hero-motion2.json';
 
 // --------------------------------------- styles
 
@@ -211,7 +207,6 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
         </Container>
 
         {/* Gradient */}
-        {/* <Lottie options={defaultOptions} /> */}
         <Box
           sx={{
             width: '100vw',
