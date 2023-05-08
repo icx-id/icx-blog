@@ -29,8 +29,8 @@ export const Sidebar = () => {
   const location = useLocation();
 
   return (
-    <Grid.Col h="100%" span={3} style={{ borderRight: '3px solid #00A478' }}>
-      <Stack spacing={rem(24)}>
+    <Grid.Col h="100%" span={2} style={{ borderRight: '3px solid #00A478' }}>
+      <Stack spacing={rem(25)}>
         {listSidebarNavigation.map((navigation, idx) => (
           <SidebarItem
             key={idx.toString()}
