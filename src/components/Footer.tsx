@@ -455,7 +455,7 @@ export const Footer: React.FC = () => {
               Disclaimer
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="md">
-              PT ICX BANGUN INDONESIA(“LandX” atau “Penyelenggara”) hadir dalam rangka mendukung
+              PT ICX BANGUN INDONESIA(“ICX” atau “Penyelenggara”) hadir dalam rangka mendukung
               program pemerintah di bidang perumahan dengan mengembangkan bisnis layanan urun dana
               bersama, dengan mempertemukan Pemodal dan pihak pengembang properti (“Penerbit”)
               (selanjutnya Pemodal dan Penerbit disebut bersama-sama sebagai “Pengguna”). Pada
@@ -463,7 +463,7 @@ export const Footer: React.FC = () => {
               untuk membeli saham yang ditawarkan oleh Penerbit, sehingga segala risiko yang timbul
               dari hubungan tersebut akan menjadi tanggung jawab masing-masing pihak. Risiko yang
               timbul dari hak sebagai Pemodal untuk menerima dividen dari Penerbit merupakan risiko
-              yang wajib ditanggung oleh Pemodal sesuai kebijakan dividen Penerbit. LandX hanya
+              yang wajib ditanggung oleh Pemodal sesuai kebijakan dividen Penerbit. ICX hanya
               bertindak sebagai layanan urun dana yang mempertemukan antara Pemodal dengan Penerbit,
               dan tidak bertindak sebagai pelaku usaha yang menjalankan usaha untuk mengumpulkan
               dana terkait atau pengelola investasi (Penerbit). Sesuai dengan Pasal 23 Peraturan
