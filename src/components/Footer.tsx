@@ -144,6 +144,12 @@ export const Footer: React.FC = () => {
                     src="/img/youtube.png"
                     height={32}
                     width={32}
+                    onClick={() =>
+                      window.open(
+                        'https://www.youtube.com/@IndonesiaCrowdfundingExchange',
+                        '_blank',
+                      )
+                    }
                   />
                   <Image
                     sx={{ cursor: 'pointer' }}
