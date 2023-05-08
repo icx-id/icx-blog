@@ -219,7 +219,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
           </Box>
         </MediaQuery>
 
-        <MediaQuery smallerThan="md" styles={{ display: 'block' }}>
+        <MediaQuery largerThan="md" styles={{ display: 'none' }}>
           <Box
             sx={{
               background: 'linear-gradient(310deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 62%)',
