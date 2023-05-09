@@ -79,7 +79,7 @@ export const Kyc: React.FC<KycProps> = () => {
       )}
 
       {activeState === 'SUCCESS-SUBMIT' && <KycSuccessSubmit />}
-      <LoadingOverlay visible={loadingScreen} overlayBlur={0} overlayOpacity={0.3} />
+      <LoadingOverlay h="100%" visible={loadingScreen} overlayBlur={0} overlayOpacity={0.1} />
     </React.Fragment>
   );
 };
