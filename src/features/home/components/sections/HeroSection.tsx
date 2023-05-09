@@ -207,15 +207,32 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
         </Container>
 
         {/* Gradient */}
-        <Box
-          sx={{
-            width: '100vw',
-            height: '100%',
-            position: 'absolute',
-            top: 0,
-          }}>
-          <Lottie options={defaultOptions} />
-        </Box>
+        <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
+          <Box
+            sx={{
+              width: '100vw',
+              height: '100%',
+              position: 'absolute',
+              top: 0,
+            }}>
+            <Lottie options={defaultOptions} />
+          </Box>
+        </MediaQuery>
+
+        <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+          <Box
+            sx={{
+              background: 'linear-gradient(310deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 62%)',
+              position: 'absolute',
+              width: '100vh',
+              height: '100vh',
+              right: '-50vh',
+              bottom: '0',
+              borderRadius: '50%',
+              display: 'flex',
+            }}
+          />
+        </MediaQuery>
       </Box>
 
       {/* VISIBLE COMPONENT */}

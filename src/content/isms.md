@@ -3,7 +3,7 @@ key: isms
 title: Kebijakan Information Security Management System (ISMS)
 content: >-
   Komitmen Kebijakan ISMS diatur sesuai dengan karakteristik layanan khususnya
-  Crowdfunding LandX dan operasional yang digunakan, bisnis perusahaan dengan
+  Crowdfunding ICX dan operasional yang digunakan, bisnis perusahaan dengan
   mempertimbangkan regulasi bisnis dan undang-undang atau persyaratan yang
   mengatur kewajiban dan keamanan sesuai dengan kontrak yang dipersyaratkan,
   maupun bilamana terjadi insiden pada organisasi, dan perbaikan sistem

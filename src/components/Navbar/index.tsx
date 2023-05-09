@@ -123,16 +123,16 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
           sx={{ borderBottom: 'initial', backgroundColor: 'initial' }}>
           <Group position="apart" sx={{ height: '100%' }}>
             <Link to="/" style={{ color: 'initial', textDecoration: 'initial' }}>
-              {!isScrolled ? (
+              {isScrolled ? (
                 <StaticImage
-                  src="../../images/icx-navbar-logo.png"
+                  src="../../images/icx-navbar-logo-dark.png"
                   alt="icx-navbar-logo"
                   placeholder="blurred"
                   className={classes.icxLogo}
                 />
               ) : (
                 <StaticImage
-                  src="../../images/icx-navbar-logo-dark.png"
+                  src="../../images/icx-navbar-logo.png"
                   alt="icx-navbar-logo"
                   placeholder="blurred"
                   className={classes.icxLogo}
@@ -141,9 +141,9 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
             </Link>
 
             <Group spacing={48} className={classes.hiddenMobile}>
-              {navbarMenus.map(({ id, name, pathname: menuPath }: NavbarMenu) => (
-                <Link key={id} to={menuPath} className={classes.unstyledLink}>
-                  <Text size={16} fw={600} lh="22px" color={!isScrolled ? '#fff' : '#000'}>
+              {navbarMenus.map(({ id, name, pathname: path }: NavbarMenu) => (
+                <Link key={id} to={path} className={classes.unstyledLink}>
+                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
                     {name}
                   </Text>
                 </Link>

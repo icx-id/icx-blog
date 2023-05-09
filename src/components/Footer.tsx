@@ -49,6 +49,44 @@ export const Footer: React.FC = () => {
   return (
     <footer className={classes.footer}>
       <Container size="ll" pb={mobileScreen ? 42 : 84}>
+        <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+          <Grid mt="lg" pb={64} fz="sm" sx={{ color: 'white', textAlign: 'center' }}>
+            <Col span={6} mb={-24}>
+              <Text mb="sm">Berizin dan Diawasi Oleh</Text>
+            </Col>
+            <Col span={6} mb={-24}>
+              <Text mb="sm">Telah Terdaftar Oleh</Text>
+            </Col>
+            <Col span={6}>
+              <Image src="/img/ojk-logo.png" height={55} sx={{ cursor: 'pointer' }} fit="contain" />
+            </Col>
+            <Col span={6}>
+              <Image
+                src="/img/kemkominfo-logo.png"
+                height={55}
+                sx={{ cursor: 'pointer' }}
+                fit="contain"
+              />
+            </Col>
+            <Col span={6} mb={-24} mt={16}>
+              <Text mb="sm">Didukung Oleh</Text>
+            </Col>
+            <Col span={6} mb={-24} mt={16}>
+              <Text mb="sm">Anggota Dari</Text>
+            </Col>
+            <Col span={6}>
+              <Image src="/img/iso-logo.png" height={55} sx={{ cursor: 'pointer' }} fit="contain" />
+            </Col>
+            <Col span={6}>
+              <Image
+                src="/img/aludi-logo.png"
+                height={55}
+                sx={{ cursor: 'pointer' }}
+                fit="contain"
+              />
+            </Col>
+          </Grid>
+        </MediaQuery>
         <Box sx={{ marginBottom: '2rem' }}>
           <Image src="/img/logo-white.png" height={44} width={95} />
         </Box>
@@ -106,13 +144,19 @@ export const Footer: React.FC = () => {
                     src="/img/youtube.png"
                     height={32}
                     width={32}
+                    onClick={() =>
+                      window.open(
+                        'https://www.youtube.com/@IndonesiaCrowdfundingExchange',
+                        '_blank',
+                      )
+                    }
                   />
                   <Image
                     sx={{ cursor: 'pointer' }}
                     src="/img/instagram.png"
                     height={24}
                     width={24}
-                    onClick={() => window.open('https://www.instagram.com/landx.id/', '_blank')}
+                    onClick={() => window.open('https://www.instagram.com/icx_id/', '_blank')}
                   />
                 </Box>
               </Box>
@@ -209,8 +253,14 @@ export const Footer: React.FC = () => {
                       fit="contain"
                     />
                   </Box>
-                  <MediaQuery query="(max-width: 605px)" styles={{ display: 'none' }}>
-                    <Grid mt="lg">
+                  <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
+                    <Grid mt="lg" sx={{ color: 'white' }} fz="xs" ta="center">
+                      <Col span={6} mb={-24}>
+                        <Text mb="sm">Berizin dan Diawasi Oleh</Text>
+                      </Col>
+                      <Col span={6} mb={-24}>
+                        <Text mb="sm">Telah Terdaftar Oleh</Text>
+                      </Col>
                       <Col span={6}>
                         <Image
                           src="/img/ojk-logo.png"
@@ -226,6 +276,12 @@ export const Footer: React.FC = () => {
                           sx={{ cursor: 'pointer' }}
                           fit="contain"
                         />
+                      </Col>
+                      <Col span={6} mb={-24} mt={16}>
+                        <Text mb="sm">Didukung Oleh</Text>
+                      </Col>
+                      <Col span={6} mb={-24} mt={16}>
+                        <Text mb="sm">Anggota Dari</Text>
                       </Col>
                       <Col span={6}>
                         <Image
@@ -405,7 +461,7 @@ export const Footer: React.FC = () => {
               Disclaimer
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="md">
-              PT ICX BANGUN INDONESIA(“LandX” atau “Penyelenggara”) hadir dalam rangka mendukung
+              PT ICX BANGUN INDONESIA(“ICX” atau “Penyelenggara”) hadir dalam rangka mendukung
               program pemerintah di bidang perumahan dengan mengembangkan bisnis layanan urun dana
               bersama, dengan mempertemukan Pemodal dan pihak pengembang properti (“Penerbit”)
               (selanjutnya Pemodal dan Penerbit disebut bersama-sama sebagai “Pengguna”). Pada
@@ -413,7 +469,7 @@ export const Footer: React.FC = () => {
               untuk membeli saham yang ditawarkan oleh Penerbit, sehingga segala risiko yang timbul
               dari hubungan tersebut akan menjadi tanggung jawab masing-masing pihak. Risiko yang
               timbul dari hak sebagai Pemodal untuk menerima dividen dari Penerbit merupakan risiko
-              yang wajib ditanggung oleh Pemodal sesuai kebijakan dividen Penerbit. LandX hanya
+              yang wajib ditanggung oleh Pemodal sesuai kebijakan dividen Penerbit. ICX hanya
               bertindak sebagai layanan urun dana yang mempertemukan antara Pemodal dengan Penerbit,
               dan tidak bertindak sebagai pelaku usaha yang menjalankan usaha untuk mengumpulkan
               dana terkait atau pengelola investasi (Penerbit). Sesuai dengan Pasal 23 Peraturan
