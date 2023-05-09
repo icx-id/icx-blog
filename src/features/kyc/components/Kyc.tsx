@@ -8,91 +8,78 @@ import { KycFormAddress } from './KycFormAddress';
 import { KycFormAddressDomicile } from './KycFormAddressDomicile';
 import { KycFormSummary } from './KycFormSummary';
 import { KycSuccessSubmit } from './KycSuccessSubmit';
-import { Formik } from 'formik';
-import { KycFormProps } from '../types';
-import { KycFormSchema } from '../schema/KycFormSchema';
+import { LoadingOverlay } from '@mantine/core';
 
 interface KycProps {}
 
 export const Kyc: React.FC<KycProps> = () => {
   const [activeState, setActiveState] = useState<string>('INTRODUCTION');
+  const [loadingScreen, setLoadingScreen] = useState<boolean>(false);
 
-  const handleSubmitAddress = () => {};
+  const onLoadingScreenActive = (callback: () => void) => {
+    setLoadingScreen(true);
+    setTimeout(() => {
+      setLoadingScreen(false);
+      callback();
+    }, 500);
+  };
 
   return (
-    <Formik<KycFormProps>
-      initialValues={{
-        ktpImage: null,
-        selfieImage: null,
+    <React.Fragment>
+      {activeState === 'INTRODUCTION' && (
+        <KycIntroduction
+          onNextStep={() => {
+            onLoadingScreenActive(() => setActiveState('IDENTITY-PHOTO'));
+          }}
+        />
+      )}
+      {activeState === 'IDENTITY-PHOTO' && (
+        <KycPickIdentityPhoto
+          onSubmitSuccess={() => onLoadingScreenActive(() => setActiveState('UPLOAD-PROGRESS'))}
+        />
+      )}
+      {activeState === 'UPLOAD-PROGRESS' && (
+        <KycUploadProgress onFinishCheckImage={() => setActiveState('IDENTITY-FORM')} />
+      )}
 
-        fullName: '',
-        nik: '',
-        dateOfBirth: '',
-        placeOfBirth: '',
-        gender: 'male',
-        religion: '',
+      {activeState === 'IDENTITY-FORM' && (
+        <KycFormIdentity
+          onSubmitSuccess={() => onLoadingScreenActive(() => setActiveState('SELFIE-PHOTO'))}
+          goBack={() => setActiveState('IDENTITY-PHOTO')}
+        />
+      )}
 
-        fullAddress: '',
-        provinceAddress: '',
-        cityAddress: '',
-        districtAddress: '',
-        subDistrictAddress: '',
-        postalCodeAddress: '',
+      {activeState === 'SELFIE-PHOTO' && (
+        <KycPickSelfiePhoto
+          onSubmitSuccess={() => onLoadingScreenActive(() => setActiveState('ADDRESS-FORM'))}
+          goBack={() => setActiveState('IDENTITY-FORM')}
+        />
+      )}
 
-        domicileAddress: '',
-        domicileProvince: '',
-        domicileTown: '',
-        domicileDistrict: '',
-        domicileSubdistrict: '',
-        domicilePostalCode: '',
-      }}
-      validationSchema={KycFormSchema}
-      onSubmit={value => console.log(value)}>
-      <React.Fragment>
-        {activeState === 'INTRODUCTION' && (
-          <KycIntroduction onNextStep={() => setActiveState('IDENTITY-PHOTO')} />
-        )}
-        {activeState === 'IDENTITY-PHOTO' && (
-          <KycPickIdentityPhoto onSubmit={() => setActiveState('UPLOAD-PROGRESS')} />
-        )}
-        {activeState === 'UPLOAD-PROGRESS' && (
-          <KycUploadProgress onFinishCheckImage={() => setActiveState('IDENTITY-FORM')} />
-        )}
+      {activeState === 'ADDRESS-FORM' && (
+        <KycFormAddress
+          onSubmitSuccess={() =>
+            onLoadingScreenActive(() => setActiveState('ADDRESS-DOMICILE-FORM'))
+          }
+          goBack={() => setActiveState('IDENTITY-FORM')}
+        />
+      )}
+      {activeState === 'ADDRESS-DOMICILE-FORM' && (
+        <KycFormAddressDomicile
+          onSubmitSuccess={() => onLoadingScreenActive(() => setActiveState('SUMMARY-FORM'))}
+          goBack={() => setActiveState('ADDRESS-FORM')}
+        />
+      )}
 
-        {activeState === 'IDENTITY-FORM' && (
-          <KycFormIdentity
-            onSubmit={() => setActiveState('SELFIE-PHOTO')}
-            goBack={() => setActiveState('IDENTITY-PHOTO')}
-          />
-        )}
+      {activeState === 'SUMMARY-FORM' && (
+        <KycFormSummary
+          onSubmitSuccess={() => onLoadingScreenActive(() => setActiveState('SUCCESS-SUBMIT'))}
+          goBack={() => setActiveState('ADDRESS-DOMICILE-FORM')}
+        />
+      )}
 
-        {activeState === 'SELFIE-PHOTO' && (
-          <KycPickSelfiePhoto
-            onSubmit={() => setActiveState('ADDRESS-FORM')}
-            goBack={() => setActiveState('IDENTITY-FORM')}
-          />
-        )}
-
-        {activeState === 'ADDRESS-FORM' && (
-          <KycFormAddress
-            onSubmit={() => setActiveState('ADDRESS-DOMICILE-FORM')}
-            goBack={() => setActiveState('IDENTITY-FORM')}
-          />
-        )}
-        {activeState === 'ADDRESS-DOMICILE-FORM' && (
-          <KycFormAddressDomicile
-            onSubmit={() => setActiveState('SUMMARY-FORM')}
-            goBack={() => setActiveState('ADDRESS-FORM')}
-          />
-        )}
-        {activeState === 'SUMMARY-FORM' && (
-          <KycFormSummary
-            onSubmit={() => setActiveState('SUCCESS-SUBMIT')}
-            goBack={() => setActiveState('ADDRESS-DOMICILE-FORM')}
-          />
-        )}
-        {activeState === 'SUCCESS-SUBMIT' && <KycSuccessSubmit />}
-      </React.Fragment>
-    </Formik>
+      {activeState === 'SUCCESS-SUBMIT' && <KycSuccessSubmit />}
+      <LoadingOverlay visible={loadingScreen} overlayBlur={0} overlayOpacity={0.3} />
+    </React.Fragment>
   );
 };

@@ -1,6 +1,30 @@
-import { Box, Button, Container, Flex, Stack, Text, rem } from '@mantine/core';
+import { Box, Button, Container, Flex, Stack, Text, createStyles, rem } from '@mantine/core';
 import React, { PropsWithChildren } from 'react';
 import { KycBreadcrumbs, KycBreadcrumbsProps } from './KycBreadcrumbs';
+
+const useStyles = createStyles(theme => ({
+  root: {
+    minHeight: '80vh',
+    paddingTop: rem(120),
+    paddingBottom: rem(50),
+    backgroundColor: '#F4f4f4',
+    [theme.fn.smallerThan('sm')]: {
+      paddingTop: rem(80),
+      backgroundColor: '#fff',
+    },
+  },
+  content: {
+    backgroundColor: '#FFF',
+    width: '100%',
+    padding: '50px 25%',
+    flexDirection: 'column',
+    borderRadius: rem(8),
+    justifyContent: 'center',
+    [theme.fn.smallerThan('sm')]: {
+      padding: 0,
+    },
+  },
+}));
 
 interface KycFormContainerProps extends KycBreadcrumbsProps {
   title: string;
@@ -19,18 +43,11 @@ export const KycFormContainer: React.FC<PropsWithChildren<KycFormContainerProps>
   withBreadcrumbs,
   buttonDisabled,
 }) => {
+  const { classes } = useStyles();
   return (
-    <Box bg="#EEFFF2" mih="80vh" py={rem(50)}>
+    <Box className={classes.root}>
       <Container h="100%">
-        <Flex
-          bg="#FFF"
-          w="100%"
-          px="25%"
-          h="100%"
-          py={rem(50)}
-          style={{ borderRadius: rem(8) }}
-          direction="column"
-          justify="center">
+        <Flex className={classes.content}>
           {withBreadcrumbs && (
             <KycBreadcrumbs currentStep={currentStep} totalStep={totalStep} goBack={goBack} />
           )}

@@ -1,21 +1,21 @@
 import { Group, Radio } from '@mantine/core';
 import React from 'react';
-import { Input } from '~/components/Core/Input';
+import { Input } from '~/components/core/Input';
 import { KycFormContainer } from './KycFormContainer';
-import { useFormikContext } from 'formik';
-import { KycFormProps } from '../types';
+import { Formik, useFormikContext } from 'formik';
+import { IdentityInformation, KycFormProps } from '../types';
+import { KycFormIdentitySchema } from '../schema/KycFormIdentitySchema';
+import { useKycStore } from '../stores';
 
-interface KycFormIdentityProps {
+interface KycFormIdentityInnerProps {
   goBack: () => void;
-  onSubmit: () => void;
 }
-
-export const KycFormIdentity: React.FC<KycFormIdentityProps> = ({ goBack, onSubmit }) => {
-  const { values, handleChange, setFieldValue, errors, handleBlur, touched } =
+const KycFormIdentityInner: React.FC<KycFormIdentityInnerProps> = ({ goBack }) => {
+  const { values, handleChange, setFieldValue, errors, handleBlur, touched, handleSubmit } =
     useFormikContext<KycFormProps>();
 
   const buttonDisabled =
-    errors.fullAddress || errors.nik || errors.dateOfBirth || errors.placeOfBirth || errors.gender
+    errors.fullName || errors.nik || errors.dateOfBirth || errors.placeOfBirth || errors.gender
       ? true
       : false;
 
@@ -26,7 +26,7 @@ export const KycFormIdentity: React.FC<KycFormIdentityProps> = ({ goBack, onSubm
       currentStep="2"
       totalStep="5"
       goBack={goBack}
-      onSubmit={onSubmit}
+      onSubmit={handleSubmit}
       buttonDisabled={buttonDisabled}>
       <Input
         name="fullName"
@@ -74,5 +74,35 @@ export const KycFormIdentity: React.FC<KycFormIdentityProps> = ({ goBack, onSubm
         </Group>
       </Radio.Group>
     </KycFormContainer>
+  );
+};
+
+interface KycFormIdentityProps extends KycFormIdentityInnerProps {
+  onSubmitSuccess: () => void;
+}
+
+export const KycFormIdentity: React.FC<KycFormIdentityProps> = ({ goBack, onSubmitSuccess }) => {
+  const { identityInformation, onIdentitySuccess } = useKycStore();
+
+  const handleSubmit = (values: IdentityInformation) => {
+    onIdentitySuccess(values);
+    onSubmitSuccess();
+  };
+
+  return (
+    <Formik<IdentityInformation>
+      initialValues={{
+        fullName: identityInformation?.fullName || '',
+        placeOfBirth: identityInformation?.placeOfBirth || '',
+        dateOfBirth: identityInformation?.dateOfBirth || '',
+        nik: identityInformation?.nik || '',
+        gender: identityInformation?.gender || 'male',
+        religion: '',
+      }}
+      validateOnMount={true}
+      validationSchema={KycFormIdentitySchema}
+      onSubmit={handleSubmit}>
+      <KycFormIdentityInner goBack={goBack} />
+    </Formik>
   );
 };

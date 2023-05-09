@@ -1,25 +1,47 @@
-import { Box, Button, Container, Flex, Image, Text, rem } from '@mantine/core';
+import { Box, Button, Container, Flex, Image, Text, createStyles, rem } from '@mantine/core';
 import React from 'react';
+import { Link } from '~/components';
+
+const useStyles = createStyles(theme => ({
+  root: {
+    backgroundColor: '#F4F4F4',
+    height: '80vh',
+    paddingTop: rem(120),
+    paddingBottom: rem(50),
+    [theme.fn.smallerThan('sm')]: {
+      backgroundColor: '#FFF',
+    },
+  },
+  image: {
+    objectFit: 'contain',
+    width: rem(160),
+    height: rem(160),
+    [theme.fn.smallerThan('sm')]: { width: rem(100) },
+  },
+  content: {
+    backgroundColor: '#FFF',
+    width: '100%',
+    padding: '50px 25%',
+    height: '100%',
+    borderRadius: rem(8),
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    [theme.fn.smallerThan('sm')]: {
+      padding: 0,
+    },
+  },
+}));
 
 export const KycSuccessSubmit: React.FC = () => {
+  const { classes } = useStyles();
   return (
-    <Box bg="#EEFFF2" h="80vh" py={rem(50)}>
+    <Box className={classes.root}>
       <Container h="100%">
-        <Flex
-          bg="#FFF"
-          w="100%"
-          px="25%"
-          h="100%"
-          py={rem(50)}
-          style={{ borderRadius: rem(8) }}
-          direction="column"
-          justify="center"
-          align="center">
-          <Image
-            withPlaceholder
+        <Flex className={classes.content}>
+          <img
             alt="icon-success"
-            style={{ width: rem(160), height: rem(160) }}
-            fit="contain"
+            className={classes.image}
             src="/img/icons/ic-success-submit.svg"
           />
           <Text weight="600" size={rem(18)} mt={rem(30)}>
@@ -28,8 +50,11 @@ export const KycSuccessSubmit: React.FC = () => {
           <Text weight="300" size={rem(14)} w={rem(300)} align="center" mt={rem(10)} mb={rem(80)}>
             Silahkan lanjutkan proses verifikasi akun untuk dapat mulai berinvestasi.
           </Text>
-          <Button style={{ backgroundColor: '#00C48F' }} w="100%" mt={rem(10)} radius={rem(15)}>
-            Kembali ke Homepage
+
+          <Button style={{ backgroundColor: '#00C48F' }} w="100%" mt={rem(10)}>
+            <Link to="/" color="#fff">
+              Kembali ke Homepage
+            </Link>
           </Button>
         </Flex>
       </Container>

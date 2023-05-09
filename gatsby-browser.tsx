@@ -12,6 +12,7 @@ const forceBlackLogoNavbar = [
   '/tata-kelola/mitigasi-risiko',
   '/tata-kelola/syarat-dan-ketentuan',
   '/tata-kelola/sla',
+  '/kyc',
 ];
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {

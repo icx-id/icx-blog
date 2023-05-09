@@ -1,38 +1,39 @@
-import { Box, List, rem } from '@mantine/core';
+import { List, rem } from '@mantine/core';
 import React from 'react';
 import { KycContainer } from './KycContainer';
-import { KycBreadcrumbs } from './KycBreadcrumbs';
-import { useFormikContext } from 'formik';
-import { KycFormProps } from '../types';
+import { Formik, useFormikContext } from 'formik';
 import { PickPhoto } from './PickPhoto';
 import { ResultPhoto } from './ResultPhoto';
+import { KycPickSelfieSchema } from '../schema/KycPickSelfieSchema';
+import { IdentitySelfie } from '../types';
+import { useKycStore } from '../stores';
 
-interface KycPickSelfiePhotoProps {
+interface KycPickSelfiePhotoInnerProps {
   goBack: () => void;
-  onSubmit: () => void;
 }
 
-export const KycPickSelfiePhoto: React.FC<KycPickSelfiePhotoProps> = ({ goBack, onSubmit }) => {
-  const { values, setFieldValue, errors } = useFormikContext<KycFormProps>();
-
+const KycPickSelfiePhotoInner: React.FC<KycPickSelfiePhotoInnerProps> = ({ goBack }) => {
+  const { values, setFieldValue, errors, handleSubmit } = useFormikContext<IdentitySelfie>();
   return (
-    <KycContainer bannerType="half" bannerImage="/img/image-selfie.png">
-      <Box px={rem(20)} pt={rem(20)}>
-        <KycBreadcrumbs currentStep="3" totalStep="5" goBack={goBack} />
-      </Box>
-
-      {values.selfieImage && !errors.selfieImage ? (
+    <KycContainer
+      bannerType="half"
+      bannerImage="/img/image-selfie.png"
+      withBreadcrumbs
+      currentStep="3"
+      goBack={goBack}
+      totalStep="5">
+      {values.identitySelfie && !errors.identitySelfie ? (
         <ResultPhoto
           title="Wajah dan foto KTP Anda sudah terlihat dengan jelas?"
-          onConfirmPhoto={onSubmit}
-          onRetakePhoto={() => setFieldValue('selfieImage', null)}
-          resultImage={URL.createObjectURL(values.selfieImage)}
+          onConfirmPhoto={handleSubmit}
+          onRetakePhoto={() => setFieldValue('identitySelfie', null)}
+          resultImage={URL.createObjectURL(values.identitySelfie)}
         />
       ) : (
         <PickPhoto
-          error={errors.selfieImage}
+          error={errors.identitySelfie}
           title="Selfie dengan KTP Anda"
-          onChange={e => setFieldValue('selfieImage', e)}>
+          onChange={e => setFieldValue('identitySelfie', e)}>
           <List type="ordered" px={rem(16)} my={rem(10)} spacing={4}>
             <List.Item style={{ fontSize: rem(15) }}>
               Posisikan KTP di bawah dagu, jangan menutupi wajah
@@ -47,5 +48,31 @@ export const KycPickSelfiePhoto: React.FC<KycPickSelfiePhotoProps> = ({ goBack, 
         </PickPhoto>
       )}
     </KycContainer>
+  );
+};
+
+interface KycPickSelfiePhotoProps extends KycPickSelfiePhotoInnerProps {
+  onSubmitSuccess: () => void;
+}
+
+export const KycPickSelfiePhoto: React.FC<KycPickSelfiePhotoProps> = ({
+  goBack,
+  onSubmitSuccess,
+}) => {
+  const { onSelfiePickerSuccess } = useKycStore();
+
+  const handleSubmit = (values: IdentitySelfie) => {
+    onSelfiePickerSuccess({ identitySelfie: values.identitySelfie });
+    onSubmitSuccess();
+  };
+  return (
+    <Formik<IdentitySelfie>
+      initialValues={{
+        identitySelfie: null,
+      }}
+      validationSchema={KycPickSelfieSchema}
+      onSubmit={handleSubmit}>
+      <KycPickSelfiePhotoInner goBack={goBack} />
+    </Formik>
   );
 };

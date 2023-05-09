@@ -4,7 +4,6 @@ const SUPPORTED_FORMATS = ['image/jpg', 'image/jpeg', 'image/png'];
 export const KycFormSchema: Yup.AnyObjectSchema = Yup.object().shape({
   ktpImage: Yup.mixed()
     .nullable()
-    .required('Foto KTP wajib dilampirkan')
     .test(
       'fileSize',
       'File foto KTP tidak melebihi 1 MB',
@@ -17,7 +16,6 @@ export const KycFormSchema: Yup.AnyObjectSchema = Yup.object().shape({
     ),
   selfieImage: Yup.mixed()
     .nullable()
-    .required('Foto selfie wajib dilampirkan')
     .test(
       'fileSize',
       'File foto Selfie tidak melebihi 1 MB',
@@ -37,10 +35,17 @@ export const KycFormSchema: Yup.AnyObjectSchema = Yup.object().shape({
   placeOfBirth: Yup.string().required('Tempat lahir harus di isi'),
   gender: Yup.string().required('Jenis kelamin harus di isi'),
 
-  fullAddress: Yup.string().required('Alamat lengkap harus diisi'),
-  provinceAddress: Yup.string().required('Provinsi harus diisi'),
-  cityAddress: Yup.string().required('Kota/Kabupaten harus diisi'),
-  districtAddress: Yup.string().required('Kecamatan harus diisi'),
-  subDistrictAddress: Yup.string().required('Kelurahan harus diisi'),
-  postalCodeAddress: Yup.string().required('Kode pos harus diisi'),
+  // fullAddress: Yup.string().required('Alamat lengkap harus diisi'),
+  // provinceAddress: Yup.string().required('Provinsi harus diisi'),
+  // cityAddress: Yup.string().required('Kota/Kabupaten harus diisi'),
+  // districtAddress: Yup.string().required('Kecamatan harus diisi'),
+  // subDistrictAddress: Yup.string().required('Kelurahan harus diisi'),
+  // postalCodeAddress: Yup.string().required('Kode pos harus diisi'),
+
+  // domicileAddress: Yup.string().required('Alamat lengkap harus diisi'),
+  // domicileProvince: Yup.string().required('Provinsi harus diisi'),
+  // domicileTown: Yup.string().required('Kota/Kabupaten harus diisi'),
+  // domicileDistrict: Yup.string().required('Kecamatan harus diisi'),
+  // domicileSubdistrict: Yup.string().required('Kelurahan harus diisi'),
+  // domicilePostalCode: Yup.string().required('Kode pos harus diisi'),
 });

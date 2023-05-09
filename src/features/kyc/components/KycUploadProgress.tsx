@@ -1,27 +1,114 @@
-import { Box, Container, Flex, Image, Progress, Text, rem } from '@mantine/core';
-import React, { useEffect } from 'react';
+import { Box, Container, Flex, Progress, Text, createStyles, rem } from '@mantine/core';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useOcrIdentityMutation } from '../api/useOcrIdentityMutation';
+import {
+  extractAddressFromOcrResult,
+  extractCityFromOcrResult,
+  extractProvinceFromOcrResult,
+} from '../utils/format';
+import { useKycStore } from '../stores';
+import { format } from 'date-fns';
+
+const useStyles = createStyles(theme => ({
+  root: { height: '80vh' },
+  image: {
+    width: rem(160),
+    height: rem(160),
+    objectFit: 'contain',
+    [theme.fn.smallerThan('sm')]: {
+      width: rem(100),
+    },
+  },
+  progress: {
+    width: '80%',
+  },
+  content: {
+    width: '40%',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
+    marginTop: rem(40),
+    [theme.fn.smallerThan('sm')]: {
+      width: '100%',
+      marginTop: rem(20),
+    },
+  },
+}));
 
 interface KycUploadProgressProps {
   onFinishCheckImage: () => void;
 }
 
 export const KycUploadProgress: React.FC<KycUploadProgressProps> = ({ onFinishCheckImage }) => {
-  useEffect(() => {
-    setTimeout(() => {
+  const { classes } = useStyles();
+
+  const { mutateAsync: requestOcrIdentity, isLoading } = useOcrIdentityMutation();
+  const [progressPercentage, setProgressPercentage] = useState(1);
+  const [isActive, setIsActive] = useState(true);
+  const { identityPhoto, onAddressIdentitySuccess, onIdentitySuccess } = useKycStore();
+
+  const translateImageToText = useCallback(async () => {
+    try {
+      const identity = await requestOcrIdentity({
+        identityPhoto,
+      });
+
+      onAddressIdentitySuccess({
+        addressIdentity: {
+          identityAddress: extractAddressFromOcrResult(identity.address, identity.rtRw),
+          identityProvince: extractProvinceFromOcrResult(identity.state),
+          identityTown: extractCityFromOcrResult(identity.city),
+          identityDistrict: identity.district,
+          identitySubdistrict: identity.administrativeVillage,
+          identityPostalCode: '',
+        },
+      });
+      onIdentitySuccess({
+        ...identity,
+        dateOfBirth: format(new Date(identity.dateOfBirth), 'yyyy-MM-dd'),
+      });
       onFinishCheckImage();
-    }, 3000);
-  });
+    } catch (e) {
+      console.log(e);
+      onFinishCheckImage();
+    }
+  }, [identityPhoto, requestOcrIdentity]);
+
+  useEffect(() => {
+    if (!isLoading && progressPercentage >= 90) {
+      setProgressPercentage(100);
+      setIsActive(false);
+    }
+    if (isActive) {
+      const timer =
+        progressPercentage > 0 &&
+        progressPercentage <= 90 &&
+        setInterval(() => setProgressPercentage(progressPercentage + 1), 5);
+
+      return () => clearInterval(Number(timer));
+    } else if (!isActive && progressPercentage !== 0) {
+      clearInterval(progressPercentage);
+    }
+  }, [isActive, isLoading, progressPercentage]);
+
+  useEffect(() => {
+    if (progressPercentage === 1) {
+      translateImageToText();
+    }
+  }, [progressPercentage, translateImageToText]);
+
   return (
-    <Box bg="#EEFFF2" h="80vh" py={rem(50)}>
+    <Box bg="#EEFFF2" className={classes.root} py={rem(50)}>
       <Container h="100%">
         <Flex justify="center" align="center" h="100%" direction="column">
-          <Image
-            style={{ width: rem(160), height: rem(160) }}
-            fit="contain"
-            src="/img/icons/icon-progres.svg"
-          />
-          <Flex w="40%" justify="center" direction="column" align="center" mt={rem(40)}>
-            <Progress value={90} w="80%" color="green" animate />
+          <img className={classes.image} alt="icon-progress" src="/img/icons/icon-progres.svg" />
+          <Flex className={classes.content}>
+            <Progress
+              value={progressPercentage}
+              className={classes.progress}
+              color="green"
+              animate
+            />
             <Text size={rem(26)} weight="500" mt={rem(10)}>
               Memeriksa kualitas foto...
             </Text>
