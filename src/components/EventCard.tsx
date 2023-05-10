@@ -2,44 +2,52 @@ import React from 'react';
 import { Box, Image, Text } from '@mantine/core';
 import { useHover } from '@mantine/hooks';
 
-const EventCard: React.FC<{}> = () => {
+const EventCard: React.FC<{
+  title: string;
+  date: string;
+  time: string;
+  eventType: string;
+}> = ({ title, date, time, eventType }) => {
   const { hovered, ref } = useHover();
 
   return (
     <Box
       ref={ref}
       sx={{
-        height: '290px',
+        height: '100%',
         border: '1px solid #E9ECEF',
         borderRadius: '10px',
         cursor: hovered ? 'pointer' : 'default',
+        boxShadow: hovered ? '0px 4px 30px rgba(0, 0, 0, 0.05)' : 'initial',
       }}>
       <Image
         src="/img/sample.png"
         fit="cover"
-        height={152}
-        sx={{
-          borderRadius: '10px',
+        height={130}
+        width="100%"
+        radius="10px 10px 0 0"
+        style={{
+          filter: hovered ? 'brightness(110%)' : 'unset',
         }}
       />
-      <Box pt="xs" px="sm">
-        <Text fz={16} fw="bold" mb={8}>
-          How To Become A Mindful Investor
+      <Box pt="md" pb="lg" px="md">
+        <Text fz={16} fw="bold" mb={8} lineClamp={1}>
+          {title}
         </Text>
-        <Box sx={{ display: 'flex', alignItems: 'center' }} mb={8}>
-          <Image src="/img/calendar-2.svg" height={12} width={12} pr="md" />
+        <Box sx={{ display: 'flex', alignItems: 'center' }} mb={2}>
+          <Image src="/img/calendar-2.svg" height={12} width={12} pr="lg" />
           <Text fz={12} color="#495057">
-            17 Mar - 19 Mar 2023 | 19:00 WIB
+            {date} | {time}
           </Text>
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center' }} mb={8}>
-          <Image src="/img/video-play.svg" height={12} width={12} pr="md" />
+        <Box sx={{ display: 'flex', alignItems: 'center' }} mb={2}>
+          <Image src="/img/video-play.svg" height={12} width={12} pr="lg" />
           <Text fz={12} color="#495057">
-            Online Event
+            {eventType} Event
           </Text>
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Image src="/img/tick-circle.svg" height={12} width={12} pr="md" />
+          <Image src="/img/tick-circle.svg" height={12} width={12} pr="lg" />
           <Text fz={12} color="#00A478">
             Terdaftar
           </Text>
