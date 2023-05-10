@@ -11,7 +11,7 @@ const EventsPage: React.FC<PageProps> = () => {
           backgroundImage: 'url(/img/image-banner-1.png)',
           height: '20rem',
         }}>
-        <Container sx={{ height: '100%' }} size="lg">
+        <Container sx={{ height: '100%' }} size="ll">
           <Box
             sx={{
               display: 'flex',
@@ -31,7 +31,7 @@ const EventsPage: React.FC<PageProps> = () => {
           </Box>
         </Container>
       </Paper>
-      <Container size="lg">
+      <Container size="ll">
         <Box mt={85}>
           <SimpleGrid
             breakpoints={[
