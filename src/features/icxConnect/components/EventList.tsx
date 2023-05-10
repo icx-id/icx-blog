@@ -5,6 +5,7 @@ import { useGetEventsQuery } from '../api/useGetEvents';
 import { parseEventDate } from '../utils';
 import { EventListSkeleton } from './EventListSkeleton';
 import { EventScheduleType } from '../types';
+import { navigate } from 'gatsby';
 
 function capitalizeFirstLetter(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1) || '';
@@ -61,7 +62,9 @@ export const EventList: React.FC<{}> = () => {
 
                 return (
                   <EventCard
+                    onClick={() => navigate(`/events/${event.id}`)}
                     key={event.id}
+                    image={event.coverImage}
                     title={event.title}
                     date={eventDate}
                     time={eventTime}

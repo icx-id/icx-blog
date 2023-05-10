@@ -7,11 +7,14 @@ const EventCard: React.FC<{
   date: string;
   time: string;
   eventType: string;
-}> = ({ title, date, time, eventType }) => {
+  image: string;
+  onClick: () => void;
+}> = ({ title, date, time, eventType, image, onClick }) => {
   const { hovered, ref } = useHover();
 
   return (
     <Box
+      onClick={onClick}
       ref={ref}
       sx={{
         height: '100%',
@@ -21,7 +24,7 @@ const EventCard: React.FC<{
         boxShadow: hovered ? '0px 4px 30px rgba(0, 0, 0, 0.05)' : 'initial',
       }}>
       <Image
-        src="/img/sample.png"
+        src={image}
         fit="cover"
         height={130}
         width="100%"
