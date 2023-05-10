@@ -2,6 +2,7 @@ import React, { FC, PropsWithChildren, useEffect, useState } from 'react';
 import {
   Box,
   Burger,
+  Button,
   Container,
   Group,
   Header,
@@ -150,19 +151,21 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
               ))}
             </Group>
 
-            {/* <Group spacing={24} className={classes.hiddenMobile}>
+            <Group spacing={24} className={classes.hiddenMobile}>
               <Button
+                component="a"
+                href="/register"
                 variant="outline"
                 className={classes.buttonSize}
                 sx={{
                   color: isScrolled ? '#000' : '#fff',
                   borderColor: isScrolled ? '#000' : '#fff',
                 }}>
-                <Text size={18} fw={500} lh="22px">
-                  Sign Up
-                </Text>
+                <Text fw={500}>Sign Up</Text>
               </Button>
               <Button
+                component="a"
+                href="/login"
                 className={classes.buttonSize}
                 sx={{
                   backgroundColor: '#00C48F',
@@ -170,11 +173,9 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                     backgroundColor: '#02B082',
                   },
                 }}>
-                <Text size={18} fw={500} lh="22px">
-                  Login
-                </Text>
+                <Text fw={500}>Login</Text>
               </Button>
-            </Group> */}
+            </Group>
 
             <Menu
               width={260}
