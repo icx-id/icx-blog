@@ -1,14 +1,14 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { HomeDataType } from '../types';
 
-export const useHomePageData = (): HomeDataType => {
+export const useSyaratKetentuanPageData = () => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
-      query HOME_PAGE_QUERY {
-        allMarkdownRemark(filter: { frontmatter: { key: { eq: "home" } } }) {
+      query SYARAT_KETENTUAN_QUERY {
+        allMarkdownRemark(filter: { frontmatter: { key: { eq: "syarat-dan-ketentuan" } } }) {
           nodes {
             frontmatter {
               title
+              content
             }
           }
         }
@@ -22,4 +22,4 @@ export const useHomePageData = (): HomeDataType => {
   return data;
 };
 
-export default useHomePageData;
+export default useSyaratKetentuanPageData;

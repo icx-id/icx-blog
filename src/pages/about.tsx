@@ -1,12 +1,17 @@
 import React from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
-import { About, useAboutPageData } from '../features/about';
+import { NewsSection, OurStorySection, SummarySection } from '~/features/about';
 import { SiteMetadata } from '~/components';
+import { Box } from '@mantine/core';
 
 const AboutPage: React.FC<PageProps> = () => {
-  const data = useAboutPageData();
-
-  return <About data={data} />;
+  return (
+    <Box sx={{ overflow: 'hidden' }}>
+      <SummarySection />
+      <OurStorySection />
+      <NewsSection />
+    </Box>
+  );
 };
 
 export default AboutPage;

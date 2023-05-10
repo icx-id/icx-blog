@@ -18,8 +18,11 @@ spec:
      containers:
        - name: icx-landing-page
          image: asia-southeast2-docker.pkg.dev/landx-id/icx-ar/icx-landing-page:latest
+         envFrom:
+            - secretRef:
+                name: icx-landing-page-secret
          ports:
-         - containerPort: 9000
+         - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
@@ -31,7 +34,7 @@ metadata:
 spec:
   ports:
     - port: 80
-      targetPort: 9000
+      targetPort: 80
   selector:
     app: icx-landing-page
 

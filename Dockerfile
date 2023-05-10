@@ -1,12 +1,16 @@
-# Building layer
-FROM node:18-alpine AS build
+FROM node:18-slim AS builder
+
+RUN apt-get update && apt-get install -y nginx
 
 WORKDIR /app
+
 COPY . .
 
 RUN yarn install --frozen-lockfile
 RUN yarn build
 
-EXPOSE 9000
+COPY ./docker/default.conf /etc/nginx/sites-available/default
 
-CMD ["yarn","serve"]
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
