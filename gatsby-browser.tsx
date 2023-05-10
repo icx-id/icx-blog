@@ -14,6 +14,7 @@ const forceBlackLogoNavbar = [
   '/tata-kelola/sla',
   '/kyc',
   '/phone-number-verification',
+  '/create-pin',
 ];
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {
