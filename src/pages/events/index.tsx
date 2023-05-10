@@ -33,7 +33,11 @@ const EventsPage: React.FC<PageProps> = () => {
       </Paper>
       <Container size="lg">
         <Box mt={85}>
-          <SimpleGrid cols={4}>
+          <SimpleGrid
+            breakpoints={[
+              { minWidth: 'sm', cols: 1 },
+              { minWidth: 'md', cols: 4 },
+            ]}>
             <EventCard />
             <EventCard />
             <EventCard />
