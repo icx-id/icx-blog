@@ -88,6 +88,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
   const isMobile = useMediaQuery(
     `(max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`,
   );
+  const [drawerOpened, { close: closeDrawer, open: openDrawer }] = useDisclosure(false);
   const [menuOpened, { close: closeMenu, open: openMenu }] = useDisclosure(false);
 
   const [isScrolled, setScrolled] = useState(navbarSolid);
@@ -113,7 +114,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
 
   const logOutAccount = () => {
     onLogout();
-    closeMenu();
+    closeDrawer();
   };
 
   useEffect(() => {
@@ -159,7 +160,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                 </Link>
               ))}
             </Group>
-            {accessToken == null && (
+            {accessToken == null ? (
               <Group spacing={24} className={classes.hiddenMobile}>
                 <Button
                   component="a"
@@ -185,25 +186,45 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                   <Text fw={500}>Login</Text>
                 </Button>
               </Group>
+            ) : (
+              <Menu
+                width={260}
+                position="bottom-end"
+                transitionProps={{ transition: 'pop-top-right' }}
+                onClose={closeMenu}
+                onOpen={openMenu}
+                withinPortal>
+                <Menu.Target>
+                  <Burger
+                    color={!isScrolled ? '#fff' : '#000'}
+                    onClick={openMenu}
+                    opened={menuOpened}
+                    className={classes.hiddenMobile}
+                  />
+                </Menu.Target>
+                <Menu.Dropdown>
+                  <Menu.Item onClick={() => onLogout()}>Logout</Menu.Item>
+                </Menu.Dropdown>
+              </Menu>
             )}
 
             <Menu
               width={260}
               position="bottom-end"
               transitionProps={{ transition: 'pop-top-right' }}
-              onClose={closeMenu}
-              onOpen={openMenu}
+              onClose={closeDrawer}
+              onOpen={openDrawer}
               withinPortal>
               <Burger
                 color={!isScrolled ? '#fff' : '#000'}
-                onClick={openMenu}
+                onClick={openDrawer}
                 opened={false}
                 className={classes.hiddenDesktop}
               />
               <Drawer
                 size="100%"
-                opened={menuOpened}
-                onClose={closeMenu}
+                opened={drawerOpened}
+                onClose={closeDrawer}
                 closeButtonProps={{ size: 'lg' }}
                 title={
                   <StaticImage
@@ -217,8 +238,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                   content: { backgroundColor: 'black', color: 'white' },
                   header: { backgroundColor: 'black', paddingInline: 38, paddingTop: 30 },
                 }}>
-                {/* Drawer content */}
-                <Stack justify="space-between" h="100%" mih="80vh">
+                <Stack justify="space-between" h="100%" mih="80vh" sx={{ position: 'relative' }}>
                   <Box>
                     {navbarMenus.map(({ id, name, pathname: path }: NavbarMenu) => (
                       <Box mt={30} key={id}>
@@ -226,7 +246,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                           key={id}
                           to={path}
                           className={classes.unstyledLink}
-                          onClick={closeMenu}>
+                          onClick={closeDrawer}>
                           <Text size={16} color="#fff" fw="bold">
                             {name}
                           </Text>
@@ -262,6 +282,20 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                       </Button>
                     )}
                   </Box>
+                  <Box
+                    sx={{
+                      background:
+                        'linear-gradient(310deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 62%)',
+                      position: 'absolute',
+                      width: '100vw',
+                      height: '100vw',
+                      right: '-50vw',
+                      bottom: '-30vw',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      zIndex: -1,
+                    }}
+                  />
                 </Stack>
               </Drawer>
             </Menu>
