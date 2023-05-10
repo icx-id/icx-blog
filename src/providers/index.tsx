@@ -63,6 +63,7 @@ export const RootProvider: React.FC<PropsWithChildren> = ({ children }) => {
                       opacity: 0.9,
                     },
                     transition: 'opacity 100ms linear',
+                    fontWeight: 500,
                   },
                 },
               },
