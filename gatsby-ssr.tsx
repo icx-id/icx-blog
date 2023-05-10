@@ -14,6 +14,7 @@ const forceBlackLogoNavbar = [
   '/tata-kelola/syarat-dan-ketentuan',
   '/tata-kelola/sla',
   '/kyc',
+  '/phone-number-verification',
 ];
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {
