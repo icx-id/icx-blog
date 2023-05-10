@@ -153,6 +153,8 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
 
             <Group spacing={24} className={classes.hiddenMobile}>
               <Button
+                component="a"
+                href="/register"
                 variant="outline"
                 className={classes.buttonSize}
                 sx={{
@@ -167,6 +169,8 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                 </Text>
               </Button>
               <Button
+                component="a"
+                href="/login"
                 className={classes.buttonSize}
                 sx={{
                   backgroundColor: '#00C48F',

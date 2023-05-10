@@ -12,6 +12,7 @@ const forceNavbarSolid = [
   '/tata-kelola/mitigasi-risiko',
   '/tata-kelola/syarat-dan-ketentuan',
   '/tata-kelola/sla',
+  '/kyc',
   '/icx-connect/event-detail',
 ];
 
