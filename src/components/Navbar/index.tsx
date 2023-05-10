@@ -2,6 +2,7 @@ import React, { FC, PropsWithChildren, useEffect, useState } from 'react';
 import {
   Box,
   Burger,
+  Button,
   Container,
   Group,
   Header,
@@ -51,7 +52,7 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
 
   buttonSize: {
     height: 'auto',
-    padding: `${rem(8)} ${rem(22)}`,
+    padding: `${rem(6)} ${rem(20)}`,
     borderRadius: theme.radius.md,
   },
 
@@ -150,15 +151,18 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
               ))}
             </Group>
 
-            {/* <Group spacing={24} className={classes.hiddenMobile}>
+            <Group spacing={24} className={classes.hiddenMobile}>
               <Button
                 variant="outline"
                 className={classes.buttonSize}
                 sx={{
                   color: isScrolled ? '#000' : '#fff',
                   borderColor: isScrolled ? '#000' : '#fff',
+                  ':hover': {
+                    backgroundColor: isScrolled ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.2)',
+                  },
                 }}>
-                <Text size={18} fw={500} lh="22px">
+                <Text size={14} fw={600} lh="20px">
                   Sign Up
                 </Text>
               </Button>
@@ -170,11 +174,11 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                     backgroundColor: '#02B082',
                   },
                 }}>
-                <Text size={18} fw={500} lh="22px">
+                <Text size={14} fw={600} lh="20px">
                   Login
                 </Text>
               </Button>
-            </Group> */}
+            </Group>
 
             <Menu
               width={260}
