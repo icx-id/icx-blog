@@ -7,11 +7,14 @@ import {
   Flex,
   Grid,
   Group,
+  Image,
+  MediaQuery,
   Stack,
   Text,
+  TypographyStylesProvider,
   createStyles,
 } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { Carousel, Embla } from '@mantine/carousel';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
@@ -21,37 +24,47 @@ const useStyles = createStyles(theme => ({
   root: {
     color: '#fff',
     backgroundColor: '#000',
-    paddingTop: 156,
-    paddingBottom: 58,
+    paddingTop: 160,
+    paddingBottom: 160,
     [theme.fn.smallerThan('md')]: {
-      paddingTop: 77,
+      paddingTop: 80,
+      paddingBottom: 80,
     },
   },
 
   title: {
-    fontSize: 64,
+    fontSize: 48,
     fontWeight: 600,
-    lineHeight: '77px',
+    lineHeight: '64px',
     textAlign: 'center',
     [theme.fn.smallerThan('md')]: {
-      fontSize: 34,
-      lineHeight: '39px',
+      fontSize: 24,
+      lineHeight: '32px',
     },
   },
 
   subtitle: {
-    maxWidth: 843,
-    marginTop: 43,
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    fontSize: 24,
-    fontWeight: 400,
-    lineHeight: '29px',
+    color: 'inherit',
+    maxWidth: 600,
+    marginTop: 24,
+    fontSize: 20,
+    fontWeight: 300,
+    lineHeight: '32px',
     textAlign: 'center',
     [theme.fn.smallerThan('md')]: {
-      marginTop: 20,
-      fontSize: 16,
+      marginTop: 16,
+      fontSize: 14,
       lineHeight: '20px',
+      maxWidth: 400,
+    },
+    span: {
+      fontSize: 22,
+      fontWeight: 600,
+      lineHeight: '24px',
+      [theme.fn.smallerThan('md')]: {
+        fontSize: 14,
+        lineHeight: '20px',
+      },
     },
   },
 
@@ -63,35 +76,34 @@ const useStyles = createStyles(theme => ({
   },
 
   flowTitle: {
-    paddingTop: 36,
-    fontSize: 40,
+    fontSize: 20,
     fontWeight: 600,
-    lineHeight: '48px',
-    textAlign: 'center',
+    lineHeight: '24px',
     [theme.fn.smallerThan('md')]: {
       paddingTop: 24,
-      fontSize: 26,
-      lineHeight: '31px',
+      fontSize: 20,
+      lineHeight: '24px',
+      textAlign: 'center',
     },
   },
 
   flowSubtitle: {
-    paddingTop: 36,
-    maxWidth: 550,
-    fontSize: 24,
-    fontWeight: 400,
-    lineHeight: '32px',
-    textAlign: 'center',
+    paddingTop: 16,
+    maxWidth: 400,
+    fontSize: 14,
+    fontWeight: 300,
+    lineHeight: '20px',
     [theme.fn.smallerThan('md')]: {
-      paddingTop: 24,
-      fontSize: 16,
+      paddingTop: 16,
+      fontSize: 14,
       lineHeight: '20px',
+      textAlign: 'center',
     },
   },
 
   iconWrapper: {
-    width: 50,
-    height: 50,
+    width: 40,
+    height: 40,
     borderRadius: '50%',
     display: 'flex',
     justifyContent: 'center',
@@ -129,20 +141,32 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
 
   return (
     <Box className={classes.root}>
-      <Container size="xl">
-        <Stack>
+      <Container size="ll">
+        <Stack spacing={0} align="center">
           <Text className={classes.title}>{props.title}</Text>
-          <Text className={classes.subtitle}>{props.subtitle}</Text>
+          <TypographyStylesProvider className={classes.subtitle}>
+            <div dangerouslySetInnerHTML={{ __html: props.subtitle }} />
+          </TypographyStylesProvider>
         </Stack>
 
-        <Grid gutter={32} mt={120} className={(classes.gridWrapper, classes.hiddenMobile)}>
+        <Grid gutter={128} mt={80} px={80} className={(classes.gridWrapper, classes.hiddenMobile)}>
           {props.flows.map(flow => (
             <Grid.Col key={flow.title} xs={12} md={6}>
-              <Flex direction="column" align="center" sx={{ height: '100%', marginBottom: 100 }}>
-                <GatsbyImage image={getImage(flow.image)!} alt={flow.title} />
-                <Text className={classes.flowTitle}>{flow.title}</Text>
-                <Text className={classes.flowSubtitle}>{flow.description}</Text>
-              </Flex>
+              <Group spacing={32} align="center" noWrap>
+                <Box>
+                  {/* <GatsbyImage image={flow.image.childImageSharp.gatsbyImageData} alt={flow.title} /> */}
+                  <Image
+                    src={flow.image}
+                    maw={164}
+                    mah={164}
+                    sx={{ img: { borderRadius: '10px' } }}
+                  />
+                </Box>
+                <Stack spacing={0}>
+                  <Text className={classes.flowTitle}>{flow.title}</Text>
+                  <Text className={classes.flowSubtitle}>{flow.description}</Text>
+                </Stack>
+              </Group>
             </Grid.Col>
           ))}
         </Grid>
@@ -157,10 +181,16 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
           {props.flows.map(flow => (
             <Carousel.Slide key={flow.title}>
               <Flex direction="column" align="center" sx={{ height: '100%' }}>
-                <GatsbyImage
-                  image={getImage(flow.image)!}
+                {/* <GatsbyImage
+                  image={flow.image.childImageSharp.gatsbyImageData}
                   alt={flow.title}
                   className={classes.imageStyle}
+                /> */}
+                <Image
+                  src={flow.image}
+                  width={192}
+                  height={192}
+                  sx={{ img: { borderRadius: '8px' } }}
                 />
                 <Text className={classes.flowTitle}>{flow.title}</Text>
                 <Text className={classes.flowSubtitle}>{flow.description}</Text>
@@ -169,34 +199,36 @@ export const InvestmentSection: FC<InvestmentSectionProps> = ({ ...props }) => {
           ))}
         </Carousel>
 
-        <Center mt={32} className={classes.hiddenDesktop}>
-          <Group>
-            <Box
-              className={classes.iconWrapper}
-              sx={{
-                cursor: embla?.canScrollPrev ? 'pointer' : 'default',
-                backgroundColor: embla?.canScrollPrev ? '#292929' : 'grey',
-                ':hover': {
-                  backgroundColor: embla?.canScrollPrev ? '#494949' : 'grey',
-                },
-              }}
-              onClick={() => embla?.scrollPrev()}>
-              <IconChevronLeft color={embla?.canScrollPrev ? '#fff' : '#000'} />
-            </Box>
-            <Box
-              className={classes.iconWrapper}
-              sx={{
-                cursor: embla?.canScrollNext ? 'pointer' : 'default',
-                backgroundColor: embla?.canScrollNext ? '#292929' : 'grey',
-                ':hover': {
-                  backgroundColor: embla?.canScrollNext ? '#494949' : 'grey',
-                },
-              }}
-              onClick={() => embla?.scrollNext()}>
-              <IconChevronRight color={embla?.canScrollNext ? '#fff' : '#000'} />
-            </Box>
-          </Group>
-        </Center>
+        <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+          <Center mt={40}>
+            <Group>
+              <Box
+                className={classes.iconWrapper}
+                sx={{
+                  cursor: embla?.canScrollPrev ? 'pointer' : 'default',
+                  backgroundColor: embla?.canScrollPrev ? '#292929' : 'grey',
+                  ':hover': {
+                    backgroundColor: embla?.canScrollPrev ? '#494949' : 'grey',
+                  },
+                }}
+                onClick={() => embla?.scrollPrev()}>
+                <IconChevronLeft color={embla?.canScrollPrev ? '#fff' : '#000'} />
+              </Box>
+              <Box
+                className={classes.iconWrapper}
+                sx={{
+                  cursor: embla?.canScrollNext ? 'pointer' : 'default',
+                  backgroundColor: embla?.canScrollNext ? '#292929' : 'grey',
+                  ':hover': {
+                    backgroundColor: embla?.canScrollNext ? '#494949' : 'grey',
+                  },
+                }}
+                onClick={() => embla?.scrollNext()}>
+                <IconChevronRight color={embla?.canScrollNext ? '#fff' : '#000'} />
+              </Box>
+            </Group>
+          </Center>
+        </MediaQuery>
       </Container>
     </Box>
   );

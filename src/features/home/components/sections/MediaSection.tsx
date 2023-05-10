@@ -1,24 +1,34 @@
 import React, { FC } from 'react';
 import { MediaSectionProps } from '../../types';
-import { Box, Container, Grid, Group, Stack, Text, createStyles } from '@mantine/core';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import {
+  Box,
+  Container,
+  Grid,
+  Group,
+  Image,
+  MediaQuery,
+  Stack,
+  Text,
+  createStyles,
+} from '@mantine/core';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 // ----------------------------------------- styles
 
 const useStyles = createStyles(theme => ({
   root: {
-    paddingTop: 144,
-    paddingBottom: 265,
+    paddingTop: 176,
+    paddingBottom: 176,
     [theme.fn.smallerThan('md')]: {
-      paddingTop: 103,
-      paddingBottom: 232,
+      paddingTop: 96,
+      paddingBottom: 96,
     },
   },
 
   title: {
-    fontSize: 14,
+    fontSize: 16,
     fontWeight: 600,
-    lineHeight: '17px',
+    lineHeight: '20Spx',
     textAlign: 'center',
     [theme.fn.smallerThan('md')]: {
       fontWeight: 400,
@@ -27,17 +37,15 @@ const useStyles = createStyles(theme => ({
 
   subtitle: {
     maxWidth: 1000,
-    marginTop: 60,
-    fontSize: 48,
+    marginTop: 40,
+    fontSize: 40,
     fontWeight: 600,
-    lineHeight: '58px',
+    lineHeight: '54px',
     textAlign: 'center',
-    marginLeft: 'auto',
-    marginRight: 'auto',
     [theme.fn.smallerThan('md')]: {
-      marginTop: 42,
+      marginTop: 32,
       fontSize: 24,
-      lineHeight: '28px',
+      lineHeight: '32px',
     },
   },
 
@@ -61,32 +69,51 @@ export const MediaSection: FC<MediaSectionProps> = ({ ...props }) => {
 
   return (
     <Box className={classes.root}>
-      <Container size="xl">
-        <Stack>
+      <Container size="ll">
+        <Stack spacing={0} align="center">
           <Text className={classes.title}>{props.title}</Text>
           <Text className={classes.subtitle}>{props.subtitle}</Text>
         </Stack>
 
         <Group noWrap mt={86} className={classes.hiddenMobile}>
           {props.medias.map(media => (
-            <GatsbyImage
-              key={media.mediaName}
-              image={getImage(media.logo)!}
-              alt={media.mediaName}
-            />
+            // <GatsbyImage
+            //   key={media.mediaName}
+            //   image={media.logo.childImageSharp.gatsbyImageData}
+            //   alt={media.mediaName}
+            // />
+            <Image key={media.mediaName} src={media.logo} />
           ))}
         </Group>
 
-        <Grid mt={32} className={classes.hiddenDesktop}>
-          {props.medias.map(media => (
-            <Grid.Col
-              key={media.mediaName}
-              span={6}
-              sx={{ display: 'flex', justifyContent: 'center' }}>
-              <GatsbyImage image={getImage(media.logo)!} alt={media.mediaName} />
-            </Grid.Col>
-          ))}
-        </Grid>
+        <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+          <Grid mt={40}>
+            {props.medias.map((media, index, arr) => {
+              const len = arr.length;
+              const lastItem = index === len - 1 && len % 2 !== 0;
+
+              return (
+                <Grid.Col
+                  key={media.mediaName}
+                  span={6}
+                  sx={{ display: 'flex', justifyContent: 'center' }}>
+                  {/* <GatsbyImage
+                  image={media.logo.childImageSharp.gatsbyImageData}
+                  alt={media.mediaName}
+                /> */}
+                  <Image
+                    src={media.logo}
+                    sx={{
+                      position: lastItem ? 'relative' : 'initial',
+                      zIndex: lastItem ? 1 : 'initial',
+                      left: lastItem ? '50%' : 0,
+                    }}
+                  />
+                </Grid.Col>
+              );
+            })}
+          </Grid>
+        </MediaQuery>
       </Container>
     </Box>
   );

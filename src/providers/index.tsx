@@ -40,8 +40,19 @@ export const RootProvider: React.FC<PropsWithChildren> = ({ children }) => {
                     sm: 960,
                     md: 1140,
                     lg: 1320,
+                    ll: 1440,
                     xl: 1920,
                   },
+                },
+                styles: theme => {
+                  return {
+                    root: {
+                      padding: '0 4em',
+                      [theme.fn.smallerThan('md')]: {
+                        padding: '0 1.5em',
+                      },
+                    },
+                  };
                 },
               },
               Button: {
@@ -52,6 +63,7 @@ export const RootProvider: React.FC<PropsWithChildren> = ({ children }) => {
                       opacity: 0.9,
                     },
                     transition: 'opacity 100ms linear',
+                    fontWeight: 500,
                   },
                 },
               },

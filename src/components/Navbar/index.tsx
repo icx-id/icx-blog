@@ -2,7 +2,6 @@ import React, { FC, PropsWithChildren, useEffect, useState } from 'react';
 import {
   Box,
   Burger,
-  Button,
   Container,
   Group,
   Header,
@@ -18,6 +17,7 @@ import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { navbarMenus, NavbarMenu } from './static/menus';
+import { NavbarProps } from '../types';
 
 // --------------------------------------- styles
 
@@ -41,9 +41,11 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
     display: 'block',
     padding: `${rem(10)} ${rem(22)}`,
     borderRadius: theme.radius.md,
-    transition: 'background-color 100ms linear',
+    transition: 'all 100ms linear',
     ':hover': {
-      backgroundColor: isScrolled ? theme.colors.gray[2] : theme.colors.dark[6],
+      opacity: 0.8,
+      textDecoration: `solid underline ${isScrolled ? '#000' : '#fff'} 2px`,
+      textUnderlineOffset: 4,
     },
   },
 
@@ -54,8 +56,8 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
   },
 
   icxLogo: {
-    width: 91.3,
-    height: 42.4,
+    width: 86,
+    height: 40,
     [theme.fn.smallerThan('md')]: {
       width: 56,
       height: 26,
@@ -63,13 +65,13 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
   },
 
   hiddenMobile: {
-    [theme.fn.smallerThan('sm')]: {
+    [theme.fn.smallerThan('md')]: {
       display: 'none',
     },
   },
 
   hiddenDesktop: {
-    [theme.fn.largerThan('sm')]: {
+    [theme.fn.largerThan('md')]: {
       display: 'none',
     },
   },
@@ -77,7 +79,7 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
 
 // --------------------------------------- components
 
-export const Navbar: FC<PropsWithChildren> = () => {
+export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = false, pathname }) => {
   const theme = useMantineTheme();
   const isMobile = useMediaQuery(
     `(max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`,
@@ -85,7 +87,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
   const [menuOpened, { toggle: toggleMenu, close: closeMenu, open: openMenu }] =
     useDisclosure(false);
 
-  const [isScrolled, setScrolled] = useState(false);
+  const [isScrolled, setScrolled] = useState(navbarSolid);
   const [handleDropdown] = useState('');
 
   const { classes } = useStyles({ isScrolled });
@@ -94,7 +96,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
     const fixedNavbar = document.getElementById('fixed-navbar');
 
     if (fixedNavbar) {
-      if (window.pageYOffset > 1 || Boolean(handleDropdown)) {
+      if (Boolean(handleDropdown) || window.pageYOffset > 1 || navbarSolid) {
         setScrolled(true);
         fixedNavbar.style.backgroundColor = '#fff';
       } else {
@@ -109,11 +111,13 @@ export const Navbar: FC<PropsWithChildren> = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [navbarSolid]);
+
+  useEffect(() => setScrolled(navbarSolid), [pathname]);
 
   return (
     <Box id="fixed-navbar" className={classes.root}>
-      <Container size="xl">
+      <Container size="ll">
         <Header
           height={isMobile ? 64 : 80}
           sx={{ borderBottom: 'initial', backgroundColor: 'initial' }}>
@@ -137,16 +141,16 @@ export const Navbar: FC<PropsWithChildren> = () => {
             </Link>
 
             <Group spacing={48} className={classes.hiddenMobile}>
-              {navbarMenus.map(({ id, name, pathname }: NavbarMenu) => (
-                <Link key={id} to={pathname} className={classes.unstyledLink}>
-                  <Text size={18} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
+              {navbarMenus.map(({ id, name, pathname: path }: NavbarMenu) => (
+                <Link key={id} to={path} className={classes.unstyledLink}>
+                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
                     {name}
                   </Text>
                 </Link>
               ))}
             </Group>
 
-            <Group spacing={24} className={classes.hiddenMobile}>
+            {/* <Group spacing={24} className={classes.hiddenMobile}>
               <Button
                 variant="outline"
                 className={classes.buttonSize}
@@ -170,7 +174,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
                   Login
                 </Text>
               </Button>
-            </Group>
+            </Group> */}
 
             <Menu
               width={260}
@@ -181,7 +185,7 @@ export const Navbar: FC<PropsWithChildren> = () => {
               withinPortal>
               <Menu.Target>
                 <Burger
-                  color={isScrolled ? '#000' : '#fff'}
+                  color={!isScrolled ? '#fff' : '#000'}
                   opened={menuOpened}
                   onClick={toggleMenu}
                   className={classes.hiddenDesktop}
@@ -189,9 +193,9 @@ export const Navbar: FC<PropsWithChildren> = () => {
               </Menu.Target>
               <Menu.Dropdown sx={{ color: '#fff' }}>
                 <Menu.Label>Menu</Menu.Label>
-                {navbarMenus.map(({ id, name, pathname }: NavbarMenu) => (
+                {navbarMenus.map(({ id, name, pathname: menuPath }: NavbarMenu) => (
                   <Menu.Item key={id}>
-                    <Link to={pathname} style={{ color: 'initial', textDecoration: 'initial' }}>
+                    <Link to={menuPath} style={{ color: 'initial', textDecoration: 'initial' }}>
                       <Text size={18} fw={500} lh="22px">
                         {name}
                       </Text>

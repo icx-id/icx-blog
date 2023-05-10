@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Stack, rem } from '@mantine/core';
+import { Flex, rem } from '@mantine/core';
 import React from 'react';
 import { Link } from '~/components';
 import { useLocation } from '@reach/router';

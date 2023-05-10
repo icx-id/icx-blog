@@ -62,9 +62,9 @@ const config: GatsbyConfig = {
     },
     {
       resolve: 'gatsby-transformer-remark',
-      options: {
-        plugins: ['gatsby-remark-relative-images-v2', 'gatsby-remark-images'],
-      },
+      // options: {
+      //   plugins: ['gatsby-remark-relative-images-v2', 'gatsby-remark-images'],
+      // },
     },
     {
       resolve: 'gatsby-plugin-mdx',
@@ -86,6 +86,12 @@ const config: GatsbyConfig = {
           'AW-CONVERSION_ID', // Google Ads / Adwords / AW
           'DC-FLOODIGHT_ID', // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: `${__dirname}/src/images/favicon.png`,
       },
     },
   ],
