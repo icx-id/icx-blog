@@ -10871,6 +10871,11 @@ nth-check@^2.0.0, nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
+nuka-carousel@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/nuka-carousel/-/nuka-carousel-6.0.2.tgz#d5cd8f090c6d10bb6123c0add4aca1eaa738a1c0"
+  integrity sha512-8dIv2Yc4CV7D8+PVHamRxvOS2UidP32ZhZ8Grnb39RhB2eZCciQkoifunXGiRVwqMa1vbcol0LyiOe2JEKQTqg==
+
 null-loader@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npmjs.org/null-loader/-/null-loader-4.0.1.tgz#8e63bd3a2dd3c64236a4679428632edd0a6dbc6a"
