@@ -5,7 +5,7 @@ import { PhoneNumberVerification } from '~/features/verification';
 
 const PhoneNumberVerificationPage: React.FC<PageProps> = () => {
   const onSubmitSuccess = () => {
-    navigate(`/`);
+    navigate(`/create-pin`);
   };
   return <PhoneNumberVerification onSubmitSuccess={onSubmitSuccess} />;
 };
