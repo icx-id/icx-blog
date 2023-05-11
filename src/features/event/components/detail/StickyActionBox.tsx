@@ -13,7 +13,12 @@ type StickyActionBoxProps = {
 };
 
 export const StickyActionBox: FC<StickyActionBoxProps> = ({ onOpenModal }) => {
-  const currentUrl = useMemo(() => document?.URL, []);
+  const currentUrl = useMemo(() => {
+    if (typeof document !== 'undefined') {
+      return document.URL;
+    }
+    return '';
+  }, []);
 
   const copyClipboardLink = () => {
     navigator.clipboard.writeText(currentUrl);

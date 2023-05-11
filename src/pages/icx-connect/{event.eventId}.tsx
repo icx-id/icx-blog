@@ -50,7 +50,7 @@ export const eventDetailQuery = graphql`
 
 export const config = async () => {
   type EventsQuery = {
-    allEvent: {
+    allEvent?: {
       nodes: Event[];
     };
   };
@@ -86,7 +86,7 @@ export const config = async () => {
   `;
 
   return ({ data, params }: PageProps<EventsQuery>) => {
-    const events = new Set(data.allEvent.nodes.map(({ eventId }) => eventId));
+    const events = new Set(data?.allEvent?.nodes.map(({ eventId }) => eventId));
 
     return {
       defer: events.has(+params.eventId),
