@@ -1,6 +1,9 @@
 import { Box, Container, Flex, Progress, Text, createStyles, rem } from '@mantine/core';
 import React, { useCallback, useEffect, useState } from 'react';
-import { useOcrIdentityMutation } from '../api/useOcrIdentityMutation';
+import {
+  useOcrIdentityMutation,
+  useOcrIdentityMutationErrors,
+} from '../api/useOcrIdentityMutation';
 import {
   extractAddressFromOcrResult,
   extractCityFromOcrResult,
@@ -8,6 +11,8 @@ import {
 } from '../utils/format';
 import { useKycStore } from '../stores';
 import { format } from 'date-fns';
+import { notifications } from '@mantine/notifications';
+import { AxiosError } from 'axios';
 
 const useStyles = createStyles(theme => ({
   root: { height: '80vh' },
@@ -69,8 +74,19 @@ export const KycUploadProgress: React.FC<KycUploadProgressProps> = ({ onFinishCh
       });
       onFinishCheckImage();
     } catch (e) {
-      console.log(e);
       onFinishCheckImage();
+      const err = e as AxiosError<{ errors: string[] }>;
+      const errors = err.response?.data?.errors;
+      if (errors?.includes(useOcrIdentityMutationErrors.KTP_NOT_DETECTED)) {
+        return notifications.show({
+          color: 'red',
+          message: 'KTP tidak terdeteksi',
+        });
+      }
+      return notifications.show({
+        color: 'red',
+        message: 'Ada kesalahan',
+      });
     }
   }, [identityPhoto, requestOcrIdentity]);
 
