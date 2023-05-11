@@ -4,6 +4,7 @@ import { RootProvider } from '~/providers';
 import { PageContainer } from '~/components';
 import '@fontsource/inter/400.css';
 import { NavbarProps } from '~/components/types';
+import { useHydration } from '~/hooks/useHydration';
 
 const noNavbarFooterPaths = ['/login', '/register'];
 const forceNavbarSolid = [
@@ -13,6 +14,8 @@ const forceNavbarSolid = [
   '/tata-kelola/syarat-dan-ketentuan',
   '/tata-kelola/sla',
   '/kyc',
+  '/phone-number-verification',
+  '/create-pin',
 ];
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {
@@ -23,6 +26,8 @@ export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, pro
     navbarSolid,
     pathname,
   };
+
+  useHydration();
 
   return noNavbarFooterPaths.includes(pathname) ? (
     element

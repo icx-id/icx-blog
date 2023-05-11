@@ -1,8 +1,10 @@
 import React from 'react';
 import { Input } from '~/components/core/Input';
 import { KycFormContainer } from './KycFormContainer';
-import { useCreateKycData } from '../api/useCreateKycData';
+import { useCreateKycData, useCreateKycDataError } from '../api/useCreateKycData';
 import { useKycStore } from '../stores';
+import { notifications } from '@mantine/notifications';
+import { AxiosError } from 'axios';
 
 interface KycSummaryProps {
   onSubmitSuccess: () => void;
@@ -67,7 +69,14 @@ export const KycFormSummary: React.FC<KycSummaryProps> = ({ onSubmitSuccess, goB
       }
       onSubmitSuccess();
     } catch (e) {
-      console.log(e);
+      const err = e as AxiosError<{ errors: string[] }>;
+      const errors = err.response?.data?.errors;
+      if (errors?.includes(useCreateKycDataError.NIK_EXIST)) {
+        return notifications.show({
+          color: 'red',
+          message: 'NIK sudah digunakan.',
+        });
+      }
     }
   };
 

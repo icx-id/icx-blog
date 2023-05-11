@@ -4,9 +4,11 @@ import {
   Burger,
   Button,
   Container,
+  Drawer,
   Group,
   Header,
   Menu,
+  Stack,
   Text,
   createStyles,
   em,
@@ -19,6 +21,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { navbarMenus, NavbarMenu } from './static/menus';
 import { NavbarProps } from '../types';
+import { useStore } from '~/stores';
 
 // --------------------------------------- styles
 
@@ -33,7 +36,7 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
     overflow: 'hidden',
     backgroundColor: 'transparent',
     transition: 'all 0.3s',
-    boxShadow: isScrolled ? '0px 4px 74px rgba(0, 0, 0, 0.05)' : 'initial',
+    boxShadow: isScrolled ? '0px 4px 30px rgba(0, 0, 0, 0.05)' : 'initial',
   },
 
   unstyledLink: {
@@ -85,13 +88,15 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
   const isMobile = useMediaQuery(
     `(max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`,
   );
-  const [menuOpened, { toggle: toggleMenu, close: closeMenu, open: openMenu }] =
-    useDisclosure(false);
+  const [drawerOpened, { close: closeDrawer, open: openDrawer }] = useDisclosure(false);
+  const [menuOpened, { close: closeMenu, open: openMenu }] = useDisclosure(false);
 
   const [isScrolled, setScrolled] = useState(navbarSolid);
   const [handleDropdown] = useState('');
 
   const { classes } = useStyles({ isScrolled });
+
+  const { accessToken, onLogout } = useStore();
 
   const handleScroll = () => {
     const fixedNavbar = document.getElementById('fixed-navbar');
@@ -105,6 +110,11 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
         fixedNavbar.style.backgroundColor = 'transparent';
       }
     }
+  };
+
+  const logOutAccount = () => {
+    onLogout();
+    closeDrawer();
   };
 
   useEffect(() => {
@@ -150,67 +160,144 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                 </Link>
               ))}
             </Group>
-
-            <Group spacing={24} className={classes.hiddenMobile}>
-              <Button
-                component="a"
-                href="/register"
-                variant="outline"
-                className={classes.buttonSize}
-                sx={{
-                  color: isScrolled ? '#000' : '#fff',
-                  borderColor: isScrolled ? '#000' : '#fff',
-                  ':hover': {
-                    backgroundColor: isScrolled ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.2)',
-                  },
-                }}>
-                <Text size={14} fw={600} lh="20px">
-                  Sign Up
-                </Text>
-              </Button>
-              <Button
-                component="a"
-                href="/login"
-                className={classes.buttonSize}
-                sx={{
-                  backgroundColor: '#00C48F',
-                  ':hover': {
-                    backgroundColor: '#02B082',
-                  },
-                }}>
-                <Text size={14} fw={600} lh="20px">
-                  Login
-                </Text>
-              </Button>
-            </Group>
+            {accessToken == null ? (
+              <Group spacing={24} className={classes.hiddenMobile}>
+                <Button
+                  component="a"
+                  href="/register"
+                  variant="outline"
+                  className={classes.buttonSize}
+                  sx={{
+                    color: isScrolled ? '#000' : '#fff',
+                    borderColor: isScrolled ? '#000' : '#fff',
+                  }}>
+                  <Text fw={500}>Sign Up</Text>
+                </Button>
+                <Button
+                  component="a"
+                  href="/login"
+                  className={classes.buttonSize}
+                  sx={{
+                    backgroundColor: '#00C48F',
+                    ':hover': {
+                      backgroundColor: '#02B082',
+                    },
+                  }}>
+                  <Text fw={500}>Login</Text>
+                </Button>
+              </Group>
+            ) : (
+              <Menu
+                width={260}
+                position="bottom-end"
+                transitionProps={{ transition: 'pop-top-right' }}
+                onClose={closeMenu}
+                onOpen={openMenu}
+                withinPortal>
+                <Menu.Target>
+                  <Burger
+                    color={!isScrolled ? '#fff' : '#000'}
+                    onClick={openMenu}
+                    opened={menuOpened}
+                    className={classes.hiddenMobile}
+                  />
+                </Menu.Target>
+                <Menu.Dropdown>
+                  <Menu.Item onClick={() => onLogout()}>Logout</Menu.Item>
+                </Menu.Dropdown>
+              </Menu>
+            )}
 
             <Menu
               width={260}
               position="bottom-end"
               transitionProps={{ transition: 'pop-top-right' }}
-              onClose={closeMenu}
-              onOpen={openMenu}
+              onClose={closeDrawer}
+              onOpen={openDrawer}
               withinPortal>
-              <Menu.Target>
-                <Burger
-                  color={!isScrolled ? '#fff' : '#000'}
-                  opened={menuOpened}
-                  onClick={toggleMenu}
-                  className={classes.hiddenDesktop}
-                />
-              </Menu.Target>
-              <Menu.Dropdown sx={{ color: '#fff' }}>
-                <Menu.Label>Menu</Menu.Label>
-                {navbarMenus.map(({ id, name, pathname: menuPath }: NavbarMenu) => (
-                  <Menu.Item key={id}>
-                    <Link to={menuPath} style={{ color: 'initial', textDecoration: 'initial' }}>
-                      <Text size={18} fw={500} lh="22px">
-                        {name}
-                      </Text>
-                    </Link>
-                  </Menu.Item>
-                ))}
-              </Menu.Dropdown>
+              <Burger
+                color={!isScrolled ? '#fff' : '#000'}
+                onClick={openDrawer}
+                opened={false}
+                className={classes.hiddenDesktop}
+              />
+              <Drawer
+                size="100%"
+                opened={drawerOpened}
+                onClose={closeDrawer}
+                closeButtonProps={{ size: 'lg' }}
+                title={
+                  <StaticImage
+                    src="../../images/icx-navbar-logo.png"
+                    alt="icx-navbar-logo"
+                    placeholder="blurred"
+                    className={classes.icxLogo}
+                  />
+                }
+                styles={{
+                  content: { backgroundColor: 'black', color: 'white' },
+                  header: { backgroundColor: 'black', paddingInline: 38, paddingTop: 30 },
+                }}>
+                <Stack justify="space-between" h="100%" mih="80vh" sx={{ position: 'relative' }}>
+                  <Box>
+                    {navbarMenus.map(({ id, name, pathname: path }: NavbarMenu) => (
+                      <Box mt={30} key={id}>
+                        <Link
+                          key={id}
+                          to={path}
+                          className={classes.unstyledLink}
+                          onClick={closeDrawer}>
+                          <Text size={16} color="#fff" fw="bold">
+                            {name}
+                          </Text>
+                        </Link>
+                      </Box>
+                    ))}
+                  </Box>
+
+                  <Box sx={{ textAlign: 'center' }}>
+                    {accessToken === null ? (
+                      <Button
+                        style={{
+                          backgroundColor: '#00C48F',
+                          borderRadius: '30px',
+                        }}
+                        component="a"
+                        href="/register"
+                        w="60%">
+                        Join ICX
+                      </Button>
+                    ) : (
+                      <Button
+                        sx={{
+                          ':hover': {
+                            backgroundColor: 'inherit',
+                          },
+                          color: 'white',
+                        }}
+                        onClick={logOutAccount}
+                        variant="subtle"
+                        w="60%">
+                        Logout
+                      </Button>
+                    )}
+                  </Box>
+                  <Box
+                    sx={{
+                      background:
+                        'linear-gradient(310deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 62%)',
+                      position: 'absolute',
+                      width: '100vw',
+                      height: '100vw',
+                      right: '-50vw',
+                      bottom: '-30vw',
+                      borderRadius: '50%',
+                      display: 'flex',
+                      zIndex: -1,
+                    }}
+                  />
+                </Stack>
+              </Drawer>
             </Menu>
           </Group>
         </Header>

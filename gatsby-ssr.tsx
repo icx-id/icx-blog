@@ -14,7 +14,8 @@ const forceNavbarSolid = [
   '/tata-kelola/syarat-dan-ketentuan',
   '/tata-kelola/sla',
   '/kyc',
-  '/icx-connect/',
+  '/phone-number-verification',
+  '/create-pin',
 ];
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {
