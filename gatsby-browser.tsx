@@ -13,12 +13,11 @@ const forceNavbarSolid = [
   '/tata-kelola/syarat-dan-ketentuan',
   '/tata-kelola/sla',
   '/kyc',
-  '/icx-connect/event-detail',
 ];
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {
   const { pathname } = props.location;
-  const navbarSolid = forceNavbarSolid.includes(pathname);
+  const navbarSolid = forceNavbarSolid.includes(pathname) || pathname.includes('/icx-connect/');
 
   const navbarOptions: NavbarProps = {
     navbarSolid,

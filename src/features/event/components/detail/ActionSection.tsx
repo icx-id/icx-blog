@@ -1,20 +1,20 @@
 import React, { FC } from 'react';
-import { Box, Text, createStyles } from '@mantine/core';
+import { Box, Button, MediaQuery, Text } from '@mantine/core';
 
-// ---------------------------------------- styles
+type ActionSectionProps = {
+  onOpenDrawer: () => void;
+};
 
-const useStyles = createStyles(theme => ({
-  root: {},
-}));
-
-// ---------------------------------------- components
-
-export const ActionSection: FC = () => {
-  const { classes } = useStyles();
-
+export const ActionSection: FC<ActionSectionProps> = ({ onOpenDrawer }) => {
   return (
-    <Box pt={24}>
-      <Text>action event</Text>
-    </Box>
+    <MediaQuery largerThan="md" styles={{ display: 'none' }}>
+      <Box pt={24}>
+        <Button fullWidth size="lg">
+          <Text fz={14} fw={500} lh="20px" onClick={onOpenDrawer}>
+            Daftar Event
+          </Text>
+        </Button>
+      </Box>
+    </MediaQuery>
   );
 };

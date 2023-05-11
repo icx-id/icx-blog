@@ -1,5 +1,11 @@
 import React, { FC } from 'react';
-import { Breadcrumbs as MantineBreadcrumbs, Text, createStyles } from '@mantine/core';
+import {
+  Breadcrumbs as MantineBreadcrumbs,
+  SpacingValue,
+  SystemProp,
+  Text,
+  createStyles,
+} from '@mantine/core';
 import { BreadcrumbItem } from '../types';
 import { Link } from './Link';
 
@@ -7,17 +13,12 @@ import { Link } from './Link';
 
 const useStyles = createStyles(theme => ({
   root: {
-    paddingTop: 24,
-    paddingBottom: 24,
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
 
     '.mantine-Breadcrumbs-separator': {
       marginLeft: 4,
       marginRight: 4,
-    },
-
-    [theme.fn.smallerThan('md')]: {
-      paddingTop: 16,
-      paddingBottom: 16,
     },
   },
 }));
@@ -26,22 +27,24 @@ const useStyles = createStyles(theme => ({
 
 type BreadcrumbsProps = {
   items: BreadcrumbItem[];
+  pt?: SystemProp<SpacingValue>;
+  pb?: SystemProp<SpacingValue>;
 };
 
-export const Breadcrumbs: FC<BreadcrumbsProps> = ({ items }) => {
+export const Breadcrumbs: FC<BreadcrumbsProps> = ({ items, pt, pb }) => {
   const { classes } = useStyles();
 
   return (
-    <MantineBreadcrumbs separator=">" className={classes.root}>
+    <MantineBreadcrumbs separator=">" className={classes.root} pt={pt} pb={pb}>
       {items.map(item =>
         item.href ? (
           <Link key={item.label} to={item.href} color="#868e96" fw={400}>
-            <Text size={16} fw={400} lh="20px">
+            <Text fz={{ base: 14, md: 16 }} fw={400} lh="20px">
               {item.label}
             </Text>
           </Link>
         ) : (
-          <Text key={item.label} size={16} fw={600} lh="20px" color="brand">
+          <Text key={item.label} fz={{ base: 14, md: 16 }} fw={600} lh="20px" color="brand">
             {item.label}
           </Text>
         ),
