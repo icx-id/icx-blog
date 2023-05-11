@@ -1,14 +1,16 @@
 import { FileButton, Flex, Text, UnstyledButton, rem } from '@mantine/core';
-import { IconUpload } from '@tabler/icons-react';
+import { IconUpload, IconCamera } from '@tabler/icons-react';
 import React, { PropsWithChildren, useState } from 'react';
 import { InlineBadge } from '~/components';
 import { ModalDukcapil } from './ModalDukcapil';
 import { ModalPrivasiData } from './ModalPrivasiData';
 
 interface PickPhotoProps {
-  onChange: (file: File) => void;
   title: string;
   error?: string;
+  handleOpenCamera: () => void;
+  withInputFile?: boolean;
+  onChange?: (file: File) => void;
 }
 
 export const PickPhoto: React.FC<PropsWithChildren<PickPhotoProps>> = ({
@@ -16,6 +18,8 @@ export const PickPhoto: React.FC<PropsWithChildren<PickPhotoProps>> = ({
   title,
   children,
   error,
+  handleOpenCamera,
+  withInputFile,
 }) => {
   const [openModalDukcapil, setOpenModalDukcapil] = useState<boolean>(false);
   const [openModalPrivasiData, setOpenModalPrivasiData] = useState<boolean>(false);
@@ -48,23 +52,38 @@ export const PickPhoto: React.FC<PropsWithChildren<PickPhotoProps>> = ({
         </Text>
       )}
       <Flex mt={rem(20)} gap="md">
-        <FileButton onChange={onChange} accept="image/png,image/jpeg">
-          {props => (
-            <UnstyledButton
-              bg="#00C48F"
-              w={rem(50)}
-              h={rem(50)}
-              style={{
-                borderRadius: rem(8),
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-              }}
-              {...props}>
-              <IconUpload color="#FFF" size={rem(23)} />
-            </UnstyledButton>
-          )}
-        </FileButton>
+        {withInputFile && !!onChange && (
+          <FileButton onChange={onChange} accept="image/png,image/jpeg">
+            {props => (
+              <UnstyledButton
+                bg="#00C48F"
+                w={rem(50)}
+                h={rem(50)}
+                style={{
+                  borderRadius: rem(8),
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+                {...props}>
+                <IconUpload color="#FFF" size={rem(23)} />
+              </UnstyledButton>
+            )}
+          </FileButton>
+        )}
+        <UnstyledButton
+          onClick={handleOpenCamera}
+          bg="#00C48F"
+          w={rem(50)}
+          h={rem(50)}
+          style={{
+            borderRadius: rem(8),
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <IconCamera color="#FFF" size={rem(23)} />
+        </UnstyledButton>
       </Flex>
       <ModalDukcapil
         opened={openModalDukcapil}

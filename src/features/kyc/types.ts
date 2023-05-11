@@ -194,3 +194,11 @@ export type RdnFormStep = Pick<
   IRiskProfileCompleteForm,
   'rdnAccountDateCreation' | 'rdnBank' | 'rdnAccountNumber' | 'rdnOwnershipProof'
 >;
+
+export interface IdentityPhoto {
+  identityPhoto: File | null;
+}
+
+export interface IdentitySelfie {
+  identitySelfie: File | null;
+}
