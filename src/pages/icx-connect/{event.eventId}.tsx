@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import { PageProps, graphql } from 'gatsby';
 import { Box, Button, Container, Drawer, Flex, MediaQuery, Modal, Text } from '@mantine/core';
 import {
@@ -6,6 +6,7 @@ import {
   Event,
   EventRegistrationData,
   JumbotronSection,
+  SuccessComponent,
   useRegisterEvent,
   useRegisterEventErrors,
 } from '~/features/event';
@@ -105,14 +106,20 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
 
   const [isOpenModal, { close: onCloseModal, open: onOpenModal }] = useDisclosure(false);
   const [isOpenDrawer, { close: onCloseDrawer, open: onOpenDrawer }] = useDisclosure(false);
+  const [registerSuccess, setRegisterSuccess] = useState(false);
+
+  const onRegisterSuccess = () => {
+    window.scrollTo(0, 0);
+    setRegisterSuccess(true);
+  };
 
   const handleRegisterEvent = async () => {
     try {
       await onRegisterEvent();
       onCloseDrawer();
       onCloseModal();
+      onRegisterSuccess();
     } catch (e) {
-      console.log({ e });
       const err = e as AxiosError<{ errors: string[] }>;
       const errors = err.response?.data?.errors;
 
@@ -154,9 +161,19 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
     }
   };
 
+  if (registerSuccess) {
+    return (
+      <MediaQuery smallerThan="sm" styles={{ backgroundColor: '#fff' }}>
+        <Flex w="100%" mih="100vh" align="center" justify="center" bg="#f0f0f0" pos="relative">
+          <SuccessComponent />
+        </Flex>
+      </MediaQuery>
+    );
+  }
+
   return (
     <main>
-      <Box pt={{ base: 64, md: 80 }}>
+      <Box pt={{ base: 64, md: 80 }} sx={{ overflow: 'hidden' }}>
         <MediaQuery largerThan="md" styles={{ display: 'none' }}>
           <Container size="lg">
             <Breadcrumbs items={eventDetailBreadcrumbs(data.event.title)} pt={16} pb={16} />

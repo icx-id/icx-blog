@@ -6,6 +6,7 @@ export * from './components/detail/OverviewSection';
 export * from './components/detail/AboutSection';
 export * from './components/detail/ActionSection';
 export * from './components/detail/EventRegistrationData';
+export * from './components/detail/SuccessComponent';
 
 // api
 export * from './api/useGetEvent';

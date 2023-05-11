@@ -32,15 +32,15 @@ type JumbotronSectionProps = {
   banners: Banner[];
 };
 
-const banners = [
-  'https://via.placeholder.com/600/771796',
-  'https://via.placeholder.com/600/d32776',
-  'https://via.placeholder.com/600/f9cee5',
-  'https://via.placeholder.com/600/392537',
-  'https://via.placeholder.com/600/e9b68',
-];
+// const banners = [
+//   'https://via.placeholder.com/600/771796',
+//   'https://via.placeholder.com/600/d32776',
+//   'https://via.placeholder.com/600/f9cee5',
+//   'https://via.placeholder.com/600/392537',
+//   'https://via.placeholder.com/600/e9b68',
+// ];
 
-export const JumbotronSection: FC<JumbotronSectionProps> = () => {
+export const JumbotronSection: FC<JumbotronSectionProps> = ({ banners }) => {
   const { classes, theme } = useStyles();
 
   const [activeCarousel, setActiveCarousel] = useState<number>(0);
@@ -67,23 +67,33 @@ export const JumbotronSection: FC<JumbotronSectionProps> = () => {
                 mx="auto"
                 withControls={false}
                 onSlideChange={index => setActiveCarousel(index)}>
-                {banners.map(banner => (
-                  <Carousel.Slide key={banner}>
-                    <Image
-                      src={banner}
-                      maw={960}
-                      mah={{ base: 250, sm: 300, md: 420 }}
-                      withPlaceholder
-                    />
+                {banners.map((banner, index) => (
+                  <Carousel.Slide key={index}>
+                    <MediaQuery smallerThan="xs" styles={{ display: 'none' }}>
+                      <Image
+                        src={banner.url}
+                        miw={960}
+                        mih={{ base: 250, sm: 300, md: 420 }}
+                        withPlaceholder
+                      />
+                    </MediaQuery>
+                    <MediaQuery largerThan="xs" styles={{ display: 'none' }}>
+                      <Image
+                        src={banner.url}
+                        maw={960}
+                        mah={{ base: 250, sm: 300, md: 420 }}
+                        withPlaceholder
+                      />
+                    </MediaQuery>
                   </Carousel.Slide>
                 ))}
               </Carousel>
             </Box>
           </Flex>
           <Group mt={{ base: 8, md: 16 }} spacing={8}>
-            {banners.map((banner, index) => (
+            {banners.map((_, index) => (
               <Box
-                key={banner}
+                key={index}
                 sx={{
                   width: 12,
                   height: 12,
