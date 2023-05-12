@@ -55,7 +55,7 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
 
   buttonSize: {
     height: 'auto',
-    padding: `${rem(8)} ${rem(22)}`,
+    padding: `${rem(6)} ${rem(20)}`,
     borderRadius: theme.radius.md,
   },
 

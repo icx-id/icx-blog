@@ -7,7 +7,7 @@ import { NavbarProps } from '~/components/types';
 import { useHydration } from '~/hooks/useHydration';
 
 const noNavbarFooterPaths = ['/login', '/register'];
-const forceBlackLogoNavbar = [
+const forceNavbarSolid = [
   '/tata-kelola/kebijakan-privasi',
   '/tata-kelola/isms',
   '/tata-kelola/mitigasi-risiko',
@@ -20,7 +20,7 @@ const forceBlackLogoNavbar = [
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {
   const { pathname } = props.location;
-  const navbarSolid = forceBlackLogoNavbar.includes(pathname);
+  const navbarSolid = forceNavbarSolid.includes(pathname) || pathname.includes('/icx-connect/');
 
   const navbarOptions: NavbarProps = {
     navbarSolid,

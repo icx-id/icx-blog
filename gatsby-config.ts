@@ -23,6 +23,7 @@ const config: GatsbyConfig = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-mantine',
     'gatsby-plugin-fix-fouc',
+    'custom-source-api-event',
     {
       resolve: 'gatsby-plugin-alias-imports',
       options: {
