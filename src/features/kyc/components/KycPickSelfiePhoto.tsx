@@ -18,7 +18,7 @@ const KycPickSelfiePhotoInner: React.FC<KycPickSelfiePhotoInnerProps> = ({ goBac
   const [isCameraOn, setIsCameraOn] = useState<boolean>(false);
 
   const handleSubmitPhoto = (image: File) => {
-    setFieldValue('identityPhoto', image);
+    setFieldValue('identitySelfie', image);
     setIsCameraOn(false);
   };
 
