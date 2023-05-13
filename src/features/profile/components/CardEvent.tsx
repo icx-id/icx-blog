@@ -24,7 +24,7 @@ const useStyles = createStyles((theme, { isEventPast }: StyleProps) => ({
     objectFit: 'cover',
     filter: isEventPast ? 'grayscale(100%)' : 'none',
     [theme.fn.smallerThan('sm')]: {
-      width: '40%',
+      width: rem(130),
       height: rem(100),
     },
   },
@@ -39,9 +39,15 @@ export const CardEvent: React.FC<CardEventProps> = ({
 }) => {
   const { classes } = useStyles({ isEventPast });
   return (
-    <Flex gap={rem(25)}>
+    <Flex
+      sx={theme => ({
+        gap: rem(25),
+        [theme.fn.smallerThan('sm')]: {
+          gap: rem(20),
+        },
+      })}>
       <img alt="image-banner" src={image} className={classes.image} />
-      <Stack spacing={10}>
+      <Stack sx={{ flex: 1 }} spacing={10}>
         <Text
           sx={theme => ({
             [theme.fn.smallerThan('sm')]: {

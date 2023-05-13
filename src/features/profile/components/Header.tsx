@@ -50,7 +50,14 @@ export const Header = () => {
             </Text>
           </Stack>
         </Flex>
-        <Box pos="absolute" bottom={0} h={rem(45)} sx={{ borderBottom: '4px solid #00C48F' }}>
+        <Box
+          pos="absolute"
+          bottom={0}
+          h={rem(45)}
+          sx={theme => ({
+            borderBottom: '4px solid #00C48F',
+            [theme.fn.smallerThan('sm')]: { borderBottom: 'none' },
+          })}>
           <Text weight={600}>My Event</Text>
         </Box>
       </Container>
