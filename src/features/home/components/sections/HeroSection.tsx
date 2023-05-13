@@ -23,7 +23,7 @@ import heroMotion1 from '~/features/home/assets/hero-motion1.json';
 
 const useStyles = createStyles(theme => ({
   root: {
-    height: '100vh',
+    height: '900px',
     color: '#fff',
     backgroundColor: '#000',
     position: 'relative',
@@ -239,7 +239,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
       <Box
         sx={theme => ({
           width: '98vw',
-          height: '100vh',
+          height: '900px',
           color: '#fff',
           backgroundColor: 'transparent',
           position: 'absolute',
