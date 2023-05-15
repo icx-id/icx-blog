@@ -1,6 +1,5 @@
 import { Box, Container, createStyles, rem, PinInput, Flex, Text } from '@mantine/core';
 import React, { useEffect, useState } from 'react';
-import { useLocation } from '@reach/router';
 import { useVerificationRequestMutation } from '~/features/auth';
 import {
   useVerificationVerifyMutation,
@@ -9,7 +8,7 @@ import {
 import { useStore } from '~/stores';
 import { AxiosError } from 'axios';
 import { notifications } from '@mantine/notifications';
-import { CustomCountdown as Countdown } from '~/components/core/Countdown';
+import { useCountdown } from '~/utils/useCountdown';
 
 const useStyles = createStyles(theme => ({
   root: {
@@ -27,23 +26,25 @@ interface PhoneNumberVerificationProps {
   onSubmitSuccess: () => void;
 }
 
+const COUNTDOWN_DURATION = 1 * 60;
+
 export const PhoneNumberVerification: React.FC<PhoneNumberVerificationProps> = ({
   onSubmitSuccess,
 }) => {
   const { classes } = useStyles();
-  const location = useLocation();
-  const phoneNumber = new URLSearchParams(location.search).get('phone-number');
   const [isError, setIsError] = useState<boolean>(false);
   const { mutateAsync: requestVerification } = useVerificationRequestMutation();
   const { mutateAsync: verifyVerification } = useVerificationVerifyMutation();
-  const { verificationToken } = useStore();
+  const { verificationToken, user } = useStore();
 
-  const [keyCountDown, setKeyCountDown] = useState<number>(0);
   const [otp, setOtp] = useState<string>('');
+  const { seconds, minutes, timeLeft, refreshCountDown } = useCountdown({
+    timeDuration: COUNTDOWN_DURATION,
+  });
 
   const onRequestVerification = async () => {
     try {
-      setKeyCountDown(keyCountDown + 1);
+      refreshCountDown();
       await requestVerification({
         type: 'phone-number',
       });
@@ -130,13 +131,17 @@ export const PhoneNumberVerification: React.FC<PhoneNumberVerificationProps> = (
                   fontSize: rem(14),
                 },
               })}>
-              Masukan 6 Digit kode OTP yang kami kirim ke +{phoneNumber}
+              Masukan 6 Digit kode OTP yang kami kirim ke +{user?.phoneNumber}
             </Text>
-            <Countdown
-              timeLeft={60000}
-              onRefreshCountdown={onRequestVerification}
-              keyCountDown={keyCountDown}
-            />
+            {timeLeft <= 0 ? (
+              <Text color="brand" onClick={onRequestVerification}>
+                Kirim ulang OTP
+              </Text>
+            ) : (
+              <Text color="brand" weight="medium">
+                {minutes} : {seconds}
+              </Text>
+            )}
           </Flex>
           <PinInput
             onChange={e => setOtp(e)}

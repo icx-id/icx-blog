@@ -8,8 +8,8 @@ import { useGuestRoute } from '~/utils/guard';
 const RegisterPage: React.FC<PageProps> = () => {
   useGuestRoute();
 
-  const onSubmitSuccess = (phoneNumber: string) => {
-    navigate(`/phone-number-verification?phone-number=${phoneNumber}`);
+  const onSubmitSuccess = () => {
+    navigate(`/phone-number-verification`);
   };
 
   return (

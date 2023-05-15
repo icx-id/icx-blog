@@ -21,7 +21,7 @@ interface RegisterFormValues {
 }
 
 interface RegisterFormProps {
-  onSubmitSuccess: (phoneNumber: string) => void;
+  onSubmitSuccess: () => void;
 }
 
 export const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmitSuccess }) => {
@@ -57,7 +57,7 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmitSuccess }) =
           type: 'phone-number',
         });
 
-        onSubmitSuccess(parseToPhoneNumber(phoneNumber));
+        onSubmitSuccess();
       } catch (e) {
         const err = e as AxiosError<{ errors: string[] }>;
         const errors = err.response?.data?.errors;
