@@ -67,7 +67,7 @@ export const JumbotronSection: FC<JumbotronSectionProps> = ({ banners }) => {
             <Box
               mx={24}
               maw={960}
-              mah={420}
+              mah={480}
               sx={{
                 backgroundColor: 'rgba(0,0,0,0.25)',
                 overflow: 'hidden',

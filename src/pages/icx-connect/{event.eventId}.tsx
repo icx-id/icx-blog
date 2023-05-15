@@ -175,6 +175,14 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
         });
         return;
       }
+      if (errors && errors.includes(useRegisterEventErrors.MINIMUM_INVESTMENT)) {
+        notifications.show({
+          title: 'Register failed',
+          message: 'Jumlah investasi Anda belum mencapai batas minimum event ini',
+          color: 'red',
+        });
+        return;
+      }
 
       // captureError(e as Error);
       console.log(e as Error);
