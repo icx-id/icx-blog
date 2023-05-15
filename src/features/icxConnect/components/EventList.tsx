@@ -46,8 +46,8 @@ export const EventList: React.FC<{}> = () => {
               ICX Connect
             </Text>
             <Text color="#F1F3F5" fz={mobileScreen ? 14 : 16} maw={420} fw="lighter">
-              Jadi bagian dari komunitas angel investor, VCs, dan founder startup. Dapatkan akses ke
-              event ekslusif.
+              Be part of a community of angel investors, VCs, as well as startup founders, and
+              receive access to exclusive events
             </Text>
           </Box>
         </Container>
@@ -71,7 +71,7 @@ export const EventList: React.FC<{}> = () => {
 
                 return (
                   <EventCard
-                    onClick={() => navigate(`/events/${event.id}`)}
+                    onClick={() => navigate(`/icx-connect/${event.id}`)}
                     key={event.id}
                     image={event.coverImage}
                     title={event.title}

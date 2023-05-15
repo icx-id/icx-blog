@@ -36,11 +36,13 @@ export const ContentLayout: FC<ContentLayoutProps> = ({
             onlineLink: event.onlineLink,
             mapLink: event.mapLink,
             initialQuota: event.initialQuota,
+            speakers: event.speakers,
           }}
         />
         <AboutSection
           event={{
             description: event.description,
+            participantRequirements: event.participantRequirements,
           }}
         />
         <ActionSection onOpenDrawer={onOpenDrawer} />

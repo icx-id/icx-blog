@@ -7,6 +7,7 @@ export const useRegisterEventErrors = {
   REGISTRATION_CLOSED: 'registration has been closed',
   QUOTA_NOT_AVALABLE: 'quota is no longer available',
   ACCESS_TOKEN_EXPIRED: 'access token is expired',
+  ALREADY_REGISTERED: 'user has already been registered to this event',
 };
 
 export const useRegisterEvent = (

@@ -24,6 +24,13 @@ export type EventRegistration = {
   event: string;
 };
 
+export type EventSpeaker = {
+  name: string;
+  imageUrl: string;
+  company: string;
+  position: string;
+};
+
 export type Event = {
   id: string;
   eventId: number;
@@ -42,6 +49,8 @@ export type Event = {
   mapLink: string | null;
   brochureLink: string | null;
   minimumUserInvestment: number;
+  speakers: EventSpeaker[];
+  participantRequirements: string;
 };
 
 export interface SimplifiedEvent

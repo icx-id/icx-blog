@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { PageProps, graphql } from 'gatsby';
+import { HeadFC, PageProps, graphql } from 'gatsby';
 import { Box, Button, Container, Drawer, Flex, MediaQuery, Modal, Text } from '@mantine/core';
 import {
   ContentLayout,
@@ -10,7 +10,7 @@ import {
   useRegisterEvent,
   useRegisterEventErrors,
 } from '~/features/event';
-import { Breadcrumbs } from '~/components';
+import { Breadcrumbs, SiteMetadata } from '~/components';
 import { useStore } from '~/stores';
 import { useDisclosure } from '@mantine/hooks';
 import { IconX } from '@tabler/icons-react';
@@ -43,6 +43,12 @@ export const eventDetailQuery = graphql`
       banners {
         url
         mediaType
+      }
+      speakers {
+        name
+        company
+        position
+        imageUrl
       }
     }
   }
@@ -79,6 +85,12 @@ export const config = async () => {
           banners {
             url
             mediaType
+          }
+          speakers {
+            name
+            company
+            position
+            imageUrl
           }
         }
       }
@@ -151,6 +163,14 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
         notifications.show({
           title: 'Register failed',
           message: 'Pendaftaran sudah ditutup.',
+          color: 'red',
+        });
+        return;
+      }
+      if (errors && errors.includes(useRegisterEventErrors.ALREADY_REGISTERED)) {
+        notifications.show({
+          title: 'Register failed',
+          message: 'Anda sudah terdaftar dalam event ini',
           color: 'red',
         });
         return;
@@ -251,5 +271,7 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
     </main>
   );
 };
+
+export const Head: HeadFC = () => <SiteMetadata />;
 
 export default EventDetailPage;

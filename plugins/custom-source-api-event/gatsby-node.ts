@@ -1,3 +1,4 @@
+import { EventSpeaker } from './../../src/features/event/types';
 import fetch from 'node-fetch';
 import { GatsbyNode } from 'gatsby';
 
@@ -46,11 +47,14 @@ type Event = {
   mapLink: string | null;
   brochureLink: string | null;
   minimumUserInvestment: number;
+  speakers: EventSpeaker[];
+  participantRequirements: string | null;
 };
 
 // get events data from endpoint
 const getEvents = async (): Promise<Event[]> => {
   const eventsResponse = await fetch(`${process.env.GATSBY_API_URL}/events`).then(r => r.json());
+
   const events = eventsResponse as unknown as PageableResponse<Event>;
   return events.data;
 };

@@ -49,12 +49,13 @@ const EventCard: React.FC<{
             {eventType} Event
           </Text>
         </Box>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        {/* TODO: Handle registration status */}
+        {/* <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <Image src="/img/tick-circle.svg" height={12} width={12} pr="lg" />
           <Text fz={12} color="#00A478">
             Terdaftar
           </Text>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );

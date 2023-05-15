@@ -19,6 +19,7 @@ type OverviewEventType = Pick<
   | 'mapLink'
   | 'onlineLink'
   | 'initialQuota'
+  | 'speakers'
 >;
 
 type OverviewSectionProps = {
@@ -99,34 +100,36 @@ export const OverviewSection: FC<OverviewSectionProps> = ({ event }) => {
           </Stack>
 
           {/* speakers */}
-          <Box mt={24}>
-            <Text fz={18} fw={600} lh="24px">
-              Speakers
-            </Text>
-            <Group spacing={32} mt={16}>
-              {[1, 2].map(item => (
-                <Flex align="flex-start" key={item}>
-                  <Image
-                    src="/img/square-default.png"
-                    maw={56}
-                    mah={56}
-                    sx={{ img: { borderRadius: '50%' } }}
-                  />
-                  <Stack spacing={0} ml={12}>
-                    <Text fz={16} fw={500} lh="20px">
-                      Edwin Riwaldo {item}
-                    </Text>
-                    <Text mt={8} fz={14} fw={400} lh="20px" color="#747474">
-                      Flip.id {item}
-                    </Text>
-                    <Text fz={14} fw={400} lh="20px" color="#747474">
-                      Senior UX Designer {item}
-                    </Text>
-                  </Stack>
-                </Flex>
-              ))}
-            </Group>
-          </Box>
+          {Boolean(event.speakers?.length) && (
+            <Box mt={24}>
+              <Text fz={18} fw={600} lh="24px">
+                Speakers
+              </Text>
+              <Group spacing={32} mt={16}>
+                {event.speakers.map(item => (
+                  <Flex align="flex-start" key={item.name}>
+                    <Image
+                      src={item.imageUrl || '/img/square-default.png'}
+                      maw={56}
+                      mah={56}
+                      sx={{ img: { borderRadius: '50%' } }}
+                    />
+                    <Stack spacing={0} ml={12}>
+                      <Text fz={16} fw={500} lh="20px">
+                        {item.name}
+                      </Text>
+                      <Text mt={8} fz={14} fw={400} lh="20px" color="#747474">
+                        {item.company}
+                      </Text>
+                      <Text fz={14} fw={400} lh="20px" color="#747474">
+                        {item.position}
+                      </Text>
+                    </Stack>
+                  </Flex>
+                ))}
+              </Group>
+            </Box>
+          )}
         </Box>
       </MediaQuery>
 
