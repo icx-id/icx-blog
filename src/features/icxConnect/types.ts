@@ -18,12 +18,6 @@ export interface Banner {
   mediaType: BannerMediaType;
 }
 
-export interface EventRegistration {
-  id: string;
-  user: string;
-  event: string;
-}
-
 export interface Event {
   id: string;
   title: string;
@@ -45,7 +39,7 @@ export interface Event {
 export interface EventRegistration {
   id: string;
   user: string;
-  event: string;
+  event: Event;
 }
 
 export interface SimplifiedEvent
