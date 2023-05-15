@@ -1,14 +1,9 @@
-import React, { FC } from 'react';
-import { Box, MediaQuery } from '@mantine/core';
+import React from 'react';
+import { PageProps } from 'gatsby';
+import { EventList } from '~/features/icxConnect';
 
-const ICXConnectPage: FC = () => {
-  return (
-    <main>
-      <MediaQuery smallerThan="md" styles={{ paddingTop: 64 }}>
-        <Box pt={80}>ICX Connect!</Box>
-      </MediaQuery>
-    </main>
-  );
+const ICXConnectPage: React.FC<PageProps> = () => {
+  return <EventList />;
 };
 
 export default ICXConnectPage;

@@ -13,6 +13,6 @@ export const navbarMenus: NavbarMenu[] = [
   {
     id: 4,
     name: 'ICX Connect',
-    pathname: '/events',
+    pathname: '/icx-connect',
   },
 ];

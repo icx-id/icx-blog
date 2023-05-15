@@ -71,7 +71,7 @@ export const EventList: React.FC<{}> = () => {
 
                 return (
                   <EventCard
-                    onClick={() => navigate(`/events/${event.id}`)}
+                    onClick={() => navigate(`/icx-connect/${event.id}`)}
                     key={event.id}
                     image={event.coverImage}
                     title={event.title}
