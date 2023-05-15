@@ -230,7 +230,7 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
         <Box p={56}>
           <Flex align="center" justify="space-between">
             <Text fz={20} fw={600} lh="24px">
-              Konfirmasi pendaftaran
+              Confirm Registration
             </Text>
             <IconX onClick={onCloseModal} style={{ cursor: 'pointer' }} />
           </Flex>
@@ -259,7 +259,7 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
         }}>
         <Flex align="center" justify="space-between">
           <Text mt={8} fz={20} fw={600} lh="24px">
-            Konfirmasi pendaftaran
+            Confirm Registration
           </Text>
           <IconX onClick={onCloseDrawer} style={{ cursor: 'pointer' }} />
         </Flex>
