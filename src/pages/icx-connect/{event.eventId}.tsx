@@ -44,6 +44,12 @@ export const eventDetailQuery = graphql`
         url
         mediaType
       }
+      speakers {
+        name
+        company
+        position
+        imageUrl
+      }
     }
   }
 `;
@@ -80,6 +86,12 @@ export const config = async () => {
             url
             mediaType
           }
+          speakers {
+            name
+            company
+            position
+            imageUrl
+          }
         }
       }
     }
@@ -103,6 +115,8 @@ const eventDetailBreadcrumbs = (title: string) => [
 const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
   const { user } = useStore();
   const { mutateAsync: onRegisterEvent, isLoading } = useRegisterEvent(`${data.event.eventId}`);
+
+  console.log(data);
 
   const [isOpenModal, { close: onCloseModal, open: onOpenModal }] = useDisclosure(false);
   const [isOpenDrawer, { close: onCloseDrawer, open: onOpenDrawer }] = useDisclosure(false);
