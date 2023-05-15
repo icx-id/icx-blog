@@ -116,8 +116,6 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
   const { user } = useStore();
   const { mutateAsync: onRegisterEvent, isLoading } = useRegisterEvent(`${data.event.eventId}`);
 
-  console.log(data);
-
   const [isOpenModal, { close: onCloseModal, open: onOpenModal }] = useDisclosure(false);
   const [isOpenDrawer, { close: onCloseDrawer, open: onOpenDrawer }] = useDisclosure(false);
   const [registerSuccess, setRegisterSuccess] = useState(false);
@@ -165,6 +163,14 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
         notifications.show({
           title: 'Register failed',
           message: 'Pendaftaran sudah ditutup.',
+          color: 'red',
+        });
+        return;
+      }
+      if (errors && errors.includes(useRegisterEventErrors.ALREADY_REGISTERED)) {
+        notifications.show({
+          title: 'Register failed',
+          message: 'Anda sudah terdaftar dalam event ini',
           color: 'red',
         });
         return;
