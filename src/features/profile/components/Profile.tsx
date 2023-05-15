@@ -84,6 +84,7 @@ export const Profile = () => {
                     eventType={userEvent.event.type}
                     image={userEvent.event.coverImage}
                     key={idx.toString()}
+                    id={userEvent.event.id}
                   />
                 ))}
               </Stack>
@@ -104,6 +105,7 @@ export const Profile = () => {
                     image={userEvent.event.coverImage}
                     key={idx.toString()}
                     isEventPast={true}
+                    id={userEvent.event.id}
                   />
                 ))}
               </Stack>
