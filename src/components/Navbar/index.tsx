@@ -203,6 +203,9 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                   />
                 </Menu.Target>
                 <Menu.Dropdown>
+                  <Menu.Item component="a" href="/profile">
+                    Profile
+                  </Menu.Item>
                   <Menu.Item onClick={() => onLogout()}>Logout</Menu.Item>
                 </Menu.Dropdown>
               </Menu>
@@ -268,18 +271,33 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                         Join ICX
                       </Button>
                     ) : (
-                      <Button
-                        sx={{
-                          ':hover': {
-                            backgroundColor: 'inherit',
-                          },
-                          color: 'white',
-                        }}
-                        onClick={logOutAccount}
-                        variant="subtle"
-                        w="60%">
-                        Logout
-                      </Button>
+                      <Stack>
+                        <Button
+                          sx={{
+                            ':hover': {
+                              backgroundColor: 'inherit',
+                            },
+                            color: 'white',
+                          }}
+                          onClick={logOutAccount}
+                          variant="subtle"
+                          w="60%">
+                          Logout
+                        </Button>
+                        <Button
+                          sx={{
+                            ':hover': {
+                              backgroundColor: 'inherit',
+                            },
+                            color: 'white',
+                          }}
+                          component="a"
+                          href="/profile"
+                          variant="subtle"
+                          w="60%">
+                          Profile
+                        </Button>
+                      </Stack>
                     )}
                   </Box>
                   <Box
