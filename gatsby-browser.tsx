@@ -5,6 +5,7 @@ import { PageContainer } from '~/components';
 import '@fontsource/inter/400.css';
 import { NavbarProps } from '~/components/types';
 import { useHydration } from '~/hooks/useHydration';
+import { useInternalPaths } from '~/utils/useInternalPaths';
 
 const noNavbarFooterPaths = ['/login', '/register'];
 const forceNavbarSolid = [
@@ -23,12 +24,18 @@ export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, pro
   const { pathname } = props.location;
   const navbarSolid = forceNavbarSolid.includes(pathname) || pathname.includes('/icx-connect/');
 
+  const internalPaths = useInternalPaths();
+
   const navbarOptions: NavbarProps = {
     navbarSolid,
     pathname,
   };
 
   useHydration();
+
+  if (!internalPaths.includes(pathname)) {
+    return <PageContainer navbarOptions={{ navbarSolid: true }}>{element}</PageContainer>;
+  }
 
   return noNavbarFooterPaths.includes(pathname) ? (
     element
