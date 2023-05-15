@@ -42,6 +42,7 @@ export const ContentLayout: FC<ContentLayoutProps> = ({
         <AboutSection
           event={{
             description: event.description,
+            participantRequirements: event.participantRequirements,
           }}
         />
         <ActionSection onOpenDrawer={onOpenDrawer} />

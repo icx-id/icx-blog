@@ -50,6 +50,7 @@ export type Event = {
   brochureLink: string | null;
   minimumUserInvestment: number;
   speakers: EventSpeaker[];
+  participantRequirements: string;
 };
 
 export interface SimplifiedEvent
