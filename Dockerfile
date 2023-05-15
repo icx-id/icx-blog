@@ -6,8 +6,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn clean
 RUN yarn install --frozen-lockfile
+RUN yarn clean
 RUN yarn build
 
 COPY ./docker/default.conf /etc/nginx/sites-available/default
