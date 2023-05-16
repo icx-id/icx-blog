@@ -11,6 +11,7 @@ import {
 import { parseToPhoneNumber } from '~/utils/format';
 import { AxiosError } from 'axios';
 import { RegisterFormSchema } from '../../schemas/RegisterFormSchema';
+import { notifications } from '@mantine/notifications';
 
 interface RegisterFormValues {
   email: string;
@@ -53,8 +54,14 @@ export const RegisterForm: React.FC<RegisterFormProps> = ({ onSubmitSuccess }) =
           referralCode,
         });
 
-        await verifyAccount({
-          type: 'phone-number',
+        // await verifyAccount({
+        //   type: 'phone-number',
+        // });
+
+        notifications.show({
+          message: 'You can now login to the website',
+          title: 'Registration successful',
+          color: 'brand',
         });
 
         onSubmitSuccess();
