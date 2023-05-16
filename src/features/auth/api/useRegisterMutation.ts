@@ -1,6 +1,5 @@
 import { UseMutationOptions, useMutation } from '@tanstack/react-query';
 import { AuthResponse } from '../types';
-import { useStore } from '~/stores';
 import { useApiClient } from '~/providers/ApiClientProvider';
 
 interface RegisterArgs {
@@ -23,7 +22,6 @@ export const useRegisterMutationErrors = {
 };
 
 export const useRegisterMutation = (options?: UseMutationOptions<void, unknown, RegisterArgs>) => {
-  const { onAuthSuccess } = useStore();
   const { axios, api } = useApiClient();
 
   return useMutation(async ({ email, password, phoneNumber, referralCode }: RegisterArgs) => {
@@ -37,13 +35,6 @@ export const useRegisterMutation = (options?: UseMutationOptions<void, unknown, 
       payload.referredBy = referralCode;
     }
 
-    const { access_token, refresh_token, user } = await api<AuthResponse>(
-      axios.post('auth/register', payload),
-    );
-    onAuthSuccess({
-      accessToken: access_token,
-      refreshToken: refresh_token,
-      user,
-    });
+    await api<AuthResponse>(axios.post('auth/register', payload));
   }, options);
 };

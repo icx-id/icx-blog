@@ -9,7 +9,7 @@ const RegisterPage: React.FC<PageProps> = () => {
   useGuestRoute();
 
   const onSubmitSuccess = () => {
-    navigate(`/phone-number-verification`);
+    navigate(`/login`);
   };
 
   return (
