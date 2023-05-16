@@ -11,7 +11,7 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby clean && NODE_OPTIONS=--max-old-space-size=4096 gatsby build",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve -p 80",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "cms-proxy": "netlify-cms-proxy-server",

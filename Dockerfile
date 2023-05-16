@@ -9,6 +9,7 @@ COPY . .
 RUN yarn install --frozen-lockfile
 RUN yarn clean
 RUN yarn build
+RUN yarn serve
 
 COPY ./docker/default.conf /etc/nginx/sites-available/default
 
