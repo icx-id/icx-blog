@@ -1,2 +1,5 @@
 export { EventList } from './components/EventList';
-export { useGetEventRegistrationQuery } from './api/useGetEventsRegistration';
+export {
+  useGetEventRegistrationQuery,
+  useGetEventRegistrationsQuery,
+} from './api/useGetEventRegistrations';

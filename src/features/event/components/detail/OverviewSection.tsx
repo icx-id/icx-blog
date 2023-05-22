@@ -7,9 +7,12 @@ import CalendarIcon from '../../assets/ic-calendar2.svg';
 import ClockIcon from '../../assets/ic-clock.svg';
 import LocationIcon from '../../assets/ic-location.svg';
 import UserIcon from '../../assets/ic-user.svg';
+import PlayIcon from '../../assets/ic-play.svg';
+import { useGetEventRegistrationQuery } from '~/features/icxConnect';
 
 type OverviewEventType = Pick<
   Event,
+  | 'id'
   | 'type'
   | 'title'
   | 'subtitle'
@@ -28,6 +31,7 @@ type OverviewSectionProps = {
 
 export const OverviewSection: FC<OverviewSectionProps> = ({ event }) => {
   const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
+  const { data: userEvent } = useGetEventRegistrationQuery(`${event.id}`);
 
   return (
     <>
@@ -69,34 +73,63 @@ export const OverviewSection: FC<OverviewSectionProps> = ({ event }) => {
                 </Grid.Col>
               </Grid>
             </Box>
-            <Box mt={24}>
-              <Text fz={18} fw={600} lh="24px">
-                Location
-              </Text>
-              <Box mt={8}>
-                <Image src={CalendarIcon} maw={20} mah={20} />
-                <Text mt={6} fz={14} lh="20px" color="#495057" maw={600}>
-                  {event.location}
+            {event.type === 'offline' && (
+              <Box mt={24}>
+                <Text fz={18} fw={600} lh="24px">
+                  Location
                 </Text>
-                <a
-                  href={event?.mapLink ?? ''}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: 'none' }}>
-                  <Text
-                    mt={8}
-                    fz={12}
-                    fw={600}
-                    lh="15px"
-                    color="brand"
-                    sx={{
-                      ':hover': { textDecoration: 'underline' },
-                    }}>
-                    Visit Google Maps
+                <Box mt={8}>
+                  <Image src={LocationIcon} maw={20} mah={20} />
+                  <Text mt={6} fz={14} lh="20px" color="#495057" maw={600}>
+                    {event.location}
                   </Text>
-                </a>
+                  <a
+                    href={event?.mapLink ?? ''}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}>
+                    <Text
+                      mt={8}
+                      fz={12}
+                      fw={600}
+                      lh="15px"
+                      color="brand"
+                      sx={{
+                        ':hover': { textDecoration: 'underline' },
+                      }}>
+                      Visit Google Maps
+                    </Text>
+                  </a>
+                </Box>
               </Box>
-            </Box>
+            )}
+            {event.type === 'online' && !!userEvent && (
+              <Box mt={24}>
+                <Text fz={18} fw={600} lh="24px">
+                  Link
+                </Text>
+                <Box mt={8}>
+                  <Image src={PlayIcon} maw={20} mah={20} />
+                  <a
+                    href={event?.onlineLink ?? ''}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}>
+                    <Text
+                      mt={8}
+                      fz={12}
+                      fw={600}
+                      lh="15px"
+                      color="brand"
+                      sx={{
+                        ':hover': { textDecoration: 'underline' },
+                      }}>
+                      Zoom Link
+                    </Text>
+                  </a>
+                </Box>
+              </Box>
+            )}
           </Stack>
 
           {/* speakers */}
@@ -152,31 +185,33 @@ export const OverviewSection: FC<OverviewSectionProps> = ({ event }) => {
                 {eventTime}
               </Text>
             </Flex>
-            <Flex align="flex-start">
-              <Image src={LocationIcon} maw={16} mah={16} />
-              <Box ml={8}>
-                <Text fz={14} fw={400} lh="20px">
-                  {event.location}
-                </Text>
-                <a
-                  href={event?.mapLink ?? ''}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ textDecoration: 'none' }}>
-                  <Text
-                    mt={4}
-                    fz={12}
-                    fw={600}
-                    lh="15px"
-                    color="brand"
-                    sx={{
-                      ':hover': { textDecoration: 'underline' },
-                    }}>
-                    Visit Google Maps
+            {event.type === 'offline' && (
+              <Flex align="flex-start">
+                <Image src={LocationIcon} maw={16} mah={16} />
+                <Box ml={8}>
+                  <Text fz={14} fw={400} lh="20px">
+                    {event.location}
                   </Text>
-                </a>
-              </Box>
-            </Flex>
+                  <a
+                    href={event?.mapLink ?? ''}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ textDecoration: 'none' }}>
+                    <Text
+                      mt={4}
+                      fz={12}
+                      fw={600}
+                      lh="15px"
+                      color="brand"
+                      sx={{
+                        ':hover': { textDecoration: 'underline' },
+                      }}>
+                      Visit Google Maps
+                    </Text>
+                  </a>
+                </Box>
+              </Flex>
+            )}
             <Flex align="flex-start">
               <Image src={UserIcon} maw={16} mah={16} />
               <Text ml={8} fz={14} fw={400} lh="20px">

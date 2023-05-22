@@ -27,6 +27,7 @@ export const ContentLayout: FC<ContentLayoutProps> = ({
         </MediaQuery>
         <OverviewSection
           event={{
+            id: String(event.eventId),
             type: event.type,
             title: event.title,
             subtitle: event.subtitle,

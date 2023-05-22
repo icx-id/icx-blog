@@ -3,7 +3,7 @@ import React from 'react';
 import calendarIcon from '~/images/icons/ic-calendar.svg';
 import playIcon from '~/images/icons/ic-video-play.svg';
 import checkIcon from '~/images/icons/ic-tick-circle.svg';
-import { format } from 'date-fns';
+import { parseEventDate } from '../../event/helpers/date-parser';
 
 interface CardEventProps {
   title: string;
@@ -34,12 +34,15 @@ const useStyles = createStyles((theme, { isEventPast }: StyleProps) => ({
 export const CardEvent: React.FC<CardEventProps> = ({
   title,
   startDate,
+  endDate,
   image,
   eventType,
   isEventPast = false,
   id,
 }) => {
   const { classes } = useStyles({ isEventPast });
+  const [eventDate, eventTime] = parseEventDate(startDate, endDate);
+
   return (
     <Box
       component="a"
@@ -73,8 +76,7 @@ export const CardEvent: React.FC<CardEventProps> = ({
                 },
               })}
               color="#495057">
-              {format(new Date(startDate), 'dd MMM')} - {format(new Date(startDate), 'dd MMM yyyy')}{' '}
-              | 19.00 WIB {format(new Date(startDate), 'hh:mm')} WIB
+              {eventDate} | {eventTime}
             </Text>
           </Flex>
           <Flex gap={rem(7)}>

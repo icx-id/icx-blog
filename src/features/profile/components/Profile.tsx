@@ -1,7 +1,7 @@
 import { Box, Container, Stack, Tabs, Text, createStyles, rem } from '@mantine/core';
 import React, { useMemo } from 'react';
 import { CardEvent } from './CardEvent';
-import { useGetEventRegistrationQuery } from '~/features/icxConnect';
+import { useGetEventRegistrationsQuery } from '~/features/icxConnect';
 import { isAfter, isBefore } from 'date-fns';
 import { Header } from './Header';
 
@@ -32,7 +32,7 @@ const useStyles = createStyles(theme => ({
 
 export const Profile = () => {
   const { classes } = useStyles();
-  const { data: userEvents } = useGetEventRegistrationQuery();
+  const { data: userEvents } = useGetEventRegistrationsQuery();
 
   const incomingEvent = useMemo(() => {
     return userEvents?.filter(userEvent =>
