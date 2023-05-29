@@ -263,8 +263,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
                     <Text className={classes.subtitle}>{props.subtitle}</Text>
                     <Group spacing="xl" align="center" noWrap className={classes.download}>
                       {props.download.map(({ logo, link, name }) => (
-                        <Box key={link}>
-                          {/* <GatsbyImage image={logo.childImageSharp.gatsbyImageData} alt={name} /> */}
+                        <Box component="a" href={link} target="_blank" key={link}>
                           <Image src={logo} alt={name} maw={200} mah={59} />
                         </Box>
                       ))}

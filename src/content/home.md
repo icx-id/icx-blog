@@ -6,10 +6,10 @@ heroSection:
   appImage: /img/app-preview.webp
   download:
     - name: Google Play
-      logo: /img/google-play-soon.webp
+      logo: /img/google-play.webp
       link: https://play.google.com
     - name: App Store
-      logo: /img/app-store-soon.webp
+      logo: /img/app-store.webp
       link: https://www.apple.com/id/app-store
 companyListSection:
   title: Trusted companies that has successfully been listed through ICX
@@ -37,7 +37,11 @@ testimonySection:
     - author: Vincent Kusuma
       authorImage: /img/testimony-author.webp
       company: Vilo Gelato
-      description: “Partnering with ICX has been a great help to us. Through their platform, we were able to expand our business and reach. The process was smooth, the team was helpful and we appreciate their support in raising the funds we needed to continue growing and providing quality gelato to our customers.”
+      description: “Partnering with ICX has been a great help to us. Through their
+        platform, we were able to expand our business and reach. The process was
+        smooth, the team was helpful and we appreciate their support in raising
+        the funds we needed to continue growing and providing quality gelato to
+        our customers.”
       image: /img/testimony-vilo.webp
 investmentSection:
   title: This Is the New Way of Investing
@@ -57,7 +61,8 @@ investmentSection:
         businesses that you trust and help them get off the ground.
       image: /img/investment-icon3.webp
     - title: Easily Assess your Assets
-      description: You can monitor and even have your say to the management of the business you invested in
+      description: You can monitor and even have your say to the management of the
+        business you invested in
       image: /img/investment-icon4.webp
 investorSection:
   title: We Have Been Empowering Businesses That Contributes to Indonesia’s Economy
@@ -65,11 +70,11 @@ investorSection:
     bring  projects to life, increasing employment opportunities and contributed
     to Indonesia’s economy
   fundraising:
-    count: '>Rp 230 Billion'
+    count: ">Rp 230 Billion"
     label: Total Fundraised
     background: /img/gradient-grey.webp
   employment:
-    count: '>1.750'
+    count: ">1.750"
     label: Number Of Employment
     background: /img/gradient-green.webp
   investor:
