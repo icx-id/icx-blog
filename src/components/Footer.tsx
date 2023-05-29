@@ -156,7 +156,7 @@ export const Footer: React.FC = () => {
                     src="/img/instagram.png"
                     height={24}
                     width={24}
-                    onClick={() => window.open('https://www.instagram.com/icx_id/', '_blank')}
+                    onClick={() => window.open('https://www.instagram.com/icx.id/', '_blank')}
                   />
                 </Box>
               </Box>
