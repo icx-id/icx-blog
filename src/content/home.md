@@ -7,10 +7,10 @@ heroSection:
   download:
     - name: Google Play
       logo: /img/google-play.webp
-      link: https://play.google.com
+      link: https://play.google.com/store/apps/details?id=id.icx
     - name: App Store
       logo: /img/app-store.webp
-      link: https://www.apple.com/id/app-store
+      link: https://apps.apple.com/us/app/icx-indonesia/id6448935038
 companyListSection:
   title: Trusted companies that has successfully been listed through ICX
   imageDesktop: /img/company-list-desktop.webp
