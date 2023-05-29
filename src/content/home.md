@@ -6,10 +6,10 @@ heroSection:
   appImage: /img/app-preview.webp
   download:
     - name: Google Play
-      logo: /img/google-play.png
+      logo: /img/google-play.webp
       link: https://play.google.com
     - name: App Store
-      logo: /img/app-store.png
+      logo: /img/app-store.webp
       link: https://www.apple.com/id/app-store
 companyListSection:
   title: Trusted companies that has successfully been listed through ICX
