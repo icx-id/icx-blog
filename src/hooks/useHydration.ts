@@ -66,9 +66,9 @@ export const useHydration = () => {
       if (!hasPin) {
         navigate('/create-pin');
       }
-      if (!identityIsNotEmpty) {
-        navigate('/kyc');
-      }
+      // if (!identityIsNotEmpty) {
+      //   navigate('/kyc');
+      // }
     }
     // navigate('/');
   }, [hasPin, identityIsNotEmpty, isAuthenticated, isLoading, phoneNumberIsVerified, hasError]);

@@ -1,6 +1,12 @@
-// TODO: enable when using gatsby image
-// import { fmImagesToRelative } from 'gatsby-remark-relative-images-v2';
+import { GatsbyNode } from 'gatsby';
 
-// exports.onCreateNode = ({ node }) => {
-//   fmImagesToRelative(node);
-// };
+const pageHide = 'register' || 'kyc';
+
+export const onCreatePage: GatsbyNode['onCreatePage'] = async ({
+  page,
+  actions: { deletePage },
+}) => {
+  if (page.path.match(pageHide)) {
+    deletePage(page);
+  }
+};
