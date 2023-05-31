@@ -89,7 +89,7 @@ mediaSection:
     - mediaName: CNN
       logo: /img/cnn.webp
     - mediaName: Tech in Asia
-      logo: /img/techinasia2.webp
+      logo: /img/techinasia3.webp
     - mediaName: Kompas
       logo: /img/kompas.webp
     - mediaName: Berita Satu
