@@ -56,9 +56,8 @@ investmentSection:
       description: You can now contribute to the businesses you trust through Equity
         Crowdfunding.
       image: /img/investment-icon2.webp
-    - title: Get Passive Income
-      description: A clear and concise view of how  ICX enables you to contribute to
-        businesses that you trust and help them get off the ground.
+    - title: Be Part of The Investor’s Community
+      description: Unlock a world of opportunities by being part of a vibrant community with various people with the same love of growing and investing.
       image: /img/investment-icon3.webp
     - title: Easily Assess your Assets
       description: You can monitor and even have your say to the management of the
@@ -89,8 +88,8 @@ mediaSection:
       logo: /img/liputan6.webp
     - mediaName: CNN
       logo: /img/cnn.webp
-    - mediaName: Sindo News
-      logo: /img/sindo-news.webp
+    - mediaName: Tech in Asia
+      logo: /img/techinasia3.webp
     - mediaName: Kompas
       logo: /img/kompas.webp
     - mediaName: Berita Satu
