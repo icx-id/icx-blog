@@ -162,7 +162,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
             </Group>
             {accessToken == null ? (
               <Group spacing={24} className={classes.hiddenMobile}>
-                <Button
+                {/* <Button
                   component="a"
                   href="/register"
                   variant="outline"
@@ -172,7 +172,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                     borderColor: isScrolled ? '#000' : '#fff',
                   }}>
                   <Text fw={500}>Sign Up</Text>
-                </Button>
+                </Button> */}
                 <Button
                   component="a"
                   href="/login"
