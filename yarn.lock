@@ -6894,6 +6894,13 @@ gatsby-plugin-netlify-cms@^7.9.0:
     mini-css-extract-plugin "1.6.2"
     netlify-identity-widget "^1.9.2"
 
+gatsby-plugin-no-sourcemaps@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.npmjs.org/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-5.10.0.tgz#2a29ba50f9403794b827f1c4476469957caed4aa"
+  integrity sha512-u7SzFl3M79E7qjvxwseDA592764NeGQmBqalV0CPS3Tl4LlzW3G3OwLZNP5x34J90GbhFZU3lEPZCxh3YYc5/A==
+  dependencies:
+    "@babel/runtime" "^7.20.13"
+
 gatsby-plugin-page-creator@^5.9.0:
   version "5.9.0"
   resolved "https://registry.npmjs.org/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-5.9.0.tgz#c5d09e1a56f8c39d2d4340ec026538044e784b46"

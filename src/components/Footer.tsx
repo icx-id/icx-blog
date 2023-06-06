@@ -238,7 +238,7 @@ export const Footer: React.FC = () => {
                   }}>
                   <Box>
                     <Image
-                      src="/img/google-play-soon.png"
+                      src="/img/google-play.webp"
                       height={mobileScreen ? 'auto' : 55}
                       width={mobileScreen ? 220 : 'auto'}
                       mb="sm"
@@ -246,7 +246,7 @@ export const Footer: React.FC = () => {
                       fit="contain"
                     />
                     <Image
-                      src="/img/app-store-soon.png"
+                      src="/img/app-store.webp"
                       height={mobileScreen ? 'auto' : 55}
                       width={mobileScreen ? 220 : 'auto'}
                       sx={{ cursor: 'pointer' }}

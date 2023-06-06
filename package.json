@@ -44,6 +44,7 @@
     "gatsby-plugin-mantine": "^5.0.0",
     "gatsby-plugin-mdx": "^5.9.0",
     "gatsby-plugin-netlify-cms": "^7.9.0",
+    "gatsby-plugin-no-sourcemaps": "^5.10.0",
     "gatsby-plugin-sharp": "^5.9.0",
     "gatsby-plugin-sitemap": "^6.9.0",
     "gatsby-remark-images": "^7.9.0",

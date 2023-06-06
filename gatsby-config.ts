@@ -95,6 +95,9 @@ const config: GatsbyConfig = {
         icon: `${__dirname}/src/images/favicon.png`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-no-sourcemaps',
+    },
   ],
 };
 
