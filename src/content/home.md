@@ -43,6 +43,11 @@ testimonySection:
         the funds we needed to continue growing and providing quality gelato to
         our customers.”
       image: /img/testimony-vilo.webp
+    - author: Bernadus Wijaya
+      authorImage: /img/testimony-author.webp
+      company: Sucor Sekuritas
+      description: “The existence of crowdfunding that  collaborates with securities excites me. I am hopeful that our synergy will advance inclusivity and financial literacy in the nation. I have faith that the establishment of ICX as a platform for crowdfunding can help business owners secure finance for expansion, which is anticipated to push the capital market sector.”
+      image: /img/testimony-sucor.webp
 investmentSection:
   title: This Is the New Way of Investing
   subtitle: <span>With ICX</span>, you now have the way to invest in promising
@@ -69,11 +74,11 @@ investorSection:
     bring  projects to life, increasing employment opportunities and contributed
     to Indonesia’s economy
   fundraising:
-    count: ">Rp 230 Billion"
+    count: '>Rp 230 Billion'
     label: Total Fundraised
     background: /img/gradient-grey.webp
   employment:
-    count: ">1.750"
+    count: '>1.750'
     label: Number Of Employment
     background: /img/gradient-green.webp
   investor:
