@@ -2,7 +2,7 @@
 key: mitigasi-risiko
 title: Mitigasi Risiko
 content: >-
-  P﻿er 3 Mei 2023
+  P﻿er 3 Mei 2023.
 
 
   Mitigasi risiko ini akan menjadi acuan bagi Pemodal yang akan berinvestasi di platform ICX yang dioperasikan oleh PT ICX BANGUN INDONESIA (selanjutnya disebut “ICX”) tentang beberapa risiko yang dapat terjadi saat berinvestasi di proyek yang diterbitkan oleh Penerbit pada platform ICX melalui penerbitan efek bersifat utang dan/atau saham.
