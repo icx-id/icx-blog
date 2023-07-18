@@ -30,7 +30,7 @@ const config: GatsbyConfig = {
         alias: {
           '~': 'src',
         },
-        extensions: ['js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
     {

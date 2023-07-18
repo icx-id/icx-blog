@@ -252,3 +252,56 @@ collections:
                   { name: 'description', label: 'Description', widget: string },
                 ],
             }
+  - name: 'blog'
+    label: 'Blog Articles'
+    file: 'src/content/blog/_index.md'
+    create: true
+    folder: 'src/content/blog'
+    fields: # The fields each document in this collection have
+      - { label: 'Draft', name: 'draft', widget: 'boolean', required: false, default: true }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - {
+          label: 'Title',
+          name: 'title',
+          widget: 'string',
+          hint: "Can't be more than 70 Characters",
+          pattern: ['^.{0,70}$', "Can't be more than 70 Characters"],
+        }
+      - {
+          label: 'Meta Title',
+          name: 'metaTitle',
+          widget: 'string',
+          hint: "Can't be more than 70 Characters",
+          pattern: ['^.{0,70}$', "Can't be more than 70 Characters"],
+        }
+      - {
+          label: 'Meta Description',
+          name: 'metaDescription',
+          hint: "Can't be more than 150 Characters",
+          widget: 'string',
+          pattern: ['^.{0,150}$', "Can't be more than 150 Characters"],
+        }
+      - { label: 'Intro Blurb', name: 'intro', widget: 'text' }
+      - { label: 'Pin This Post', name: 'isPinned', widget: 'boolean', required: false }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Tags',
+          name: 'tag',
+          widget: 'list',
+          field: { name: tag, label: Tag, widget: string },
+        }
+      - {
+          label: 'Categories',
+          name: 'category',
+          widget: 'list',
+          field: { name: category, label: Category, widget: string },
+        }
+      - name: featuredImage
+        label: Featured image
+        widget: object
+        fields:
+          - { name: src, label: Image, widget: image }
+          - { name: alt, label: Alt text, widget: string }
+          - { name: title, label: Title, widget: string }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Key', name: 'key', widget: 'hidden', default: 'blog-article' }
