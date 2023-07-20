@@ -75,12 +75,12 @@ export const BlogArticleListLayout = () => {
             </Tabs>
           </Grid.Col>
           <Grid.Col md={3} span={12}>
-            <NativeSelect
+            {/* <NativeSelect
               classNames={{
                 input: classes.selectInput,
               }}
               data={['Sort by Newest-Oldest', 'Sort by Oldest-Newest']}
-            />
+            /> */}
           </Grid.Col>
         </Grid>
         <SimpleGrid
