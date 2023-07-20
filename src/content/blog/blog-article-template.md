@@ -1,23 +1,22 @@
 ---
-draft: false
+draft: true
 author: Theodore
-title: Cara menabung ala Gen-Z
-metaTitle: Cara menabung ala Gen-Z
-metaDescription: Cara menabung ala Gen-Z
-intro: "Etiam id maximus sapien. Praesent ut faucibus est. Pellentesque
-  fermentum diam ac magna varius, id aliquam magna sollicitudin. Praesent
-  pretium metus eu pharetra volutpat. Maecenas rutrum maximus est, a
-  pellentesque quam viverra vitae. Mauris id orci ac nunc accumsan sollicitudin.
-  "
-date: 2023-07-17T08:47:20.046Z
+title: Blog Article Template
+metaTitle: Blog Article Template
+metaDescription: Blog Article Template
+intro: Etiam id maximus sapien. Praesent ut faucibus est. Pellentesque fermentum
+  diam ac magna varius, id aliquam magna sollicitudin. Praesent pretium metus eu
+  pharetra volutpat
+date: 2023-07-17T06:52:13.052Z
 category:
-  - news
+  - keuangan
 featuredImage:
-  src: /img/dhpb-cover-image.png
-  alt: featured
-  title: "featured "
+  src: /img/about-banner.png
+  alt: test
+  title: test
 key: blog-article
 ---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel mi dictum, ullamcorper ex nec, tristique augue. Ut lobortis urna ac dolor egestas, eget viverra sapien finibus. Maecenas eget ultrices felis. Nam laoreet lacinia dui. Nullam faucibus neque vitae viverra aliquet. Praesent sit amet magna ac sapien condimentum ultrices. Fusce cursus lacus eget malesuada euismod. Aliquam vehicula enim nisl, eu aliquam nisl interdum consectetur. Aenean at lectus sed nulla eleifend ullamcorper. Morbi sagittis orci non tincidunt congue. Curabitur nibh est, ornare a metus congue, pellentesque egestas erat. Etiam lacinia tempus purus, ut luctus orci pretium quis. Duis volutpat lectus est, eget mattis sem lacinia vel.
 
 Etiam id maximus sapien. Praesent ut faucibus est. Pellentesque fermentum diam ac magna varius, id aliquam magna sollicitudin. Praesent pretium metus eu pharetra volutpat. Maecenas rutrum maximus est, a pellentesque quam viverra vitae. Mauris id orci ac nunc accumsan sollicitudin. Donec consequat erat vel dictum bibendum. Aenean eu ligula viverra, pretium orci molestie, euismod elit.
