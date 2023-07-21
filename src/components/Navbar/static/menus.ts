@@ -15,4 +15,9 @@ export const navbarMenus: NavbarMenu[] = [
     name: 'ICX Connect',
     pathname: '/icx-connect',
   },
+  {
+    id: 5,
+    name: 'Blog',
+    pathname: '/blog',
+  },
 ];
