@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 author: Nadya A. Faatihah
 title: Investasi Surat Utang Negara (SUN) dan Obligasi Ritel Indonesia (ORI)
 metaTitle: Investasi Surat Utang Negara (SUN) dan Obligasi Ritel Indonesia (ORI)
