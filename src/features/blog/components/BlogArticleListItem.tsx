@@ -1,4 +1,4 @@
-import { AspectRatio, Image, Stack, Text, Anchor, Group, Box } from '@mantine/core';
+import { Image, Stack, Text, Anchor, Group } from '@mantine/core';
 import { IconArrowUpRight } from '@tabler/icons-react';
 import { Link } from 'gatsby';
 import React from 'react';
@@ -36,7 +36,7 @@ export const BlogArticleListItem: React.FC<BlogArticleListItemProps> = ({
         color="#333333"
         variant="white"
         component={Link}
-        to={`/blog/${slug}`}
+        to={`${slug}`}
         target="_blank">
         <Group spacing="lg">
           Read More <IconArrowUpRight />
