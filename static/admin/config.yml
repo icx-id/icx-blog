@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: prod
   commit_messages:
     create: 'content: create {{collection}} “{{slug}}”'
     update: 'content: update {{collection}} “{{slug}}”'
