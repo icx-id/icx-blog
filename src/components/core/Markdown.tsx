@@ -1,5 +1,6 @@
 /* eslint-disable react/no-children-prop */
 import { rem } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import React, { ReactNode } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -9,8 +10,10 @@ interface MarkdownProps {
 }
 
 export const Markdown: React.FC<MarkdownProps> = ({ content }) => {
+  const mobileScreen = useMediaQuery('(max-width: 30em)');
+
   const P = ({ children }: { children: ReactNode }) => (
-    <p style={{ marginBottom: 0, marginTop: 0, fontSize: rem(16) }}>{children}</p>
+    <p style={{ marginBottom: rem(16), marginTop: 0, fontSize: rem(16) }}>{children}</p>
   );
   const H5 = ({ children }: { children: ReactNode }) => (
     <h5 style={{ marginBottom: 0, marginTop: 0, fontWeight: 500, fontSize: rem(20) }}>
@@ -32,6 +35,29 @@ export const Markdown: React.FC<MarkdownProps> = ({ content }) => {
   const Table = ({ children }: { children: ReactNode }) => (
     <table style={{ marginBottom: 0, marginTop: 0, textAlign: 'center' }}>{children}</table>
   );
+  const Image = (props: any) => (
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        margin: mobileScreen ? '24px 0' : '42px 0',
+      }}>
+      <img {...props} loading="lazy" width={mobileScreen ? '100%' : '50%'} height="auto" />
+    </div>
+  );
+
+  const Blockquote = ({ children }: { children: ReactNode }) => (
+    <blockquote
+      style={{
+        margin: 0,
+        marginLeft: rem(16),
+        color: '#666',
+        paddingLeft: rem(14),
+        borderLeft: '3px solid #EEE',
+      }}>
+      {children}
+    </blockquote>
+  );
   return (
     <ReactMarkdown
       children={content}
@@ -41,6 +67,8 @@ export const Markdown: React.FC<MarkdownProps> = ({ content }) => {
         h5: H5,
         h6: H6,
         table: Table,
+        blockquote: Blockquote,
+        img: Image,
       }}
     />
   );
