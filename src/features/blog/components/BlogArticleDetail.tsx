@@ -31,8 +31,8 @@ export const BlogArticleDetail: FC<BlogArticleDetailProps> = ({ article }) => {
         </Flex>
         <Flex justify="center" mb={rem(52)}>
           <img
-            src={article.frontmatter.featuredImage.src}
-            alt={article.frontmatter.featuredImage.alt}
+            src={article.frontmatter?.featuredImage?.src}
+            alt={article.frontmatter?.featuredImage?.alt}
             style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '8px' }}
           />
         </Flex>
@@ -55,15 +55,17 @@ export const BlogArticleDetail: FC<BlogArticleDetailProps> = ({ article }) => {
         )}
 
         <Markdown content={article.rawMarkdownBody} />
-        <Flex gap={rem(10)}>
-          {Children.toArray(
-            Object.values(article.frontmatter.tag).map((tag, index) => (
-              <Text sx={{ textDecoration: 'underline' }} key={index.toString()}>
-                {tag}
-              </Text>
-            )),
-          )}
-        </Flex>
+        {!!article.frontmatter.tag && (
+          <Flex gap={rem(10)}>
+            {Children.toArray(
+              Object.values(article.frontmatter.tag).map((tag, index) => (
+                <Text sx={{ textDecoration: 'underline' }} key={index.toString()}>
+                  {tag}
+                </Text>
+              )),
+            )}
+          </Flex>
+        )}
       </Box>
       <Box>
         <Text sx={{ fontSize: rem(20), fontWeight: 600 }}>Read Another Blog</Text>

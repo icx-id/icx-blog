@@ -4,7 +4,7 @@ import { SiteMetadata } from '~/components';
 import { BlogArticleDetail, BlogArticleQueryResponse } from '~/features/blog/';
 
 export const query = graphql`
-  query ($slug: String!) {
+  query ($slug: String) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
