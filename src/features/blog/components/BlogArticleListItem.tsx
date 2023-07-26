@@ -1,4 +1,15 @@
-import { Image, Stack, Text, Anchor, Group } from '@mantine/core';
+import {
+  Image,
+  Stack,
+  Text,
+  Anchor,
+  Group,
+  Flex,
+  useMantineTheme,
+  em,
+  getBreakpointValue,
+} from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import { IconArrowUpRight } from '@tabler/icons-react';
 import { Link } from 'gatsby';
 import React from 'react';
@@ -16,32 +27,50 @@ export const BlogArticleListItem: React.FC<BlogArticleListItemProps> = ({
   title,
   slug,
 }) => {
+  const theme = useMantineTheme();
+  const isMobile = useMediaQuery(
+    `(max-width: ${em(getBreakpointValue(theme.breakpoints.sm) - 1)})`,
+  );
+
   return (
-    <Stack spacing={12}>
-      <Stack sx={{ flex: 1 }} spacing={12}>
-        <Image
-          src={image}
-          styles={{
-            image: {
-              aspectRatio: '16 / 9',
-            },
-          }}
-        />
-        <Text fw="bold">{title}</Text>
-        <Text fz="sm">{intro.length >= 139 ? intro.slice(0, 139) + '...' : intro}</Text>
+    <Flex gap={12} direction={{ xs: 'row', sm: 'column' }}>
+      <Image
+        src={image}
+        sx={{
+          maxWidth: isMobile ? '50%' : '100%',
+          minWidth: isMobile ? '50%' : '100%',
+        }}
+        styles={{
+          image: {
+            borderRadius: '4px',
+            aspectRatio: isMobile ? '3 / 2' : '16 / 9',
+          },
+        }}
+      />
+      <Stack h="100%">
+        <Stack justify="space-between" h="100%">
+          <Text fw="bold" lineClamp={isMobile ? 3 : 2} lh={1.5}>
+            {title}
+          </Text>
+          {!isMobile && (
+            <Text fz="sm" lineClamp={3}>
+              {intro}
+            </Text>
+          )}
+        </Stack>
+        <Anchor
+          fw="bold"
+          fz="sm"
+          color="#333333"
+          variant="white"
+          component={Link}
+          to={`${slug}`}
+          target="_blank">
+          <Group spacing="lg">
+            Read More <IconArrowUpRight />
+          </Group>
+        </Anchor>
       </Stack>
-      <Anchor
-        fw="bold"
-        fz="sm"
-        color="#333333"
-        variant="white"
-        component={Link}
-        to={`${slug}`}
-        target="_blank">
-        <Group spacing="lg">
-          Read More <IconArrowUpRight />
-        </Group>
-      </Anchor>
-    </Stack>
+    </Flex>
   );
 };
