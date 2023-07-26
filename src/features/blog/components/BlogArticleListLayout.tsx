@@ -1,10 +1,22 @@
 import React, { useState } from 'react';
-import { Box, Container, Grid, NativeSelect, SimpleGrid, Tabs, createStyles } from '@mantine/core';
+import {
+  Box,
+  Container,
+  Grid,
+  NativeSelect,
+  SimpleGrid,
+  Tabs,
+  createStyles,
+  em,
+  getBreakpointValue,
+  useMantineTheme,
+} from '@mantine/core';
 import { AllArticles } from './article-lists/AllArticles';
 import { NewsArticles } from './article-lists/NewsArticles';
 import { EkonomiArticles } from './article-lists/EkonomiArticles';
 import { KeuanganArticles } from './article-lists/KeuanganArticles';
 import { InvestasiArticles } from './article-lists/InvestasiArticles';
+import { useMediaQuery } from '@mantine/hooks';
 
 const useStyles = createStyles(theme => ({
   tab: {
@@ -40,40 +52,64 @@ export const BlogArticleListLayout = () => {
     }
   };
 
+  const theme = useMantineTheme();
+  const isMobile = useMediaQuery(
+    `(max-width: ${em(getBreakpointValue(theme.breakpoints.md) - 1)})`,
+  );
+
   return (
     <Box>
       <Container size="ll" py="xl">
         <Grid>
-          <Grid.Col md="auto" span="auto">
+          <Grid.Col
+            md="auto"
+            span="auto"
+            sx={{
+              '.mantine-1a1iqt9[data-active]': {
+                borderBottom: '4px solid #00b382',
+              },
+              '::-webkit-scrollbar': {
+                width: 0,
+                height: 0,
+                background: 'transparent',
+              },
+              borderBottom: '2px solid #D9D9D9',
+              overflowX: 'auto',
+              margin: '0px 8px',
+              padding: '0px',
+            }}>
             <Tabs
+              sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                flexWrap: 'nowrap',
+              }}
               styles={{
                 tabLabel: {
-                  // marginBottom: '16px',
-                  margin: '0 32px 16px 0',
+                  margin: isMobile ? '12px' : '4px 32px 12px 0',
                 },
               }}
-              sx={{ flex: 1 }}
               onTabChange={value => setArticleCategory(value as string)}
-              value={articleCategory}>
-              <Tabs.List defaultChecked>
-                <Tabs.Tab className={classes.tab} value="semua">
-                  Semua
-                </Tabs.Tab>
-                <Tabs.Tab className={classes.tab} value="news">
-                  News
-                </Tabs.Tab>
-                <Tabs.Tab className={classes.tab} value="ekonomi">
-                  Ekonomi
-                </Tabs.Tab>
-                <Tabs.Tab className={classes.tab} value="keuangan">
-                  Keuangan
-                </Tabs.Tab>
-                <Tabs.Tab className={classes.tab} value="investasi">
-                  Investasi
-                </Tabs.Tab>
-              </Tabs.List>
+              value={articleCategory}
+              defaultChecked>
+              <Tabs.Tab className={classes.tab} value="semua">
+                Semua
+              </Tabs.Tab>
+              <Tabs.Tab className={classes.tab} value="news">
+                News
+              </Tabs.Tab>
+              <Tabs.Tab className={classes.tab} value="ekonomi">
+                Ekonomi
+              </Tabs.Tab>
+              <Tabs.Tab className={classes.tab} value="keuangan">
+                Keuangan
+              </Tabs.Tab>
+              <Tabs.Tab className={classes.tab} value="investasi">
+                Investasi
+              </Tabs.Tab>
             </Tabs>
           </Grid.Col>
+
           <Grid.Col md={3} span={12}>
             {/* <NativeSelect
               classNames={{
@@ -84,7 +120,7 @@ export const BlogArticleListLayout = () => {
           </Grid.Col>
         </Grid>
         <SimpleGrid
-          my="lg"
+          my={isMobile ? '30px' : '40px'}
           cols={4}
           verticalSpacing="xl"
           breakpoints={[
