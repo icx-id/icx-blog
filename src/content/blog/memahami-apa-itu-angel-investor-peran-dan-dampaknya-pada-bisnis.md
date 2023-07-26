@@ -97,6 +97,6 @@ Dalam membangun ekosistem angel investor yang kuat, penting bagi Indonesia untuk
 
 Oleh sebab itu, angel investor memiliki peran penting terhadap pertumbuhan inovasi-inovasi untuk mendorong pertumbuhan ekonomi Indonesia. 
 
-## **UNLOCKING YOUR NEXT LEVEL INVESTMENT**
+## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)**
 
 ![angel investor di indonesia](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "angel investor yang mendukung pertumbuhan perusahaan startup")
