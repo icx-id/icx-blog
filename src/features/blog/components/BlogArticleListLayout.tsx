@@ -120,7 +120,8 @@ export const BlogArticleListLayout = () => {
           </Grid.Col>
         </Grid>
         <SimpleGrid
-          my={isMobile ? '30px' : '40px'}
+          mt={isMobile ? '30px' : '40px'}
+          mb="60px"
           cols={4}
           verticalSpacing="xl"
           breakpoints={[
