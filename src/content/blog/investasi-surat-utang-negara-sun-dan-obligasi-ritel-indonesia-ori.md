@@ -14,8 +14,8 @@ category:
   - investasi
 featuredImage:
   src: https://images.unsplash.com/photo-1628873690006-344e1f0b2b96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
-  alt: coin
-  title: coin
+  alt: Memahami apa itu SUN (Surat Utang Negara)
+  title: Apa itu SUN dan Cara Investasinya
 key: blog-article
 ---
 Apa itu SUN? Surat Utang Negara adalah bukti pemerintah berutang kepada investor dalam jangka waktu tertentu. Dengan kata lain, melalui Surat Utang Negara (SUN), pemerintah menjamin pembayaran bunga dan pokok dari SUN sesuai masa berlaku yang ditentukan.
