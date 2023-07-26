@@ -129,6 +129,6 @@ ri investasi, investor akan semakin leluasa untuk menabung, menyiapkan dana hari
 
 Maka, melalui investasi yang tepat, investor dapat mengelola risiko inflasi dengan lebih efektif dan memperoleh hasil yang optimal dari portofolio investasi mereka. 
 
-## **UNLOCKING YOUR NEXT LEVEL INVESTMENT**
+## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT](https://icx.id/)**
 
 ![investasi di tengah kebijakan moneter](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "kebijakan moneter")
