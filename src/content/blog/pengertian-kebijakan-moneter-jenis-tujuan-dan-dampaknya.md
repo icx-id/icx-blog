@@ -131,4 +131,4 @@ Maka, melalui investasi yang tepat, investor dapat mengelola risiko inflasi deng
 
 ## **UNLOCKING YOUR NEXT LEVEL INVESTMENT**
 
-![investasi di tengah kebijakan moneter](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080.jpg "kebijakan moneter")
+![investasi di tengah kebijakan moneter](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "kebijakan moneter")
