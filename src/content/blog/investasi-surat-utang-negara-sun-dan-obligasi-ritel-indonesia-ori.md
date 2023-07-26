@@ -9,11 +9,9 @@ intro: Yuk kenali Surat Utang Negara (SUN) dan Obligasi Ritel Indonesia (ORI)
   untuk potensi instrumen investasi jangka panjang anda
 isPinned: false
 date: 2023-07-21T03:13:27.931Z
-tag:
-  - instrumentinvestasi
-  - investasi
+tag: []
 category:
-  - CROWDFUNDING
+  - investasi
 featuredImage:
   src: https://images.unsplash.com/photo-1628873690006-344e1f0b2b96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
   alt: coin
