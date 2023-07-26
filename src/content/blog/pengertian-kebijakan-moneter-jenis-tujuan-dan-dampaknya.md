@@ -123,8 +123,12 @@ Inflasi merupakan salah satu risiko ekonomi yang seringkali menghantui para inve
 
 Dalam menghadapi inflasi, investor perlu melakukan alokasi dana yang tepat dalam aset yang dapat memberikan imbal hasil yang lebih tinggi daripada laju inflasi. Dengan begitu, nilai uang yang diinvestasikan akan terlindungi dari penurunan daya beli akibat inflasi.
 
-Investasi yang tepat juga dapat membantu meningkatkan nilai nominal dana yang diinvestasikan. Seiring dengan peningkatan pendapatan dari investasi, investor akan semakin leluasa untuk menabung, menyiapkan dana hari tua, atau memenuhi kebutuhan lainnya.
+Investasi yang tepat juga dapat membantu meningkatkan nilai nominal dana yang diinvestasikan. Seiring dengan peningkatan pendapatan da
+
+ri investasi, investor akan semakin leluasa untuk menabung, menyiapkan dana hari tua, atau memenuhi kebutuhan lainnya.
 
 Maka, melalui investasi yang tepat, investor dapat mengelola risiko inflasi dengan lebih efektif dan memperoleh hasil yang optimal dari portofolio investasi mereka. 
 
-**UNLOCKING YOUR NEXT LEVEL INVESTMENT**
+## **UNLOCKING YOUR NEXT LEVEL INVESTMENT**
+
+![investasi di tengah kebijakan moneter](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080.jpg "kebijakan moneter")
