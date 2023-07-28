@@ -1,6 +1,7 @@
 export interface BlogArticleNode {
   id: string;
   rawMarkdownBody: string;
+  tableOfContents: string;
   frontmatter: {
     author: string;
     key: string;
@@ -16,6 +17,7 @@ export interface BlogArticleNode {
       src: string;
       title: string;
     };
+    tag: string[];
   };
   fields: {
     slug: string;
@@ -28,4 +30,8 @@ export interface BlogArticlesQueryResponse {
       node: BlogArticleNode;
     }[];
   };
+}
+
+export interface BlogArticleQueryResponse {
+  markdownRemark: BlogArticleNode;
 }

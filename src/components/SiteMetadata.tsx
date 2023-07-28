@@ -1,7 +1,10 @@
 import React from 'react';
 import useSiteMetadata from '../hooks/useSiteMetadata';
 
-export const SiteMetadata: React.FC<{ title?: string }> = ({ title = 'ICX' }) => {
+export const SiteMetadata: React.FC<{ title?: string; metaDescription?: string }> = ({
+  title = 'ICX',
+  metaDescription,
+}) => {
   const { title: defaultTitle, description } = useSiteMetadata();
   return (
     <>
@@ -10,7 +13,7 @@ export const SiteMetadata: React.FC<{ title?: string }> = ({ title = 'ICX' }) =>
       </title>
 
       {/* metadata */}
-      <meta name="description" content={description} />
+      <meta name="description" content={metaDescription || description} />
     </>
   );
 };

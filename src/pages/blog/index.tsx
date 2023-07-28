@@ -13,13 +13,13 @@ const BlogPage: React.FC<PageProps> = () => {
       <Paper
         mb="xl"
         sx={{
-          backgroundImage: 'url(/img/events-banner.png)',
-          backgroundPosition: mobileScreen
-            ? '-1200px 0px'
-            : tabScreen
-            ? '-1000px 0px'
-            : '-500px 0px',
-          height: '20rem',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: mobileScreen ? 'cover' : 'unset',
+          backgroundImage: mobileScreen
+            ? 'url(/img/events-banner-mobile.png)'
+            : 'url(/img/events-banner.png)',
+          backgroundPosition: mobileScreen ? 'right' : tabScreen ? '-1000px 0px' : '-500px 0px',
+          height: '14rem',
           borderRadius: '0px',
         }}>
         <Container sx={{ height: '100%' }} size="ll">

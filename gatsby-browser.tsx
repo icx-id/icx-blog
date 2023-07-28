@@ -22,7 +22,10 @@ const forceNavbarSolid = [
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {
   const { pathname } = props.location;
-  const navbarSolid = forceNavbarSolid.includes(pathname) || pathname.includes('/icx-connect/');
+  const navbarSolid =
+    forceNavbarSolid.includes(pathname) ||
+    pathname.includes('/icx-connect/') ||
+    pathname.includes('/blog/');
 
   const internalPaths = useInternalPaths();
 
