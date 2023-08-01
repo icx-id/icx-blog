@@ -20,7 +20,7 @@ key: blog-article
 ---
 Quantitative easing adalah kebijakan yang bertujuan untuk mendukung perekonomian negara yang sedang mengalami krisis dengan meningkatkan jumlah uang yang beredar. Bagaimana cara pelaksanaan quantitative easing dan seperti apa dampaknya? Yuk, simak lebih lanjut artikel ini. 
 
-## Apa itu quantitative easing?
+## Apa Itu Quantitative Easing?
 
 Quantitative easing adalah kebijakan yang dilakukan oleh bank sentral suatu negara untuk meningkatkan jumlah uang yang beredar dengan membeli aset atau surat berharga dari bank komersial atau institusi swasta. Penerapan  kebijakan quantitative easing ini diharapkan dapat mendorong masyarakat untuk melakukan pengeluaran atau pembelian, sehingga berdampak kepada perputaran uang yang lebih aktif dan menghidupkan kembali roda ekonomi.
 
@@ -98,9 +98,4 @@ Oleh karena itu, penting bagi kita untuk mempersiapkan dana pribadi, seperti dan
 
 **[Yuk, segera siapkan investasi kita dari sekarang!](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)**
 
-\
-<!--StartFragment-->
-
 ![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
-
-<!--EndFragment-->
