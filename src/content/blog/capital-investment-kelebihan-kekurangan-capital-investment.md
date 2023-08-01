@@ -1,6 +1,6 @@
 ---
 draft: false
-author: Della Octavilla
+author: Della Octavilla.
 title: "Capital Investment: Kelebihan & Kekurangan Capital Investment"
 metaTitle: Memahami Kelebihan dan Kekurangan Capital Investment dalam Bisnis
 metaDescription: "Menggali capital investment: pengertian, peran, dan
