@@ -32,7 +32,7 @@ Masih bingung? Yuk kita simak bersama-sama bahas mengenai perusahaan investasi p
 
 Pada perusahaan investasi, kegiatan bisnis yang dijalankan adalah melakukan pengelolaan sekuritas untuk kepentingan investasi. Namun, perusahaan investasi biasanya menawarkan investor bermacam-macam dana dan layanan investasi termasuk manajemen portofolio, pencatatan, legal, kustodian, akuntansi, dan manajemen pajak.
 
-Perusahaan investasi biasanya bekerja sama dengan third party distribution untuk menjual reksa dana. **Third party distribution** adalah institusi atau badan hukum yang menjual atau mendistribusikan reksa dana ke investor untuk pendanaan manajemen perusahaan.
+Perusahaan investasi biasanBya bekerja sama dengan third party distribution untuk menjual reksa dana. **Third party distribution** adalah institusi atau badan hukum yang menjual atau mendistribusikan reksa dana ke investor untuk pendanaan manajemen perusahaan.
 
 Perusahaan investasi dapat berbentuk korporat, perusahaan, firma, dan perseroan terbatas yang mengumpulkan uang secara kolektif dari para investor. Dengan demikian, uang yang akan dikumpulkan akan diinvestasikan, sehingga investor dapat berbagi keuntungan dan kerugian yang terjadi pada perusahaan sesuai dengan kepentingan investor di perusahaan tersebut. 
 
@@ -94,6 +94,8 @@ Kelima perusahaan investasi yang sudah disebutkan di atas adalah perusahaan yang
 
 Beberapa perusahaan pun menjual produk bermacam-macam, untuk perorangan, korporasi, syariah dan memiliki layanan paduan investasi dari tim regional maupun internasional. Dengan menawarkan layanan dan produk bervariasi sehingga sebelum melakukan investasi, calon investor dapat menyesuaikan dengan perusahaan sekuritas yang dipilih.
 
+
+
 ## Diversifikasi Investasi
 
 Harapan dengan hadirnya perusahaan investasi ini para investor yang melakukan investasi dapat menikmati skala lebih ekonomis dengan biaya transaksi, administrasi, dan komisi yang rendah. 
@@ -102,14 +104,30 @@ Dalam pengelolaanya investasi pun dilakukan oleh manajer investasi sendiri seper
 
 Seperti yang sudah dibahas sebelumnya, hadirnya perusahaan investasi ini bisa juga menjadi kesempatan untuk para investor untuk mengalokasikan modal untuk menambah aset sahamnya. Selain itu juga, kamu bisa loh melakukan diversifikasi investasi kamu melalui skema equity crowdfunding.
 
-Dengan skema [equity crowdfunding](https://landx.id/), kamu bersama masyarakat luas bersama-sama patungan ke bisnis yang sesuai dengan profil risiko kamu dan tentunya bisnis yang kamu danai memiliki prospek yang bagus, maka dari itu perlu memilih aplikasi [equity crowdfunding](https://landx.id/) yang berpengalaman.
-
-[LandX](https://landx.id/) merupakan platform [equity crowdfunding](https://landx.id/) yang telah berizin dari Otoritas Jasa Keuangan (OJK) dan berpengalaman mendanai bisnis di berbagai sektor industri seperti FnB, properti, kebugaran, dan jasa laundry. Nantinya usaha yang kamu danai akan berkembang dan melakukan ekspansi bisnis. Dengan demikian, keuntungan yang kamu raih berupa dividen pun akan semakin baik.
-
-## [Yuk, Diversifikasi Investasi Kamu dengan Miliki Bisnis Kekinian Lewat LandX!](https://app.landx.id/?utm_source=BLOGCONTENT&utm_medium=SEO&utm_campaign=SEO&utm_id=BLOGLANDX)
-
 <!--StartFragment-->
 
-[![miliki bisnis modal kecil cuma dengan 1 jutaan dapat 4 cabang ](https://accountgram-production.sfo2.cdn.digitaloceanspaces.com/landx_ghost/2021/11/jadi-owner-bisnis-hanya-1-jutaan-dengan-cuan-yang-sangat-menjanjikan.png)](https://app.landx.id/?utm_source=BLOGCONTENT&utm_medium=SEO&utm_campaign=SEO&utm_id=BLOGLANDX)
+- - -
+
+**Diversifikasi Investasi dengan ICX**
+
+ICX adalah platform equity crowdfunding yang telah berizin dari Otoritas Jasa Keuangan (OJK). ICX memberikan kesempatan bagi para investor untuk berinvestasi di berbagai bisnis yang sedang berkembang di Indonesia.
+
+Dengan berinvestasi di ICX, Anda dapat menikmati berbagai manfaat, seperti:
+
+* Diversifikasi investasi: ICX menawarkan berbagai jenis bisnis untuk Anda pilih, sehingga Anda dapat mengurangi risiko investasi Anda.
+* Kemudahan berinvestasi: ICX adalah platform online yang mudah digunakan, sehingga Anda dapat berinvestasi kapan saja dan di mana saja.
+* Keamanan investasi: ICX telah terdaftar dan diawasi oleh OJK, sehingga Anda dapat berinvestasi dengan aman.
+
+Jika Anda tertarik untuk berinvestasi di ICX, Anda dapat mengunjungi situs web ICX atau menghubungi tim ICX untuk informasi lebih lanjut.
+
+**[Unlocking next level investment](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)**
+
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+
+<!--EndFragment-->
+
+- - -
+
+
 
 <!--EndFragment-->
