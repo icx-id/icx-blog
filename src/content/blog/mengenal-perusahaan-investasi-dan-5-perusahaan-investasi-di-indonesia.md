@@ -124,10 +124,4 @@ Jika Anda tertarik untuk berinvestasi di ICX, Anda dapat mengunjungi situs web I
 
 ![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
 
-<!--EndFragment-->
-
 - - -
-
-
-
-<!--EndFragment-->
