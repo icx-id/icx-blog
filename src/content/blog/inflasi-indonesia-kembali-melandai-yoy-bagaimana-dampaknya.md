@@ -46,4 +46,4 @@ Inflasi yang mengalami penurunan di Indonesia telah menarik perhatian para ekono
 
 Dengan penurunan inflasi yang terjadi, pemerintah harus tetap waspada terhadap kemungkinan kenaikan inflasi di masa mendatang. Stabilitas inflasi dapat dijaga dengan menjalankan kebijakan yang tepat, termasuk menjaga stabilitas nilai tukar rupiah, ketersediaan pasokan pangan dan energi, serta melanjutkan program-program sosial untuk meningkatkan daya beli masyarakat.
 
-Demikianlah pembahasan lebih komprehensif mengenai penurunan inflasi di Indonesia dan dampak positif yang dihasilkannya. Dengan stabilitas harga dan pertumbuhan ekonomi yang berpotensi, diharapkan Indonesia dapat terus meniti jalur menuju perekonomian yang lebih kokoh dan berkembang.
+Demikianlah pembahasan lebih komprehensif mengenai penurunan inflasi di Indonesia dan dampak positif yang dihasilkannya. Dengan stabilitas harga dan pertumbuhan ekonomi yang berpotensi, diharaxpkan Indonesia dapat terus meniti jalur menuju perekonomian yang lebih kokoh dan berkembang.`
