@@ -36,13 +36,13 @@ Inflasi yang mengalami penurunan di Indonesia telah menarik perhatian para ekono
 
 **Penurunan inflasi memberikan dampak positif bagi perekonomian Indonesia, di antaranya:**
 
-a. Meningkatkan Daya Beli Masyarakat: Stabilitas harga barang dan jasa membuat daya beli masyarakat meningkat. Masyarakat memiliki lebih banyak uang untuk digunakan dalam kebutuhan sehari-hari, sehingga konsumsi meningkat dan sektor usaha merasakan dampak positif dari kenaikan permintaan.
+**a. Meningkatkan Daya Beli Masyarakat:** Stabilitas harga barang dan jasa membuat daya beli masyarakat meningkat. Masyarakat memiliki lebih banyak uang untuk digunakan dalam kebutuhan sehari-hari, sehingga konsumsi meningkat dan sektor usaha merasakan dampak positif dari kenaikan permintaan.
 
-b. Mendorong Pertumbuhan Ekonomi: Inflasi yang terkendali menciptakan lingkungan ekonomi yang stabil, yang pada gilirannya mendorong investasi dan ekspansi bisnis. Hal ini dapat berkontribusi pada pertumbuhan ekonomi secara keseluruhan.
+**b. Mendorong Pertumbuhan Ekonomi:** Inflasi yang terkendali menciptakan lingkungan ekonomi yang stabil, yang pada gilirannya mendorong investasi dan ekspansi bisnis. Hal ini dapat berkontribusi pada pertumbuhan ekonomi secara keseluruhan.
 
-c. Mengurangi Beban Subsidi Pemerintah: Penurunan inflasi akan berdampak pada penurunan harga-harga tertentu, termasuk harga bahan bakar. Hal ini dapat mengurangi beban subsidi pemerintah dalam menjaga harga-harga agar tetap terjangkau oleh masyarakat.
+**c. Mengurangi Beban Subsidi Pemerintah:** Penurunan inflasi akan berdampak pada penurunan harga-harga tertentu, termasuk harga bahan bakar. Hal ini dapat mengurangi beban subsidi pemerintah dalam menjaga harga-harga agar tetap terjangkau oleh masyarakat.
 
-d. Meningkatkan Efektivitas Kebijakan Moneter: Dalam lingkungan inflasi yang rendah, kebijakan moneter dapat menjadi lebih efektif. Bank Sentral dapat dengan lebih leluasa mengatur suku bunga dan likuiditas moneter untuk menjaga stabilitas ekonomi.
+**d. Meningkatkan Efektivitas Kebijakan Moneter:** Dalam lingkungan inflasi yang rendah, kebijakan moneter dapat menjadi lebih efektif. Bank Sentral dapat dengan lebih leluasa mengatur suku bunga dan likuiditas moneter untuk menjaga stabilitas ekonomi.
 
 Dengan penurunan inflasi yang terjadi, pemerintah harus tetap waspada terhadap kemungkinan kenaikan inflasi di masa mendatang. Stabilitas inflasi dapat dijaga dengan menjalankan kebijakan yang tepat, termasuk menjaga stabilitas nilai tukar rupiah, ketersediaan pasokan pangan dan energi, serta melanjutkan program-program sosial untuk meningkatkan daya beli masyarakat.
 
