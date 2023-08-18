@@ -16,8 +16,6 @@ featuredImage:
   title: memahami konsep annual return
 key: blog-article
 ---
-
-
 Apa itu annual return? Annualized return atau yang disebut juga annual return adalah pengembalian atau pendapatan dari investasi yang dihasilkan selama setahun dan dihitung sebagai persentase dari jumlah investasi awal. Pengembalian investasi dalam 1 tahun akan bervariasi tergantung tingkat risiko investasi tersebut.
 
 Annual return atau 1 year return adalah proses perhitungan yang kerap digunakan karena mencakup perhitungan bunga dan dianggap lebih akurat. Untuk menghitung pengembalian investasi dalam 1 tahun, rumus annual return dapat digunakan di berbagai instrumen investasi seperti saham, obligasi, komoditas, dan beberapa jenis derivatif. Perhitungan 1 year return juga dapat digunakan untuk melihat kinerja investasi dari waktu ke waktu atau membandingkan dua investasi dengan periode waktu yang berbeda.
@@ -126,9 +124,7 @@ Equity crowdfunding adalah sistem urun dana yang dilakukan oleh investor untuk m
 
 Sama seperti saham di pasar modal, saham di equity crowdfunding juga menawarkan keuntungan melalui dividen. Semakin besar saham yang dimiliki maka semakin besar potensi dividen yang akan didapatkan, artinya semakin besar pula potensi nilai annual return yang akan didapat.
 
-Jika kamu sudah paham menghitung annual return, kamu bisa mencoba investasi di platform equity. Salah satu equity crowdfunding berizin OJK adalah LandX. Selain membeli saham bisnis, kamu juga bisa menghitung potensi annual return dengan cara mendownload prospektus dari bisnis yang telah listing. 
-
-Dalam dokumen prospektus, kamu akan mendapatkan informasi bisnis seputar latar belakang bisnis, laporan keuangan, hingga estimasi dividen yang akan didapat selama kurun waktu tertentu sehingga kamu bisa memperhitungkan return dari investasi yang anda lakukan. 
+Selain membeli saham bisnis, kamu juga bisa menghitung potensi annual return dengan cara mendownload prospektus dari bisnis yang telah listing. Dalam dokumen prospektus, kamu akan mendapatkan informasi bisnis seputar latar belakang bisnis, laporan keuangan, hingga estimasi dividen yang akan didapat selama kurun waktu tertentu sehingga kamu bisa memperhitungkan return dari investasi yang anda lakukan. 
 
 K﻿arena itu, tunggu apalagi... 
 
