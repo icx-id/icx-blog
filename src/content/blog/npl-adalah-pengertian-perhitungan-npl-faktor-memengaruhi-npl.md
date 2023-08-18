@@ -130,4 +130,4 @@ Ingin tahu bagaimana caranya? Anda dapat memulai dengan memilih investasi berisi
 
 Dengan dana yang telah diinvestasikan, bisnis yang Anda dukung akan memiliki peluang untuk tumbuh dan mengembangkan diri, bahkan melakukan ekspansi. Pada akhirnya, investasi Anda bisa menjadi suatu komitmen jangka panjang. Melalui platform equity crowdfunding seperti ICX, yang memiliki pengalaman dalam mendanai bisnis berpotensi serta memiliki reputasi terpercaya, Anda dapat memilih investasi dengan lebih percaya diri. Dengan kontribusi terbesar di Indonesia, ICX telah membuktikan diri sebagai pemimpin di bidangnya.
 
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "investasi jangka panjang lewat equity crowdfunding")
