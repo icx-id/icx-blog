@@ -182,8 +182,6 @@ O﻿leh sebab itu, sistem ini bisa jadi pilihan instrumen untuk investasi jangka
 
 ## Y﻿uk Mulai Kembangkan Investasi Jangka Panjang Anda Sekarang...
 
-<!--StartFragment-->
+
 
 ![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
-
-<!--EndFragment-->
