@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Box, Text, Paper, SimpleGrid, Tabs, createStyles } from '@mantine/core';
+import { Container, Box, Text, Paper, SimpleGrid, Tabs, createStyles, Flex } from '@mantine/core';
 import EventCard from '~/components/EventCard';
 import { useGetEventsQuery } from '../api/useGetEvents';
 import { parseEventDate } from '../utils';
@@ -96,7 +96,14 @@ export const EventList: React.FC<{}> = () => {
                 {isLoading ? (
                   <EventListSkeleton />
                 ) : !events?.data.length ? (
-                  <Text>No upcoming events</Text>
+                  <Flex direction="column">
+                    <Text fz="xl" fw="bold" pb="xl">
+                      No upcoming event yet,
+                    </Text>
+                    <Text>
+                      Stay tune for upcoming event at ICX to keep in touch with investors.
+                    </Text>
+                  </Flex>
                 ) : (
                   events.data.map(event => {
                     const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
@@ -130,7 +137,13 @@ export const EventList: React.FC<{}> = () => {
                 {isLoading ? (
                   <EventListSkeleton />
                 ) : !events?.data.length ? (
-                  <Text>No upcoming events</Text>
+                  <>
+                    <Text>Belum ada event</Text>
+                    <Text>
+                      Pantau terus dan nantikan event menarik ICX lainnya untuk dapat terhubung
+                      dengan para investor.
+                    </Text>
+                  </>
                 ) : (
                   events.data.map(event => {
                     const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
