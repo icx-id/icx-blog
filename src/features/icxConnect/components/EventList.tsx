@@ -137,13 +137,14 @@ export const EventList: React.FC<{}> = () => {
                 {isLoading ? (
                   <EventListSkeleton />
                 ) : !events?.data.length ? (
-                  <>
-                    <Text>Belum ada event</Text>
-                    <Text>
-                      Pantau terus dan nantikan event menarik ICX lainnya untuk dapat terhubung
-                      dengan para investor.
+                  <Flex direction="column">
+                    <Text fz="xl" fw="bold" pb="xl">
+                      No upcoming event yet,
                     </Text>
-                  </>
+                    <Text>
+                      Stay tune for upcoming event at ICX to keep in touch with investors.
+                    </Text>
+                  </Flex>
                 ) : (
                   events.data.map(event => {
                     const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
