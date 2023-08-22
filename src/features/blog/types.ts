@@ -18,6 +18,7 @@ export interface BlogArticleNode {
       title: string;
     };
     tag: string[];
+    isPinned?: boolean;
   };
   fields: {
     slug: string;

@@ -15,13 +15,39 @@ export const BlogArticleList: React.FC<BlogArticleListProps> = ({ articles }) =>
             featuredImage: { src },
             intro,
             title,
+            isPinned,
           },
           id,
           fields: { slug },
         }) => {
-          return (
-            <BlogArticleListItem image={src} intro={intro} slug={slug} title={title} key={id} />
-          );
+          if (isPinned)
+            return (
+              <BlogArticleListItem
+                pinned={isPinned}
+                image={src}
+                intro={intro}
+                slug={slug}
+                title={title}
+                key={id}
+              />
+            );
+        },
+      )}
+      {articles.map(
+        ({
+          frontmatter: {
+            featuredImage: { src },
+            intro,
+            title,
+            isPinned,
+          },
+          id,
+          fields: { slug },
+        }) => {
+          if (!isPinned)
+            return (
+              <BlogArticleListItem image={src} intro={intro} slug={slug} title={title} key={id} />
+            );
         },
       )}
     </>

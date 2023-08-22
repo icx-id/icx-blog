@@ -8,6 +8,7 @@ import {
   useMantineTheme,
   em,
   getBreakpointValue,
+  Badge,
 } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconArrowUpRight } from '@tabler/icons-react';
@@ -19,6 +20,7 @@ interface BlogArticleListItemProps {
   intro: string;
   image: string;
   slug: string;
+  pinned?: boolean;
 }
 
 export const BlogArticleListItem: React.FC<BlogArticleListItemProps> = ({
@@ -26,6 +28,7 @@ export const BlogArticleListItem: React.FC<BlogArticleListItemProps> = ({
   intro,
   title,
   slug,
+  pinned,
 }) => {
   const theme = useMantineTheme();
   const isMobile = useMediaQuery(
@@ -43,7 +46,12 @@ export const BlogArticleListItem: React.FC<BlogArticleListItemProps> = ({
           textDecoration: 'none',
         },
       }}>
-      <Flex gap={12} direction={{ xs: 'row', sm: 'column' }}>
+      <Flex gap={12} direction={{ xs: 'row', sm: 'column' }} pos="relative">
+        {pinned && (
+          <Badge pos="absolute" top={8} right={8} sx={{ zIndex: 2 }}>
+            Pinned
+          </Badge>
+        )}
         <Image
           src={image}
           sx={{
