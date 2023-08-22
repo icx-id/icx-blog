@@ -8,16 +8,10 @@ import { EventScheduleType } from '../types';
 import { navigate } from 'gatsby';
 import { useMediaQuery } from '@mantine/hooks';
 
-const useStyles = createStyles(theme => ({
+const useStyles = createStyles(() => ({
   tab: {
     fontWeight: 'bold',
     color: 'gray',
-  },
-  selectInput: {
-    // borderRadius: '50px',
-    background: theme.white,
-    boxShadow: `0px 4.993950843811035px 20px 0px rgba(0, 0, 0, 0.10)`,
-    border: '1px solid white',
   },
 }));
 
