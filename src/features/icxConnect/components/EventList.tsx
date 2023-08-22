@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Box, Text, Paper, SimpleGrid } from '@mantine/core';
+import React, { useState } from 'react';
+import { Container, Box, Text, Paper, SimpleGrid, Tabs, createStyles } from '@mantine/core';
 import EventCard from '~/components/EventCard';
 import { useGetEventsQuery } from '../api/useGetEvents';
 import { parseEventDate } from '../utils';
@@ -8,13 +8,30 @@ import { EventScheduleType } from '../types';
 import { navigate } from 'gatsby';
 import { useMediaQuery } from '@mantine/hooks';
 
+const useStyles = createStyles(theme => ({
+  tab: {
+    fontWeight: 'bold',
+    color: 'gray',
+  },
+  selectInput: {
+    // borderRadius: '50px',
+    background: theme.white,
+    boxShadow: `0px 4.993950843811035px 20px 0px rgba(0, 0, 0, 0.10)`,
+    border: '1px solid white',
+  },
+}));
+
 function capitalizeFirstLetter(string: string) {
   return string.charAt(0).toUpperCase() + string.slice(1) || '';
 }
 
 export const EventList: React.FC<{}> = () => {
+  const { classes } = useStyles();
+
+  const [eventType, setEventType] = useState<EventScheduleType>(EventScheduleType.UPCOMING);
+
   const { data: events, isLoading } = useGetEventsQuery({
-    type: EventScheduleType.UPCOMING,
+    type: eventType,
   });
 
   const mobileScreen = useMediaQuery('(max-width: 30em)');
@@ -52,38 +69,95 @@ export const EventList: React.FC<{}> = () => {
           </Box>
         </Container>
       </Paper>
-      <Container size="ll">
-        <Box my={60}>
-          <SimpleGrid
-            breakpoints={[
-              { minWidth: 'xs', cols: 1 },
-              { minWidth: 'sm', cols: 2 },
-              { minWidth: 'md', cols: 3 },
-              { minWidth: 'lg', cols: 4 },
-            ]}>
-            {isLoading ? (
-              <EventListSkeleton />
-            ) : !events?.data.length ? (
-              <Text>No upcoming events</Text>
-            ) : (
-              events.data.map(event => {
-                const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
+      <Container size="ll" py="xl">
+        <Tabs
+          styles={{
+            tabLabel: {
+              margin: mobileScreen ? '12px' : '4px 32px 12px 0',
+            },
+          }}
+          defaultChecked
+          onTabChange={value => {
+            setEventType(value as EventScheduleType);
+          }}
+          defaultValue={EventScheduleType.UPCOMING}>
+          <Tabs.List>
+            <Tabs.Tab className={classes.tab} value={EventScheduleType.UPCOMING}>
+              On Going Event
+            </Tabs.Tab>
+            <Tabs.Tab className={classes.tab} value={EventScheduleType.PAST}>
+              Past Event
+            </Tabs.Tab>
+          </Tabs.List>
 
-                return (
-                  <EventCard
-                    onClick={() => navigate(`/icx-connect/${event.id}`)}
-                    key={event.id}
-                    image={event.coverImage}
-                    title={event.title}
-                    date={eventDate}
-                    time={eventTime}
-                    eventType={capitalizeFirstLetter(event.type)}
-                  />
-                );
-              })
-            )}
-          </SimpleGrid>
-        </Box>
+          <Tabs.Panel value={EventScheduleType.UPCOMING}>
+            <Box my={60}>
+              <SimpleGrid
+                breakpoints={[
+                  { minWidth: 'xs', cols: 1 },
+                  { minWidth: 'sm', cols: 2 },
+                  { minWidth: 'md', cols: 3 },
+                  { minWidth: 'lg', cols: 4 },
+                ]}>
+                {isLoading ? (
+                  <EventListSkeleton />
+                ) : !events?.data.length ? (
+                  <Text>No upcoming events</Text>
+                ) : (
+                  events.data.map(event => {
+                    const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
+
+                    return (
+                      <EventCard
+                        onClick={() => navigate(`/icx-connect/${event.id}`)}
+                        key={event.id}
+                        image={event.coverImage}
+                        title={event.title}
+                        date={eventDate}
+                        time={eventTime}
+                        eventType={capitalizeFirstLetter(event.type)}
+                      />
+                    );
+                  })
+                )}
+              </SimpleGrid>
+            </Box>
+          </Tabs.Panel>
+
+          <Tabs.Panel value={EventScheduleType.PAST}>
+            <Box my={60}>
+              <SimpleGrid
+                breakpoints={[
+                  { minWidth: 'xs', cols: 1 },
+                  { minWidth: 'sm', cols: 2 },
+                  { minWidth: 'md', cols: 3 },
+                  { minWidth: 'lg', cols: 4 },
+                ]}>
+                {isLoading ? (
+                  <EventListSkeleton />
+                ) : !events?.data.length ? (
+                  <Text>No upcoming events</Text>
+                ) : (
+                  events.data.map(event => {
+                    const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
+
+                    return (
+                      <EventCard
+                        onClick={() => navigate(`/icx-connect/${event.id}`)}
+                        key={event.id}
+                        image={event.coverImage}
+                        title={event.title}
+                        date={eventDate}
+                        time={eventTime}
+                        eventType={capitalizeFirstLetter(event.type)}
+                      />
+                    );
+                  })
+                )}
+              </SimpleGrid>
+            </Box>
+          </Tabs.Panel>
+        </Tabs>
       </Container>
     </Box>
   );
