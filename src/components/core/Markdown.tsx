@@ -4,6 +4,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import React, { ReactNode } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { slugify } from '~/utils/slugify';
 
 interface MarkdownProps {
   content: string;
@@ -58,6 +59,15 @@ export const Markdown: React.FC<MarkdownProps> = ({ content }) => {
       {children}
     </blockquote>
   );
+
+  const H2 = ({ children }: { children: ReactNode }) => {
+    return <h2 id={slugify(children?.toString() || '')}>{children}</h2>;
+  };
+
+  const H3 = ({ children }: { children: ReactNode }) => {
+    return <h3 id={slugify(children?.toString() || '')}>{children}</h3>;
+  };
+
   return (
     <ReactMarkdown
       children={content}
@@ -69,6 +79,8 @@ export const Markdown: React.FC<MarkdownProps> = ({ content }) => {
         table: Table,
         blockquote: Blockquote,
         img: Image,
+        h2: H2,
+        h3: H3,
       }}
     />
   );

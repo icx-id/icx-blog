@@ -27,6 +27,7 @@ export const useAllBlogArticlesQuery = () => {
                   title
                 }
                 category
+                isPinned
               }
               fields {
                 slug
