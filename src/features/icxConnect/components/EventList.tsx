@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Box, Text, Paper, SimpleGrid, Tabs, createStyles, Flex } from '@mantine/core';
 import EventCard from '~/components/EventCard';
 import { useGetEventsQuery } from '../api/useGetEvents';
-import { parseEventDate } from '../utils';
+import { capitalizeFirstLetter, parseEventDate } from '../utils';
 import { EventListSkeleton } from './EventListSkeleton';
 import { EventScheduleType } from '../types';
 import { navigate } from 'gatsby';
@@ -15,17 +15,15 @@ const useStyles = createStyles(() => ({
   },
 }));
 
-function capitalizeFirstLetter(string: string) {
-  return string.charAt(0).toUpperCase() + string.slice(1) || '';
-}
-
 export const EventList: React.FC<{}> = () => {
   const { classes } = useStyles();
 
-  const [eventType, setEventType] = useState<EventScheduleType>(EventScheduleType.UPCOMING);
+  const [eventScheduleType, setEventScheduleType] = useState<EventScheduleType>(
+    EventScheduleType.UPCOMING,
+  );
 
   const { data: events, isLoading } = useGetEventsQuery({
-    type: eventType,
+    type: eventScheduleType,
   });
 
   const mobileScreen = useMediaQuery('(max-width: 30em)');
@@ -72,7 +70,7 @@ export const EventList: React.FC<{}> = () => {
           }}
           defaultChecked
           onTabChange={value => {
-            setEventType(value as EventScheduleType);
+            setEventScheduleType(value as EventScheduleType);
           }}
           defaultValue={EventScheduleType.UPCOMING}>
           <Tabs.List>
