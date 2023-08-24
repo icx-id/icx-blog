@@ -1,29 +1,20 @@
-import React, { useState } from 'react';
-import { Container, Box, Text, Paper, SimpleGrid, Tabs, createStyles, Flex } from '@mantine/core';
+import React from 'react';
+import { Container, Box, Text, Paper, SimpleGrid } from '@mantine/core';
 import EventCard from '~/components/EventCard';
 import { useGetEventsQuery } from '../api/useGetEvents';
-import { capitalizeFirstLetter, parseEventDate } from '../utils';
+import { parseEventDate } from '../utils';
 import { EventListSkeleton } from './EventListSkeleton';
 import { EventScheduleType } from '../types';
 import { navigate } from 'gatsby';
 import { useMediaQuery } from '@mantine/hooks';
 
-const useStyles = createStyles(() => ({
-  tab: {
-    fontWeight: 'bold',
-    color: 'gray',
-  },
-}));
+function capitalizeFirstLetter(string: string) {
+  return string.charAt(0).toUpperCase() + string.slice(1) || '';
+}
 
 export const EventList: React.FC<{}> = () => {
-  const { classes } = useStyles();
-
-  const [eventScheduleType, setEventScheduleType] = useState<EventScheduleType>(
-    EventScheduleType.UPCOMING,
-  );
-
   const { data: events, isLoading } = useGetEventsQuery({
-    type: eventScheduleType,
+    type: EventScheduleType.UPCOMING,
   });
 
   const mobileScreen = useMediaQuery('(max-width: 30em)');
@@ -61,109 +52,38 @@ export const EventList: React.FC<{}> = () => {
           </Box>
         </Container>
       </Paper>
-      <Container size="ll" py="xl">
-        <Tabs
-          styles={{
-            tabLabel: {
-              margin: mobileScreen ? '12px' : '4px 32px 12px 0',
-            },
-          }}
-          defaultChecked
-          onTabChange={value => {
-            setEventScheduleType(value as EventScheduleType);
-          }}
-          defaultValue={EventScheduleType.UPCOMING}>
-          <Tabs.List>
-            <Tabs.Tab className={classes.tab} value={EventScheduleType.UPCOMING}>
-              On Going Event
-            </Tabs.Tab>
-            <Tabs.Tab className={classes.tab} value={EventScheduleType.PAST}>
-              Past Event
-            </Tabs.Tab>
-          </Tabs.List>
+      <Container size="ll">
+        <Box my={60}>
+          <SimpleGrid
+            breakpoints={[
+              { minWidth: 'xs', cols: 1 },
+              { minWidth: 'sm', cols: 2 },
+              { minWidth: 'md', cols: 3 },
+              { minWidth: 'lg', cols: 4 },
+            ]}>
+            {isLoading ? (
+              <EventListSkeleton />
+            ) : !events?.data.length ? (
+              <Text>No upcoming events</Text>
+            ) : (
+              events.data.map(event => {
+                const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
 
-          <Tabs.Panel value={EventScheduleType.UPCOMING}>
-            <Box my={60}>
-              <SimpleGrid
-                breakpoints={[
-                  { minWidth: 'xs', cols: 1 },
-                  { minWidth: 'sm', cols: 2 },
-                  { minWidth: 'md', cols: 3 },
-                  { minWidth: 'lg', cols: 4 },
-                ]}>
-                {isLoading ? (
-                  <EventListSkeleton />
-                ) : !events?.data.length ? (
-                  <Flex direction="column">
-                    <Text fz="xl" fw="bold" pb="xl">
-                      No upcoming event yet,
-                    </Text>
-                    <Text>
-                      Stay tune for upcoming event at ICX to keep in touch with investors.
-                    </Text>
-                  </Flex>
-                ) : (
-                  events.data.map(event => {
-                    const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
-
-                    return (
-                      <EventCard
-                        onClick={() => navigate(`/icx-connect/${event.id}`)}
-                        key={event.id}
-                        image={event.coverImage}
-                        title={event.title}
-                        date={eventDate}
-                        time={eventTime}
-                        eventType={capitalizeFirstLetter(event.type)}
-                      />
-                    );
-                  })
-                )}
-              </SimpleGrid>
-            </Box>
-          </Tabs.Panel>
-
-          <Tabs.Panel value={EventScheduleType.PAST}>
-            <Box my={60}>
-              <SimpleGrid
-                breakpoints={[
-                  { minWidth: 'xs', cols: 1 },
-                  { minWidth: 'sm', cols: 2 },
-                  { minWidth: 'md', cols: 3 },
-                  { minWidth: 'lg', cols: 4 },
-                ]}>
-                {isLoading ? (
-                  <EventListSkeleton />
-                ) : !events?.data.length ? (
-                  <Flex direction="column">
-                    <Text fz="xl" fw="bold" pb="xl">
-                      No upcoming event yet,
-                    </Text>
-                    <Text>
-                      Stay tune for upcoming event at ICX to keep in touch with investors.
-                    </Text>
-                  </Flex>
-                ) : (
-                  events.data.map(event => {
-                    const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
-
-                    return (
-                      <EventCard
-                        onClick={() => navigate(`/icx-connect/${event.id}`)}
-                        key={event.id}
-                        image={event.coverImage}
-                        title={event.title}
-                        date={eventDate}
-                        time={eventTime}
-                        eventType={capitalizeFirstLetter(event.type)}
-                      />
-                    );
-                  })
-                )}
-              </SimpleGrid>
-            </Box>
-          </Tabs.Panel>
-        </Tabs>
+                return (
+                  <EventCard
+                    onClick={() => navigate(`/icx-connect/${event.id}`)}
+                    key={event.id}
+                    image={event.coverImage}
+                    title={event.title}
+                    date={eventDate}
+                    time={eventTime}
+                    eventType={capitalizeFirstLetter(event.type)}
+                  />
+                );
+              })
+            )}
+          </SimpleGrid>
+        </Box>
       </Container>
     </Box>
   );
