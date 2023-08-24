@@ -3,7 +3,6 @@ import {
   Box,
   Container,
   Grid,
-  NativeSelect,
   SimpleGrid,
   Tabs,
   createStyles,
@@ -13,10 +12,9 @@ import {
 } from '@mantine/core';
 import { AllArticles } from './article-lists/AllArticles';
 import { NewsArticles } from './article-lists/NewsArticles';
-import { EkonomiArticles } from './article-lists/EkonomiArticles';
-import { KeuanganArticles } from './article-lists/KeuanganArticles';
-import { InvestasiArticles } from './article-lists/InvestasiArticles';
 import { useMediaQuery } from '@mantine/hooks';
+import { InvestmentArticles } from './article-lists/InvestmentArticles';
+import { StartupArticles } from './article-lists/StartupArticles';
 
 const useStyles = createStyles(theme => ({
   tab: {
@@ -41,12 +39,10 @@ export const BlogArticleListLayout = () => {
         return <AllArticles />;
       case 'news':
         return <NewsArticles />;
-      case 'ekonomi':
-        return <EkonomiArticles />;
-      case 'keuangan':
-        return <KeuanganArticles />;
-      case 'investasi':
-        return <InvestasiArticles />;
+      case 'startup':
+        return <StartupArticles />;
+      case 'investment':
+        return <InvestmentArticles />;
       default:
         return <AllArticles />;
     }
@@ -98,14 +94,11 @@ export const BlogArticleListLayout = () => {
               <Tabs.Tab className={classes.tab} value="news">
                 News
               </Tabs.Tab>
-              <Tabs.Tab className={classes.tab} value="ekonomi">
-                Ekonomi
+              <Tabs.Tab className={classes.tab} value="startup">
+                Startup
               </Tabs.Tab>
-              <Tabs.Tab className={classes.tab} value="keuangan">
-                Keuangan
-              </Tabs.Tab>
-              <Tabs.Tab className={classes.tab} value="investasi">
-                Investasi
+              <Tabs.Tab className={classes.tab} value="investment">
+                Investment
               </Tabs.Tab>
             </Tabs>
           </Grid.Col>
