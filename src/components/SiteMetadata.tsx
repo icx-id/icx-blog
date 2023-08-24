@@ -7,13 +7,13 @@ export const SiteMetadata: React.FC<{
   ogImageUrl?: string;
 }> = ({ title = 'ICX', metaDescription, ogImageUrl = '' }) => {
   const { title: defaultTitle, description } = useSiteMetadata();
+
   return (
     <>
-      <title>
-        {title} - {defaultTitle}
-      </title>
+      <title>{title + ' - ' + defaultTitle}</title>
 
       {/* metadata */}
+      <meta name="title" content={title + ' - ' + defaultTitle} />
       <meta name="description" content={metaDescription || description} />
       <meta name="og:image" content={ogImageUrl} />
 
