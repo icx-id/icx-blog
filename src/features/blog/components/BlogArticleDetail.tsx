@@ -1,4 +1,4 @@
-import React, { Children, FC } from 'react';
+import React, { Children, FC, useEffect, useState } from 'react';
 import { BlogArticleNode } from '../types';
 import { Box, Container, Flex, Grid, MediaQuery, SimpleGrid, Text, rem } from '@mantine/core';
 import { Markdown } from '~/components/core/Markdown';
@@ -12,9 +12,16 @@ interface BlogArticleDetailProps {
 }
 
 export const BlogArticleDetail: FC<BlogArticleDetailProps> = ({ article }) => {
+  const [shareUrl, setShareUrl] = useState('https://icx.id');
   const articles = useAllBlogArticlesQuery();
 
   const mobileScreen = useMediaQuery('(max-width: 30em)');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setShareUrl(window.location.href);
+    }
+  }, []);
 
   return (
     <>
@@ -30,7 +37,7 @@ export const BlogArticleDetail: FC<BlogArticleDetailProps> = ({ article }) => {
               pos="sticky"
               top={100}
               right={0}
-              url={window.location.href}
+              url={shareUrl}
               h="min-content"
               maw="118px"
             />
@@ -90,12 +97,7 @@ export const BlogArticleDetail: FC<BlogArticleDetailProps> = ({ article }) => {
             )}
           </Box>
           <MediaQuery styles={{ display: 'none' }} largerThan="md">
-            <ShareButtonGroup
-              url={window.location.href}
-              orientation="horizontal"
-              shadow="none"
-              mb="xl"
-            />
+            <ShareButtonGroup url={shareUrl} orientation="horizontal" shadow="none" mb="xl" />
           </MediaQuery>
         </Grid.Col>
       </Grid>
