@@ -8,38 +8,52 @@ import { HowToFundraiseSection } from './HowToFundraiseSection/HowToFundraiseSec
 import { InvestmentFlowSection } from './InvestmentFlowSection';
 import { ContactUsSection } from './ContactUsSection';
 import { TestimonySection } from './TestimonySection';
-import { useFundraiseStaticQuery } from '../hooks/useFundraiseStaticQuery';
+// import { useFundraiseStaticQuery } from '../hooks/useFundraiseStaticQuery';
 
 export const Fundraise = () => {
-  const {
-    jumbotronSection,
-    portfolioSection,
-    whyFundraiseSection,
-    testimonySection,
-    howToFundraiseSection,
-    investmentFlowSection,
-    contactUsSection,
-  } = useFundraiseStaticQuery();
+  // const {
+  //   jumbotronSection,
+  //   portfolioSection,
+  //   whyFundraiseSection,
+  //   testimonySection,
+  //   howToFundraiseSection,
+  //   investmentFlowSection,
+  //   contactUsSection,
+  // } = useFundraiseStaticQuery();
 
-  console.log(
-    jumbotronSection,
-    portfolioSection,
-    whyFundraiseSection,
-    testimonySection,
-    howToFundraiseSection,
-    investmentFlowSection,
-    contactUsSection,
-  );
+  // console.log(
+  //   jumbotronSection,
+  //   portfolioSection,
+  //   whyFundraiseSection,
+  //   testimonySection,
+  //   howToFundraiseSection,
+  //   investmentFlowSection,
+  //   contactUsSection,
+  // );
   return (
     <Box>
-      <JumbotronSection {...jumbotronSection} />
-      <PortfolioSection {...portfolioSection} />
+      <JumbotronSection
+      //  {...jumbotronSection}
+      />
+      <PortfolioSection
+      //  {...portfolioSection}
+      />
       <AchievementSection />
-      <WhyFundraiseSection {...whyFundraiseSection} />
-      <TestimonySection {...testimonySection} />
-      <HowToFundraiseSection {...howToFundraiseSection} />
-      <InvestmentFlowSection {...investmentFlowSection} />
-      <ContactUsSection {...contactUsSection} />
+      <WhyFundraiseSection
+      //  {...whyFundraiseSection}
+      />
+      <TestimonySection
+      //  {...testimonySection}
+      />
+      <HowToFundraiseSection
+      //  {...howToFundraiseSection}
+      />
+      <InvestmentFlowSection
+      //  {...investmentFlowSection}
+      />
+      <ContactUsSection
+      //  {...contactUsSection}
+      />
     </Box>
   );
 };
