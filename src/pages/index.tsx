@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import type { HeadFC, PageProps } from 'gatsby';
 import { SiteMetadata } from '~/components';
-import { Home } from '~/features/kyc/components/home';
+import { Home } from '~/features/kyc/home';
 
 export const Head: HeadFC = () => <SiteMetadata />;
 
