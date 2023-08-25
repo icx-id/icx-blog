@@ -1,7 +1,8 @@
 import { Box, Container, Stack, createStyles, Text, Button } from '@mantine/core';
-import React from 'react';
+import React, { FC } from 'react';
 import FundraiseBackground from '../assets/fundraise-bg.png';
 import { useMediaQuery } from '@mantine/hooks';
+import { JumbotronSectionProps } from '../types';
 
 const useStyles = createStyles(theme => ({
   root: {
@@ -53,7 +54,7 @@ const useStyles = createStyles(theme => ({
   },
 }));
 
-export const JumbotronSection = ({ ...props }) => {
+export const JumbotronSection: FC<JumbotronSectionProps> = ({ desc, title }) => {
   const { classes } = useStyles();
   const mobileScreen = useMediaQuery('(max-width: 30em)');
 
@@ -67,14 +68,11 @@ export const JumbotronSection = ({ ...props }) => {
             justify={mobileScreen ? 'flex-end' : 'center'}
             h="calc(100% - 80px)">
             <Text className={classes.title}>
-              Unlocking New Way
-              <br />
-              Of Fundraising
+              <div dangerouslySetInnerHTML={{ __html: title }} />
             </Text>
             <Box maw={{ sm: 420, lg: 500 }}>
               <Text mt="20px" className={classes.subtitle}>
-                Join our thriving community of successful businesses and take your venture to new
-                heights.
+                {desc}
               </Text>
               <Button
                 mt="40px"

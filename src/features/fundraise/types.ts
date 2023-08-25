@@ -1,4 +1,4 @@
-type JumbotronSectionProps = {
+export type JumbotronSectionProps = {
   title: string;
   desc: string;
 };
@@ -9,6 +9,11 @@ type WhyFundraiseData = {
   desc: string;
 };
 
+export type WhyFundraiseSectionProps = {
+  title: string;
+  data: WhyFundraiseData[];
+};
+
 type TestimonyData = {
   author: string;
   authorImage: string;
@@ -17,25 +22,29 @@ type TestimonyData = {
   image: string;
 };
 
-type PortfolioSectionProps = {
+export type TestimonySectionProps = {
+  testimonies: TestimonyData[];
+};
+
+export type PortfolioSectionProps = {
   title: string;
   desc: string;
   descLine2: string;
 };
 
-type HowToFundraiseSectionProps = {
+export type HowToFundraiseSectionProps = {
   title: string;
   desc: string;
   descLine2: string;
 };
 
-type InvestmentFlowSectionProps = {
+export type InvestmentFlowSectionProps = {
   title: string;
   desc: string;
   descLine2: string;
 };
 
-type ContactUsSectionProps = {
+export type ContactUsSectionProps = {
   title: string;
   desc: string;
 };
@@ -44,13 +53,8 @@ export type FundraiseStaticQueryProps = {
   key: string;
   jumbotronSection: JumbotronSectionProps;
   portfolioSection: PortfolioSectionProps;
-  whyFundraiseSection: {
-    title: string;
-    data: WhyFundraiseData[];
-  };
-  testimonySection: {
-    testimonies: TestimonyData[];
-  };
+  whyFundraiseSection: WhyFundraiseSectionProps;
+  testimonySection: TestimonySectionProps;
   howToFundraiseSection: HowToFundraiseSectionProps;
   investmentFlowSection: InvestmentFlowSectionProps;
   contactUsSection: ContactUsSectionProps;

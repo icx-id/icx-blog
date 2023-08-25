@@ -8,52 +8,41 @@ import { HowToFundraiseSection } from './HowToFundraiseSection/HowToFundraiseSec
 import { InvestmentFlowSection } from './InvestmentFlowSection';
 import { ContactUsSection } from './ContactUsSection';
 import { TestimonySection } from './TestimonySection';
-// import { useFundraiseStaticQuery } from '../hooks/useFundraiseStaticQuery';
+import { useFundraiseStaticQuery } from '../hooks/useFundraiseStaticQuery';
 
 export const Fundraise = () => {
-  // const {
-  //   jumbotronSection,
-  //   portfolioSection,
-  //   whyFundraiseSection,
-  //   testimonySection,
-  //   howToFundraiseSection,
-  //   investmentFlowSection,
-  //   contactUsSection,
-  // } = useFundraiseStaticQuery();
+  const {
+    jumbotronSection,
+    portfolioSection,
+    whyFundraiseSection,
+    testimonySection,
+    howToFundraiseSection,
+    investmentFlowSection,
+    contactUsSection,
+  } = useFundraiseStaticQuery();
 
-  // console.log(
-  //   jumbotronSection,
-  //   portfolioSection,
-  //   whyFundraiseSection,
-  //   testimonySection,
-  //   howToFundraiseSection,
-  //   investmentFlowSection,
-  //   contactUsSection,
-  // );
   return (
     <Box>
-      <JumbotronSection
-      //  {...jumbotronSection}
-      />
+      <JumbotronSection title={jumbotronSection.title} desc={jumbotronSection.desc} />
       <PortfolioSection
-      //  {...portfolioSection}
+        title={portfolioSection.title}
+        desc={portfolioSection.desc}
+        descLine2={portfolioSection.descLine2}
       />
       <AchievementSection />
-      <WhyFundraiseSection
-      //  {...whyFundraiseSection}
-      />
-      <TestimonySection
-      //  {...testimonySection}
-      />
+      <WhyFundraiseSection title={whyFundraiseSection.title} data={whyFundraiseSection.data} />
+      <TestimonySection testimonies={testimonySection.testimonies} />
       <HowToFundraiseSection
-      //  {...howToFundraiseSection}
+        title={howToFundraiseSection.title}
+        desc={howToFundraiseSection.desc}
+        descLine2={howToFundraiseSection.descLine2}
       />
       <InvestmentFlowSection
-      //  {...investmentFlowSection}
+        title={investmentFlowSection.title}
+        desc={investmentFlowSection.desc}
+        descLine2={investmentFlowSection.descLine2}
       />
-      <ContactUsSection
-      //  {...contactUsSection}
-      />
+      <ContactUsSection title={contactUsSection.title} desc={contactUsSection.desc} />
     </Box>
   );
 };

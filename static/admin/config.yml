@@ -275,21 +275,21 @@ collections:
             label: 'Why Fundraise Section'
             widget: 'object'
             fields:
-            - { name: 'title', label: 'Title', widget: 'string' }
-            - name: 'data'
-              label: 'Data'
-              widget: 'list'
-              fields:
-                - {
-                  name: 'icon',
-                  label: 'Icon',
-                  widget: 'image',
-                  required: true,
-                  allow_multiple: false,
-                  choose_url: false,
-                }
-                - { name: 'title', label: 'Title', widget: 'string' }
-                - { name: 'desc', label: 'Desc', widget: 'string' }
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - name: 'data'
+                label: 'Data'
+                widget: 'list'
+                fields:
+                  - {
+                      name: 'icon',
+                      label: 'Icon',
+                      widget: 'image',
+                      required: true,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+                  - { name: 'title', label: 'Title', widget: 'string' }
+                  - { name: 'desc', label: 'Desc', widget: 'string' }
           - name: 'testimonySection'
             label: 'Testimony Section'
             widget: 'object'

@@ -33,7 +33,7 @@ const useStyles = createStyles(theme => ({
   },
 }));
 
-export const ContactUsSection = ({ ...props }) => {
+export const ContactUsSection = ({ title, desc }) => {
   const { classes } = useStyles();
   const mobileScreen = useMediaQuery('(max-width: 30em)');
 
@@ -47,11 +47,10 @@ export const ContactUsSection = ({ ...props }) => {
         py={100}>
         <Container size="ll">
           <Text align={mobileScreen ? 'center' : 'start'} className={classes.title}>
-            Start Raising with ICX
+            {title}
           </Text>
           <Text align={mobileScreen ? 'center' : 'start'} className={classes.subtitle} maw={600}>
-            Take the first step towards your fundraising goals. Sign up now and start creating your
-            fundraising campaign to attract investors and secure the funding your company deserves.
+            {desc}
           </Text>
           <Button
             mt="40px"

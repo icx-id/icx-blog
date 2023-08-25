@@ -169,7 +169,11 @@ export const TestimonyCarousel: FC<{
                     <Image
                       src={authorImage}
                       alt="profile"
-                      style={{ width: '50px', height: '50px', objectFit: 'cover', marginRight: 18 }}
+                      fit="cover"
+                      width={50}
+                      height={50}
+                      mr={18}
+                      radius={10}
                     />
                   )}
                   <Box>
