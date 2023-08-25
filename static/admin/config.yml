@@ -192,10 +192,70 @@ collections:
                       allow_multiple: false,
                       choose_url: false,
                     }
-      - name: 'fundraising'
-        id: 'fundraising'
+      - file: 'src/content/kebijakan-privasi.md'
+        label: 'Kebijakan Privasi'
+        name: 'kebijakan-privasi'
+        id: 'kebijakan-privasi'
+        fields:
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'kebijakan-privasi' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/isms.md'
+        label: 'ISMS'
+        name: 'isms'
+        id: 'isms'
+        fields:
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'isms' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/mitigasi-risiko.md'
+        label: 'Mitigasi Risiko'
+        name: 'mitigasi-risiko'
+        id: 'mitigasi-risiko'
+        fields:
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'mitigasi-risiko' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/syarat-dan-ketentuan.md'
+        label: 'Syarat dan Ketentuan'
+        name: 'syarat-dan-ketentuan'
+        id: 'syarat-dan-ketentuan'
+        fields:
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'syarat-dan-ketentuan' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/sla.md'
+        label: 'SLA'
+        name: 'sla'
+        id: 'sla'
+        fields:
+          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'sla' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Content', name: 'content', widget: 'markdown' }
+      - file: 'src/content/about.md'
+        label: 'About'
+        name: 'about'
+        id: 'about'
+        fields:
+          - { name: 'key', label: 'Key', widget: 'hidden', default: 'about' }
+          - { name: 'title', label: 'Title', widget: 'string' }
+          - { name: 'subtitleLeft', label: 'Sub Title Left', widget: 'string' }
+          - { name: 'subtitleRight', label: 'Sub Title Right', widget: 'string' }
+          - { name: 'banner', label: 'Banner Image', widget: 'image' }
+          - {
+              name: 'ourStories',
+              label: 'Our Story',
+              widget: 'list',
+              fields:
+                [
+                  { name: 'year', label: 'Year', widget: number },
+                  { name: 'description', label: 'Description', widget: string },
+                ],
+            }
+      - file: 'src/content/fundraising.md'
         label: 'Fundraising'
-        file: 'src/content/fundraising.md'
+        name: 'fundraising'
+        id: 'fundraising'
         fields:
           - { name: 'key', label: 'Key', widget: 'hidden', default: 'fundraising' }
           - name: 'jumbotronSection'
@@ -272,71 +332,11 @@ collections:
               - { name: 'desc', label: 'Desc', widget: 'string' }
               - { name: 'descLine2', label: 'Desc Line 2', widget: 'string' }
           - name: 'contactUsSection'
-          label: 'Contact Us Section'
-          widget: 'object'
-          fields:
-            - { name: 'title', label: 'Title', widget: 'string' }
-            - { name: 'desc', label: 'Desc', widget: 'string' }
-      - file: 'src/content/kebijakan-privasi.md'
-        label: 'Kebijakan Privasi'
-        name: 'kebijakan-privasi'
-        id: 'kebijakan-privasi'
-        fields:
-          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'kebijakan-privasi' }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Content', name: 'content', widget: 'markdown' }
-      - file: 'src/content/isms.md'
-        label: 'ISMS'
-        name: 'isms'
-        id: 'isms'
-        fields:
-          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'isms' }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Content', name: 'content', widget: 'markdown' }
-      - file: 'src/content/mitigasi-risiko.md'
-        label: 'Mitigasi Risiko'
-        name: 'mitigasi-risiko'
-        id: 'mitigasi-risiko'
-        fields:
-          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'mitigasi-risiko' }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Content', name: 'content', widget: 'markdown' }
-      - file: 'src/content/syarat-dan-ketentuan.md'
-        label: 'Syarat dan Ketentuan'
-        name: 'syarat-dan-ketentuan'
-        id: 'syarat-dan-ketentuan'
-        fields:
-          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'syarat-dan-ketentuan' }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Content', name: 'content', widget: 'markdown' }
-      - file: 'src/content/sla.md'
-        label: 'SLA'
-        name: 'sla'
-        id: 'sla'
-        fields:
-          - { label: 'Key', name: 'Key', widget: 'hidden', default: 'sla' }
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Content', name: 'content', widget: 'markdown' }
-      - file: 'src/content/about.md'
-        label: 'About'
-        name: 'about'
-        id: 'about'
-        fields:
-          - { name: 'key', label: 'Key', widget: 'hidden', default: 'about' }
-          - { name: 'title', label: 'Title', widget: 'string' }
-          - { name: 'subtitleLeft', label: 'Sub Title Left', widget: 'string' }
-          - { name: 'subtitleRight', label: 'Sub Title Right', widget: 'string' }
-          - { name: 'banner', label: 'Banner Image', widget: 'image' }
-          - {
-              name: 'ourStories',
-              label: 'Our Story',
-              widget: 'list',
-              fields:
-                [
-                  { name: 'year', label: 'Year', widget: number },
-                  { name: 'description', label: 'Description', widget: string },
-                ],
-            }
+            label: 'Contact Us Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'desc', label: 'Desc', widget: 'string' }
   - name: 'blog'
     label: 'Blog Articles'
     file: 'src/content/blog/_index.md'
