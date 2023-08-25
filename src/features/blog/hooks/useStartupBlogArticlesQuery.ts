@@ -1,20 +1,16 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { BlogArticlesQueryResponse } from '../types';
 
-/**
- *
- * @deprecated
- */
-export const useInvestasiBlogArticlesQuery = () => {
+export const useStartupBlogArticlesQuery = () => {
   const { allMarkdownRemark } = useStaticQuery<BlogArticlesQueryResponse>(
     graphql`
-      query InvestasiBlogArticles {
+      query StartupBlogArticles {
         allMarkdownRemark(
           filter: {
             frontmatter: {
               key: { eq: "blog-article" }
               draft: { eq: false }
-              category: { eq: "investasi" }
+              category: { eq: "startup" }
             }
           }
         ) {

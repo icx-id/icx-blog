@@ -31,6 +31,7 @@ const BlogDetailPage: FC<PageProps<BlogArticleQueryResponse>> = ({ data }) => {
       <SiteMetadata
         title={data.markdownRemark.frontmatter.metaTitle}
         metaDescription={data.markdownRemark.frontmatter.metaDescription}
+        ogImageUrl={data?.markdownRemark?.frontmatter?.featuredImage?.src}
       />
       <BlogArticleDetail article={data.markdownRemark} />;
     </>
