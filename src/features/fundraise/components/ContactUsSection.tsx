@@ -1,7 +1,8 @@
 import { Box, Button, Container, Flex, Image, Text, createStyles } from '@mantine/core';
-import React from 'react';
+import React, { FC } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
 import IcxMockup from '../assets/icx-mockup.png';
+import { ContactUsSectionProps } from '../types';
 
 const useStyles = createStyles(theme => ({
   title: {
@@ -33,7 +34,7 @@ const useStyles = createStyles(theme => ({
   },
 }));
 
-export const ContactUsSection = ({ title, desc }) => {
+export const ContactUsSection: FC<ContactUsSectionProps> = ({ title, desc }) => {
   const { classes } = useStyles();
   const mobileScreen = useMediaQuery('(max-width: 30em)');
 
