@@ -6,6 +6,11 @@ export type NavbarMenu = {
 
 export const navbarMenus: NavbarMenu[] = [
   {
+    id: 2,
+    name: 'Fundraise',
+    pathname: '/fundraise',
+  },
+  {
     id: 3,
     name: 'About Us',
     pathname: '/about',

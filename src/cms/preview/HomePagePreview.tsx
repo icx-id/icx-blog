@@ -1,7 +1,7 @@
 import React from 'react';
 import { PreviewTemplateComponentProps } from 'netlify-cms-core';
-import { Home } from '../../features/home';
-import { HomeDataType } from '../../features/home/types';
+import { Home } from '../../features/kyc/components/home';
+import { HomeDataType } from '../../features/kyc/components/home/types';
 
 const HomePagePreview: React.FC<PreviewTemplateComponentProps> = ({ entry }) => {
   const data: HomeDataType = {
