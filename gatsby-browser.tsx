@@ -18,6 +18,7 @@ const forceNavbarSolid = [
   '/phone-number-verification',
   '/create-pin',
   '/profile',
+  '/start-fundraise',
 ];
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {
