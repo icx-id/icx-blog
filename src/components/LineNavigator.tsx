@@ -35,6 +35,22 @@ const useStyles = createStyles(theme => ({
       height: 32,
     },
   },
+
+  active: {
+    cursor: 'pointer',
+    backgroundColor: 'initial',
+    ':hover': {
+      backgroundColor: 'lightgrey',
+    },
+  },
+
+  inactive: {
+    cursor: 'default',
+    backgroundColor: 'grey',
+    ':hover': {
+      backgroundColor: 'grey',
+    },
+  },
 }));
 
 export const LineNavigator: FC<LineNavigatorProps<unknown>> = ({
@@ -53,14 +69,7 @@ export const LineNavigator: FC<LineNavigatorProps<unknown>> = ({
         <Box
           className={`${classes.iconWrapper} ${darkMode ? classes.darkmode : classes.lightmode} ${
             big ? classes.big : classes.default
-          }`}
-          sx={{
-            cursor: active > 0 ? 'pointer' : 'default',
-            backgroundColor: active > 0 ? 'initial' : 'grey',
-            ':hover': {
-              backgroundColor: active > 0 ? 'lightgrey' : 'grey',
-            },
-          }}
+          } ${active > 0 ? classes.active : classes.inactive}`}
           onClick={onClickPrev}>
           <IconChevronLeft
             size={big ? 34 : 24}
@@ -70,14 +79,7 @@ export const LineNavigator: FC<LineNavigatorProps<unknown>> = ({
         <Box
           className={`${classes.iconWrapper} ${darkMode ? classes.darkmode : classes.lightmode} ${
             big ? classes.big : classes.default
-          }`}
-          sx={{
-            cursor: active < data.length - 1 ? 'pointer' : 'default',
-            backgroundColor: active < data.length - 1 ? 'initial' : 'grey',
-            ':hover': {
-              backgroundColor: active < data.length - 1 ? 'lightgrey' : 'grey',
-            },
-          }}
+          } ${active < data.length - 1 ? classes.active : classes.inactive}`}
           onClick={onClickNext}>
           <IconChevronRight
             size={big ? 34 : 24}
