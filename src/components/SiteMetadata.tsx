@@ -23,6 +23,8 @@ export const SiteMetadata: React.FC<{
 
       <meta property="og:type" content="website" />
       <meta property="og:image" itemProp="image" content={ogImageUrl} />
+      <meta property="og:title" content={title + ' - ' + defaultTitle} />
+      <meta property="og:description" content={metaDescription || description} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content={pageUrl} />
