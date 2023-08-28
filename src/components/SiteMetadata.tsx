@@ -18,7 +18,7 @@ export const SiteMetadata: React.FC<{
       <meta name="og:image" content={ogImageUrl} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:image" content={ogImageUrl} />
+      <meta property="og:image" itemProp="image" content={ogImageUrl} />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:image" content={ogImageUrl} />
