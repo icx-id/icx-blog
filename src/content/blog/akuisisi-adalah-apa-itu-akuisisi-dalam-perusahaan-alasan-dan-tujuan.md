@@ -12,7 +12,7 @@ date: 2023-08-18T08:26:11.918Z
 category:
   - ekonomi
 featuredImage:
-  src: https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80
+  src: /img/compressed.png
   alt: "Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan"
   title: "Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan"
 key: blog-article
