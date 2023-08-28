@@ -1,4 +1,4 @@
-import React, { FC, PropsWithChildren } from 'react';
+import React, { FC } from 'react';
 import { Container, createStyles, Text, Flex, Stack, MediaQuery } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { WrapperProps } from '../types';
