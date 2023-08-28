@@ -1,6 +1,7 @@
 import React, { FC, PropsWithChildren } from 'react';
 import { Container, createStyles, Text, Flex, Stack, MediaQuery } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
+import { WrapperProps } from '../types';
 
 const useStyles = createStyles(theme => ({
   title: {
@@ -39,16 +40,15 @@ const useStyles = createStyles(theme => ({
   },
 }));
 
-export const Wrapper: FC<
-  PropsWithChildren<{
-    title: string;
-    gradientTitle?: boolean;
-    desc?: string;
-    descLine2?: string;
-    bg: string;
-    pb?: number;
-  }>
-> = ({ title, gradientTitle, desc, descLine2, children, bg, pb }) => {
+export const Wrapper: FC<WrapperProps> = ({
+  title,
+  gradientTitle,
+  desc,
+  descLine2,
+  children,
+  bg,
+  pb,
+}) => {
   const { classes } = useStyles();
   const tabScreen = useMediaQuery('(min-width: 30em) and (max-width: 70em)');
 

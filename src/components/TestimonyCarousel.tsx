@@ -18,6 +18,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { useMediaQuery } from '@mantine/hooks';
 import testimonyIcon from '~/images/testimony-icon.svg';
 import { LineNavigator } from './LineNavigator';
+import { TestimonyCarouselprops } from './types';
 
 export const fade = keyframes({
   '0%,100%': { opacity: 1 },
@@ -107,28 +108,9 @@ const useStyles = createStyles(theme => ({
   },
 }));
 
-interface Testimony {
-  author: string;
-  authorImage: string;
-  company: string;
-  description: string;
-  image: string;
-}
-
 // -------------------------------------- components
 
-export const TestimonyCarousel: FC<{
-  description: string;
-  author: string;
-  company: string;
-  testimonies: Testimony[];
-  active: number;
-  onClickPrev: () => void;
-  onClickNext: () => void;
-  image: string;
-  hideWhatTheySaid?: boolean;
-  authorImage?: string;
-}> = ({
+export const TestimonyCarousel: FC<TestimonyCarouselprops> = ({
   description,
   author,
   company,
@@ -239,7 +221,7 @@ export const TestimonyCarousel: FC<{
                   src={image}
                   width={isMobile ? 250 : 290}
                   height={isMobile ? 300 : 312}
-                  sx={{ img: { borderRadius: '10px' } }}
+                  sx={{ img: { borderRadius: '10px', objectFit: 'cover' } }}
                 />
               </Box>
               <Box

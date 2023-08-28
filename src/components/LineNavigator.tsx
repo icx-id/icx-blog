@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { Box, Group, MediaQuery, createStyles } from '@mantine/core';
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
+import { LineNavigatorProps } from './types';
 
 const useStyles = createStyles(theme => ({
   iconWrapper: {
@@ -36,7 +37,7 @@ const useStyles = createStyles(theme => ({
   },
 }));
 
-export const LineNavigator: FC<any> = ({
+export const LineNavigator: FC<LineNavigatorProps<unknown>> = ({
   data,
   active,
   onClickPrev,

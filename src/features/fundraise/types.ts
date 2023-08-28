@@ -1,3 +1,5 @@
+import { PropsWithChildren } from 'react';
+
 export type JumbotronSectionProps = {
   title: string;
   desc: string;
@@ -59,3 +61,23 @@ export type FundraiseStaticQueryProps = {
   investmentFlowSection: InvestmentFlowSectionProps;
   contactUsSection: ContactUsSectionProps;
 };
+
+export type WhyFundraiseSectionCardItemProps = {
+  title: string;
+  desc: string;
+  icon: string;
+};
+
+export type HowToFundraiseSectionCardItemProps = {
+  title: string;
+  number: number;
+};
+
+export interface WrapperProps extends PropsWithChildren {
+  title: string;
+  gradientTitle?: boolean;
+  desc?: string;
+  descLine2?: string;
+  bg: string;
+  pb?: number;
+}

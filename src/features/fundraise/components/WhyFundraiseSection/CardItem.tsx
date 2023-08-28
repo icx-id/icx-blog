@@ -1,12 +1,9 @@
 import { Flex, Image, MediaQuery, Text } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import React, { FC } from 'react';
+import { WhyFundraiseSectionCardItemProps } from '../../types';
 
-export const CardItem: FC<{ title: string; desc: string; icon: string }> = ({
-  title,
-  desc,
-  icon,
-}) => {
+export const CardItem: FC<WhyFundraiseSectionCardItemProps> = ({ title, desc, icon }) => {
   const mobileScreen = useMediaQuery('(max-width: 30em)');
   const tabScreen = useMediaQuery('(min-width: 30em) and (max-width: 70em)');
 
