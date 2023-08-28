@@ -30,6 +30,7 @@ export const SiteMetadata: React.FC<{
       <meta property="twitter:url" content={pageUrl} />
       <meta name="twitter:title" content={title + ' - ' + defaultTitle} />
       <meta name="twitter:image" content={ogImageUrl} />
+      <meta property="twitter:description" content={metaDescription || description} />
     </>
   );
 };
