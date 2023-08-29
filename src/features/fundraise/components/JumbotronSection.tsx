@@ -3,6 +3,7 @@ import React, { FC } from 'react';
 import FundraiseBackground from '../assets/fundraise-bg.webp';
 import { useMediaQuery } from '@mantine/hooks';
 import { JumbotronSectionProps } from '../types';
+import { navigate } from 'gatsby';
 
 const useStyles = createStyles(theme => ({
   root: {
@@ -75,6 +76,7 @@ export const JumbotronSection: FC<JumbotronSectionProps> = ({ desc, title }) => 
                 {desc}
               </Text>
               <Button
+                onClick={() => navigate('/contact')}
                 mt="40px"
                 fullWidth={mobileScreen}
                 w={{ sm: 200 }}
