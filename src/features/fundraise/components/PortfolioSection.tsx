@@ -1,8 +1,8 @@
 import { Box, Flex, Image } from '@mantine/core';
 import React, { FC } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
-import PortfolioMobile from '../assets/portfolio-mobile.png';
-import PortfolioDesktop from '../assets/portfolio-desktop.png';
+import PortfolioMobile from '../assets/portfolio-mobile.webp';
+import PortfolioDesktop from '../assets/portfolio-desktop.webp';
 import { Wrapper } from './Wrapper';
 import { PortfolioSectionProps } from '../types';
 

@@ -1,8 +1,9 @@
 import { Box, Button, Container, Flex, Image, Text, createStyles } from '@mantine/core';
 import React, { FC } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
-import IcxMockup from '../assets/icx-mockup.png';
+import IcxMockup from '../assets/icx-mockup.webp';
 import { ContactUsSectionProps } from '../types';
+import { navigate } from 'gatsby';
 
 const useStyles = createStyles(theme => ({
   title: {
@@ -54,6 +55,7 @@ export const ContactUsSection: FC<ContactUsSectionProps> = ({ title, desc }) => 
             {desc}
           </Text>
           <Button
+            onClick={() => navigate('/contact')}
             mt="40px"
             fullWidth={mobileScreen}
             w={{ sm: 200 }}
