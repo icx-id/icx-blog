@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: Vlora Riyandi
 title: Kenapa Startup Bakar Uang? Kenali Istilah Burn Rate atau Bakar Uang
 metaTitle: Memahami Apa Itu Bakar Uang dalam Startup dan Alasannya
