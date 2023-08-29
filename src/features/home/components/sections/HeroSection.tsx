@@ -17,7 +17,7 @@ import { HeroSectionProps } from '../../types';
 import Lottie from 'react-lottie';
 
 // eslint-disable-next-line no-restricted-imports
-import heroMotion1 from '~/features/home/assets/hero-motion1.json';
+// import heroMotion1 from '~/features/home/assets/hero-motion1.json';
 
 // --------------------------------------- styles
 
@@ -155,7 +155,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: heroMotion1,
+    // animationData: heroMotion1,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
@@ -215,7 +215,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
               position: 'absolute',
               top: 0,
             }}>
-            <Lottie options={defaultOptions} />
+            {/* <Lottie options={defaultOptions} /> */}
           </Box>
         </MediaQuery>
 
