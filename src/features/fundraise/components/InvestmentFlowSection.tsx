@@ -11,14 +11,15 @@ export const InvestmentFlowSection: FC<InvestmentFlowSectionProps> = ({
   descLine2,
 }) => {
   const mobileScreen = useMediaQuery('(max-width: 30em)');
+  const giantScreen = useMediaQuery('(min-width: 160em)');
 
   return (
     <Wrapper gradientTitle bg="#EFEFED" title={title} desc={desc} descLine2={descLine2}>
       <Flex justify="center">
         <Image
           src={InvestmentFlow}
-          width={mobileScreen ? '100%' : '450px'}
-          my={mobileScreen ? '20px' : '40px'}
+          width={mobileScreen ? '100%' : giantScreen ? '600px' : '450px'}
+          my={mobileScreen ? '20px' : giantScreen ? '60px' : '40px'}
         />
       </Flex>
     </Wrapper>

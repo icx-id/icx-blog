@@ -41,6 +41,10 @@ const useStyles = createStyles(theme => ({
       fontSize: 32,
       lineHeight: '40px',
     },
+    [theme.fn.largerThan('2xl')]: {
+      fontSize: 58,
+      lineHeight: '74px',
+    },
   },
 
   subtitle: {
@@ -51,6 +55,10 @@ const useStyles = createStyles(theme => ({
     [theme.fn.smallerThan('lg')]: {
       fontSize: 16,
       lineHeight: '24px',
+    },
+    [theme.fn.largerThan('2xl')]: {
+      fontSize: 24,
+      lineHeight: '34px',
     },
   },
 }));
@@ -80,8 +88,7 @@ export const JumbotronSection: FC<JumbotronSectionProps> = ({ desc, title }) => 
                 mt="40px"
                 fullWidth={mobileScreen}
                 w={{ sm: 200 }}
-                h={40}
-                style={{ fontSize: 12 }}>
+                size="md">
                 Contact Us
               </Button>
             </Box>

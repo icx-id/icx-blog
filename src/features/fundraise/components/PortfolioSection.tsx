@@ -9,6 +9,7 @@ import { PortfolioSectionProps } from '../types';
 export const PortfolioSection: FC<PortfolioSectionProps> = ({ title, desc, descLine2 }) => {
   const mobileScreen = useMediaQuery('(max-width: 30em)');
   const tabScreen = useMediaQuery('(min-width: 30em) and (max-width: 70em)');
+  const giantScreen = useMediaQuery('(min-width: 160em)');
 
   return (
     <Wrapper
@@ -19,7 +20,7 @@ export const PortfolioSection: FC<PortfolioSectionProps> = ({ title, desc, descL
       desc={desc}
       descLine2={descLine2}>
       <Flex justify="center" w="100%">
-        <Box w={mobileScreen ? '60%' : tabScreen ? '70%' : '55%'}>
+        <Box w={mobileScreen ? '60%' : tabScreen ? '70%' : giantScreen ? '60%' : '55%'}>
           <Image
             src={mobileScreen ? PortfolioMobile : PortfolioDesktop}
             w="100%"

@@ -17,6 +17,9 @@ const useStyles = createStyles(theme => ({
       fontSize: 32,
       lineHeight: '40px',
     },
+    [theme.fn.largerThan('2xl')]: {
+      fontSize: 44,
+    },
   },
 
   gradientTitle: {
@@ -30,12 +33,17 @@ const useStyles = createStyles(theme => ({
     fontSize: 16,
     fontWeight: 400,
     lineHeight: '28px',
+    maxWidth: 600,
     [theme.fn.smallerThan('lg')]: {
       fontSize: 14,
       lineHeight: '24px',
     },
     [theme.fn.smallerThan('sm')]: {
       fontSize: 12,
+    },
+    [theme.fn.largerThan('2xl')]: {
+      fontSize: 20,
+      maxWidth: 700,
     },
   },
 }));
@@ -51,6 +59,7 @@ export const Wrapper: FC<WrapperProps> = ({
 }) => {
   const { classes } = useStyles();
   const tabScreen = useMediaQuery('(min-width: 30em) and (max-width: 70em)');
+  const giantScreen = useMediaQuery('(min-width: 160em)');
 
   return (
     <Flex
@@ -58,7 +67,7 @@ export const Wrapper: FC<WrapperProps> = ({
       align="center"
       dir="column"
       h="100%"
-      mih={tabScreen ? 'unset' : '100vh'}
+      mih={tabScreen ? 'unset' : giantScreen ? '80vh' : '100vh'}
       bg={bg}
       pt={100}
       pb={pb || 100}>
@@ -70,7 +79,7 @@ export const Wrapper: FC<WrapperProps> = ({
             {title}
           </Text>
           {!!desc && (
-            <Text className={classes.subtitle} align="center" mt="10px" maw={600}>
+            <Text className={classes.subtitle} align="center" mt="10px">
               {desc}
               {descLine2 && (
                 <>

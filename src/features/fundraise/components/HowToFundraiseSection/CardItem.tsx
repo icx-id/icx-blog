@@ -9,7 +9,6 @@ export const CardItem: FC<HowToFundraiseSectionCardItemProps> = ({ title, number
       dir="row"
       align="center"
       sx={{
-        backgroundColor: 'green',
         borderRadius: '8px',
         backgroundImage: `url(${GradientBackground})`,
         backgroundRepeat: 'no-repeat',
