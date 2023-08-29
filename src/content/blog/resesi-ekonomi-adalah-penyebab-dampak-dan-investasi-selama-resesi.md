@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: Della Octavilia
 title: "Resesi Ekonomi Adalah: Penyebab, Dampak, dan Investasi Selama Resesi"
 metaTitle: Resesi Ekonomi 2023, Mungkinkah Indonesia Terdampak?
@@ -9,7 +9,7 @@ intro: Resesi ekonomi adalah kondisi yang sangat ditakuti oleh seluruh negara di
   dunia. Apa yang terjadi jika ancaman resesi ekonomi 2023 terealisasi? Lalu,
   apakah Indonesia akan terdampak? Pahami lengkapnya lewat akibat dampak resesi
   ekonomi yuk!
-date: 2023-08-29T03:05:14.843Z
+date: 2023-01-31T03:05:14.843Z
 featuredImage:
   src: https://img.freepik.com/free-vector/global-business-downfall-with-falling-arrow-world-map_1017-37134.jpg?w=740&t=st=1660291439~exp=1660292039~hmac=99ca8001e72d21e5157c77e7bfcb95fc3a93b777cffd1b1e221b43608692832d
   alt: memahami konsep dan dampak resesi terhadap perekonomian Indonesia
@@ -156,7 +156,7 @@ Selanjutnya kita akan membahas bagaimana cara mengatasi resesi ekonomi agar Anda
 
 Salah satu cara mengatasi resesi ekonomi adalah mengembalikan kepercayaan investor. Pemerintah harus mengeluarkan berbagai kebijakan selama resesi dan membuat proyek-proyek strategis untuk menciptakan iklim investasi yang baik di tengah resesi agar investor tetap percaya dan tertarik untuk menanamkan modalnya kembali.
 
-## 2. Bantuan Usaha Mikro Kecil Menengah (UMKM)
+### 2. Bantuan Usaha Mikro Kecil Menengah (UMKM)
 
 UMKM merupakan salah satu sektor yang terkena dampak dari resesi ekonomi Indonesia. Namun saat terjadi resesi ekonomi usaha ini dinilai memiliki daya tahan yang lebih baik daripada perusahaan besar karena lingkupnya yang kecil. 
 
@@ -229,5 +229,9 @@ S﻿elain itu, anda juga bisa berinvestasi ke berbagai bisnis privat potensial l
 K﻿arena itu, 
 
 ## Y﻿uk Siapkan Aset Investasi Jangka Panjang Anda Sekarang...
+
+## [UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
+
+![Funding Lending untuk investasi](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "sistem funding dan lending untuk pendanaan bisnis dan investasi")
 
 <!--EndFragment-->
