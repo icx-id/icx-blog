@@ -48,6 +48,7 @@ const useStyles = createStyles(theme => ({
   },
 
   subtitle: {
+    mt: '20px',
     color: '#fff',
     fontSize: 18,
     fontWeight: 400,
@@ -80,9 +81,7 @@ export const JumbotronSection: FC<JumbotronSectionProps> = ({ desc, title }) => 
               <div dangerouslySetInnerHTML={{ __html: title }} />
             </Text>
             <Box maw={{ sm: 420, lg: 500 }}>
-              <Text mt="20px" className={classes.subtitle}>
-                {desc}
-              </Text>
+              <Text className={classes.subtitle}>{desc}</Text>
               <Button
                 onClick={() => navigate('/contact')}
                 mt="40px"

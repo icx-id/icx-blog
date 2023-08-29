@@ -5,6 +5,7 @@ import { WrapperProps } from '../types';
 
 const useStyles = createStyles(theme => ({
   title: {
+    textAlign: 'center',
     color: '#fff',
     fontSize: 38,
     fontWeight: 600,
@@ -30,6 +31,8 @@ const useStyles = createStyles(theme => ({
   },
 
   subtitle: {
+    textAlign: 'center',
+    mt: '10px',
     fontSize: 16,
     fontWeight: 400,
     lineHeight: '28px',
@@ -73,13 +76,11 @@ export const Wrapper: FC<WrapperProps> = ({
       pb={pb || 100}>
       <Container size="ll">
         <Stack spacing={0} justify="center" align="center">
-          <Text
-            className={`${classes.title} ${gradientTitle ? classes.gradientTitle : ''}`}
-            align="center">
+          <Text className={`${classes.title} ${gradientTitle ? classes.gradientTitle : ''}`}>
             {title}
           </Text>
           {!!desc && (
-            <Text className={classes.subtitle} align="center" mt="10px">
+            <Text className={classes.subtitle}>
               {desc}
               {descLine2 && (
                 <>
