@@ -31,7 +31,7 @@ export const Fundraise = () => {
       />
       <AchievementSection />
       <WhyFundraiseSection title={whyFundraiseSection.title} data={whyFundraiseSection.data} />
-      <TestimonySection testimonies={testimonySection.testimonies} />
+      {/* <TestimonySection testimonies={testimonySection.testimonies} /> */}
       <HowToFundraiseSection
         title={howToFundraiseSection.title}
         desc={howToFundraiseSection.desc}
