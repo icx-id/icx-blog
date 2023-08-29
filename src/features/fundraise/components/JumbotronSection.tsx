@@ -1,6 +1,6 @@
 import { Box, Container, Stack, createStyles, Text, Button } from '@mantine/core';
 import React, { FC } from 'react';
-import FundraiseBackground from '../assets/fundraise-bg.png';
+import FundraiseBackground from '../assets/fundraise-bg.webp';
 import { useMediaQuery } from '@mantine/hooks';
 import { JumbotronSectionProps } from '../types';
 

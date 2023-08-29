@@ -1,7 +1,7 @@
 import { Flex, Image } from '@mantine/core';
 import React, { FC } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
-import InvestmentFlow from '../assets/investment-flow.png';
+import InvestmentFlow from '../assets/investment-flow.webp';
 import { Wrapper } from './Wrapper';
 import { InvestmentFlowSectionProps } from '../types';
 

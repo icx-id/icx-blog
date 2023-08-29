@@ -1,8 +1,8 @@
 import { Box, Container, createStyles, Flex, Image } from '@mantine/core';
 import React from 'react';
 import { useMediaQuery } from '@mantine/hooks';
-import AchievementMobile from '../assets/achievement-mobile.png';
-import AchievementDesktop from '../assets/achievement-desktop.png';
+import AchievementMobile from '../assets/achievement-mobile.webp';
+import AchievementDesktop from '../assets/achievement-desktop.webp';
 
 const useStyles = createStyles(theme => ({
   root: {

@@ -1,7 +1,7 @@
 import { Box, Button, Container, Flex, Image, Text, createStyles } from '@mantine/core';
 import React, { FC } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
-import IcxMockup from '../assets/icx-mockup.png';
+import IcxMockup from '../assets/icx-mockup.webp';
 import { ContactUsSectionProps } from '../types';
 
 const useStyles = createStyles(theme => ({

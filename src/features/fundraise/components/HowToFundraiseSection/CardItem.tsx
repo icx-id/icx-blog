@@ -1,6 +1,6 @@
 import { Text, Flex } from '@mantine/core';
 import React, { FC } from 'react';
-import GradientBackground from '../../assets/gradient-card.png';
+import GradientBackground from '../../assets/gradient-card.webp';
 import { HowToFundraiseSectionCardItemProps } from '../../types';
 
 export const CardItem: FC<HowToFundraiseSectionCardItemProps> = ({ title, number }) => {
