@@ -16,11 +16,11 @@ featuredImage:
   title: Kenapa Startup Bakar Uang? Burn Rate Bahayakan Startup Unicorn
 key: blog-article
 ---
-Istilah perusahaan rintisan atau startup telah akrab dilingkungan harian kita, mulai dari gebrakan inovasi yang mendisrupsi hingga gelar unicorn dan decacorn yang dimiliki. 
+**Mengungkap Rahasia Strategi "Bakar Uang" Startup: Apa yang Perlu Anda Ketahui Sebagai Investor**
 
-Mungkin Anda sering bertanya kenapa startup-startup yang terlihat megah tersebut sering memberikan promosi tanpa henti atau bahkan dikenal sebagai bakar uang. Strategi bakar uang (burn rate) yang terasa berlebihan pun buat kita menyatukan ujung alis sembari bergumam “ini perusahaan dapet untung ga sih?”.
+Dalam dunia yang semakin akrab dengan istilah startup, dimana beberapa di antaranya bahkan mencapai prestasi unicorn dan decacorn, kita sering kali bertanya-tanya mengapa startup-startup yang terlihat mewah ini tampaknya terus memompa banyak uang ke dalam promosi, seperti sedang 'membakar uang.' Strategi ini kadang-kadang terasa berlebihan, dan ini pasti membuat para investor bertanya, "Apakah semua ini sepadan? Apakah startup ini benar-benar menguntungkan?"
 
-Nah, menjawab pertanyaan tersebut, [LandX](https://www.landx.id/) akan bahas terkait tujuan strategi bakar uang startup dan perkiraan dampak yang akan guncang startup level unicorn.
+Dalam pembahasan ini, kita akan menjelajahi lebih dalam dunia startup yang penuh dengan dinamika, mencari pemahaman mengapa strategi 'bakar uang' digunakan, dan bagaimana hal ini bisa mempengaruhi kinerja dan potensi hasil investasi kita sebagai para investor. Dengan informasi ini, kita dapat memiliki pemahaman yang lebih manusiawi dan komprehensif terkait investasi kita dalam startup-startup yang bersemangat ini.
 
 ## Burn Rate Startup
 
@@ -29,8 +29,6 @@ Kenapa startup suka bakar duit? Umumnya pendiri startup berangkat hanya dengan i
 Kegiatan promosi untuk dapat dilirik konsumen tentunya akan menghabiskan uang dalam jumlah yang banyak. Uang tersebut dari mana? Mungkin dana dari kantong pendiri startup sendiri (bootstrap) belum mencukupi, hingga mereka melakukan presentasi didepan investor untuk mendapatkan pendanaan.
 
 Putaran pendanaan startup (funding) dari investor berkali-kali hingga ratusan dolar membuat perusahaan startup dapat mengembangkan model bisnisnya, melakukan promosi hingga dianugerahi sebagai startup unicorn.
-
-> [Berapa jumlah pendanaan awal startup? Baca lebih lanjut di sini](https://landx.id/blog/mengenal-tahapan-pendanaan-startup-berapa-nilai-seed-funding-landx/)
 
 ## Istilah dalam Startup GMV Adalah
 
