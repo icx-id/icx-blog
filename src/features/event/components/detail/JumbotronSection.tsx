@@ -1,15 +1,5 @@
 import React, { FC, useState } from 'react';
-import {
-  AspectRatio,
-  Box,
-  Flex,
-  Group,
-  Image,
-  MediaQuery,
-  Stack,
-  Text,
-  createStyles,
-} from '@mantine/core';
+import { Box, Flex, Group, Image, MediaQuery, Stack, Text, createStyles } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 
 import HeroBackground from '../../assets/event-detail-hero-bg.png';
