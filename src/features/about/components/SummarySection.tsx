@@ -9,6 +9,8 @@ import {
   Flex,
   createStyles,
   Container,
+  Button,
+  rem,
 } from '@mantine/core';
 
 import SummaryVideo from '~/images/about-video-thumbnail.png';
@@ -90,6 +92,12 @@ const useStyles = createStyles(theme => ({
     },
     height: '100vh',
   },
+
+  buttonSize: {
+    height: 'auto',
+    padding: `${rem(6)} ${rem(20)}`,
+    borderRadius: theme.radius.md,
+  },
 }));
 
 export const SummarySection: React.FC<SummarySectionProps> = ({ onOpenVideo }) => {
@@ -128,6 +136,19 @@ export const SummarySection: React.FC<SummarySectionProps> = ({ onOpenVideo }) =
                 To The Businesses You Trust
               </Text>
             </Stack>
+            <Button
+              component="a"
+              href="/contact"
+              className={classes.buttonSize}
+              maw={115}
+              sx={{
+                backgroundColor: '#00C48F',
+                ':hover': {
+                  backgroundColor: '#02B082',
+                },
+              }}>
+              <Text fw={500}>Contact Us</Text>
+            </Button>
             <Grid fz="20px" mt="40px" align="center">
               <Grid.Col sm={12} md={5}>
                 <Text className={classes.subtitle} maw="550px">
