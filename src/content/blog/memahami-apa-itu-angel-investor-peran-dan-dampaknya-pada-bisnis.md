@@ -1,7 +1,7 @@
 ---
 draft: false
 author: Rafa Syawalia R
-title: "Memahami Apa Itu Angel Investor : Peran dan Dampaknya pada Bisnis"
+title: "Memahami Apa Itu Angel Investor: Peran dan Dampaknya pada Bisnis"
 metaTitle: "Mengenal Angel Investor: Mitra Strategis dalam Pengembangan Bisnis"
 metaDescription: Memahami potensi besar Angel Investor sebagai mitra strategis
   dalam pertumbuhan bisnis  serta memberikan dukungan finansial dan pengetahuan
