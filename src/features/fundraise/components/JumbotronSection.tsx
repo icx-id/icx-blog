@@ -1,4 +1,4 @@
-import { Box, Container, Stack, createStyles, Text, Button } from '@mantine/core';
+import { Box, Container, Stack, createStyles, Text, Button, Flex } from '@mantine/core';
 import React, { FC } from 'react';
 import FundraiseBackground from '../assets/fundraise-bg.webp';
 import { useMediaQuery } from '@mantine/hooks';
@@ -81,15 +81,36 @@ export const JumbotronSection: FC<JumbotronSectionProps> = ({ desc, title }) => 
               <div dangerouslySetInnerHTML={{ __html: title }} />
             </Text>
             <Box maw={{ sm: 420, lg: 500 }}>
-              <Text className={classes.subtitle}>{desc}</Text>
-              <Button
-                onClick={() => navigate('/contact')}
-                mt="40px"
-                fullWidth={mobileScreen}
-                w={{ sm: 200 }}
-                size="md">
-                Contact Us
-              </Button>
+              <Text mt="20px" className={classes.subtitle}>
+                {desc}
+              </Text>
+              <Flex direction={mobileScreen ? 'column' : 'row'} mt="40px" gap={10}>
+                <Button
+                  onClick={() => navigate('/contact')}
+                  fullWidth={mobileScreen}
+                  w={{ sm: 200 }}
+                  h={40}
+                  style={{ fontSize: 12 }}>
+                  Contact Us
+                </Button>
+                <Button
+                  onClick={() => navigate('/fundraise/start-fundraise')}
+                  variant="outlined"
+                  fullWidth={mobileScreen}
+                  w={{ sm: 200 }}
+                  h={40}
+                  sx={{
+                    fontSize: 12,
+                    color: '#fff',
+                    border: '0.5px solid #fff',
+                    ':hover': {
+                      boxShadow: '0px 4px 30px #00b38270',
+                      transition: '300ms ease-in-out',
+                    },
+                  }}>
+                  Start Raising
+                </Button>
+              </Flex>
             </Box>
           </Stack>
         </Container>
