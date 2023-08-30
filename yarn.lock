@@ -6807,10 +6807,10 @@ gatsby-plugin-fix-fouc@^1.0.2:
   dependencies:
     camel-case "^4"
 
-gatsby-plugin-google-gtag@^5.9.0:
-  version "5.9.0"
-  resolved "https://registry.npmjs.org/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.9.0.tgz#8336e3710dcfbac647f1fc247a14161c4e9de5c4"
-  integrity sha512-BJJHBgcbsmOuDJEN2aGarEWxaxw1rf8qLRllv2rbJbCHR/asmr7WWLspLWesqrDtSFJKdHYHA9c0I98fUWFeOw==
+gatsby-plugin-google-gtag@^5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-5.11.0.tgz#8e65a028561df6487173d808de59d426ec1658ce"
+  integrity sha512-GeXfYksdrrJ6/Bbgr1rBG9UwppyA0ZdA6Q8R9kDbLtTyFLpumM9BiiPPsrbBSrE+CfiUD7uKhbgZlXQk6VNSUQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     minimatch "^3.1.2"

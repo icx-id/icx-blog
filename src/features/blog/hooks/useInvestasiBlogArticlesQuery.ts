@@ -1,6 +1,10 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { BlogArticlesQueryResponse } from '../types';
 
+/**
+ *
+ * @deprecated
+ */
 export const useInvestasiBlogArticlesQuery = () => {
   const { allMarkdownRemark } = useStaticQuery<BlogArticlesQueryResponse>(
     graphql`

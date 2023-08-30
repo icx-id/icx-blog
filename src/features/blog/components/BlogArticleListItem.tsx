@@ -8,6 +8,7 @@ import {
   useMantineTheme,
   em,
   getBreakpointValue,
+  Badge,
 } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { IconArrowUpRight } from '@tabler/icons-react';
@@ -19,6 +20,7 @@ interface BlogArticleListItemProps {
   intro: string;
   image: string;
   slug: string;
+  pinned?: boolean;
 }
 
 export const BlogArticleListItem: React.FC<BlogArticleListItemProps> = ({
@@ -26,6 +28,7 @@ export const BlogArticleListItem: React.FC<BlogArticleListItemProps> = ({
   intro,
   title,
   slug,
+  pinned,
 }) => {
   const theme = useMantineTheme();
   const isMobile = useMediaQuery(
@@ -33,44 +36,54 @@ export const BlogArticleListItem: React.FC<BlogArticleListItemProps> = ({
   );
 
   return (
-    <Flex gap={12} direction={{ xs: 'row', sm: 'column' }}>
-      <Image
-        src={image}
-        sx={{
-          maxWidth: isMobile ? '50%' : '100%',
-          minWidth: isMobile ? '50%' : '100%',
-        }}
-        styles={{
-          image: {
-            borderRadius: '4px',
-            aspectRatio: isMobile ? '3 / 2' : '16 / 9',
-          },
-        }}
-      />
-      <Stack h="100%">
-        <Stack justify="space-between" h="100%">
-          <Text fw="bold" lineClamp={isMobile ? 3 : 2} lh={1.5}>
-            {title}
-          </Text>
-          {!isMobile && (
-            <Text fz="sm" lineClamp={3}>
-              {intro}
+    <Anchor
+      component={Link}
+      to={`${slug}`}
+      target="_blank"
+      color="dark"
+      sx={{
+        ':hover': {
+          textDecoration: 'none',
+        },
+      }}>
+      <Flex gap={12} direction={{ xs: 'row', sm: 'column' }} pos="relative">
+        {pinned && (
+          <Badge pos="absolute" top={8} right={8} sx={{ zIndex: 2 }}>
+            Pinned
+          </Badge>
+        )}
+        <Image
+          src={image}
+          sx={{
+            maxWidth: isMobile ? '50%' : '100%',
+            minWidth: isMobile ? '50%' : '100%',
+          }}
+          styles={{
+            image: {
+              borderRadius: '4px',
+              aspectRatio: isMobile ? '3 / 2' : '16 / 9',
+            },
+          }}
+        />
+        <Stack h="100%">
+          <Stack justify="space-between" h="100%">
+            <Text fw="bold" lineClamp={isMobile ? 3 : 2} lh={1.5}>
+              {title}
             </Text>
-          )}
-        </Stack>
-        <Anchor
-          fw="bold"
-          fz="sm"
-          color="#333333"
-          variant="white"
-          component={Link}
-          to={`${slug}`}
-          target="_blank">
+            {!isMobile && (
+              <Text fz="sm" lineClamp={3}>
+                {intro}
+              </Text>
+            )}
+          </Stack>
+
           <Group spacing="lg">
-            Read More <IconArrowUpRight />
+            <Text fw="bold" fz="sm" color="#333333" variant="white">
+              Read More <IconArrowUpRight />
+            </Text>
           </Group>
-        </Anchor>
-      </Stack>
-    </Flex>
+        </Stack>
+      </Flex>
+    </Anchor>
   );
 };
