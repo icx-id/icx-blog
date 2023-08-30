@@ -54,15 +54,33 @@ export const ContactUsSection: FC<ContactUsSectionProps> = ({ title, desc }) => 
           <Text align={mobileScreen ? 'center' : 'start'} className={classes.subtitle} maw={600}>
             {desc}
           </Text>
-          <Button
-            onClick={() => navigate('/contact')}
-            mt="40px"
-            fullWidth={mobileScreen}
-            w={{ sm: 200 }}
-            h={40}
-            style={{ fontSize: 12 }}>
-            Contact Us
-          </Button>
+          <Flex direction={mobileScreen ? 'column' : 'row'} mt="40px" gap={10}>
+            <Button
+              onClick={() => navigate('/contact')}
+              fullWidth={mobileScreen}
+              w={{ sm: 200 }}
+              h={40}
+              style={{ fontSize: 12 }}>
+              Contact Us
+            </Button>
+            <Button
+              onClick={() => navigate('/fundraise/start-fundraise')}
+              variant="outlined"
+              fullWidth={mobileScreen}
+              w={{ sm: 200 }}
+              h={40}
+              sx={{
+                fontSize: 12,
+                color: '#000',
+                border: '0.5px solid #000',
+                ':hover': {
+                  boxShadow: '0px 4px 30px #00b38270',
+                  transition: '300ms ease-in-out',
+                },
+              }}>
+              Start Raising
+            </Button>
+          </Flex>
         </Container>
       </Flex>
       <Box w={mobileScreen ? '100%' : '50vw'}>
