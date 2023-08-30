@@ -5,7 +5,6 @@ import { WhyFundraiseSectionCardItemProps } from '../../types';
 
 export const CardItem: FC<WhyFundraiseSectionCardItemProps> = ({ title, desc, icon }) => {
   const mobileScreen = useMediaQuery('(max-width: 30em)');
-  const tabScreen = useMediaQuery('(min-width: 30em) and (max-width: 70em)');
 
   return (
     <Flex
@@ -14,9 +13,7 @@ export const CardItem: FC<WhyFundraiseSectionCardItemProps> = ({ title, desc, ic
       align={mobileScreen ? 'center' : 'start'}
       px={mobileScreen ? 0 : 24}
       py={mobileScreen ? 0 : 26}
-      mx={mobileScreen || tabScreen ? 'unset' : 14}
-      mb={mobileScreen ? 0 : 28}
-      w={mobileScreen ? '100%' : tabScreen ? '50vw' : '23vw'}
+      mih={{ xs: 'unset', sm: 180, md: 270, lg: 240 }}
       sx={{
         backgroundColor: mobileScreen ? 'unset' : '#252525',
         backgroundImage: mobileScreen ? 'unset' : `url(${icon})`,

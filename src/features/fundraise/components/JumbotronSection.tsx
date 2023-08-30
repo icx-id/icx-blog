@@ -41,9 +41,14 @@ const useStyles = createStyles(theme => ({
       fontSize: 32,
       lineHeight: '40px',
     },
+    [theme.fn.largerThan('2xl')]: {
+      fontSize: 58,
+      lineHeight: '74px',
+    },
   },
 
   subtitle: {
+    mt: '20px',
     color: '#fff',
     fontSize: 18,
     fontWeight: 400,
@@ -51,6 +56,10 @@ const useStyles = createStyles(theme => ({
     [theme.fn.smallerThan('lg')]: {
       fontSize: 16,
       lineHeight: '24px',
+    },
+    [theme.fn.largerThan('2xl')]: {
+      fontSize: 24,
+      lineHeight: '34px',
     },
   },
 }));

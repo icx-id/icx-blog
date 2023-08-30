@@ -7,7 +7,7 @@ import { WhyFundraiseSection } from './WhyFundraiseSection/WhyFundraiseSection';
 import { HowToFundraiseSection } from './HowToFundraiseSection/HowToFundraiseSection';
 import { InvestmentFlowSection } from './InvestmentFlowSection';
 import { ContactUsSection } from './ContactUsSection';
-import { TestimonySection } from './TestimonySection';
+// import { TestimonySection } from './TestimonySection';
 import { useFundraiseStaticQuery } from '../hooks/useFundraiseStaticQuery';
 
 export const Fundraise = () => {
@@ -15,7 +15,7 @@ export const Fundraise = () => {
     jumbotronSection,
     portfolioSection,
     whyFundraiseSection,
-    testimonySection,
+    // testimonySection,
     howToFundraiseSection,
     investmentFlowSection,
     contactUsSection,

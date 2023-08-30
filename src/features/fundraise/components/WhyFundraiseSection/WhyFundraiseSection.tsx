@@ -1,7 +1,7 @@
 import React, { FC, useState } from 'react';
 import { CardItem } from './CardItem';
 import { Wrapper } from '../Wrapper';
-import { Box, Flex, MediaQuery } from '@mantine/core';
+import { Box, Flex, Grid, MediaQuery } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { LineNavigator } from '~/components/LineNavigator';
 import { WhyFundraiseSectionProps } from '../../types';
@@ -27,17 +27,21 @@ export const WhyFundraiseSection: FC<WhyFundraiseSectionProps> = ({ title, data 
   return (
     <Wrapper title={title} bg={mobileScreen ? '#252525' : '#000'}>
       <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
-        <Flex direction="column" align="center" mt="40px">
-          <Flex direction={tabScreen ? 'column' : 'row'}>
+        <Flex direction="column" align="center" mt="40px" w="100%" maw="80vw">
+          <Grid justify="center" gutter={30}>
             {data?.slice(0, 3).map(item => (
-              <CardItem key={item.title} icon={item.icon} title={item.title} desc={item.desc} />
+              <Grid.Col span={tabScreen ? 12 : 4} key={item.title}>
+                <CardItem key={item.title} icon={item.icon} title={item.title} desc={item.desc} />
+              </Grid.Col>
             ))}
-          </Flex>
-          <Flex direction={tabScreen ? 'column' : 'row'}>
+          </Grid>
+          <Grid justify="center" gutter={30} mt={20}>
             {data?.slice(3).map(item => (
-              <CardItem key={item.title} icon={item.icon} title={item.title} desc={item.desc} />
+              <Grid.Col span={tabScreen ? 12 : 4} key={item.title}>
+                <CardItem key={item.title} icon={item.icon} title={item.title} desc={item.desc} />
+              </Grid.Col>
             ))}
-          </Flex>
+          </Grid>
         </Flex>
       </MediaQuery>
 

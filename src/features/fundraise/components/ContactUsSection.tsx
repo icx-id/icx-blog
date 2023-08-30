@@ -15,6 +15,9 @@ const useStyles = createStyles(theme => ({
     [theme.fn.smallerThan('sm')]: {
       fontSize: 28,
     },
+    [theme.fn.largerThan('2xl')]: {
+      fontSize: 44,
+    },
     background: '-webkit-linear-gradient(left, #011929, #00C48F)',
     backgroundClip: 'text',
     WebkitBackgroundClip: 'text',
@@ -25,6 +28,7 @@ const useStyles = createStyles(theme => ({
     fontSize: 16,
     fontWeight: 400,
     lineHeight: '28px',
+    maxWidth: 600,
     [theme.fn.smallerThan('lg')]: {
       fontSize: 12,
       lineHeight: '24px',
@@ -32,15 +36,25 @@ const useStyles = createStyles(theme => ({
     [theme.fn.smallerThan('sm')]: {
       lineHeight: '20px',
     },
+    [theme.fn.largerThan('2xl')]: {
+      fontSize: 20,
+      maxWidth: 700,
+    },
   },
 }));
 
 export const ContactUsSection: FC<ContactUsSectionProps> = ({ title, desc }) => {
   const { classes } = useStyles();
   const mobileScreen = useMediaQuery('(max-width: 30em)');
+  const tabScreen = useMediaQuery('(min-width: 30em) and (max-width: 70em)');
+  const giantScreen = useMediaQuery('(min-width: 160em)');
 
   return (
-    <Flex align="center" direction={mobileScreen ? 'column-reverse' : 'row'}>
+    <Flex
+      align="center"
+      direction={mobileScreen ? 'column-reverse' : 'row'}
+      mah={tabScreen ? 'unset' : giantScreen ? '80vh' : '100vh'}
+      sx={{ overflow: 'hidden' }}>
       <Flex
         direction="column"
         align={mobileScreen ? 'center' : 'start'}
@@ -51,7 +65,7 @@ export const ContactUsSection: FC<ContactUsSectionProps> = ({ title, desc }) => 
           <Text align={mobileScreen ? 'center' : 'start'} className={classes.title}>
             {title}
           </Text>
-          <Text align={mobileScreen ? 'center' : 'start'} className={classes.subtitle} maw={600}>
+          <Text align={mobileScreen ? 'center' : 'start'} className={classes.subtitle}>
             {desc}
           </Text>
           <Flex direction={mobileScreen ? 'column' : 'row'} mt="40px" gap={10}>
@@ -83,7 +97,7 @@ export const ContactUsSection: FC<ContactUsSectionProps> = ({ title, desc }) => 
           </Flex>
         </Container>
       </Flex>
-      <Box w={mobileScreen ? '100%' : '50vw'}>
+      <Box w={mobileScreen ? '100%' : '50vw'} h="100%">
         <Image src={IcxMockup} alt="Mockup" fit="cover" w="100%" h="100%" />
       </Box>
     </Flex>
