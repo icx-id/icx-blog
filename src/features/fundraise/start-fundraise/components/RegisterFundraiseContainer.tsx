@@ -1,7 +1,7 @@
 import { Box, Container, Grid, createStyles, rem } from '@mantine/core';
 import React, { PropsWithChildren } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
-import { Breadcrumbs, BreadcrumbsProps } from './Breadcrumbs';
+import { FundraiseBreadcrumbs, FundraiseBreadcrumbsProps } from './FundraiseBreadcrumbs';
 
 const useStyles = createStyles(theme => ({
   root: {
@@ -36,7 +36,7 @@ const useStyles = createStyles(theme => ({
   },
 }));
 
-interface RegisterFundraiseContainerProps extends BreadcrumbsProps {
+interface RegisterFundraiseContainerProps extends FundraiseBreadcrumbsProps {
   bannerImage: string;
   bannerType?: 'full' | 'half';
   withBreadcrumbs?: boolean;
@@ -60,7 +60,7 @@ export const RegisterFundraiseContainer: React.FC<
       <Container h="100%">
         {withBreadcrumbs && mobileScreen && (
           <Box>
-            <Breadcrumbs currentStep={currentStep} totalStep={totalStep} goBack={goBack} />
+            <FundraiseBreadcrumbs currentStep={currentStep} totalStep={totalStep} goBack={goBack} />
           </Box>
         )}
         <Grid
@@ -89,7 +89,7 @@ export const RegisterFundraiseContainer: React.FC<
             span={mobileScreen ? 12 : 6}>
             {withBreadcrumbs && !mobileScreen && (
               <Box px={rem(20)} mb={rem(20)}>
-                <Breadcrumbs currentStep={currentStep} totalStep={totalStep} />
+                <FundraiseBreadcrumbs currentStep={currentStep} totalStep={totalStep} />
               </Box>
             )}
             {children}

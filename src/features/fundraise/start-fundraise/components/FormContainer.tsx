@@ -1,6 +1,6 @@
 import { Box, Button, Container, Flex, Stack, Text, createStyles, rem } from '@mantine/core';
 import React, { PropsWithChildren } from 'react';
-import { BreadcrumbsProps, Breadcrumbs } from './Breadcrumbs';
+import { FundraiseBreadcrumbsProps, FundraiseBreadcrumbs } from './FundraiseBreadcrumbs';
 
 const useStyles = createStyles(theme => ({
   root: {
@@ -28,7 +28,7 @@ const useStyles = createStyles(theme => ({
   },
 }));
 
-interface FormContainerProps extends BreadcrumbsProps {
+interface FormContainerProps extends FundraiseBreadcrumbsProps {
   title: string;
   onSubmit: () => void;
   withBreadcrumbs?: boolean;
@@ -51,7 +51,7 @@ export const FormContainer: React.FC<PropsWithChildren<FormContainerProps>> = ({
       <Container h="100%">
         <Flex className={classes.content}>
           {withBreadcrumbs && (
-            <Breadcrumbs currentStep={currentStep} totalStep={totalStep} goBack={goBack} />
+            <FundraiseBreadcrumbs currentStep={currentStep} totalStep={totalStep} goBack={goBack} />
           )}
 
           <Text mt={rem(20)} weight="600" size={rem(20)} mb={rem(20)}>

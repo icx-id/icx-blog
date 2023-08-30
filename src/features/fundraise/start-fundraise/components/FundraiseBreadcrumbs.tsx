@@ -1,13 +1,17 @@
 import { ActionIcon, Flex, Image, Text, rem } from '@mantine/core';
 import React from 'react';
 
-export interface BreadcrumbsProps {
+export interface FundraiseBreadcrumbsProps {
   currentStep?: string;
   totalStep?: string;
   goBack?: () => void;
 }
 
-export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ currentStep, totalStep, goBack }) => {
+export const FundraiseBreadcrumbs: React.FC<FundraiseBreadcrumbsProps> = ({
+  currentStep,
+  totalStep,
+  goBack,
+}) => {
   return (
     <Flex align="center">
       {currentStep !== '1' && (
