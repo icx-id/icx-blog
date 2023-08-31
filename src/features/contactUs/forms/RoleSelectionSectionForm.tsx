@@ -1,58 +1,57 @@
 import React from 'react';
-import { ContactUsFormContainer } from '../components/ContactUsFormContainer';
-import { Roles, RoleSelection } from './contactUs';
+import { Roles, UserRole, SectionsFormProps } from './contactUs';
 import { Formik, useFormikContext } from 'formik';
 import { useContactUsStore } from '../stores';
-import { Flex, Radio } from '@mantine/core';
+import { createStyles, Flex, Radio, rem } from '@mantine/core';
+import { ContactUsContainer } from '../components/ContactUsContainer';
 
 interface RoleSelectionSectionProps {
   goBack: () => void;
 }
 
+const useStyles = createStyles(theme => ({
+  radioButton: {
+    'box-shadow': theme.shadows.lg,
+    padding: rem(20),
+  },
+}));
+
 const RoleSelectionSection: React.FC<RoleSelectionSectionProps> = ({ goBack }) => {
-  const { values, errors, setFieldValue, handleSubmit } = useFormikContext<RoleSelection>();
+  const { classes } = useStyles();
+  const { onRoleSelectionSuccess } = useContactUsStore();
+  const { values, errors, setFieldValue, handleSubmit } = useFormikContext<UserRole>();
 
   return (
-    <ContactUsFormContainer
-      title="Pilih posisi anda"
-      onSubmit={handleSubmit}
-      goBack={goBack}
-      withBackButton>
+    <ContactUsContainer title="Pilih posisi anda" onSubmit={handleSubmit} goBack={goBack}>
       <Radio.Group
         name="role"
         value={values.userRole}
         error={errors.userRole}
-        onChange={e => setFieldValue('userRole', e)}>
+        onChange={e => {
+          setFieldValue('userRole', e);
+          onRoleSelectionSuccess({ userRole: e as Roles });
+        }}>
         <Flex direction="column" mt="xs" gap="xl">
-          <Radio value={Roles.INVESTOR} label="Investor" />
-          <Radio value={Roles.FUNDRAISER} label="Fundraiser" />
-          <Radio value={Roles.FUND_MANAGER} label="Fund Manager" />
+          <Radio className={classes.radioButton} value={Roles.INVESTOR} label="Investor" />
+          <Radio className={classes.radioButton} value={Roles.FUNDRAISER} label="Fundraiser" />
+          <Radio className={classes.radioButton} value={Roles.FUND_MANAGER} label="Fund Manager" />
         </Flex>
       </Radio.Group>
-    </ContactUsFormContainer>
+    </ContactUsContainer>
   );
 };
 
-interface RoleSelectionSectionFormProps {
-  onSubmitSuccess: () => void;
-  goBack: () => void;
-}
+export const RoleSelectionForm: React.FC<SectionsFormProps> = ({ onSubmitSuccess, goBack }) => {
+  const { userRole } = useContactUsStore();
 
-export const RoleSelectionForm: React.FC<RoleSelectionSectionFormProps> = ({
-  onSubmitSuccess,
-  goBack,
-}) => {
-  const { userRole, onRoleSelectionSuccess } = useContactUsStore();
-
-  const handleSubmit = (values: RoleSelection) => {
-    onRoleSelectionSuccess(values.userRole);
+  const handleSubmit = () => {
     onSubmitSuccess();
   };
 
   return (
-    <Formik<RoleSelection>
+    <Formik<UserRole>
       initialValues={{
-        userRole: userRole || Roles.INVESTOR,
+        userRole: userRole?.userRole || Roles.INVESTOR,
       }}
       onSubmit={handleSubmit}>
       <RoleSelectionSection goBack={goBack} />

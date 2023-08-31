@@ -1,14 +1,30 @@
 export enum Roles {
   INVESTOR = 'INVESTOR',
   FUNDRAISER = 'FUNDRAISER',
-  FUND_MANAGER = 'FUND_MANAGER',
+  FUND_MANAGER = 'FUND MANAGER',
 }
 
 export enum ActiveSection {
+  UNDEFINED = 'UNDEFINED',
   IDENTITY = 'IDENTITY',
   ROLE_SELECTION = 'ROLE_SELECTION',
-  COMPANY_PROFILE = 'COMPANY_PROFILE',
-  CONTACTUS_SUMMARY = 'CONTACTUS_SUMMARY',
+  INVESTOR_COMPANY = 'INVESTOR_COMPANY',
+  INVESTOR_INVESTMENT_RANGE = 'INVESTOR_INVESTMENT_RANGE',
+  INVESTOR_STARTUP_INVESTMENT_STATUS = 'INVESTOR_STARTUP_INVESTMENT_STATUS',
+  INVESTOR_RDN_STATUS = 'INVESTOR_RDN_STATUS',
+  FUNDRAISER_REASON = 'FUNDRAISER_REASON',
+  FUNDRAISER_COMPANY_DESC = 'FUNDRAISER_COMPANY_DESC',
+  FUNDRAISER_FUND_RANGE = 'FUNDRAISER_FUND_RANGE',
+  FUNDRAISER_INVESTOR_LIST = 'FUNDRAISER_INVESTOR_LIST',
+  FUNDRAISER_PITCHDECK = 'FUNDRAISER_PITCHDECK',
+  FUND_MANAGER_EXPERIENCE = 'FUND_MANAGER_EXPERIENCE',
+  FUND_MANAGER_FUNDS_MANAGED = 'FUND_MANAGER_FUNDS_MANAGED',
+  FUND_MANAGER_CREDENTIALS = 'FUND_MANAGER_CREDENTIALS',
+  FUND_MANAGER_PURPOSE = 'FUND_MANAGER_PURPOSE',
+  INTEREST = 'INTEREST',
+  ARRANGE = 'ARRANGE',
+  PREFERED_LANGUAGE = 'PREFERED_LANGUAGE',
+  THANK_YOU = 'THANK_YOU',
 }
 
 export enum InvestmentRange {
@@ -45,14 +61,14 @@ export enum Purpose {
 }
 
 export enum Arrange {
-  CALL = 'CALL',
-  ONLINE_MEETING = 'ONLINE_MEETING',
-  OFFICE_VISIT = 'OFFICE_VISIT',
+  CALL = 'Call',
+  ONLINE_MEETING = 'Online Meeting',
+  OFFICE_VISIT = 'Office Visit',
 }
 
 export enum PreferedLanguage {
   ENGLISH = 'ENGLISH',
-  BAHASA = 'BAHASA',
+  INDONESIA = 'INDONESIA',
 }
 
 export interface Identity {
@@ -61,36 +77,77 @@ export interface Identity {
   phoneNumber: string;
 }
 
-export interface RoleSelection {
-  userRole: Roles;
+export interface UserRole {
+  userRole: Roles | Roles.INVESTOR;
 }
 
-export interface Investor {
-  occupation: string;
+export interface InvestorCompany {
+  occupationOrBusiness: string;
   companyName: string;
   domicileCity: string;
-  investmentRange: InvestmentRange;
-  startupInvestmentStatus: StartupInvestmentStatus;
-  rdnStatus: string;
 }
 
-export interface Fundraiser {
+export interface InvestorInvestmentRange {
+  investmentAmountRange: InvestmentRange;
+}
+export interface InvestorStartupInvestmentStatus {
+  startupInvestmentStatus: StartupInvestmentStatus;
+}
+
+export interface InvestorRdnStatus {
+  isRdnMoreThanTwoYears: string;
+}
+
+export interface FundraiseReason {
   fundraisingReason: string;
-  fundraisingRange: FundraisingRange;
+}
+
+export interface FundraiseRange {
+  fundraisingAmountRange: FundraisingRange;
+}
+
+export interface FundraiserPitchdeck {
   pitchDeck: File | null;
+}
+
+export interface FundraiserCompanyDescription {
   companyDescription: string;
+}
+
+export interface FundraiserCurrentInvestor {
   currentInvestor: string;
 }
 
-export interface FundManager {
-  experience: Experience;
-  fundsManaged: string;
-  credentials: string;
-  purpose: Purpose;
+export interface FundManagerExperience {
+  yearsOfExperience: Experience;
 }
 
-export interface ContactUsSummary {
-  expertise: string;
-  arrange: Arrange;
-  preferedLanguage: PreferedLanguage;
+export interface FundManagerFundsManaged {
+  fundsManaged: string;
+}
+
+export interface FundManagerCredentials {
+  credential: string;
+}
+
+export interface FundManagerPurpose {
+  fundManagementPurpose: Purpose;
+}
+
+export interface UserExpertise {
+  interestOrExpertise: string;
+}
+export interface UserArrangement {
+  arrangementType: Arrange;
+}
+export interface userPrederedLanguage {
+  preferredLanguage: PreferedLanguage;
+}
+export interface ContactUsSectionsProps {
+  goBack: () => void;
+}
+
+export interface SectionsFormProps {
+  onSubmitSuccess: () => void;
+  goBack: () => void;
 }

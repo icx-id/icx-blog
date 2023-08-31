@@ -1,26 +1,27 @@
 import { Input } from '~/components/core/Input';
 import React from 'react';
-import { ContactUsFormContainer } from '../components/ContactUsFormContainer';
-import { Identity } from './contactUs';
+import { ContactUsSectionsProps, Identity, SectionsFormProps } from './contactUs';
 import { Formik, useFormikContext } from 'formik';
 import { IdentitySectionFormSchema } from '../schema/IdentitySectionFormSchema';
 import { useContactUsStore } from '../stores';
+import { ContactUsContainer } from '../components/ContactUsContainer';
 
-const IdentitySection: React.FC = () => {
+const IdentitySection: React.FC<ContactUsSectionsProps> = ({ goBack }) => {
   const { handleChange, values, errors, touched, handleBlur, handleSubmit } =
     useFormikContext<Identity>();
 
   const buttonDisabled = errors.fullName || errors.email || errors.phoneNumber ? true : false;
 
   return (
-    <ContactUsFormContainer
-      title="Berikan Informasi Pribadi anda untuk tujuan identifikasi"
+    <ContactUsContainer
+      title="Personal Information"
+      goBack={goBack}
       onSubmit={handleSubmit}
       buttonDisabled={buttonDisabled}>
       <Input
         name="fullName"
         value={values.fullName}
-        label="Nama Lengkap"
+        label="Full Name"
         onChange={handleChange}
         error={errors.fullName && touched.fullName ? errors.fullName : ''}
         onBlur={handleBlur}
@@ -28,7 +29,7 @@ const IdentitySection: React.FC = () => {
       <Input
         name="email"
         value={values.email}
-        label="Email"
+        label="Email Address"
         onChange={handleChange}
         error={errors.email && touched.email ? errors.email : ''}
         onBlur={handleBlur}
@@ -36,20 +37,16 @@ const IdentitySection: React.FC = () => {
       <Input
         name="phoneNumber"
         value={values.phoneNumber}
-        label="No. Telefon"
+        label="Phone Number"
         onChange={handleChange}
         error={errors.phoneNumber && touched.phoneNumber ? errors.phoneNumber : ''}
         onBlur={handleBlur}
       />
-    </ContactUsFormContainer>
+    </ContactUsContainer>
   );
 };
 
-interface IdentitySectionFormProps {
-  onSubmitSuccess: () => void;
-}
-
-export const IdentitySectionForm: React.FC<IdentitySectionFormProps> = ({ onSubmitSuccess }) => {
+export const IdentitySectionForm: React.FC<SectionsFormProps> = ({ onSubmitSuccess, goBack }) => {
   const { identity, onIdentitySuccess } = useContactUsStore();
 
   const handleSubmit = (values: Identity) => {
@@ -64,10 +61,10 @@ export const IdentitySectionForm: React.FC<IdentitySectionFormProps> = ({ onSubm
         email: identity?.email || '',
         phoneNumber: identity?.phoneNumber || '',
       }}
-      validateOnMount={true}
+      validateOnMount={false}
       validationSchema={IdentitySectionFormSchema}
       onSubmit={handleSubmit}>
-      <IdentitySection />
+      <IdentitySection goBack={goBack} />
     </Formik>
   );
 };
