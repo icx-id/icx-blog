@@ -1,20 +1,13 @@
 import React from 'react';
-import {
-  ContactUsSectionsProps,
-  FundraiseReason,
-  FundraiserPitchdeck,
-  SectionsFormProps,
-} from '../contactUs';
+import { ContactUsSectionsProps, FundraiserPitchdeck, SectionsFormProps } from '../contactUs';
 import { Formik, useFormikContext } from 'formik';
 import { useContactUsStore } from '../../stores';
-import { FileButton, UnstyledButton, rem } from '@mantine/core';
+import { FileButton, Text, UnstyledButton, rem } from '@mantine/core';
 import { IconUpload } from '@tabler/icons-react';
 import { ContactUsContainer } from '../../components/ContactUsContainer';
 
 const PitchdeckSection: React.FC<ContactUsSectionsProps> = ({ goBack }) => {
-  const { setFieldValue, errors, handleSubmit } = useFormikContext<FundraiseReason>();
-
-  const buttonDisabled = errors.fundraisingReason ? true : false;
+  const { setFieldValue, values, handleSubmit } = useFormikContext<FundraiserPitchdeck>();
 
   return (
     <ContactUsContainer
@@ -22,8 +15,7 @@ const PitchdeckSection: React.FC<ContactUsSectionsProps> = ({ goBack }) => {
       desc="Pastikan file berformat PDF dan ukurannya maksimal 5MB."
       bannerText="Fundraiser"
       goBack={goBack}
-      onSubmit={handleSubmit}
-      buttonDisabled={buttonDisabled}>
+      onSubmit={handleSubmit}>
       <FileButton onChange={e => setFieldValue('pitchDeck', e)} accept="application/pdf">
         {props => (
           <UnstyledButton
@@ -42,6 +34,11 @@ const PitchdeckSection: React.FC<ContactUsSectionsProps> = ({ goBack }) => {
           </UnstyledButton>
         )}
       </FileButton>
+      {values.pitchDeck && (
+        <Text size="sm" align="center" mt="sm">
+          Picked file: {values.pitchDeck.name}
+        </Text>
+      )}
     </ContactUsContainer>
   );
 };

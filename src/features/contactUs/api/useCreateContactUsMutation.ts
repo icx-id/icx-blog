@@ -85,11 +85,14 @@ export const useCreateContactUsMutation = (
       contactUsForm.append('currentInvestor', currentInvestor);
       contactUsForm.append('yearsOfExperience', experience);
       contactUsForm.append('fundsManaged', fundsManaged);
-      contactUsForm.append('credentials', JSON.stringify(credentials));
       contactUsForm.append('fundManagementPurpose', purpose);
       contactUsForm.append('interestOrExpertise', expertise);
       contactUsForm.append('arrangementType', arrange);
       contactUsForm.append('preferredLanguage', preferedLanguage);
+
+      if (credentials.length !== 0) {
+        contactUsForm.append('credentials', JSON.stringify(credentials));
+      }
 
       return await api<ContactUsResponse>(
         axios.post('/contact-us', contactUsForm, {
