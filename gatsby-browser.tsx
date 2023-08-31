@@ -19,6 +19,7 @@ const forceNavbarSolid = [
   '/create-pin',
   '/profile',
   '/fundraise/start-fundraise',
+  '/contact',
 ];
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({ element, props }) => {

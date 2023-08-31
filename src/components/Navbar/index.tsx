@@ -173,9 +173,14 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                   }}>
                   <Text fw={500}>Sign Up</Text>
                 </Button> */}
+                <Link to="/login" className={classes.unstyledLink}>
+                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
+                    Login
+                  </Text>
+                </Link>
                 <Button
                   component="a"
-                  href="/login"
+                  href="/contact"
                   className={classes.buttonSize}
                   sx={{
                     backgroundColor: '#00C48F',
@@ -183,7 +188,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                       backgroundColor: '#02B082',
                     },
                   }}>
-                  <Text fw={500}>Login</Text>
+                  <Text fw={500}>Contact Us</Text>
                 </Button>
               </Group>
             ) : (
