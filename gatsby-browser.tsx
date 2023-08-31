@@ -18,6 +18,7 @@ const forceNavbarSolid = [
   '/phone-number-verification',
   '/create-pin',
   '/profile',
+  '/fundraise/start-fundraise',
   '/contact',
 ];
 
