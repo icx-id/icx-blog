@@ -22,6 +22,7 @@ import { Link } from 'gatsby';
 import { navbarMenus, NavbarMenu } from './static/menus';
 import { NavbarProps } from '../types';
 import { useStore } from '~/stores';
+import { useLocation } from '@reach/router';
 
 // --------------------------------------- styles
 
@@ -98,11 +99,18 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
 
   const { accessToken, onLogout } = useStore();
 
+  const location = useLocation();
+  const currentPath = location.pathname;
+  const customPaths = ['contact']; // add other pages as needed
+  const isPathIncluded = customPaths.includes(currentPath.trim());
+
   const handleScroll = () => {
     const fixedNavbar = document.getElementById('fixed-navbar');
-
     if (fixedNavbar) {
-      if (Boolean(handleDropdown) || window.pageYOffset > 1 || navbarSolid) {
+      if (isPathIncluded) {
+        setScrolled(true);
+        fixedNavbar.style.backgroundColor = '#fff';
+      } else if (Boolean(handleDropdown) || window.pageYOffset > 1 || navbarSolid) {
         setScrolled(true);
         fixedNavbar.style.backgroundColor = '#fff';
       } else {
