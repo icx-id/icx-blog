@@ -29,6 +29,8 @@ export const StickyActionBox: FC<StickyActionBoxProps> = ({ onOpenModal, disable
     });
   };
 
+  const hoverIcon = { cursor: 'pointer', ':hover': { opacity: 0.7 } };
+
   return (
     <Stack
       w={{ base: 276, lg: 360 }}
@@ -58,36 +60,16 @@ export const StickyActionBox: FC<StickyActionBoxProps> = ({ onOpenModal, disable
         </Text>
         <Group spacing={8} mt={10}>
           <Box onClick={copyClipboardLink}>
-            <Image
-              src={CopyIcon}
-              width={24}
-              height={24}
-              sx={{ cursor: 'pointer', ':hover': { opacity: 0.7 } }}
-            />
+            <Image src={CopyIcon} width={24} height={24} sx={hoverIcon} />
           </Box>
           <FacebookShareButton url={currentUrl}>
-            <Image
-              src={FacebookIcon}
-              width={24}
-              height={24}
-              sx={{ cursor: 'pointer', ':hover': { opacity: 0.7 } }}
-            />
+            <Image src={FacebookIcon} width={24} height={24} sx={hoverIcon} />
           </FacebookShareButton>
           <TwitterShareButton url={currentUrl}>
-            <Image
-              src={TwitterIcon}
-              width={24}
-              height={24}
-              sx={{ cursor: 'pointer', ':hover': { opacity: 0.7 } }}
-            />
+            <Image src={TwitterIcon} width={24} height={24} sx={hoverIcon} />
           </TwitterShareButton>
           <LinkedinShareButton url={currentUrl}>
-            <Image
-              src={LinkedinIcon}
-              width={24}
-              height={24}
-              sx={{ cursor: 'pointer', ':hover': { opacity: 0.7 } }}
-            />
+            <Image src={LinkedinIcon} width={24} height={24} sx={hoverIcon} />
           </LinkedinShareButton>
         </Group>
       </Box>
