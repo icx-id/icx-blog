@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, Text, createStyles } from '@mantine/core';
+import { Box, Button, Container, Flex, MediaQuery, Text, createStyles } from '@mantine/core';
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
 import IcxMockup from '../../../images/icx-contact-us-banner.png';
@@ -20,6 +20,7 @@ interface ContactUsSectionProps extends PropsWithChildren {
 
 const useStyles = createStyles(theme => ({
   button: {
+    width: 'fit-content',
     ':hover': {
       background: 'white',
     },
@@ -27,11 +28,15 @@ const useStyles = createStyles(theme => ({
 
   bannerText: {
     position: 'absolute',
-    left: 400,
-    top: 400,
+    left: '42%',
+    top: '50%',
     color: 'white',
-    fontSize: 70,
+    fontSize: 42,
     fontWeight: 'bolder',
+    zIndex: 1,
+    [theme.fn.smallerThan('lg')]: {
+      fontSize: 34,
+    },
   },
 
   title: {
@@ -91,18 +96,17 @@ export const ContactUsContainer: FC<ContactUsSectionProps> = ({
 
   return (
     <Flex
-      direction={mobileScreen ? 'column-reverse' : 'row'}
-      mah={tabScreen ? 'unset' : giantScreen ? '80vh' : '100vh'}
+      direction="row"
+      h={tabScreen || giantScreen || mobileScreen ? '80vh' : '100vh'}
       sx={{ overflow: 'hidden' }}>
       <Flex
         direction="column"
         justify="space-between"
-        w={mobileScreen ? '100%' : '45vw'}
+        w={mobileScreen || tabScreen ? '100%' : '45vw'}
         pt={mobileScreen ? 80 : 130}
         pb={40}
-        h="100vh"
-        px={mobileScreen ? 20 : 70}>
-        <Flex align="start" direction="column">
+        px={mobileScreen || tabScreen ? 20 : 70}>
+        <Box>
           {lastPage ? null : (
             <Button className={classes.button} p={0} variant="subtle" onClick={goBack} color="dark">
               <Flex align="center" gap={7}>
@@ -111,15 +115,14 @@ export const ContactUsContainer: FC<ContactUsSectionProps> = ({
               </Flex>
             </Button>
           )}
-          <Container px={0} w="100%" size="ll">
-            {icon}
-            <Text className={classes.title}>{title}</Text>
-            <Text className={classes.subtitle}>{desc}</Text>
-            <Flex direction="column" mt="40px" gap={10}>
-              {children}
-            </Flex>
-          </Container>
-        </Flex>
+
+          {icon}
+          <Text className={classes.title}>{title}</Text>
+          <Text className={classes.subtitle}>{desc}</Text>
+          <Flex direction="column" mt="40px" gap={10}>
+            {children}
+          </Flex>
+        </Box>
 
         <Flex gap="xl">
           {lastPage ? (
@@ -133,12 +136,12 @@ export const ContactUsContainer: FC<ContactUsSectionProps> = ({
           )}
         </Flex>
       </Flex>
-      {mobileScreen ? null : (
+      <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
         <Box w="55vw" h="100%" pos="relative">
           <Text className={classes.bannerText}>{bannerText}</Text>
           <img src={IcxMockup} alt="Mockup" style={{ width: '100%', height: '101vh' }} />
         </Box>
-      )}
+      </MediaQuery>
     </Flex>
   );
 };

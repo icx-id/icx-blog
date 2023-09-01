@@ -48,7 +48,10 @@ export const BlogArticleListItem: React.FC<BlogArticleListItemProps> = ({
       }}>
       <Flex gap={12} direction={{ xs: 'row', sm: 'column' }} pos="relative">
         {pinned && (
-          <Badge pos="absolute" top={8} right={8} sx={{ zIndex: 2 }}>
+          <Badge
+            pos="absolute"
+            top={8}
+            sx={{ zIndex: 2, right: isMobile ? 'unset' : 8, left: isMobile ? 8 : 'unset' }}>
             Pinned
           </Badge>
         )}
