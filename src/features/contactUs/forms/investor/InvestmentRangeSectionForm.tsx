@@ -9,6 +9,7 @@ import { Formik, useFormikContext } from 'formik';
 import { useContactUsStore } from '../../stores';
 import { Flex, Radio, createStyles, rem } from '@mantine/core';
 import { ContactUsContainer } from '../../components/ContactUsContainer';
+import { useMediaQuery } from '@mantine/hooks';
 
 const useStyles = createStyles(theme => ({
   radioButton: {
@@ -18,6 +19,8 @@ const useStyles = createStyles(theme => ({
 }));
 
 const InvestmentRangeSection: React.FC<ContactUsSectionsProps> = ({ goBack }) => {
+  const mobileScreen = useMediaQuery('(max-width: 30em)');
+  const size = mobileScreen ? 'xs' : 'md';
   const { classes } = useStyles();
   const { values, errors, setFieldValue, handleSubmit } =
     useFormikContext<InvestorInvestmentRange>();
@@ -34,21 +37,25 @@ const InvestmentRangeSection: React.FC<ContactUsSectionsProps> = ({ goBack }) =>
         onChange={e => setFieldValue('investmentAmountRange', e)}>
         <Flex direction="column" mt="xs" gap="xl">
           <Radio
+            size={size}
             className={classes.radioButton}
             value={InvestmentRange.UNDER_100MIO}
             label={InvestmentRange.UNDER_100MIO}
           />
           <Radio
+            size={size}
             className={classes.radioButton}
             value={InvestmentRange.BETWEEN_100MIO_TO_500MIO}
             label={InvestmentRange.BETWEEN_100MIO_TO_500MIO}
           />
           <Radio
+            size={size}
             className={classes.radioButton}
             value={InvestmentRange.BETWEEN_500MIO_TO_1BIO}
             label={InvestmentRange.BETWEEN_500MIO_TO_1BIO}
           />
           <Radio
+            size={size}
             className={classes.radioButton}
             value={InvestmentRange.ABOVE_1BIO}
             label={InvestmentRange.ABOVE_1BIO}
