@@ -17,6 +17,7 @@ import {
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { HeroSectionProps } from '../../types';
 import Lottie from 'react-lottie';
+import { useMediaQuery } from '@mantine/hooks';
 
 // eslint-disable-next-line no-restricted-imports
 // import heroMotion1 from '~/features/home/assets/hero-motion1.json';
@@ -147,18 +148,13 @@ const useStyles = createStyles(theme => ({
       transform: 'translateX(-50%)',
     },
   },
-
-  buttonSize: {
-    height: 'auto',
-    padding: `${rem(6)} ${rem(20)}`,
-    borderRadius: theme.radius.md,
-  },
 }));
 
 // -------------------------------------- components
 
 export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
   const { classes } = useStyles();
+  const mobileScreen = useMediaQuery('(max-width: 30em)');
 
   const defaultOptions = {
     loop: true,
@@ -272,13 +268,10 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
                     <Button
                       component="a"
                       href="/contact"
-                      className={classes.buttonSize}
-                      sx={{
-                        backgroundColor: '#00C48F',
-                        ':hover': {
-                          backgroundColor: '#02B082',
-                        },
-                      }}>
+                      fullWidth={mobileScreen}
+                      w={{ sm: 200 }}
+                      h={40}
+                      style={{ fontSize: 12 }}>
                       <Text fw={500}>Contact Us</Text>
                     </Button>
                     <Group spacing="xl" align="center" noWrap className={classes.download}>

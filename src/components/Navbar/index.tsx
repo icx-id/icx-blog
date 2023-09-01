@@ -36,15 +36,15 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
     width: '100%',
     overflow: 'hidden',
     transition: 'all 0.3s',
-    boxShadow: isScrolled ? '0px 4px 30px rgba(0, 0, 0, 0.05)' : 'initial',
   },
 
   rootBackgroundColor: {
-    backgroundColor: 'transparent',
+    boxShadow: isScrolled ? '0px 4px 30px rgba(0, 0, 0, 0.05)' : 'initial',
   },
 
   customPathBackgroundColor: {
     backgroundColor: '#fff',
+    boxShadow: '0px 4px 30px rgba(0, 0, 0, 0.05)',
   },
 
   unstyledLink: {
@@ -113,7 +113,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
 
   const handleScroll = () => {
     const fixedNavbar = document.getElementById('fixed-navbar');
-    if (fixedNavbar) {
+    if (fixedNavbar && !isPathIncluded) {
       if (Boolean(handleDropdown) || window.pageYOffset > 1 || navbarSolid) {
         setScrolled(true);
         fixedNavbar.style.backgroundColor = '#fff';
@@ -150,7 +150,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
           sx={{ borderBottom: 'initial', backgroundColor: 'initial' }}>
           <Group position="apart" sx={{ height: '100%' }}>
             <Link to="/" style={{ color: 'initial', textDecoration: 'initial' }}>
-              {isScrolled ? (
+              {isScrolled || isPathIncluded ? (
                 <StaticImage
                   src="../../images/icx-navbar-logo-dark.png"
                   alt="icx-navbar-logo"
@@ -170,7 +170,11 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
             <Group spacing={48} className={classes.hiddenMobile}>
               {navbarMenus.map(({ id, name, pathname: path }: NavbarMenu) => (
                 <Link key={id} to={path} className={classes.unstyledLink}>
-                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
+                  <Text
+                    size={16}
+                    fw={600}
+                    lh="22px"
+                    color={isScrolled || isPathIncluded ? '#000' : '#fff'}>
                     {name}
                   </Text>
                 </Link>
@@ -190,7 +194,11 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                   <Text fw={500}>Sign Up</Text>
                 </Button> */}
                 <Link to="/login" className={classes.unstyledLink}>
-                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
+                  <Text
+                    size={16}
+                    fw={600}
+                    lh="22px"
+                    color={isScrolled || isPathIncluded ? '#000' : '#fff'}>
                     Login
                   </Text>
                 </Link>
@@ -217,7 +225,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                 withinPortal>
                 <Menu.Target>
                   <Burger
-                    color={!isScrolled ? '#fff' : '#000'}
+                    color={isScrolled || isPathIncluded ? '#000' : '#fff'}
                     onClick={openMenu}
                     opened={menuOpened}
                     className={classes.hiddenMobile}
@@ -240,7 +248,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
               onOpen={openDrawer}
               withinPortal>
               <Burger
-                color={!isScrolled ? '#fff' : '#000'}
+                color={isScrolled || isPathIncluded ? '#000' : '#fff'}
                 onClick={openDrawer}
                 opened={false}
                 className={classes.hiddenDesktop}
