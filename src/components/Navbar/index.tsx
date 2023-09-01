@@ -35,9 +35,16 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
     zIndex: 5,
     width: '100%',
     overflow: 'hidden',
-    backgroundColor: 'transparent',
     transition: 'all 0.3s',
     boxShadow: isScrolled ? '0px 4px 30px rgba(0, 0, 0, 0.05)' : 'initial',
+  },
+
+  rootBackgroundColor: {
+    backgroundColor: 'transparent',
+  },
+
+  customPathBackgroundColor: {
+    backgroundColor: '#fff',
   },
 
   unstyledLink: {
@@ -101,16 +108,13 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
 
   const location = useLocation();
   const currentPath = location.pathname;
-  const customPaths = ['contact']; // add other pages as needed
+  const customPaths = ['/contact']; // add other pages as needed
   const isPathIncluded = customPaths.includes(currentPath.trim());
 
   const handleScroll = () => {
     const fixedNavbar = document.getElementById('fixed-navbar');
     if (fixedNavbar) {
-      if (isPathIncluded) {
-        setScrolled(true);
-        fixedNavbar.style.backgroundColor = '#fff';
-      } else if (Boolean(handleDropdown) || window.pageYOffset > 1 || navbarSolid) {
+      if (Boolean(handleDropdown) || window.pageYOffset > 1 || navbarSolid) {
         setScrolled(true);
         fixedNavbar.style.backgroundColor = '#fff';
       } else {
@@ -135,7 +139,11 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
   useEffect(() => setScrolled(navbarSolid), [pathname]);
 
   return (
-    <Box id="fixed-navbar" className={classes.root}>
+    <Box
+      id="fixed-navbar"
+      className={`${classes.root} ${
+        isPathIncluded ? classes.customPathBackgroundColor : classes.rootBackgroundColor
+      }`}>
       <Container size="ll">
         <Header
           height={isMobile ? 64 : 80}
