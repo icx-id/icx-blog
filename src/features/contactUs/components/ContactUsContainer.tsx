@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, MediaQuery, Text, createStyles } from '@mantine/core';
+import { Box, Button, Flex, MediaQuery, Text, createStyles } from '@mantine/core';
 import React, { FC, PropsWithChildren, ReactNode } from 'react';
 import { useMediaQuery } from '@mantine/hooks';
 import IcxMockup from '../../../images/icx-contact-us-banner.png';
