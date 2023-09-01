@@ -94,7 +94,14 @@ export const ContactUsContainer: FC<ContactUsSectionProps> = ({
       direction={mobileScreen ? 'column-reverse' : 'row'}
       mah={tabScreen ? 'unset' : giantScreen ? '80vh' : '100vh'}
       sx={{ overflow: 'hidden' }}>
-      <Flex direction="column" justify="space-between" w="45vw" pt={130} pb={40} px={70}>
+      <Flex
+        direction="column"
+        justify="space-between"
+        w={mobileScreen ? '100%' : '45vw'}
+        pt={mobileScreen ? 80 : 130}
+        pb={40}
+        h="100vh"
+        px={mobileScreen ? 20 : 70}>
         <Flex align="start" direction="column">
           {lastPage ? null : (
             <Button className={classes.button} p={0} variant="subtle" onClick={goBack} color="dark">
@@ -126,10 +133,12 @@ export const ContactUsContainer: FC<ContactUsSectionProps> = ({
           )}
         </Flex>
       </Flex>
-      <Box w={mobileScreen ? '100%' : '55vw'} h="100%" pos="relative">
-        <Text className={classes.bannerText}>{bannerText}</Text>
-        <img src={IcxMockup} alt="Mockup" style={{ width: '100%', height: '101vh' }} />
-      </Box>
+      {mobileScreen ? null : (
+        <Box w="55vw" h="100%" pos="relative">
+          <Text className={classes.bannerText}>{bannerText}</Text>
+          <img src={IcxMockup} alt="Mockup" style={{ width: '100%', height: '101vh' }} />
+        </Box>
+      )}
     </Flex>
   );
 };
