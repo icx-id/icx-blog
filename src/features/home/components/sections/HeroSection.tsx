@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import {
   Box,
+  Button,
   Container,
   Flex,
   Grid,
@@ -11,6 +12,7 @@ import {
   Text,
   TypographyStylesProvider,
   createStyles,
+  rem,
 } from '@mantine/core';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { HeroSectionProps } from '../../types';
@@ -145,6 +147,12 @@ const useStyles = createStyles(theme => ({
       transform: 'translateX(-50%)',
     },
   },
+
+  buttonSize: {
+    height: 'auto',
+    padding: `${rem(6)} ${rem(20)}`,
+    borderRadius: theme.radius.md,
+  },
 }));
 
 // -------------------------------------- components
@@ -261,6 +269,18 @@ export const HeroSection: FC<HeroSectionProps> = ({ ...props }) => {
                       <div dangerouslySetInnerHTML={{ __html: props.title }} />
                     </TypographyStylesProvider>
                     <Text className={classes.subtitle}>{props.subtitle}</Text>
+                    <Button
+                      component="a"
+                      href="/contact"
+                      className={classes.buttonSize}
+                      sx={{
+                        backgroundColor: '#00C48F',
+                        ':hover': {
+                          backgroundColor: '#02B082',
+                        },
+                      }}>
+                      <Text fw={500}>Contact Us</Text>
+                    </Button>
                     <Group spacing="xl" align="center" noWrap className={classes.download}>
                       {props.download.map(({ logo, link, name }) => (
                         <Box component="a" href={link} target="_blank" key={link}>
