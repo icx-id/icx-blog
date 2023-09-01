@@ -10,9 +10,10 @@ import { notifications } from '@mantine/notifications';
 
 type StickyActionBoxProps = {
   onOpenModal: () => void;
+  disabled: boolean;
 };
 
-export const StickyActionBox: FC<StickyActionBoxProps> = ({ onOpenModal }) => {
+export const StickyActionBox: FC<StickyActionBoxProps> = ({ onOpenModal, disabled }) => {
   const currentUrl = useMemo(() => {
     if (typeof document !== 'undefined') {
       return document.URL;
@@ -41,28 +42,52 @@ export const StickyActionBox: FC<StickyActionBoxProps> = ({ onOpenModal }) => {
         boxShadow: '0px 4px 64px rgba(0, 0, 0, 0.05)',
         borderRadius: 6,
       }}>
-      <Text fz={18} fw={600} lh="24px">
-        Registration
-      </Text>
-      <Button fullWidth mt={24} size="md" onClick={onOpenModal}>
-        Daftar Event
-      </Button>
-      <Box mt={24}>
+      {!disabled && (
+        <Stack>
+          <Text fz={18} fw={600} lh="24px">
+            Registration
+          </Text>
+          <Button fullWidth mt={24} size="md" onClick={onOpenModal}>
+            Daftar Event
+          </Button>
+        </Stack>
+      )}
+      <Box mt={disabled ? 0 : 24}>
         <Text fz={14} fw={500} lh="20px" ta="center">
           Share this event
         </Text>
-        <Group spacing={8} mt={8}>
+        <Group spacing={8} mt={10}>
           <Box onClick={copyClipboardLink}>
-            <Image src={CopyIcon} width={24} height={24} sx={{ cursor: 'pointer' }} />
+            <Image
+              src={CopyIcon}
+              width={24}
+              height={24}
+              sx={{ cursor: 'pointer', ':hover': { opacity: 0.7 } }}
+            />
           </Box>
           <FacebookShareButton url={currentUrl}>
-            <Image src={FacebookIcon} width={24} height={24} sx={{ cursor: 'pointer' }} />
+            <Image
+              src={FacebookIcon}
+              width={24}
+              height={24}
+              sx={{ cursor: 'pointer', ':hover': { opacity: 0.7 } }}
+            />
           </FacebookShareButton>
           <TwitterShareButton url={currentUrl}>
-            <Image src={TwitterIcon} width={24} height={24} sx={{ cursor: 'pointer' }} />
+            <Image
+              src={TwitterIcon}
+              width={24}
+              height={24}
+              sx={{ cursor: 'pointer', ':hover': { opacity: 0.7 } }}
+            />
           </TwitterShareButton>
           <LinkedinShareButton url={currentUrl}>
-            <Image src={LinkedinIcon} width={24} height={24} sx={{ cursor: 'pointer' }} />
+            <Image
+              src={LinkedinIcon}
+              width={24}
+              height={24}
+              sx={{ cursor: 'pointer', ':hover': { opacity: 0.7 } }}
+            />
           </LinkedinShareButton>
         </Group>
       </Box>
