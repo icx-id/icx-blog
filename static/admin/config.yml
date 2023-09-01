@@ -252,6 +252,91 @@ collections:
                   { name: 'description', label: 'Description', widget: string },
                 ],
             }
+      - file: 'src/content/fundraising.md'
+        label: 'Fundraising'
+        name: 'fundraising'
+        id: 'fundraising'
+        fields:
+          - { name: 'key', label: 'Key', widget: 'hidden', default: 'fundraising' }
+          - name: 'jumbotronSection'
+            label: 'Jumbotron Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'desc', label: 'Desc', widget: 'string' }
+          - name: 'portfolioSection'
+            label: 'Portfolio Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'desc', label: 'Desc', widget: 'string' }
+              - { name: 'descLine2', label: 'Desc Line 2', widget: 'string' }
+          - name: 'whyFundraiseSection'
+            label: 'Why Fundraise Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - name: 'data'
+                label: 'Data'
+                widget: 'list'
+                fields:
+                  - {
+                      name: 'icon',
+                      label: 'Icon',
+                      widget: 'image',
+                      required: true,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+                  - { name: 'title', label: 'Title', widget: 'string' }
+                  - { name: 'desc', label: 'Desc', widget: 'string' }
+          - name: 'testimonySection'
+            label: 'Testimony Section'
+            widget: 'object'
+            fields:
+              - name: 'testimonies'
+                label: 'Testimonies'
+                widget: 'list'
+                fields:
+                  - { name: 'author', label: 'Author', widget: 'string' }
+                  - {
+                      name: 'authorImage',
+                      label: 'Author Image',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+                  - { name: 'company', label: 'Company', widget: 'string' }
+                  - { name: 'description', label: 'Description', widget: 'string' }
+                  - {
+                      name: 'image',
+                      label: 'Image',
+                      widget: 'image',
+                      required: false,
+                      allow_multiple: false,
+                      choose_url: false,
+                    }
+          - name: 'howToFundraiseSection'
+            label: 'How to Fundraise Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'desc', label: 'Desc', widget: 'string' }
+              - { name: 'descLine2', label: 'Desc Line 2', widget: 'string' }
+          - name: 'investmentFlowSection'
+            label: 'Investment Flow Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'desc', label: 'Desc', widget: 'string' }
+              - { name: 'descLine2', label: 'Desc Line 2', widget: 'string' }
+          - name: 'contactUsSection'
+            label: 'Contact Us Section'
+            widget: 'object'
+            fields:
+              - { name: 'title', label: 'Title', widget: 'string' }
+              - { name: 'desc', label: 'Desc', widget: 'string' }
   - name: 'blog'
     label: 'Blog Articles'
     file: 'src/content/blog/_index.md'

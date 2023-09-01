@@ -5,6 +5,7 @@ import { AboutSection } from './AboutSection';
 import { ActionSection } from './ActionSection';
 import { StickyActionBox } from './StickyActionBox';
 import { Event } from '../../types';
+import { isPast } from 'date-fns';
 
 type ContentLayoutProps = {
   event: Event;
@@ -49,7 +50,10 @@ export const ContentLayout: FC<ContentLayoutProps> = ({
         <ActionSection onOpenDrawer={onOpenDrawer} />
       </Grid.Col>
       <Grid.Col xs={12} md="content" display={{ base: 'none', md: 'block' }}>
-        <StickyActionBox onOpenModal={onOpenModal} />
+        <StickyActionBox
+          onOpenModal={onOpenModal}
+          disabled={event.endDate ? isPast(new Date(event.endDate)) : false}
+        />
       </Grid.Col>
     </Grid>
   );

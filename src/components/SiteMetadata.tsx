@@ -5,8 +5,11 @@ export const SiteMetadata: React.FC<{
   title?: string;
   metaDescription?: string;
   ogImageUrl?: string;
-}> = ({ title = 'ICX', metaDescription, ogImageUrl = '' }) => {
+  pathname?: string;
+}> = ({ title = 'ICX', metaDescription, ogImageUrl = '', pathname = '' }) => {
   const { title: defaultTitle, description } = useSiteMetadata();
+
+  const pageUrl = 'https://icx.netlify.app' + pathname;
 
   return (
     <>
@@ -15,13 +18,19 @@ export const SiteMetadata: React.FC<{
       {/* metadata */}
       <meta name="title" content={title + ' - ' + defaultTitle} />
       <meta name="description" content={metaDescription || description} />
-      <meta name="og:image" content={ogImageUrl} />
+      <meta name="og:image" itemProp="image" content={ogImageUrl} />
+      <meta property="og:url" content={pageUrl} />
 
       <meta property="og:type" content="website" />
-      <meta property="og:image" content={ogImageUrl} />
+      <meta property="og:image" itemProp="image" content={ogImageUrl} />
+      <meta property="og:title" content={title + ' - ' + defaultTitle} />
+      <meta property="og:description" content={metaDescription || description} />
 
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:image" content={ogImageUrl} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={pageUrl} />
+      <meta name="twitter:title" content={title + ' - ' + defaultTitle} />
+      <meta name="twitter:image" content={ogImageUrl} />
+      <meta property="twitter:description" content={metaDescription || description} />
     </>
   );
 };

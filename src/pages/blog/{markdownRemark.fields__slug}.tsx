@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import React, { FC } from 'react';
-import { PageProps, graphql } from 'gatsby';
+import { PageProps, graphql, HeadFC } from 'gatsby';
 import { SiteMetadata } from '~/components';
 import { BlogArticleDetail, BlogArticleQueryResponse } from '~/features/blog/';
 
@@ -28,13 +29,19 @@ export const query = graphql`
 const BlogDetailPage: FC<PageProps<BlogArticleQueryResponse>> = ({ data }) => {
   return (
     <>
-      <SiteMetadata
-        title={data.markdownRemark.frontmatter.metaTitle}
-        metaDescription={data.markdownRemark.frontmatter.metaDescription}
-        ogImageUrl={data?.markdownRemark?.frontmatter?.featuredImage?.src}
-      />
       <BlogArticleDetail article={data.markdownRemark} />;
     </>
+  );
+};
+
+export const Head: HeadFC<BlogArticleQueryResponse> = ({ data, location }) => {
+  return (
+    <SiteMetadata
+      title={data.markdownRemark.frontmatter.metaTitle}
+      metaDescription={data.markdownRemark.frontmatter.metaDescription}
+      ogImageUrl={data?.markdownRemark?.frontmatter?.featuredImage?.src}
+      pathname={location.pathname}
+    />
   );
 };
 

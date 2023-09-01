@@ -22,6 +22,7 @@ import { Link } from 'gatsby';
 import { navbarMenus, NavbarMenu } from './static/menus';
 import { NavbarProps } from '../types';
 import { useStore } from '~/stores';
+import { useLocation } from '@reach/router';
 
 // --------------------------------------- styles
 
@@ -34,9 +35,16 @@ const useStyles = createStyles((theme, { isScrolled }: StyleProps) => ({
     zIndex: 5,
     width: '100%',
     overflow: 'hidden',
-    backgroundColor: 'transparent',
     transition: 'all 0.3s',
     boxShadow: isScrolled ? '0px 4px 30px rgba(0, 0, 0, 0.05)' : 'initial',
+  },
+
+  rootBackgroundColor: {
+    backgroundColor: 'transparent',
+  },
+
+  customPathBackgroundColor: {
+    backgroundColor: '#fff',
   },
 
   unstyledLink: {
@@ -98,9 +106,13 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
 
   const { accessToken, onLogout } = useStore();
 
+  const location = useLocation();
+  const currentPath = location.pathname;
+  const customPaths = ['/contact']; // add other pages as needed
+  const isPathIncluded = customPaths.includes(currentPath.trim());
+
   const handleScroll = () => {
     const fixedNavbar = document.getElementById('fixed-navbar');
-
     if (fixedNavbar) {
       if (Boolean(handleDropdown) || window.pageYOffset > 1 || navbarSolid) {
         setScrolled(true);
@@ -127,7 +139,11 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
   useEffect(() => setScrolled(navbarSolid), [pathname]);
 
   return (
-    <Box id="fixed-navbar" className={classes.root}>
+    <Box
+      id="fixed-navbar"
+      className={`${classes.root} ${
+        isPathIncluded ? classes.customPathBackgroundColor : classes.rootBackgroundColor
+      }`}>
       <Container size="ll">
         <Header
           height={isMobile ? 64 : 80}
@@ -173,9 +189,14 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                   }}>
                   <Text fw={500}>Sign Up</Text>
                 </Button> */}
+                <Link to="/login" className={classes.unstyledLink}>
+                  <Text size={16} fw={600} lh="22px" color={isScrolled ? '#000' : '#fff'}>
+                    Login
+                  </Text>
+                </Link>
                 <Button
                   component="a"
-                  href="/login"
+                  href="/contact"
                   className={classes.buttonSize}
                   sx={{
                     backgroundColor: '#00C48F',
@@ -183,7 +204,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                       backgroundColor: '#02B082',
                     },
                   }}>
-                  <Text fw={500}>Login</Text>
+                  <Text fw={500}>Contact Us</Text>
                 </Button>
               </Group>
             ) : (
