@@ -22,11 +22,11 @@ key: blog-article
 ---
 ## **The New Era of Startups Investing with ICX (Indonesia Crowdfunding Exchange) and Trihill Capital**
 
-Di tengah euforia pertumbuhan ekonomi yang terus berlanjut, investasi dalam dunia startup semakin menjadi incaran para investor. Pada tanggal 15 Agustus 2023, ICX Investor Connect menggelar acara bertajuk **"The New Era of Startups Investing"** bersama Trihill Capital yang membahas perkembangan investasi startups di Indonesia. 
+Di tengah euforia pertumbuhan ekonomi yang terus berlanjut, investasi dalam dunia startup semakin menjadi incaran para investor. Pada tanggal 15 Agustus 2023, ICX Investor Connect menggelar acara bertajuk **"The New Era of Startups Investing"** bersama Trihill Capital yang membahas perkembangan **startups investing di Indonesia.** 
 
 Romario Sumargo, CEO dari ICX bersama Valerianus Ian Sulaiman, VP of Investments dari Trihill Capital, membahas  bagaimana perubahan dan perkembangan investasi startup yang semakin diincar investor. 
 
-**P﻿enilaian Valuasi Startups yang Terus Berkembang**
+## **P﻿enilaian Valuasi Startups yang Terus Berkembang**
 
 Dalam dunia investasi yang terus berubah, paradigma valuasi startup mengalami pergeseran yang patut diperhatikan. Tidak lagi hanya bergantung pada metode tradisional, valuasi startup sekarang memasukkan faktor keuntungan sebagai elemen utama. Bagaimana ini mempengaruhi cara kita memahami dan mendekati investasi dalam startup? 
 
@@ -36,7 +36,7 @@ Keuntungan kini menjadi faktor kunci dalam penilaian valuasi sebuah startup. Par
 
 ![Thrill Capital](https://media.licdn.com/dms/image/D5622AQHUsK8D7NF8VQ/feedshare-shrink_1280/0/1692594313358?e=1695859200&v=beta&t=xWwNda_aLEDqS1Liz7_U3KrPkufgBk6LFID5LJwFHas "Trihill capital")
 
-**Peran Investor yang Berkembang**
+## **Peran Investor dalam Pendanaan Startups**
 
 Peran investor dalam dunia startup juga mengalami evolusi yang signifikan. Investor tidak lagi hanya berperan sebagai penyedia dana, melainkan juga memberikan nilai strategis yang lebih besar.
 
@@ -54,7 +54,7 @@ Selain itu, ide bahwa investor bukan hanya penyedia dana, tetapi juga mitra stra
 
 Jadi, bagaimana kita harus beradaptasi dengan perubahan ini? Pertama-tama, sebagai investor, penting untuk mempertimbangkan aspek profitabilitas ketika menilai startup potensial untuk investasi. Selain itu, startup juga dapat mencari investor yang tidak hanya memberikan modal tetapi juga dukungan strategis dan kemitraan yang dapat membantu mereka tumbuh.
 
-Acara ICX Investor Connect 2023 adalah awal yang menjanjikan untuk masa depan investasi startup di Indonesia. Kami berharap untuk melihat lebih banyak kolaborasi yang menguntungkan antara investor, startup, dan pemangku kepentingan lainnya di masa mendatang. Teruslah mengikuti berita dari ICX dan Trihill Capital, karena kami akan terus berbagi wawasan dan peluang dalam dunia yang penuh potensi ini.
+Acara ICX Investor Connect 2023 adalah awal yang menjanjikan untuk masa depan investasi startup di Indonesia. Kami berharap untuk melihat lebih banyak kolaborasi yang menguntungkan antara investor, startup, dan pemangku kepentingan lainnya di masa mendatang. 
 
 ## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
