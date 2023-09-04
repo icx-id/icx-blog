@@ -9,6 +9,7 @@ metaDescription: Kamar Dagang Indonesia (KADIN) Provinsi Bali, Nawa Cita
 intro: Direktur Penilaian Perusahaan BEI menyatakan setiap perusahaan terbuka
   pada peluang untuk naik kelas melalui Pasar Modal. Ketahui juga cara
   mempersiapkan bisnis Anda menuju IPO dengan SCF
+isPinned: true
 date: 2023-09-04T14:05:32.015Z
 category:
   - news
@@ -46,8 +47,6 @@ Sejalan dengan manfaat IPO, perusahaan yang menawarkan saham kepada publik melal
 
 Melalui ICX, Anda sebagai pelaku bisnis dapat mendaftarkan perusahaan yang dikelola untuk meraih pendanaan dengan memanfaatkan pasar modal dan menawarkan saham kepada publik.
 
-##  [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
+## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
 ![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
-
-<!--EndFragment-->[!](https://app.landx.id/?utm_source=Organic+Page&utm_medium=Content+Blog&utm_campaign=BlogLandX&utm_id=Blog)
