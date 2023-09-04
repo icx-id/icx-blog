@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: Vlora Riyandi
 title: Pahami Biaya Investasi dan Cara Menghitungnya dalam Portofolio Anda
 metaTitle: Cara Menghitung Biaya Investasi (Investment Cost) untuk Investor
