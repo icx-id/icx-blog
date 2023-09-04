@@ -81,8 +81,6 @@ Dengan mengambil langkah-langkah strategis tersebut, Indonesia dapat mewujudkan 
 
 Paragraf tersebut telah diperbarui dengan menambahkan data terbaru dari World Economic Forum. Selain itu, paragraf tersebut juga telah diperjelas dengan menambahkan penjelasan tentang langkah-langkah strategis yang perlu diambil oleh Indonesia untuk mewujudkan peluang jangka panjang green economy.
 
-<!--EndFragment-->
-
 ### Penerapan Green Economy di Indonesia
 
 Menurut studi World Economic Forum 2020, sektor ekonomi hijau di seluruh dunia diperkirakan dapat menciptakan $10 triliun dolar Amerika dan 395 juta lapangan pekerjaan pada tahun 2030. Pemerintah Indonesia telah berkomitmen untuk memaksimalkan potensi ini dengan mengalokasikan dana hingga Rp6 triliun untuk badan riset nasional melalui Anggaran Pendapatan dan Belanja Negara (APBN).
@@ -96,5 +94,3 @@ Penerapan green economy bukan hanya tantangan, tetapi juga peluang besar bagi In
 ## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
 ![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
-
-<!--EndFragment-->
