@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: ICX
 title: "ICX Investor Connect: Startup Investment Trends with Trihill Capital"
 metaTitle: "ICX Investor Connect: Startup Investment Trends with Trihill Capital"
@@ -56,4 +56,6 @@ Jadi, bagaimana kita harus beradaptasi dengan perubahan ini? Pertama-tama, sebag
 
 Acara ICX Investor Connect 2023 adalah awal yang menjanjikan untuk masa depan investasi startup di Indonesia. Kami berharap untuk melihat lebih banyak kolaborasi yang menguntungkan antara investor, startup, dan pemangku kepentingan lainnya di masa mendatang. Teruslah mengikuti berita dari ICX dan Trihill Capital, karena kami akan terus berbagi wawasan dan peluang dalam dunia yang penuh potensi ini.
 
-![icx](https://media.licdn.com/dms/image/D5622AQH24rbkEmfBqA/feedshare-shrink_1280/0/1692594313184?e=1695859200&v=beta&t=SpltbhyKygZp_bFhSXxXjRZ2SYBqXv3asfrWI_rwWLc "ceo icx")
+## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
+
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
