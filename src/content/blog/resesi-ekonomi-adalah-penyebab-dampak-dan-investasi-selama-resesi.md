@@ -219,3 +219,5 @@ Saat memilih instrumen investasi, penting untuk mempertimbangkan risiko dan pote
 Emas, sebagai salah satu instrumen investasi yang telah terbukti berkinerja baik selama ketidakpastian ekonomi, dapat menjadi pilihan yang bijak. Emas tidak hanya mempertahankan nilai dalam situasi ekonomi yang sulit, tetapi juga dapat berfungsi sebagai lindung nilai terhadap inflasi.
 
 Secara keseluruhan, investasi dalam kondisi ekonomi yang tidak stabil adalah peluang bagi para investor yang memiliki kemampuan untuk mengelola risiko dengan bijak. Dengan strategi yang matang, pengetahuan yang baik, dan analisis yang cermat, Anda dapat tetap berhasil berinvestasi dalam situasi ekonomi yang penuh ketidakpastian ini. Ingatlah bahwa setiap keputusan investasi harus didasarkan pada pemahaman yang kuat dan perencanaan yang hati-hati untuk mencapai tujuan keuangan Anda.
+
+> ## **[T﻿emukan informasi terkini terkait ekonomi dan investasi dnegan follow akun resmi kami di Instagram. ](https://www.instagram.com/icx.id/)**
