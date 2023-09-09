@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: Vlora Riyandi
 title: Pertumbuhan dan Potensi Green Economy di Indonesia
 metaTitle: Konsep Green Economy dan Penerapan Green Economy di Indonesia
@@ -90,7 +90,3 @@ Namun, tantangan yang dihadapi dalam mewujudkan green economy di Indonesia melib
 Meskipun menghadapi tantangan finansial yang signifikan, Indonesia berupaya keras untuk memanfaatkan potensi ekonomi hijau, dengan memanfaatkan sumber daya seperti hutan mangrove dan hutan tropis untuk menjaga keseimbangan alam, menciptakan lapangan kerja, dan memberikan keberlanjutan bagi generasi mendatang.
 
 Penerapan green economy bukan hanya tantangan, tetapi juga peluang besar bagi Indonesia untuk mencapai pertumbuhan ekonomi yang berkelanjutan dan berdampak positif bagi lingkungan dan masyarakatnya. Dalam era ketidakpastian perubahan iklim, langkah-langkah untuk memperkuat ekonomi hijau adalah investasi penting bagi masa depan negara ini.
-
-## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
