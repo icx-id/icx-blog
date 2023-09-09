@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: ICX
 title: "Valuasi Startup: Meninjau Perkembangan dalam Penilaian Nilai Startup"
 metaTitle: Memahami Konsep dan Perhitungan Valuasi Startup
