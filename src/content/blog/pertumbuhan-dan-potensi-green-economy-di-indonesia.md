@@ -90,3 +90,5 @@ Namun, tantangan yang dihadapi dalam mewujudkan green economy di Indonesia melib
 Meskipun menghadapi tantangan finansial yang signifikan, Indonesia berupaya keras untuk memanfaatkan potensi ekonomi hijau, dengan memanfaatkan sumber daya seperti hutan mangrove dan hutan tropis untuk menjaga keseimbangan alam, menciptakan lapangan kerja, dan memberikan keberlanjutan bagi generasi mendatang.
 
 Penerapan green economy bukan hanya tantangan, tetapi juga peluang besar bagi Indonesia untuk mencapai pertumbuhan ekonomi yang berkelanjutan dan berdampak positif bagi lingkungan dan masyarakatnya. Dalam era ketidakpastian perubahan iklim, langkah-langkah untuk memperkuat ekonomi hijau adalah investasi penting bagi masa depan negara ini.
+
+> ## **[T﻿emukan informasi terkini terkait ekonomi dan investasi dnegan follow akun resmi kami di Instagram. ](https://www.instagram.com/icx.id/)**
