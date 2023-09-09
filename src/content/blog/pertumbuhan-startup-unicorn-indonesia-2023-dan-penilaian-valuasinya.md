@@ -1,24 +1,31 @@
 ---
-draft: true
+draft: false
 author: ICX
 title: Pertumbuhan Startup Unicorn Indonesia 2023 dan Penilaian Valuasinya
 metaTitle: Pertumbuhan Startup Unicorn Indonesia 2023 & Kriteria Valuasi Startup
 metaDescription: Kriteria valuasi startup kemudian dijelaskan bagaimana
   pertumbuhan startup unicorn dan decacorn di Indonesia
-intro: a
+intro: >-
+  Dalam beberapa dekade terakhir, perubahan dramatis dalam lingkungan global
+  telah menyoroti sejumlah perusahaan yang dengan tepat dapat digambarkan
+  sebagai bintang-bintang cemerlang dalam dunia startup, yaitu Airbnb, Facebook,
+  dan Google. Ketiganya memegang gelar istimewa sebagai "unicorn" dalam ranah
+  bisnis.
+
+
+  Dalam ranah keuangan, istilah "startup unicorn" mengacu pada perusahaan swasta yang telah mencapai valuasi sebesar US$1 miliar atau bahkan lebih. Mayoritas dari perusahaan-perusahaan ini beroperasi di sektor teknologi, yang mencakup beragam industri seperti edutech, fintech, foodtech, blockchain, hingga kecerdasan buatan.
+
+
+  Namun, apa yang sesungguhnya menjadi faktor pembeda di antara berbagai startup? Bagaimana persisnya proses penilaian valuasi oleh para pemodal ventura (venture capitalists, VC) berlangsung? Dan bagaimana perkembangan startup unicorn di Indonesia saat ini?
 date: 2023-09-04T16:01:28.589Z
+category:
+  - startup
 featuredImage:
   src: https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80
   alt: valuasi startup
   title: penilaian valuasi startup
 key: blog-article
 ---
-Dalam beberapa dekade terakhir, perubahan dramatis dalam lingkungan global telah menyoroti sejumlah perusahaan yang dengan tepat dapat digambarkan sebagai bintang-bintang cemerlang dalam dunia startup, yaitu Airbnb, Facebook, dan Google. Ketiganya memegang gelar istimewa sebagai "unicorn" dalam ranah bisnis.
-
-Dalam ranah keuangan, istilah "startup unicorn" mengacu pada perusahaan swasta yang telah mencapai valuasi sebesar US$1 miliar atau bahkan lebih. Mayoritas dari perusahaan-perusahaan ini beroperasi di sektor teknologi, yang mencakup beragam industri seperti edutech, fintech, foodtech, blockchain, hingga kecerdasan buatan.
-
-Namun, apa yang sesungguhnya menjadi faktor pembeda di antara berbagai startup? Bagaimana persisnya proses penilaian valuasi oleh para pemodal ventura (venture capitalists, VC) berlangsung? Dan bagaimana perkembangan startup unicorn di Indonesia saat ini?
-
 ## Kriteria Dasar dalam Penilaian Valuasi Startup
 
 Penilaian valuasi sebuah startup adalah sebuah proses yang sangat cermat dalam menentukan nilai sebenarnya dari sebuah perusahaan rintisan yang sedang mengalami perkembangan. Terdapat beberapa kriteria dasar yang menjadi acuan dalam menentukan valuasi sebuah startup:
