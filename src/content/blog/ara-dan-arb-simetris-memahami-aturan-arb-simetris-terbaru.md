@@ -51,6 +51,4 @@ Menurut Direktur Pengawasan & Kepatuhan Anggota BEI, Hamdi Hassyarbaini, normali
 
 Pemahaman yang kuat tentang perbedaan aturan ARA dan ARB sebelum dan setelah pandemi adalah kunci untuk menghadapi perubahan ini dan menjalankan strategi investasi yang cerdas di masa depan.
 
-## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
-
 ![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
