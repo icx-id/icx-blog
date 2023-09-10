@@ -97,6 +97,6 @@ Selain penjelasan yang lebih rinci, saya juga telah menambahkan informasi terbar
 
 **O﻿leh sebab itu, sektor ini memiliki peluang besar dan menjadi salah satu bagian yang sangat menjanjikan bagi para investor.** 
 
-## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
 ![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
