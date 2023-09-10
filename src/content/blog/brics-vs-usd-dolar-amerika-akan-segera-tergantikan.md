@@ -72,4 +72,7 @@ Inilah perjalanan menarik yang memunculkan beragam tantangan dan peluang yang da
 
 Pertarungan BRICS melawan dominasi USD bukan hanya sebuah konflik mata uang, melainkan juga sebuah peristiwa bersejarah yang membentuk arah ekonomi global. Sebagai seorang investor, pemahaman mendalam tentang tantangan dan peluang yang dihadapi BRICS adalah kunci untuk membuat keputusan investasi yang cerdas. Dalam era investasi BRICS yang penuh potensi ini, kita harus tetap terlibat dan memantau perkembangan ini dengan cermat. Di tengah dinamika global yang terus berubah, pengetahuan yang kuat adalah senjata terbaik dalam menjelajahi perjalanan investasi yang tak terduga namun menjanjikan ini.
 
-> ## **[T﻿emukan informasi terkini terkait ekonomi dan investasi dnegan follow akun resmi kami di Instagram. ](https://www.instagram.com/icx.id/)**
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
+
+\
+![Pengaruh suku bunga The Fed terhadap investasi di Indonesia](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "Suku bunga The Fed dan investasi di Indonesia")
