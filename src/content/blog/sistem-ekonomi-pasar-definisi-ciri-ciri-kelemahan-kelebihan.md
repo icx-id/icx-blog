@@ -81,10 +81,6 @@ Pemerintah memiliki peran pada sistem ekonomi ini, seperti melaksanakan kebijaka
 
 Secara singkat, keuntungan pada sistem ini tentunya mendorong produk yang kreatif dan inovatif. Namun, tingginya kompetisi dalam usaha ini tentunya akan memengaruhi kegiatan ekonomi seperti kesenjangan sosial dan ekonomi. Para pelaku bisnis perlu mengetahui kekurangan dan kelebihan mengenai sistem ekonomi pada negara yang akan dijadikan tempat untuk berusaha.
 
-Untuk itu para setiap pelaku usaha perlu mengendalikan modalnya dengan baik. Jika kamu seorang pelaku bisnis yang membutuhkan suntikan dana untuk pengembangan bisnis kamu atau ingin melakukan ekspansi bisnis maka kamu bisa loh mendaftarkan bisnis kamu lewat aplikasi equity crowdfunding yang sudah berpengalaman dalam melakukan pendanaan bisnis potensial di berbagai sektor industri dan sudah berizin Otoritas Jasa Keuangan.
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-S﻿elain bagi pebisnis, sistem ini juga membuat investor menjadi lebih mudah berinvestasi ke bisnis privat sehingga bisa jadi salah satu pilihan instrumen investasi jangka panjang anda. 
-
-K﻿arena itu, 
-
-## Y﻿uk Kembangkan Portofolio Investasi Anda Sekarang....
+![](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
