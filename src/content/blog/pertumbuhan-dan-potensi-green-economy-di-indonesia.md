@@ -91,4 +91,6 @@ Meskipun menghadapi tantangan finansial yang signifikan, Indonesia berupaya kera
 
 Penerapan green economy bukan hanya tantangan, tetapi juga peluang besar bagi Indonesia untuk mencapai pertumbuhan ekonomi yang berkelanjutan dan berdampak positif bagi lingkungan dan masyarakatnya. Dalam era ketidakpastian perubahan iklim, langkah-langkah untuk memperkuat ekonomi hijau adalah investasi penting bagi masa depan negara ini.
 
-> ## **[T﻿emukan informasi terkini terkait ekonomi dan investasi dnegan follow akun resmi kami di Instagram. ](https://www.instagram.com/icx.id/)**
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
+
+![](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
