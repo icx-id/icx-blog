@@ -81,4 +81,4 @@ Dengan memahami pentingnya komitmen finansial yang dibutuhkan dalam investasi ve
 
 ## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT](https://icx.id/)**
 
-![berinvestasi lewat venture capital](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "venture capital untuk pendanaan bisnis")
+![berinvestasi lewat venture capital](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "venture capital untuk pendanaan bisnis")
