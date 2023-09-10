@@ -119,8 +119,6 @@ Kini tentu Anda semakin paham kriteria bisnis dan investasi seperti apa yang coc
 
 Salah satu instrumen investasi yang wajib Anda coba adalah investasi bisnis melalui skema ***equity crowdfunding***. Sistem ini memungkinkan anda memiliki saham berbagai bisnis potensial dan akan mendapatkan dividen sesuai dengan kinerja dari bisnis yang anda danai. 
 
-K﻿arena itu, 
+## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
-## Y﻿uk Mulai Kembangkan Investasi Anda Sekarang....
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
