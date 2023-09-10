@@ -95,10 +95,6 @@ Jenis terakhir ini merupakan jenis akuisisi dengan pengambilalihan kepemilikan p
 
 Perusahaan mesti melakukan pertimbangan dalam melakukan akuisisi dan memahami risiko yang mungkin akan ditimbulkan ketika melakukan proses akuisisi, perlunya meninjau kembali hubungan bisnis pada perusahaan yang akan diakuisisi sehingga dapat memperkecil munculnya masalah baru. Sehingga, perusahaan pun dapat mlancarkan strategi ekspansi bisnisnya.
 
-Tahukah Anda...
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-S﻿aat ini anda dapat berinvestasi ke berbagai bisnis potensial yang ingin melakukan ekspansi melalui sistem equity crowdfunding yang membantu mempertemukan investor dan bisnis yang butuh pendanaan. Melalui sistem ini, anda dapat berinvestasi ke berbagai bisnis potensial dan mendapatkan keuntungan berupa dividen sesuai dari kinerja bisnis yang anda danai.
-
-## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/)**
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
