@@ -94,6 +94,6 @@ Dahulu, Bank Indonesia juga memiliki fungsi pengawasan terhadap bank dan perusah
 
 Dengan memahami peran dan fungsi bank sentral di Indonesia, pemahaman serta wawasan Anda terkait bank sentral akan semakin luas. Hal ini sangat akan membantu investor menentukan kebijakan investasi. Sebagaimana telah dijelaskan sebelumnya, bank sentral memiliki wewenang untuk menaikkan suku bunga guna mencegah aliran dana keluar dan menarik aliran dana masuk ke dalam negeri. Fungsi-fungsi ini akan menarik minat banyak orang untuk melakukan investasi.
 
-## [Unlocking Your Next Level Investment](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
