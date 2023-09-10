@@ -77,6 +77,6 @@ Du Anyam adalah bisnis sosial yang berawal dari permasalahan kesehatan gizi yang
 
 Oleh sebab itu, bisnis dengan konsep sociopreneur memiliki peran pentingnya dalam memperbaiki kondisi sosial dan ekonomi masyarakat di Indonesia. Melalui platform crowdfunding seperti Kitabisa.com, bantuan kesehatan dari WeCare.id, upaya pengelolaan sampah dari Waste4Change, dan pengembangan kerajinan anyaman oleh Du Anyam, sociopreneur telah memberikan kontribusi signifikan dalam memberdayakan masyarakat dan menghadapi tantangan sosial yang ada. Dengan semakin banyaknya contoh-contoh ini, diharapkan konsep sociopreneur akan terus berkembang dan memberikan dampak positif yang lebih besar di masa depan.
 
-## [Unlocking Your Next Level Investment](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
