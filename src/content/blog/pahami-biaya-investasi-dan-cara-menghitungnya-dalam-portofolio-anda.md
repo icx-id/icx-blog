@@ -90,4 +90,6 @@ Jika Anda memutuskan untuk berinvestasi dalam bentuk properti, seperti membeli b
 
 Inilah beberapa biaya terkait dengan berbagai jenis investasi yang mungkin Anda pertimbangkan. Setiap jenis investasi memiliki biaya tersendiri, dan penting bagi Anda untuk mengevaluasi, mempertimbangkan, dan memahami biaya-biaya ini agar tidak terkejut dengan biaya yang mungkin signifikan dalam suatu jenis investasi. Diversifikasi investasi, atau berinvestasi dalam berbagai jenis instrumen investasi seperti yang telah disebutkan, dapat membantu Anda memaksimalkan potensi keuntungan Anda dan meminimalkan risiko.
 
-> ## **[T﻿emukan informasi terkini terkait ekonomi dan investasi dnegan follow akun resmi kami di Instagram. ](https://www.instagram.com/icx.id/)**
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
+
+![](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
