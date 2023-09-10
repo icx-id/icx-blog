@@ -53,4 +53,4 @@ Dengan pemahaman tentang cara menghitung pajak bunga deposito, Anda dapat menges
 
 ## [UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
-![Funding Lending untuk investasi](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "sistem funding dan lending untuk pendanaan bisnis dan investasi")
+![Funding Lending untuk investasi](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "sistem funding dan lending untuk pendanaan bisnis dan investasi")
