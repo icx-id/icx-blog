@@ -186,6 +186,6 @@ Saat ini, terdapat banyak opsi investasi modal minim yang dapat kamu akses denga
 
 S﻿istem ini bisa melengkapi diversifikasi portofolio anda sehingga bisa memberikan keuntungan yang optimal. 
 
-## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/)**
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
 ![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
