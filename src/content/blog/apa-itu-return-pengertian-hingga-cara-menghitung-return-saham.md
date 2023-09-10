@@ -188,7 +188,3 @@ K﻿arena itu, sistem ini bisa menjadi pilihan instrumen untuk mewarnai portofol
 
 \
 ![Pengaruh suku bunga The Fed terhadap investasi di Indonesia](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "Suku bunga The Fed dan investasi di Indonesia")
-
-Read
-
-<!--EndFragment-->
