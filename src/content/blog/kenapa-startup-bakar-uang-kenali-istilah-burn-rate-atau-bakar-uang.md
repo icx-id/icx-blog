@@ -58,7 +58,7 @@ Penelitian telah menunjukkan bahwa aspek-aspek seperti kemasan produk, harga, da
 
 Namun, perlu diingat bahwa meskipun strategi ini memiliki manfaat, penggunaannya yang berlebihan atau tanpa perencanaan yang baik dapat berdampak negatif pada startup, termasuk risiko kehilangan status mereka. Mari kita telaah lebih dalam dampak dari strategi ini dalam ekosistem startup yang selalu berubah.
 
-## Bahaya Strategi Bakar Uang Startup 
+## Bahaya Strategi Bakar Uang Startup
 
 Banyak yang menganggap bahwa strategi "bakar uang" (burn rate) yang sering digunakan oleh perusahaan startup, terutama yang berhasil mencapai status unicorn dengan valuasi miliaran dolar, sebenarnya bisa menjadi bumerang yang berbahaya bagi perusahaan itu sendiri. Mari kita telaah beberapa faktor yang menjadi dasar anggapan ini:
 
@@ -76,7 +76,7 @@ Jika para konsumen mulai tertarik dan beralih ke produk dari satu perusahaan, ko
 
 Ketika perusahaan startup melakukan dumping, terutama jika diikuti oleh kompetitor, ini dapat mengarah pada "endless dumping." Praktik ini berarti perusahaan terus menjual dengan harga di bawah margin tanpa mencapai profit.
 
-4.  **Rentetan Dumping Menyertai Endless Dumping**
+4. **Rentetan Dumping Menyertai Endless Dumping**
 
 Agar dumping dapat berlanjut, perusahaan startup memerlukan pendanaan. Ini mengarah pada serangkaian putaran pendanaan yang terus berlanjut. Namun, setiap putaran pendanaan tersebut biasanya menghasilkan pengurangan kepemilikan saham pendiri (founder) startup. Hal ini berarti semakin banyak investor dan manajemen baru yang masuk.
 
@@ -112,6 +112,6 @@ Karena itu, sistem crowdfunding dapat menjadi pilihan yang menarik untuk investa
 
 ## [UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
-![Funding Lending untuk investasi](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "sistem funding dan lending untuk pendanaan bisnis dan investasi")
+![Funding Lending untuk investasi](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "sistem funding dan lending untuk pendanaan bisnis dan investasi")
 
-<!--EndFragment-->[](https://landx.id/?utm_source=Blog&utm_medium=organic+keyword&utm_campaign=blog&utm_id=Blog)
+<!--EndFragment-->\[](https://landx.id/?utm_source=Blog&utm_medium=organic+keyword&utm_campaign=blog&utm_id=Blog)
