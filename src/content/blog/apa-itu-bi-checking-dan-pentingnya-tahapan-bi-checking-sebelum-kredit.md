@@ -18,8 +18,6 @@ featuredImage:
   title: Apa itu BI checking bank dan tahapan BI checking online
 key: blog-article
 ---
-
-
 Apa itu BI checking adalah salah satu faktor yang membuat seseorang mendapat persetujuan kredit dari bank atau lembaga keuangan lainnya. BI checking artinya data historis terdahulu apakah calon debitur lancar atau macet pembayaran kredit (kolektibilitas).
 
 Apa itu BI checking bank adalah riwayat kredit dalam Sistem Informasi Debitur (SID) yang dapat diakses oleh lembaga antar-bank dan lembaga keuangan lainnya di Indonesia. Jika ada calon debitur akan mengajukan Kredit Tanpa Agunan (KTA), Kredit Pemilikan Rumah (KPR), maupun kartu kredit, tahapan BI Checking adalah keharusan sebelum diproses untuk *approval*.
@@ -188,10 +186,6 @@ Saat ini, terdapat banyak opsi investasi modal minim yang dapat kamu akses denga
 
 S﻿istem ini bisa melengkapi diversifikasi portofolio anda sehingga bisa memberikan keuntungan yang optimal. 
 
-## Yuk Kembangkan Portofolio Anda Sekarang....
-
-<!--StartFragment-->
+## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/)**
 
 ![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
-
-<!--EndFragment-->
