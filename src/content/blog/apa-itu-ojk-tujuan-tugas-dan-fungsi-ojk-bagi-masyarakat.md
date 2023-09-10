@@ -170,18 +170,6 @@ Bagi calon investor yang ingin melakukan investasi dengan adanya OJK dapat menge
 
 Oleh karena itu, OJK sangat berperan penting dalam investasi. Karena dengan adanya OJK, kegiatan investasi akan selalu diawasi. Jadi investor dapat mengetahui bagaimana pergerakan uang mereka. Juga investor akan merasa aman bila telah mengetahui lembaga-lembaga mana yang telah terdaftar di OJK sehingga dapat terhindar dari segala macam penipuan.
 
-## Investasi Crowdfunding Aman Berizin OJK
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-Nah, kita telah membahas seputar OJK, mulai dari apa itu OJK, tujuan OJK, tugas OJK, hingga peranan OJK dalam investasi. Bagaimana? Sudah lebih tahu seputar OJK? 
-
-OJK memiliki peranan penting terhadap sektor keuangan baik dalam melakukan pengawasan atau penyelenggaraan sistem pengaturannya. Dengan adanya OJK aktivitas keuangan jauh lebih aman karena telah diawasi setiap harinya. Bahkan hadirnya OJK pun sangat berperan penting dalam investasi. Karena investasi yang sedang dijalankan jauh lebih aman karena adanya OJK. Salah satu investasi aman berizin OJK adalah Equity Crowdfuding.
-
-Equity crowdfunding adalah metode investasi melakukan pendanaan dengan skema patungan yang dilakukan oleh banyak investor. Nantinya para investor akan menanamkan dananya terhadap usaha yang sudah tersedia di platform equity crowdfunding. Kemudian, para investor tersebut berkesempatan mendapatkan potensi keuntungan berupa dividen sesuai kinerja dari bisnis anda.
-
-O﻿leh sebab itu, sistem ini bisa jadi pilihan instrumen untuk investasi jangka panjang anda.
-
-## Y﻿uk Mulai Kembangkan Investasi Jangka Panjang Anda Sekarang...
-
-
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
