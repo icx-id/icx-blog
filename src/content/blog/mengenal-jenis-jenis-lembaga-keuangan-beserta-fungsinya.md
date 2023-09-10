@@ -137,6 +137,6 @@ Perkembangan teknologi juga memungkinkan investor untuk mengakses informasi pasa
 
 Namun, meskipun teknologi telah membawa kemudahan dalam berinvestasi, kehati-hatian tetap diperlukan dalam memilih lembaga keuangan atau platform investasi online yang tepat. Selalu lakukan riset dan analisis yang cukup sebelum memutuskan untuk berinvestasi.
 
-K﻿arena itu, 
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-## Y﻿uk Mulai Kembangkan Portofolio Anda Sekarang.... [](https://landx.id/project/?utm_source=Blog&utm_medium=organic+keyword&utm_campaign=blog&utm_id=Blog)
+![](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
