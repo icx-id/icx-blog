@@ -94,8 +94,6 @@ Kelima perusahaan investasi yang sudah disebutkan di atas adalah perusahaan yang
 
 Beberapa perusahaan pun menjual produk bermacam-macam, untuk perorangan, korporasi, syariah dan memiliki layanan paduan investasi dari tim regional maupun internasional. Dengan menawarkan layanan dan produk bervariasi sehingga sebelum melakukan investasi, calon investor dapat menyesuaikan dengan perusahaan sekuritas yang dipilih.
 
-
-
 ## Diversifikasi Investasi
 
 Harapan dengan hadirnya perusahaan investasi ini para investor yang melakukan investasi dapat menikmati skala lebih ekonomis dengan biaya transaksi, administrasi, dan komisi yang rendah. 
@@ -120,8 +118,8 @@ Dengan berinvestasi di ICX, Anda dapat menikmati berbagai manfaat, seperti:
 
 Jika Anda tertarik untuk berinvestasi di ICX, Anda dapat mengunjungi situs web ICX atau menghubungi tim ICX untuk informasi lebih lanjut.
 
-**[Unlocking next level investment](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)**
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
 
 - - -
