@@ -184,7 +184,6 @@ Dalam melakukan investasi melalui equity crowdfunding, pastikan bahwa platform y
 
 K﻿arena itu, sistem ini bisa menjadi pilihan instrumen untuk mewarnai portofolio investasi jangka panjang Anda. 
 
-**[UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/)**
+## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/)**
 
-\
-![Pengaruh suku bunga The Fed terhadap investasi di Indonesia](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "Suku bunga The Fed dan investasi di Indonesia")
+![](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
