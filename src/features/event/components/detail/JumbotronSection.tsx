@@ -1,5 +1,15 @@
 import React, { FC, useState } from 'react';
-import { Box, Flex, Group, Image, MediaQuery, Stack, Text, createStyles } from '@mantine/core';
+import {
+  AspectRatio,
+  Box,
+  Flex,
+  Group,
+  Image,
+  MediaQuery,
+  Stack,
+  Text,
+  createStyles,
+} from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 
 import HeroBackground from '../../assets/event-detail-hero-bg.png';
@@ -68,23 +78,10 @@ export const JumbotronSection: FC<JumbotronSectionProps> = ({ banners }) => {
                 withControls={false}
                 onSlideChange={index => setActiveCarousel(index)}>
                 {banners.map((banner, index) => (
-                  <Carousel.Slide key={index}>
-                    <MediaQuery smallerThan="xs" styles={{ display: 'none' }}>
-                      <Image
-                        src={banner.url}
-                        miw={{ base: 500, sm: 600, md: 960 }}
-                        mih={{ base: 250, sm: 300, md: 480 }}
-                        withPlaceholder
-                      />
-                    </MediaQuery>
-                    <MediaQuery largerThan="xs" styles={{ display: 'none' }}>
-                      <Image
-                        src={banner.url}
-                        maw={960}
-                        mah={{ base: 250, sm: 300, md: 420 }}
-                        withPlaceholder
-                      />
-                    </MediaQuery>
+                  <Carousel.Slide key={index} w="100%">
+                    <AspectRatio ratio={16 / 9} w="700px" maw="100vw">
+                      <Image src={banner.url} withPlaceholder />
+                    </AspectRatio>
                   </Carousel.Slide>
                 ))}
               </Carousel>

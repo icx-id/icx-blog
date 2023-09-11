@@ -92,7 +92,7 @@ export const BlogArticleListLayout = () => {
                 Semua
               </Tabs.Tab>
               <Tabs.Tab className={classes.tab} value="news">
-                News
+                ICX News
               </Tabs.Tab>
               <Tabs.Tab className={classes.tab} value="startup">
                 Startup
