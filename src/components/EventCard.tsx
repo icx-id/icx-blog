@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Image, Text } from '@mantine/core';
+import { AspectRatio, Box, Image, Text } from '@mantine/core';
 import { useHover } from '@mantine/hooks';
 
 const EventCard: React.FC<{
@@ -23,16 +23,17 @@ const EventCard: React.FC<{
         cursor: hovered ? 'pointer' : 'default',
         boxShadow: hovered ? '0px 4px 30px rgba(0, 0, 0, 0.05)' : 'initial',
       }}>
-      <Image
-        src={image}
-        fit="cover"
-        height={130}
-        width="100%"
-        radius="10px 10px 0 0"
-        style={{
-          filter: hovered ? 'brightness(110%)' : 'unset',
-        }}
-      />
+      <AspectRatio ratio={16 / 9}>
+        <Image
+          src={image}
+          fit="cover"
+          width="100%"
+          radius="10px 10px 0 0"
+          style={{
+            filter: hovered ? 'brightness(110%)' : 'unset',
+          }}
+        />
+      </AspectRatio>
       <Box pt="md" pb="lg" px="md">
         <Text fz={16} fw="bold" mb={8} lineClamp={1}>
           {title}
