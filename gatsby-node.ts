@@ -69,3 +69,18 @@ export const onCreatePage: GatsbyNode['onCreatePage'] = async ({
     deletePage(page);
   }
 };
+
+export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+
+    type Frontmatter {
+      tag: [String]
+    }
+  `;
+
+  createTypes(typeDefs);
+};
