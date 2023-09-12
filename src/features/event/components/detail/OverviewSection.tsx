@@ -142,7 +142,7 @@ export const OverviewSection: FC<OverviewSectionProps> = ({ event }) => {
                 {event.speakers.map(item => (
                   <Flex align="flex-start" key={item.name}>
                     <Image
-                      src={item.imageUrl || '/img/square-default.png'}
+                      src={item.imageUrl}
                       maw={56}
                       mah={56}
                       sx={{ img: { borderRadius: '50%' } }}
