@@ -90,7 +90,7 @@ export const EventList: React.FC<{}> = () => {
                 breakpoints={[
                   { minWidth: 'xs', cols: 1 },
                   { minWidth: 'sm', cols: 2 },
-                  { minWidth: 'md', cols: 3 },
+                  { minWidth: 'md', cols: 2 },
                   { minWidth: 'lg', cols: 4 },
                 ]}>
                 {isLoading ? (
