@@ -3,6 +3,11 @@ export enum EventMethodType {
   ONLINE = 'online',
 }
 
+export enum EventAccess {
+  PUBLIC = 'public',
+  PRIVATE = 'private',
+}
+
 export enum EventScheduleType {
   UPCOMING = 'upcoming',
   PAST = 'past',
