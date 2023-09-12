@@ -18,12 +18,6 @@ export type Banner = {
   mediaType: BannerMediaType;
 };
 
-export type EventRegistration = {
-  id: string;
-  user: string;
-  event: string;
-};
-
 export type EventSpeaker = {
   name: string;
   imageUrl: string;
@@ -70,3 +64,9 @@ export interface SimplifiedEvent
   startDate: string;
   endDate: string;
 }
+
+export type PublicEventRegistration = {
+  id: string;
+  user: string;
+  event: Event;
+};
