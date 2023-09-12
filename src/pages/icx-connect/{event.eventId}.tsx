@@ -20,7 +20,7 @@ import {
   useRegisterPublicEvent,
   useRegisterPublicEventErrors,
 } from '~/features/event';
-import { Breadcrumbs, MaskInput, SiteMetadata, Input } from '~/components';
+import { Breadcrumbs, SiteMetadata, Input } from '~/components';
 import { useDisclosure } from '@mantine/hooks';
 import { IconX } from '@tabler/icons-react';
 import { AxiosError } from 'axios';
@@ -144,11 +144,6 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
     setRegisterSuccess(true);
   };
 
-  const handleCloseModal = () => {
-    onCloseModal();
-    setIsNextPageModal(false);
-  };
-
   const {
     handleChange,
     handleSubmit,
@@ -165,6 +160,14 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
     },
     onSubmit: () => {},
   });
+
+  const handleCloseModal = () => {
+    onCloseModal();
+    setIsNextPageModal(false);
+    setFieldValue('name', '');
+    setFieldValue('email', '');
+    setFieldValue('phoneNumber', '');
+  };
 
   const handleRegisterEvent = async () => {
     try {
@@ -300,15 +303,14 @@ const EventDetailPage: FC<PageProps<EventDetailQuery>> = ({ data }) => {
                   placeholder="Masukkan Email"
                   onChange={handleChange}
                 />
-                <MaskInput
-                  mask="+62 000 0000 0000"
+                <Input
                   error={formErrors.phoneNumber}
                   label="Nomor HP"
                   value={values.phoneNumber}
                   name="phoneNumber"
                   placeholder="Masukkan Nomor HP"
                   type="phoneNumber"
-                  onAccept={value => setFieldValue('phoneNumber', value)}
+                  onChange={handleChange}
                 />
               </Stack>
             </form>

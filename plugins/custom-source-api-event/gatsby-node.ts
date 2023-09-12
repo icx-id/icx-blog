@@ -53,7 +53,9 @@ type Event = {
 
 // get events data from endpoint
 const getEvents = async (): Promise<Event[]> => {
-  const eventsResponse = await fetch(`${process.env.GATSBY_API_URL}/events`).then(r => r.json());
+  const eventsResponse = await fetch(`${process.env.GATSBY_API_URL}/events?access=public`).then(r =>
+    r.json(),
+  );
 
   const events = eventsResponse as unknown as PageableResponse<Event>;
   return events.data;

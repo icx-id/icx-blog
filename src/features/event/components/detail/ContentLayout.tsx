@@ -50,7 +50,10 @@ export const ContentLayout: FC<ContentLayoutProps> = ({
         <ActionSection onOpenDrawer={onOpenDrawer} />
       </Grid.Col>
       <Grid.Col xs={12} md="content" display={{ base: 'none', md: 'block' }}>
-        <StickyActionBox onOpenModal={onOpenModal} disabled={false} />
+        <StickyActionBox
+          onOpenModal={onOpenModal}
+          disabled={event.endDate ? isPast(new Date(event.endDate)) : false}
+        />
       </Grid.Col>
     </Grid>
   );

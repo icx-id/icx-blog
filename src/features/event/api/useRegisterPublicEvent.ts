@@ -6,7 +6,7 @@ export const useRegisterPublicEventErrors = {
   NOT_YET_OPEN: 'registration is not yet open',
   REGISTRATION_CLOSED: 'registration has been closed',
   QUOTA_NOT_AVALABLE: 'quota is no longer available',
-  ALREADY_REGISTERED: 'user has already been registered to this event',
+  ALREADY_REGISTERED: 'this guest has already been registered to this event',
 };
 
 interface RegisterPublicEventArgs {

@@ -8,7 +8,6 @@ import ClockIcon from '../../assets/ic-clock.svg';
 import LocationIcon from '../../assets/ic-location.svg';
 import UserIcon from '../../assets/ic-user.svg';
 import PlayIcon from '../../assets/ic-play.svg';
-import { useGetEventRegistrationQuery } from '~/features/icxConnect';
 
 type OverviewEventType = Pick<
   Event,
@@ -31,7 +30,6 @@ type OverviewSectionProps = {
 
 export const OverviewSection: FC<OverviewSectionProps> = ({ event }) => {
   const [eventDate, eventTime] = parseEventDate(event?.startDate, event?.endDate);
-  const { data: userEvent } = useGetEventRegistrationQuery(`${event.id}`);
 
   return (
     <>
@@ -103,7 +101,7 @@ export const OverviewSection: FC<OverviewSectionProps> = ({ event }) => {
                 </Box>
               </Box>
             )}
-            {event.type === 'online' && !!userEvent && (
+            {event.type === 'online' && (
               <Box mt={24}>
                 <Text fz={18} fw={600} lh="24px">
                   Link
