@@ -7,6 +7,7 @@ import { EventListSkeleton } from './EventListSkeleton';
 import { EventScheduleType } from '../types';
 import { navigate } from 'gatsby';
 import { useMediaQuery } from '@mantine/hooks';
+import { EventAccess } from '~/features/event';
 
 const useStyles = createStyles(() => ({
   tab: {
@@ -24,6 +25,7 @@ export const EventList: React.FC<{}> = () => {
 
   const { data: events, isLoading } = useGetEventsQuery({
     type: eventScheduleType,
+    access: EventAccess.PUBLIC,
   });
 
   const mobileScreen = useMediaQuery('(max-width: 30em)');
