@@ -11,16 +11,15 @@ import {
   em,
   getBreakpointValue,
 } from '@mantine/core';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import { useMediaQuery } from '@mantine/hooks';
 
 // ------------------------------------------ styles
 
 const useStyles = createStyles(theme => ({
   root: {
-    paddingTop: 176,
+    padding: '176px 0px',
     [theme.fn.smallerThan('md')]: {
-      paddingTop: 96,
+      padding: '96px 0px',
     },
   },
 
@@ -55,10 +54,7 @@ const useStyles = createStyles(theme => ({
   },
 
   gridWrapper: {
-    marginTop: 96,
-    [theme.fn.smallerThan('md')]: {
-      marginTop: 64,
-    },
+    marginTop: 40,
   },
 
   textCount: {
