@@ -45,11 +45,11 @@ export const StickyActionBox: FC<StickyActionBoxProps> = ({ onOpenModal, disable
         borderRadius: 6,
       }}>
       {!disabled && (
-        <Stack>
-          <Text fz={18} fw={600} lh="24px">
+        <Stack w="100%">
+          <Text fz={18} fw={600} align="center">
             Registration
           </Text>
-          <Button fullWidth mt={24} size="md" onClick={onOpenModal}>
+          <Button fullWidth size="md" onClick={onOpenModal}>
             Daftar Event
           </Button>
         </Stack>

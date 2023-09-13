@@ -13,8 +13,8 @@ export const parseToPhoneNumber = (value: string) => {
   let phoneNumber = value[0] === '+' ? value.slice(1) : value;
 
   let newPhoneNumber = phoneNumber;
-  if (Array.from(phoneNumber)[0] === '0') {
-    newPhoneNumber = `62${phoneNumber.substring(1)}`;
+  if (phoneNumber.startsWith('08')) {
+    newPhoneNumber = `62${newPhoneNumber.substring(1)}`;
   }
 
   newPhoneNumber = newPhoneNumber.replaceAll(' ', '');
@@ -86,4 +86,14 @@ export const serializeNPWP = (npwpNo: string) => {
 
 export const extractNumbersFromString = (value: string) => {
   return value.replace(/\D/g, '');
+};
+
+export const capitalizeWords = (str: string) => {
+  const words = str.split(' ');
+
+  const capitalizedWords = words.map((word: string) => {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+
+  return capitalizedWords.join(' ');
 };

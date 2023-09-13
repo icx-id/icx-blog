@@ -1,19 +1,16 @@
 import React, { FC } from 'react';
-import { Box, Flex, Image, Stack, Text, ThemeIcon } from '@mantine/core';
-import { User } from '~/features/auth';
+import { Box, Flex, Image, Text, ThemeIcon } from '@mantine/core';
 import { Event } from '../../types';
 import { formatDateTime } from '../../helpers/date-parser';
-
 import PlayIcon from '../../assets/ic-play.svg';
 import CalendarIcon from '../../assets/ic-calendar2.svg';
 import UserIcon from '../../assets/ic-user.svg';
 import MessageIcon from '../../assets/ic-message.svg';
 import CallIcon from '../../assets/ic-call.svg';
-import { IconCash } from '@tabler/icons-react';
-import { toRupiah } from '~/utils/format';
+import { capitalizeWords } from '~/utils/format';
 
 type EventRegistrationDataProps = {
-  user: User | null;
+  user: { email: string; name: string; phoneNumber: string };
   event: Event;
 };
 
@@ -34,13 +31,13 @@ export const EventRegistrationData: FC<EventRegistrationDataProps> = ({ user, ev
     {
       id: 3,
       label: 'Full Name',
-      value: user?.identity.fullName,
+      value: capitalizeWords(user?.name || ''),
       icon: UserIcon,
     },
     {
       id: 4,
       label: 'Email',
-      value: user?.email,
+      value: user?.email?.toLowerCase(),
       icon: MessageIcon,
     },
     {
@@ -48,12 +45,6 @@ export const EventRegistrationData: FC<EventRegistrationDataProps> = ({ user, ev
       label: 'Phone Number',
       value: user?.phoneNumber,
       icon: CallIcon,
-    },
-    {
-      id: 6,
-      label: 'Minimum Total Investment',
-      value: toRupiah(event.minimumUserInvestment),
-      icon: <IconCash />,
     },
   ];
 

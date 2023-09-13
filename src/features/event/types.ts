@@ -3,6 +3,11 @@ export enum EventMethodType {
   ONLINE = 'online',
 }
 
+export enum EventAccess {
+  PUBLIC = 'public',
+  PRIVATE = 'private',
+}
+
 export enum EventScheduleType {
   UPCOMING = 'upcoming',
   PAST = 'past',
@@ -16,12 +21,6 @@ export enum BannerMediaType {
 export type Banner = {
   url: string;
   mediaType: BannerMediaType;
-};
-
-export type EventRegistration = {
-  id: string;
-  user: string;
-  event: string;
 };
 
 export type EventSpeaker = {
@@ -70,3 +69,9 @@ export interface SimplifiedEvent
   startDate: string;
   endDate: string;
 }
+
+export type PublicEventRegistration = {
+  id: string;
+  user: string;
+  event: Event;
+};
