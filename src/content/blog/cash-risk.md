@@ -1,19 +1,26 @@
 ---
 draft: true
 author: icx
-title: cash risk
-metaTitle: "Cash Risk 2023: Kenapa Menyimpan Kas Berisiko"
-metaDescription: cash risk
-intro: cash risk 2023
+title: "Cash Risk: Menyusun Strategi Mitigasi Menghadapi Cash Risk 2023"
+metaTitle: "Cash Risk 2023: Memahami Berbagai Jenis dan Mitagasi Cash Risk "
+metaDescription: Cash risk adalah ancaman yang dapat mengancam kelangsungan
+  usaha perusahaan. Perusahaan menghadapi berbagai tantangan yangmeningkatkan
+  risiko kas.
+intro: Cash risk adalah risiko yang berkaitan dengan ketidakcukupan kas untuk
+  memenuhi kewajiban perusahaan. Dalam artikel ini, kita akan membahas mengapa
+  cash risk adalah masalah yang serius, terutama di era inflasi yang tinggi.
+  Kita juga akan membahas pandangan Robert Kiyosaki tentang pentingnya
+  berinvestasi, serta bagaimana perusahaan dapat mengelola cash flow dengan baik
+  untuk mengurangi risiko kas.
 date: 2023-09-11T15:31:01.781Z
+category:
+  - investment
 featuredImage:
   src: https://images.unsplash.com/photo-1621378864046-0122e4a415a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80
-  alt: cash risk
-  title: cash risk
+  alt: memahami apa itu cas risk dan bagaimana menanggulanginya
+  title: memahami cash riks yang muncul karena inflasi
 key: blog-article
 ---
-<!--StartFragment-->
-
 Educational tentang kenapa menyimpan kas memiliki risiko yang cukup tinggi. Perlu dijelaskan berbagai alasan kenapa kas harus diputar ke melalui investasi/ bisnis. Konteks pembahasan perlu dimasukkan bagaimana perusahaan perlu mengoptimalkan berbagai hal
 
 Cash risk 2023 – Ketika seorang investor mempertimbangkan alternatif untuk menanamkan uang mereka, menahan kas mungkin terlihat seperti pilihan yang aman. Namun, risiko kas sebenarnya bisa sangat tinggi, dan ada beberapa alasan mengapa menahan kas dalam jangka panjang bukanlah pilihan terbaik.
@@ -75,7 +82,3 @@ Kegiatan investasi pada saham cenderung mengalami naik-turun atau fluktuatif, se
 Sehingga dengan sifat saham yang fluktuatif maka cara memaksimalkan potensi return adalah dengan melakukan diversifikasi portofolio investasi. Diversifikasi portofolio adalah menaruh dana pada beberapa jenis instrumen investasi dengan tingkat risiko berbeda. Misalkan menaruh dana pada saham di bursa efek, surat utang pemerintah, real estate, dan saham perusahaan privat melalui crowdfunding.
 
 Anda bisa mendapatkan akses khusus saham perusahaan privat melalui platform crowdfunding ICX yang telah dipercaya oleh ribuan investor di Indonesia. Terhubung dengan perusahaan yang gencar berkembang untuk menjadi pemain utama di industrinya. Dapatkan akses saham perusahaan privat dan pilih industri favorit Anda dengan terhubung dengan Tim ICX di sini.
-
-
-
-<!--EndFragment-->
