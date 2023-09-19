@@ -101,6 +101,6 @@ Untuk memaksimalkan potensi pengembalian investasi, diversifikasi portofolio inv
 
 Untuk membantu Anda mengakses investasi dalam perusahaan swasta dan startup dengan lebih mudah, platform crowdfunding ICX merupakan pilihan yang dapat dipercaya. Dengan ribuan investor di Indonesia yang telah mempercayainya, ICX dapat menjadi jembatan yang memungkinkan Anda terhubung dengan perusahaan-perusahaan yang sedang berkembang dan menjadi pemimpin di industri mereka. Dengan ICX, Anda dapat dengan mudah mengakses saham perusahaan swasta dan memilih industri yang sesuai dengan preferensi Anda. Terhubunglah dengan tim ICX sekarang untuk memulai perjalanan investasi Anda yang lebih baik.
 
-## [Amplify Your Investment Strategy with ICX](https://icx.id/)
+## [Amplify Your Investment with ICX](https://icx.id/)
 
 ![icx investment](/img/rsz_345888006_1402056983669571_641072638675443244_n.jpg "icx investment")
