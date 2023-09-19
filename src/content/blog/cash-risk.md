@@ -21,9 +21,7 @@ featuredImage:
   title: memahami cash riks yang muncul karena inflasi
 key: blog-article
 ---
-Educational tentang kenapa menyimpan kas memiliki risiko yang cukup tinggi. Perlu dijelaskan berbagai alasan kenapa kas harus diputar ke melalui investasi/ bisnis. Konteks pembahasan perlu dimasukkan bagaimana perusahaan perlu mengoptimalkan berbagai hal
-
-Cash risk 2023 – Ketika seorang investor mempertimbangkan alternatif untuk menanamkan uang mereka, menahan kas mungkin terlihat seperti pilihan yang aman. Namun, risiko kas sebenarnya bisa sangat tinggi, dan ada beberapa alasan mengapa menahan kas dalam jangka panjang bukanlah pilihan terbaik.
+Cash Risk 2023, Ketika investor mempertimbangkan alternatif untuk menanamkan uang mereka, menahan kas mungkin terlihat seperti pilihan yang aman. Namun, risiko kas sebenarnya bisa sangat tinggi, dan ada beberapa alasan mengapa menahan kas dalam jangka panjang bukanlah pilihan terbaik. 
 
 ## The Risk in Cash
 
