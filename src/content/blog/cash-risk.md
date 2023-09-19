@@ -103,4 +103,4 @@ Untuk membantu Anda mengakses investasi dalam perusahaan swasta dan startup deng
 
 ## [Amplify Your Investment Strategy with ICX](https://icx.id/)
 
-![icx investment](/img/369266965_255024807370191_7868232635756870289_n-1-.jpg "icx investment")
+![icx investment](/img/rsz_345888006_1402056983669571_641072638675443244_n.jpg "icx investment")
