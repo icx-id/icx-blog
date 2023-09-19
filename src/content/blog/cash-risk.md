@@ -1,6 +1,6 @@
 ---
 draft: true
-author: icx
+author: ICX
 title: "Cash Risk: Menyusun Strategi Mitigasi Menghadapi Cash Risk 2023"
 metaTitle: "Cash Risk 2023: Memahami Berbagai Jenis dan Mitagasi Cash Risk "
 metaDescription: Cash risk adalah ancaman yang dapat mengancam kelangsungan
