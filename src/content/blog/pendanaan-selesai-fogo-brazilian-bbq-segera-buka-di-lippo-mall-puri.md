@@ -36,4 +36,4 @@ Pada akhirnya, berita tentang ekspansi ini tidak hanya penting bagi FOGO BBQ seb
 
 ## **[Elevate Your Investment Portfolio with ICX](https://icx.id/)**
 
-![FOGO X ICX](https://media.discordapp.net/attachments/913378897113010207/1153901258588049469/ICX_banner-blog_1.png?width=981&height=655 "ICX FOGO")
+![FOGO X ICX,](https://media.discordapp.net/attachments/913378897113010207/1153901258588049469/ICX_banner-blog_1.png?width=981&height=655 "ICX FOGO")
