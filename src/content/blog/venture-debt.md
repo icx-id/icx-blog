@@ -38,7 +38,7 @@ Namun, Venture Debt tidak dapat diartikan sebagai substitusi dari peran sebuah v
 
 Dari sisi investor, venture debt adalah kelas aset yang menarik yang menawarkan returns secara regular and merupakan cara yang baik untuk mendapatkan eksposur ke ekosistem startup.
 
-Selain venture debt, terdapat juga akses investasi pada startup Indonesia melalui platform securities crowdfunding ICX.
+**[Selain venture debt, terdapat juga akses investasi pada startup Indonesia melalui platform securities crowdfunding ICX](https://icx.id/)**.
 
 ## **Venture Debt: Menyelami Pembiayaan yang Makin Berkembang di Indonesia dan Asia Tenggara**
 
