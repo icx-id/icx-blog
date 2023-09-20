@@ -13,8 +13,7 @@ intro: Inflasi adalah naiknya harga barang dan jasa secara umum dan
   mendorong terjadinya krisis ekonomi.
 date: 2023-08-01T08:19:22.045Z
 category:
-  - ekonomi
-  - news
+  - investment
 featuredImage:
   src: https://images.unsplash.com/photo-1625605079052-e7fcb98994ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
   alt: "memahami macam-macam inflasi "
