@@ -70,4 +70,4 @@ Dan untuk para investor yang ingin lebih mendalam dalam mengejar peluang investa
 
 ## **[Amplify Your Investment Strategy with ICX](https://icx.id/)**
 
-![new way investing with ICX](/img/icx_banner-blog_3.png)
+![new way investing with ICX](/img/icx_banner-blog_3.png "ICX ")
