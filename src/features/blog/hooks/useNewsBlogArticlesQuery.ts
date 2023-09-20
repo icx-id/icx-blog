@@ -13,6 +13,7 @@ export const useNewsBlogArticlesQuery = () => {
               category: { eq: "news" }
             }
           }
+          sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {
             node {

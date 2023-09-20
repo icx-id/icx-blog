@@ -13,6 +13,7 @@ export const useEkonomiBlogArticlesQuery = () => {
               category: { eq: "ekonomi" }
             }
           }
+          sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {
             node {
