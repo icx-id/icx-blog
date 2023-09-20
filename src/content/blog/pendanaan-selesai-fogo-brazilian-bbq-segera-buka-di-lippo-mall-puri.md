@@ -33,3 +33,5 @@ FOGO BBQ terkenal karena hidangan Brazil yang autentik, yang dagingnya dipanggan
 Dengan membuka cabang baru di Lippo Mall Puri, FOGO BBQ berharap dapat merangkul lebih banyak pelanggan dan membagikan kegembiraan makanan Brazil kepada lebih banyak orang. Keberhasilan proses pendanaan melalui ICX adalah bukti nyata bahwa banyak pihak yang percaya pada potensi dan visi bisnis FOGO BBQ.
 
 Pada akhirnya, berita tentang ekspansi ini tidak hanya penting bagi FOGO BBQ sebagai bisnis, tetapi juga bagi pecinta kuliner di Jakarta. Dengan adanya cabang baru di Lippo Mall Puri, mereka akan memiliki lebih banyak pilihan untuk mengeksplorasi hidangan Brazil yang lezat dan merasakan pengalaman makan yang unik. Semua ini mencerminkan komitmen FOGO BBQ untuk terus berkembang dan berinovasi dalam memenuhi kebutuhan pelanggan mereka. Tunggu kabar selanjutnya tentang pembukaan resmi cabang baru FOGO BBQ di Lippo Mall Puri dan jadilah bagian dari perayaan kuliner ini!
+
+![FOGO X ICX](https://media.discordapp.net/attachments/913378897113010207/1153901258588049469/ICX_banner-blog_1.png?width=981&height=655 "ICX FOGO")
