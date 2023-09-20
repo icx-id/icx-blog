@@ -5,8 +5,15 @@ title: "Venture Debt: Memahami Sistem Venture Debt untuk Pendanaan "
 metaTitle: Mengenal Sistem Venture Debt untuk Pendanaan Startup
 metaDescription: Dalam artikel ini, mari kita bahas bagaimana sistem Venture
   Debt yang menjadi pilihan bijak untuk mendanai startup Anda.
-intro: venture debt
+intro: "Venture debt adalah sumber pembiayaan yang semakin populer bagi startup,
+  terutama di Indonesia. Menurut data dari PitchBook, nilai pendanaan venture
+  debt di Indonesia pada tahun 2023 mencapai Rp 1,7 triliun, meningkat 50% dari
+  tahun sebelumnya. Oleh sebab itu, sistem pendanaan ini menjadi sangat menarik
+  untuk kita bahas. "
 date: 2023-09-11T13:26:52.348Z
+tag: []
+category:
+  - startup
 featuredImage:
   src: https://images.unsplash.com/photo-1588286492514-ddb61b527086?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80
   alt: venture debt
@@ -47,4 +54,4 @@ Dapat dikatakan pasar venture debt masih dalam tahap awal di Asia Tenggara dan m
 
 
 
-<!--EndFragment-->
+![](/img/icx_banner-blog_3.png)
