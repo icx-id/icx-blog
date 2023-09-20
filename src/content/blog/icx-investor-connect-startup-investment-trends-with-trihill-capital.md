@@ -58,6 +58,6 @@ Jadi, bagaimana kita harus beradaptasi dengan perubahan ini? Pertama-tama, sebag
 
 Acara ICX Investor Connect 2023 adalah awal yang menjanjikan untuk masa depan investasi startup di Indonesia. Kami berharap untuk melihat lebih banyak kolaborasi yang menguntungkan antara investor, startup, dan pemangku kepentingan lainnya di masa mendatang. 
 
-## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
+## [E﻿LEVATE YOUR INVESTMENT PORTOFOLIO WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_345888006_1402056983669571_641072638675443244_n.jpg)
