@@ -1,9 +1,9 @@
 ---
 draft: true
-author: icx
-title: venture debt
-metaTitle: Mengenal Venture Debt dan Pertumbuhan Venture Debt di Asia Tenggara
-metaDescription: venture debt
+author: ICX
+title: "Venture Debt: Memahami Sistem Venture Debt untuk Pendanaan "
+metaTitle: Mengenal Sistem Venture Debt untuk Pendanaan Startup
+metaDescription: Venture debt
 intro: venture debt
 date: 2023-09-11T13:26:52.348Z
 featuredImage:
