@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: ICX
 title: Pendanaan Selesai, FOGO Brazilian BBQ Segera Buka di Lippo Mall Puri
 metaTitle: " FOGO BBQ: Pendaan Selesai, Bersiap Buka di Lippo Mall Puri"
