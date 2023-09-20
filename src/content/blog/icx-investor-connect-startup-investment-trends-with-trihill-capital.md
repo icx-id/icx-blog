@@ -14,6 +14,8 @@ intro: Pada tanggal 15 Agustus 2023, ICX Investor Connect menggelar acara
   Artikel ini akan mengulas sorotan dari acara tersebut dan memberikan wawasan
   berharga tentang tren investasi startup saat ini.
 date: 2023-08-28T12:05:39.076Z
+category:
+  - news
 featuredImage:
   src: https://media.licdn.com/dms/image/D5622AQEkRrnSy_rIEw/feedshare-shrink_1280/0/1692594313594?e=1695859200&v=beta&t=untvojd7GQ9OdvKve2Lqnw3tfxTkReyzBNae0JcD_nw
   alt: "ICX EVENT "
