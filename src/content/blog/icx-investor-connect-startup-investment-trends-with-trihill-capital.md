@@ -13,6 +13,7 @@ intro: Pada tanggal 15 Agustus 2023, ICX Investor Connect menggelar acara
   Romario, CEO dari ICX, dan Mr. Ian, VP of Investments dari Trihill Capital.
   Artikel ini akan mengulas sorotan dari acara tersebut dan memberikan wawasan
   berharga tentang tren investasi startup saat ini.
+isPinned: true
 date: 2023-08-28T12:05:39.076Z
 category:
   - news
