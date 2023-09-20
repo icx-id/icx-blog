@@ -3,7 +3,8 @@ draft: true
 author: ICX
 title: "Venture Debt: Memahami Sistem Venture Debt untuk Pendanaan "
 metaTitle: Mengenal Sistem Venture Debt untuk Pendanaan Startup
-metaDescription: Venture debt
+metaDescription: Dalam artikel ini, mari kita bahas bagaimana sistem Venture
+  Debt yang menjadi pilihan bijak untuk mendanai startup Anda.
 intro: venture debt
 date: 2023-09-11T13:26:52.348Z
 featuredImage:
