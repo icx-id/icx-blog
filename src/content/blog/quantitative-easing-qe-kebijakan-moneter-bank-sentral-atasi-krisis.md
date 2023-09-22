@@ -9,7 +9,7 @@ metaDescription: Quantitative easing adalah kebijakan untuk mendukung
 intro: Quantitative easing adalah kebijakan untuk mendukung perekonomian negara
   yang sedang dilanda krisis melalui peningkatan jumlah uang beredar. Bagaimana
   cara quantitative easing dan dampaknya? Yuk cari tahu lebih lanjut!
-isPinned: true
+isPinned: false
 date: 2023-08-01T06:38:43.576Z
 category:
   - ekonomi
