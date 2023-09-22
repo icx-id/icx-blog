@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: ICX
 title: "Startup Financial Model: Overview Jenis Financial Model Bisnis Startup"
 metaTitle: Financial Modeling Pada Bisnis Startup di Indonesia
@@ -82,7 +82,7 @@ Pembiayaan ekuitas adalah jenis pendanaan startup yang melibatkan penjualan saha
 
 ## Fenomena Baru: Tantangan dan Peluang bagi Startup Indonesia
 
-Selain ketiga jenis pendanaan startup di atas, terdapat beberapa fenomena terbaru yang perlu diperhatikan oleh startup di Indonesia. Fenomena-fenomena ini dapat menjadi tantangan maupun peluang bagi startup.
+Selain jenis pendanaan startup di atas, terdapat beberapa fenomena terbaru yang perlu diperhatikan oleh startup di Indonesia. Fenomena-fenomena ini dapat menjadi tantangan maupun peluang bagi startup.
 
 **Meningkatnya minat investor terhadap startup Indonesia**
 
@@ -100,6 +100,12 @@ Perkembangan teknologi membuka peluang baru bagi startup untuk berinovasi dan tu
 
 Namun, startup juga harus berhati-hati dalam memanfaatkan perkembangan teknologi. Startup harus memastikan bahwa produk atau layanannya tetap relevan dengan kebutuhan pasar.
 
-Kesimpulan
+**Kesimpulan**
 
 Startup di Indonesia perlu memahami fenomena-fenomena terbaru yang terjadi di industri startup. Fenomena-fenomena ini dapat menjadi tantangan maupun peluang bagi startup. Dengan memahami fenomena-fenomena ini, startup dapat mengambil langkah-langkah yang tepat untuk mencapai kesuksesan.
+
+Selain itu, fenomena-fenomena ini juga dapat menjadi peluang bagi investor untuk mulai berinvestasi kepada sektor potensial ini. Dengan memahami tantangan dan peluang yang dihadapi startup, investor dapat membuat keputusan investasi yang lebih tepat.
+
+## [Explore New Potential Investment with ICX](https://icx.id/)
+
+![icx financing model](https://media.discordapp.net/attachments/913378897113010207/1153901258588049469/ICX_banner-blog_1.png?width=981&height=655 "financial modeling startup")
