@@ -1,9 +1,10 @@
 ---
 draft: true
 author: ICX
-title: STARTUP PITCH
-metaTitle: PI
-metaDescription: startup
+title: ICX dan Xendit Hubungkan Startup & Investor di Event The Startup Pitch
+metaTitle: ICX dan Xendit Hubungkan Startup & Investor di Event The Startup Pitch
+metaDescription: Pada tanggal 21 September Indonesia Crowdfunding Exchange (ICX)
+  dan Xendit berkolaborasi dalam mengadakan acara “The Startup Pitch
 intro: >+
   Pitching by founders + Input from Investors = A day full of innovation and
   insight! 🚀
@@ -39,6 +40,7 @@ intro: >+
 
   These startups showcased their extraordinary and visionary ideas in front of esteemed VCs. Following the presentations, investors, founders, and other participants had the opportunity to interact and establish direct, high-quality connections ✨
 
+isPinned: true
 date: 2023-09-20T10:46:19.537Z
 featuredImage:
   src: /img/369266965_255024807370191_7868232635756870289_n-1-.jpg
