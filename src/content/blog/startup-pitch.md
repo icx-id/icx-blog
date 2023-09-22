@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: ICX
 title: ICX dan Xendit Hubungkan Startup & Investor di Event The Startup Pitch
 metaTitle: ICX dan Xendit Hubungkan Startup & Investor di Event The Startup Pitch
@@ -53,4 +53,6 @@ Ekosistem startup di Indonesia memiliki potensi besar untuk berkembang pesat. Na
 
 **Oleh sebab itu, kemudahan akan akses ini menjadi salah satu kunci idealnya pertumbuhan ekosistem startup di Indonesia.** 
 
-The Startup Pitch menjadi bukti komitmen ICX untuk mendorong pertumbuhan positif dalam ekosistem startup di Indonesia dengan mempermudah akses investasi bagi investor dan pendanaan bagi startup. Acara ini memberikan panggung bagi para startup untuk mempresentasikan ide-ide mereka dan terhubung dengan investor yang berbagi visi mereka. Dengan demikian, akses startup dapat dengan lebih mendapatkan bahan bakar untuk mempercepat pengembangan perusahaan mereka.
+The Startup Pitch menjadi bukti komitmen ICX untuk mendorong pertumbuhan positif dalam ekosistem startup di Indonesia dengan mempermudah akses investasi bagi investor dan pendanaan bagi startup. Acara ini memberikan panggung bagi para startup untuk mempresentasikan ide-ide mereka dan terhubung dengan investor yang berbagi visi mereka. Dengan demikian, akses startup dapat dengan lebih mendapatkan bahan bakar untuk mempercepat pengembangan perusahaan mereka. 
+
+![be a part of ICX](https://cdn.discordapp.com/attachments/913378897113010207/1153901258588049469/ICX_banner-blog_1.png "Investing on a trusted platform in ICX")
