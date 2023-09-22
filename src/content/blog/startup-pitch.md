@@ -55,4 +55,4 @@ Ekosistem startup di Indonesia memiliki potensi besar untuk berkembang pesat. Na
 
 The Startup Pitch menjadi bukti komitmen ICX untuk mendorong pertumbuhan positif dalam ekosistem startup di Indonesia dengan mempermudah akses investasi bagi investor dan pendanaan bagi startup. Acara ini memberikan panggung bagi para startup untuk mempresentasikan ide-ide mereka dan terhubung dengan investor yang berbagi visi mereka. Dengan demikian, akses startup dapat dengan lebih mendapatkan bahan bakar untuk mempercepat pengembangan perusahaan mereka. 
 
-![be a part of ICX](https://cdn.discordapp.com/attachments/913378897113010207/1153901258588049469/ICX_banner-blog_1.png "Investing on a trusted platform in ICX")
+![be a part of ICX](https://media.discordapp.net/attachments/913378897113010207/1153901259804397568/ICX_banner-blog_3.png?width=981&height=655 "Investing on a trusted platform in ICX")
