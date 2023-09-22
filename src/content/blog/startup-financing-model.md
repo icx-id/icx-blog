@@ -1,19 +1,20 @@
 ---
 draft: true
 author: ICX
-title: "startup financing model "
-metaTitle: Berkenalan dengan Startup Financing dan Contoh Startup Lokal
-metaDescription: Berkenalan dengan Startup Financing dan Contoh Startup Lokal
+title: "Startup Financial Model: Overview Jenis Financial Model Bisnis Startup"
+metaTitle: Financial Modeling Pada Bisnis Startup di Indonesia
+metaDescription: Mari kita bahas berbagai jenis financial model yang digunakan
+  oleh berbagai bisnis-bisnis startup yang berkembang di Indonesia
 intro: model pendanaan startup
 date: 2023-09-11T13:24:16.268Z
+category:
+  - startup
 featuredImage:
   src: https://images.unsplash.com/photo-1515180711443-f8685c6d6a74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80
   alt: startup financing model
   title: model pendanaan  startup
 key: blog-article
 ---
-<!--StartFragment-->
-
 Seiring dengan banyaknya ide bisnis yang muncul namun kurang dalam segi modal usaha maka keberadaan startup financing model bisa menjadi solusi. Berbagai model pendanaan startup bisa Anda manfaatkan untuk mendapatkan modal.
 
 Apa saja jenis pendanaan startup? Jenis pendanaan startup yang disediakan juga cukup bervariasi, mulai dari yang populer seperti putaran modal ventura (venture capital), mengajukan limit kredit, dana hibah, maupun pinjaman untuk usaha kecil. 
@@ -79,7 +80,5 @@ Adapun sebagian besar dari startup tersebut tentu memerlukan pendanaan maupun fi
 Selain itu, sebagai pemilik bisnis Anda juga dapat meningkatkan modal usaha Anda melalui model pendanaan startup: equity crowdfunding. Anda berkesempatan untuk memiliki akses terhubung dengan para Angel Investor dan menerbitkan saham secara resmi hingga meningkatkan capital untuk dapat melakukan IPO di masa depan.
 
 Hubungi Tim ICX (Indonesia Crowdfunding Exchange) lebih lanjut untuk model financing startup melalui crowdfunding untuk bisnis Anda.
-
-
 
 <!--EndFragment-->
