@@ -5,7 +5,11 @@ title: "Startup Financial Model: Overview Jenis Financial Model Bisnis Startup"
 metaTitle: Financial Modeling Pada Bisnis Startup di Indonesia
 metaDescription: Mari kita bahas berbagai jenis financial model yang digunakan
   oleh berbagai bisnis-bisnis startup yang berkembang di Indonesia
-intro: model pendanaan startup
+intro: "Startup di Indonesia terus berkembang pesat dari waktu ke waktu. Menurut
+  data dari Startup Ranking, jumlah startup di Indonesia mencapai 2.400 pada
+  tahun 2023. Hal ini tentu saja membutuhkan perencanaan keuangan yang matang,
+  sehingga financial modeling menjadi salah satu bagian krusial yang menentukan
+  keberlangsungan dari suatu startup. "
 date: 2023-09-11T13:24:16.268Z
 category:
   - startup
@@ -15,6 +19,10 @@ featuredImage:
   title: model pendanaan  startup
 key: blog-article
 ---
+Startup di Indonesia sedang meledak! Menurut data Startup Ranking, jumlah startup di Indonesia mencapai 2.200 pada tahun 2023. Dengan begitu banyak startup yang bermunculan, persaingan semakin ketat. Untuk bertahan dan sukses, startup perlu memiliki perencanaan keuangan yang matang. Salah satu cara untuk melakukan hal ini adalah dengan menyusun financial modeling.
+
+
+
 Seiring dengan banyaknya ide bisnis yang muncul namun kurang dalam segi modal usaha maka keberadaan startup financing model bisa menjadi solusi. Berbagai model pendanaan startup bisa Anda manfaatkan untuk mendapatkan modal.
 
 Apa saja jenis pendanaan startup? Jenis pendanaan startup yang disediakan juga cukup bervariasi, mulai dari yang populer seperti putaran modal ventura (venture capital), mengajukan limit kredit, dana hibah, maupun pinjaman untuk usaha kecil. 
