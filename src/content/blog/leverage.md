@@ -1,9 +1,10 @@
 ---
 draft: true
 author: icx
-title: leverage
-metaTitle: Membahas Leverage Venture Capital dalam Investasi
-metaDescription: leverage venture capital
+title: Membahas Konsep Leverage dalam Investasi Venture Capital
+metaTitle: Konsep Leverage dalam Investasi Startup oleh  Venture Capital
+metaDescription: Pahami konsep leverage dalam investasi venture capital dan
+  bagaimana strategi ini dapat menggandakan hasil investasi startup Anda.
 intro: "leverage "
 date: 2023-09-11T15:18:02.821Z
 featuredImage:
