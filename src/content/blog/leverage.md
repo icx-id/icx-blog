@@ -12,10 +12,14 @@ intro: Konsep leverage bukanlah hal asing dalam dunia investasi, tetapi
   meningkatkan hasil investasi mereka dalam startup yang sedang berkembang
   pesat.
 date: 2023-09-11T15:18:02.821Z
+tag: []
+category:
+  - investment
+  - startup
 featuredImage:
   src: https://images.unsplash.com/photo-1593510987459-9a1489817a3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcGl0YWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60
-  alt: ven
-  title: tur
+  alt: Konsep Leverage dalam investasi yang dilakukan venture capital
+  title: Leverage yang dilakukan venture capital dan startup
 key: blog-article
 ---
 <!--StartFragment-->
