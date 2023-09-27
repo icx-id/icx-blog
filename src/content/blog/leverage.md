@@ -5,7 +5,12 @@ title: Membahas Konsep Leverage dalam Investasi Venture Capital
 metaTitle: Konsep Leverage dalam Investasi Startup oleh  Venture Capital
 metaDescription: Pahami konsep leverage dalam investasi venture capital dan
   bagaimana strategi ini dapat menggandakan hasil investasi startup Anda.
-intro: "Leverage dalam venture capital "
+intro: Konsep leverage bukanlah hal asing dalam dunia investasi, tetapi
+  bagaimana leverage digunakan secara efektif dalam konteks investasi venture
+  capital? Dalam artikel ini, kami akan membahas dengan bagaimana leverage dapat
+  menjadi salah satu strategi yang dilakukan investor venture capital untuk
+  meningkatkan hasil investasi mereka dalam startup yang sedang berkembang
+  pesat.
 date: 2023-09-11T15:18:02.821Z
 featuredImage:
   src: https://images.unsplash.com/photo-1593510987459-9a1489817a3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcGl0YWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=400&q=60
