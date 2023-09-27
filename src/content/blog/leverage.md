@@ -61,7 +61,3 @@ Namun, sebagaimana disebutkan sebelumnya, leverage adalah pisau bermata dua. Pen
 Terlalu banyak leverage dapat meningkatkan risiko kerugian investasi. Risiko ini menjadi lebih besar ketika investasi tidak memberikan hasil yang diharapkan, karena utang harus tetap dibayar. Selain itu, penggunaan leverage yang berlebihan juga dapat membuat investor kesulitan dalam mendapatkan modal tambahan di masa depan. Investor yang memiliki rasio utang yang tinggi mungkin akan dianggap kurang likuid oleh calon investor atau kreditor.
 
 Dalam investasi venture capital, pemahaman yang matang tentang risiko dan manfaat leverage adalah kunci untuk membuat keputusan investasi yang cerdas. Itulah mengapa para pemodal ventura yang sukses selalu berusaha menemukan keseimbangan yang tepat antara penggunaan leverage untuk memaksimalkan potensi pengembalian investasi, sambil tetap menjaga tingkat risiko yang dapat diterima.
-
-
-
-<!--EndFragment-->
