@@ -26,7 +26,7 @@ key: blog-article
 
 Kata "leverage" sendiri menciptakan gambaran tentang pisau bermata dua dalam dunia investasi. Leverage adalah senjata ampuh yang dapat memperbesar imbal hasil investasi, tetapi juga berpotensi memotong tajam dengan risiko yang lebih besar. Dalam konteks investasi venture capital, leverage adalah konsep penting yang telah mengubah cara investor memandang potensi keuntungan dan risiko yang akan muncul saat memulai investasi. 
 
-## Leverage Venture Capital 
+## K﻿onsep Leverage dalam Investasi Venture Capital
 
 Apa yang dimaksud dengan leverage venture capital? Leverage Venture Capital merupakan modal yang diberikan kepada perusahaan swasta dalam rangka investasi pada perusahaan lain. 
 
