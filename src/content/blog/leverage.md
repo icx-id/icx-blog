@@ -22,11 +22,9 @@ featuredImage:
   title: Leverage yang dilakukan venture capital dan startup
 key: blog-article
 ---
-Modal merupakan salah satu elemen kunci yang memengaruhi kemampuan sebuah perusahaan untuk tumbuh dan berkembang. Semakin besar jumlah modal yang dimiliki oleh sebuah perusahaan, semakin besar pula potensi pertumbuhan bisnisnya. Dalam dunia bisnis yang bergerak cepat, ketersediaan modal menjadi faktor penentu dalam mengeksekusi strategi pengembangan bisnis.
+**Leverage adalah senjata rahasia venture capital untuk meraih keuntungan besar dari startup-startup potensial.** 
 
-Untuk banyak perusahaan, khususnya yang berada dalam tahap awal atau startup, mengakses sumber modal menjadi salah satu tantangan dalam proses pengembangan bisnis. Oleh sebab itu, **leverage venture capital menjadi** salah satu metode pendanaan yang sangat relevan, menjadi solusi yang ditempuh.
-
-Dalam bentuknya yang paling umum, pendanaan modal ventura melibatkan kolaborasi antara perusahaan rintisan dan investor eksternal. Melalui kemitraan ini, perusahaan rintisan dapat memperoleh akses ke modal yang diperlukan untuk mendukung pengembangan inovatif mereka. Dengan adanya dukungan keuangan dari investor eksternal, perusahaan rintisan memiliki kesempatan yang lebih baik untuk mengembangkan visi mereka dan mewujudkannya dalam bentuk inovasi yang berdampak.
+Kata "leverage" sendiri menciptakan gambaran tentang pisau bermata dua dalam dunia investasi. Leverage adalah senjata ampuh yang dapat memperbesar imbal hasil investasi, tetapi juga berpotensi memotong tajam dengan risiko yang lebih besar. Dalam konteks investasi venture capital, leverage adalah konsep penting yang telah mengubah cara investor memandang potensi keuntungan dan risiko yang akan muncul saat memulai investasi. 
 
 ## Leverage Venture Capital 
 
