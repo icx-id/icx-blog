@@ -35,3 +35,5 @@ Leverage, secara sederhana, adalah praktik menggunakan dana pinjaman atau utang 
 S﻿alah satu daya tarik utama venture capital melakukan leverage adalah untuk mengoptimalkan potensi return yang akan mereka dapatkan dari suatu investasi. Bayangkan jika Anda dapat berinvestasi dalam lebih banyak startup atau memberikan tambahan modal bagi perusahaan portofolio Anda. Dengan leverage, skenario ini menjadi lebih mungkin.
 
 Sebagai contoh, dengan modal awal sebesar $1 juta dan penggunaan leverage yang cerdas, Anda dapat mengambil bagian dalam berbagai startup sekaligus. Jika salah satu dari mereka berkembang menjadi perusahaan besar, potensi pengembalian investasi Anda bisa sangat signifikan.
+
+Namun, sebagaimana pisau bermata dua, **leverage juga membawa potensi risiko yang signifikan.** Ketika memanfaatkan uang pinjaman, risiko investasi akan ikut meningkat cukup signifikan. Artinya, jika sesuatu tidak berjalan sesuai rencana, kerugian yang dialami juga akan lebih besar. Dalam konteks venture capital, ini berarti risiko kerugian investasi akan sangat besar apabila startup yang didanai tidak berjalan dengan optimal atau mengalami kegagalan.
