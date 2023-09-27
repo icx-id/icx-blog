@@ -30,4 +30,8 @@ Kata "leverage" sendiri menciptakan gambaran tentang pisau bermata dua dalam dun
 
 Investasi dalam dunia venture capital memang penuh potensi *return yang* menjanjikan, leverage adalah salah satu strategi yang digunakan untuk mengoptimalkan keuntungan yang dilakukan oleh venture capital. 
 
-Leverage, secara sederhana, adalah praktik menggunakan dana pinjaman atau utang untuk memperbesar dampak modal Anda dalam suatu investasi. Dalam dunia venture capital, leverage mengacu pada penggunaan dana pinjaman untuk membiayai investasi pada perusahaan-perusahaan startup yang berpotensi tinggi. Konsep ini membuka pintu peluang yang menggiurkan, namun sekaligus memasukkan elemen risiko yang harus dihadapi oleh bisnis.
+Leverage, secara sederhana, adalah praktik menggunakan dana pinjaman atau utang untuk memperbesar dampak modal Anda dalam suatu investasi. Dalam dunia venture capital, leverage mengacu pada penggunaan dana pinjaman untuk membiayai investasi pada perusahaan-perusahaan startup yang berpotensi tinggi. Konsep ini membuka pintu peluang yang menggiurkan, namun sekaligus memasukkan elemen risiko yang harus dihadapi. 
+
+S﻿alah satu daya tarik utama venture capital melakukan leverage adalah untuk mengoptimalkan potensi return yang akan mereka dapatkan dari suatu investasi. Bayangkan jika Anda dapat berinvestasi dalam lebih banyak startup atau memberikan tambahan modal bagi perusahaan portofolio Anda. Dengan leverage, skenario ini menjadi lebih mungkin.
+
+Sebagai contoh, dengan modal awal sebesar $1 juta dan penggunaan leverage yang cerdas, Anda dapat mengambil bagian dalam berbagai startup sekaligus. Jika salah satu dari mereka berkembang menjadi perusahaan besar, potensi pengembalian investasi Anda bisa sangat signifikan.
