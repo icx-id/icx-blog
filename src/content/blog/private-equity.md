@@ -1,7 +1,7 @@
 ---
 draft: true
 author: icx
-title: private equity
+title: "Private Equity: Peluang dan Risiko Investasi Lewat Private Equity"
 metaTitle: apa itu private equity
 metaDescription: private equity
 intro: Berikut akan dibahas lebih lanjut terkait apa itu private equity hingga
