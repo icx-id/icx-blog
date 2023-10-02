@@ -13,7 +13,7 @@ export const useKeuanganBlogArticlesQuery = () => {
               category: { eq: "keuangan" }
             }
           }
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { frontmatter: { date: DESC } }
         ) {
           edges {
             node {

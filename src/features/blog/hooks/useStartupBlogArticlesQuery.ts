@@ -13,7 +13,7 @@ export const useStartupBlogArticlesQuery = () => {
               category: { eq: "startup" }
             }
           }
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { frontmatter: { date: DESC } }
         ) {
           edges {
             node {

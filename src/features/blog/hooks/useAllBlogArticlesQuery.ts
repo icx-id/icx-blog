@@ -7,7 +7,7 @@ export const useAllBlogArticlesQuery = () => {
       query BlogArticles {
         allMarkdownRemark(
           filter: { frontmatter: { key: { eq: "blog-article" }, draft: { eq: false } } }
-          sort: { fields: [frontmatter___date], order: DESC }
+          sort: { frontmatter: { date: DESC } }
         ) {
           edges {
             node {
