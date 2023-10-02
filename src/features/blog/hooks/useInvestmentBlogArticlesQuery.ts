@@ -13,6 +13,7 @@ export const useInvestmentBlogArticlesQuery = () => {
               category: { eq: "investment" }
             }
           }
+          sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {
             node {

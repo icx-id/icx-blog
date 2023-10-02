@@ -9,9 +9,7 @@ export * from './components/detail/EventRegistrationData';
 export * from './components/detail/SuccessComponent';
 
 // api
-export * from './api/useGetEvent';
-export * from './api/useGetEvents';
-export * from './api/useRegisterEvent';
+export * from './api/useRegisterPublicEvent';
 
 // types
 export * from './types';

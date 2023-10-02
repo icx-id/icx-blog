@@ -7,6 +7,7 @@ import { TestimonySection } from './sections/TestimonySection';
 import { InvestmentSection } from './sections/InvestmentSection';
 import { InvestorSection } from './sections/InvestorSection';
 import { MediaSection } from './sections/MediaSection';
+import { ContactUsSection } from './sections/ContactUsSection';
 
 export const Home: React.FC<PageProps> = () => {
   const {
@@ -25,6 +26,7 @@ export const Home: React.FC<PageProps> = () => {
       <TestimonySection {...testimonySection} />
       <InvestmentSection {...investmentSection} />
       <InvestorSection {...investorSection} />
+      <ContactUsSection />
       <MediaSection {...mediaSection} />
     </>
   );

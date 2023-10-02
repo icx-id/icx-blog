@@ -17,6 +17,7 @@ export const useInvestasiBlogArticlesQuery = () => {
               category: { eq: "investasi" }
             }
           }
+          sort: { fields: [frontmatter___date], order: DESC }
         ) {
           edges {
             node {
