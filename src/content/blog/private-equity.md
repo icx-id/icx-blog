@@ -2,7 +2,7 @@
 draft: true
 author: icx
 title: "Private Equity: Peluang dan Risiko Investasi Lewat Private Equity"
-metaTitle: apa itu private equity
+metaTitle: Manfaat dan Risiko dalam Konsep Investasi Private Equity
 metaDescription: private equity
 intro: Berikut akan dibahas lebih lanjut terkait apa itu private equity hingga
   potensi private equity market.
