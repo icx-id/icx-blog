@@ -18,7 +18,7 @@ date: 2023-08-28T12:05:39.076Z
 category:
   - news
 featuredImage:
-  src: https://media.licdn.com/dms/image/D5622AQEkRrnSy_rIEw/feedshare-shrink_1280/0/1692594313594?e=1695859200&v=beta&t=untvojd7GQ9OdvKve2Lqnw3tfxTkReyzBNae0JcD_nw
+  src: https://media.licdn.com/dms/image/D5622AQGD4ZtaYIF0jQ/feedshare-shrink_2048_1536/0/1692167024513?e=1698883200&v=beta&t=qyJIO6jPPTP6i3b5LfymJxT273MJ0VZXYqrV6a4C1T4
   alt: "ICX EVENT "
   title: Investor connect event
 key: blog-article
