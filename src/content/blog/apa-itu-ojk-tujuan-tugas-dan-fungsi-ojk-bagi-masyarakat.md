@@ -13,20 +13,16 @@ date: 2023-08-18T08:09:11.832Z
 category:
   - investasi
 featuredImage:
-  src: https://elibrary.ojk.go.id/OJK/assets/frontend/images/logo-ojk.png
+  src: https://upload.wikimedia.org/wikipedia/commons/8/83/OJK_Logo.png
   alt: memahami apa itu ojk dan fungsinya
   title: memahami dengan baik peran dan tugas ojk
 key: blog-article
 ---
-<!--StartFragment-->
-
 Apa itu OJK? OJK adalah lembaga independen yang berperan menyelenggarakan sistem dan pengawasan terhadap seluruh kegiatan di sektor keuangan. Pengawasan yang dilakukan oleh OJK di sektor keuangan meliputi pasar modal, perbankan, hingga sektor Industri Keuangan Non Bank (IKNB) seperti asuransi, dana pensiun, lembaga pembiayaan, dan lembaga jasa keuangan.
 
 Hadirnya OJK sendiri memiliki peranan penting dalam kegiatan investasi. Ini karena OJK memiliki daftar perusahaan di sektor keuangan dan telah mengantongi izin OJK legalitasnya. Jadi jika Anda ingin melakukan investasi di suatu platform atau perusahaan, Anda terlebih dahulu dapat mengecek legalitas izinnya apakah sudah terdaftar di OJK atau belum. Jika sudah, maka seluruh kegiatan investasi kalian akan diawasi langsung oleh OJk dan dinilai lebih aman
 
 Mau tau lebih lanjut seputar apa itu OJK? Anda bisa mengikuti artikel ini. Karena kali ini kita akan membahas seputar OJK, mulai dari pengertian OJK, fungsi OJK, tugas OJK, hingga peranan penting OJK dalam investasi. 
-
-Jadi simak terus artikel ini!
 
 ## Apa Itu OJK?
 
