@@ -25,7 +25,7 @@ key: blog-article
 ---
 ## **The New Era of Startups Investing with ICX (Indonesia Crowdfunding Exchange) and Trihill Capital**
 
-Di tengah euforia pertumbuhan ekonomi yang terus berlanjut, investasi dalam dunia startup semakin menjadi incaran para investor. Pada tanggal 15 Agustus 2023, ICX Investor Connect menggelar acara bertajuk **"The New Era of Startups Investing"** bersama Trihill Capital yang membahas perkembangan **startups investing di Indonesia.** 
+Di tengah euforia pertumbuhan ekonomi yang terus berlanjut, investasi dalam dunia startup semakin menjadi incaran para investor. Pada tanggal 15 Agustus 2023, ICX Investor Connect menggelar acara bertajuk **"The New Era of Startups Investing"** bersama Trihill Capital yang membahas perkembangan **startups investing di Indonesia.**
 
 Romario Sumargo, CEO dari ICX bersama Valerianus Ian Sulaiman, VP of Investments dari Trihill Capital, membahas  bagaimana perubahan dan perkembangan investasi startup yang semakin diincar investor. 
 
