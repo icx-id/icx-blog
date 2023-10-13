@@ -69,10 +69,6 @@ export const sourceNodes: GatsbyNode['sourceNodes'] = async ({
 }) => {
   const events = await getEvents();
 
-  if (!events.length) {
-    throw new Error('cannot collect events data from endpoint');
-  }
-
   for (const event of events) {
     actions.createNode({
       ...event,
@@ -86,4 +82,44 @@ export const sourceNodes: GatsbyNode['sourceNodes'] = async ({
       },
     });
   }
+};
+
+export const createSchemaCustomization: GatsbyNode['createSchemaCustomization'] = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type Banner implements Node {
+      url: String
+      mediaType: String
+    }
+
+    type Speaker implements Node {
+      name: String
+      company: String
+      position: String
+      imageUrl: String
+    }
+
+    type Event implements Node {
+      id: String
+      eventId: Int
+      title: String
+      type: String
+      subtitle: String
+      description: String
+      onlineLink: String
+      coverImage: String
+      initialQuota: Int
+      remainingQuota: Int
+      startDate: Date
+      endDate: Date
+      location: String
+      mapLink: String
+      brochureLink: String
+      minimumUserInvestment: Int
+      participantRequirements: String
+      banners: Banner
+      speakers: Speaker
+    }
+  `;
+  createTypes(typeDefs);
 };
