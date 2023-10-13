@@ -8,7 +8,7 @@ metaDescription: Resesi ekonomi adalah kondisi suatu negara yang mengalami
 intro: Resesi ekonomi adalah kondisi yang sangat ditakuti oleh seluruh negara di
   dunia. Apa yang terjadi jika ancaman resesi ekonomi 2023 terealisasi? Lalu,
   apakah Indonesia akan terdampak? Pahami lengkapnya lewat akibat dampak resesi
-  ekonomi yuk!
+  ekonomi yuk!!
 date: 2023-01-31T03:05:14.843Z
 featuredImage:
   src: https://img.freepik.com/free-vector/global-business-downfall-with-falling-arrow-world-map_1017-37134.jpg?w=740&t=st=1660291439~exp=1660292039~hmac=99ca8001e72d21e5157c77e7bfcb95fc3a93b777cffd1b1e221b43608692832d
