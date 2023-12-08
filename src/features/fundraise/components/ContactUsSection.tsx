@@ -77,23 +77,24 @@ export const ContactUsSection: FC<ContactUsSectionProps> = ({ title, desc }) => 
               style={{ fontSize: 12 }}>
               Contact Us
             </Button>
-            <Button
-              onClick={() => navigate('/fundraise/start-fundraise')}
-              variant="outlined"
-              fullWidth={mobileScreen}
-              w={{ sm: 200 }}
-              h={40}
-              sx={{
-                fontSize: 12,
-                color: '#000',
-                border: '0.5px solid #000',
-                ':hover': {
-                  boxShadow: '0px 4px 30px #00b38270',
-                  transition: '300ms ease-in-out',
-                },
-              }}>
-              Start Raising
-            </Button>
+            <a href="https://penerbit.icx.id/" target="_blank" rel="noopener noreferrer">
+              <Button
+                variant="outlined"
+                fullWidth={mobileScreen}
+                w={{ sm: 200 }}
+                h={40}
+                sx={{
+                  fontSize: 12,
+                  color: '#000',
+                  border: '0.5px solid #000',
+                  ':hover': {
+                    boxShadow: '0px 4px 30px #00b38270',
+                    transition: '300ms ease-in-out',
+                  },
+                }}>
+                Start Raising
+              </Button>
+            </a>
           </Flex>
         </Container>
       </Flex>
