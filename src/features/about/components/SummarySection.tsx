@@ -136,19 +136,37 @@ export const SummarySection: React.FC<SummarySectionProps> = ({ onOpenVideo }) =
                 To The Businesses You Trust
               </Text>
             </Stack>
-            <Button
-              component="a"
-              href="/contact"
-              className={classes.buttonSize}
-              maw={115}
-              sx={{
-                backgroundColor: '#00C48F',
-                ':hover': {
-                  backgroundColor: '#02B082',
-                },
-              }}>
-              <Text fw={500}>Contact Us</Text>
-            </Button>
+            <Flex direction="row" gap={12}>
+              <Button
+                component="a"
+                href="/contact"
+                variant="filled"
+                w={{ sm: 200 }}
+                h={40}
+                sx={{
+                  fontSize: 12,
+                  color: '#fff',
+                }}>
+                Contact Us
+              </Button>
+              <a href="https://penerbit.icx.id/" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outlined"
+                  w={{ sm: 200 }}
+                  h={40}
+                  sx={{
+                    fontSize: 12,
+                    color: '#fff',
+                    border: '0.5px solid #fff',
+                    ':hover': {
+                      boxShadow: '0px 4px 30px #00b38270',
+                      transition: '300ms ease-in-out',
+                    },
+                  }}>
+                  Start Raising
+                </Button>
+              </a>
+            </Flex>
             <Grid fz="20px" mt="40px" align="center">
               <Grid.Col sm={12} md={5}>
                 <Text className={classes.subtitle} maw="550px">
