@@ -1,22 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: icx-landing-page
+ name: icx-blog
  namespace: production
  labels:
-   app: icx-landing-page
-spec:
+   app: icx-blog
  replicas: 1
  selector:
    matchLabels:
-     app: icx-landing-page
+     app: icx-blog
  template:
    metadata:
      labels:
-       app: icx-landing-page
+       app: icx-blog
    spec:
      containers:
-       - name: icx-landing-page
+       - name: icx-blog
          image: asia-southeast2-docker.pkg.dev/landx-id/icx-ar/icx-landing-page:latest
          envFrom:
             - secretRef:
@@ -27,41 +26,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: icx-landing-page-service
+  name: icx-blog-service
   namespace: production
   labels:
-    app: icx-landing-page
+    app: icx-blog
 spec:
   ports:
     - port: 80
       targetPort: 80
   selector:
-    app: icx-landing-page
-
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: icx-landing-page-ingress
-  namespace: production
-  labels:
-    app: icx-landing-page
-  annotations:
-    kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/rewrite-target: /
-status:
-  loadBalancer:
-    ingress:
-      - ip: 34.101.225.199
-spec:
-  rules:
-    - host: icx.id
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service: 
-                name: icx-landing-page-service
-                port:
-                  number: 80
+    app: icx-blog

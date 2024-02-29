@@ -12,7 +12,7 @@ env:
   GKE_ZONE: asia-southeast2   # TODO: update to cluster zone
   IMAGE_NAME: icx-landing-page 
   REPOSITORY: icx-ar # TODO: update to Artifact Registry docker repository
-  DEPLOYMENT_NAME: icx-landing-page
+  DEPLOYMENT_NAME: icx-blog
 
 jobs:
   setup-build-publish-deploy:
