@@ -64,8 +64,8 @@ Tentunya tidak hanya pemerintah yang mendukung potensi perkembangan pemanfaatan 
 
 Pendanaan startup AI yang diusung Google terhadap startup AI Indonesia diharapkan memperkuat ekosistem AI dan dapat berkembang pesat dalam 2 tahun. Untuk mendapatkan pendanaan ini, setiap perusahaan tentunya harus memenuhi persyaratan pendanaan, salah satunya yaitu menggunakan AI sebagai teknologi inti untuk mengembangkan produk utama dan telah berdiri selama 10 tahun.
 
-Pendanaan startup AI yang dilakukan Google nantinya akan dibagikan dalam bentuk Kredit Google Cloud dan dapat dimanfaatkan untuk penggunaan Google Cloud serta Firebase. Selain itu, tentunya startup AI Indonesia juga akan mendapatkan arahan seperti webinar dan akses bertanya langsung pada pihak Google selama pendanaan.
+Pendanaan startup AI yang dilakukan Google nantinya akan dibagikan dalam bentuk Kredit Google Cloud dan dapat dimanfaatkan untuk penggunaan Google Cloud serta Firebase. 
 
-
+Selain itu, tentunya startup AI Indonesia juga akan mendapatkan arahan seperti webinar dan akses bertanya langsung pada pihak Google selama pendanaan.
 
 <!--EndFragment-->
