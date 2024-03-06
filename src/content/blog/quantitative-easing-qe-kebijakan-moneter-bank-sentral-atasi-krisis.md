@@ -9,7 +9,7 @@ metaDescription: Quantitative easing adalah kebijakan untuk mendukung
 intro: Quantitative easing adalah kebijakan untuk mendukung perekonomian negara
   yang sedang dilanda krisis melalui peningkatan jumlah uang beredar. Bagaimana
   cara quantitative easing dan dampaknya? Yuk cari tahu lebih lanjut!
-isPinned: true
+isPinned: false
 date: 2023-08-01T06:38:43.576Z
 category:
   - ekonomi
@@ -97,6 +97,6 @@ Lembaga dan pemerintah selalu berupaya menjaga perekonomian Indonesia sebagai ba
 
 Oleh karena itu, penting bagi kita untuk mempersiapkan dana pribadi, seperti dana darurat, aset, dan investasi di sektor yang disarankan oleh para profesional. Mari kita siapkan keuangan kita sejak dini agar dapat bertahan dari kemungkinan resesi di masa depan.
 
-**[Yuk, segera siapkan investasi kita dari sekarang!](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)**
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)

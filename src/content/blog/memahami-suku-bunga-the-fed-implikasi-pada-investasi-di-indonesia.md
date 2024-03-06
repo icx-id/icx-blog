@@ -98,6 +98,6 @@ Karena itu, perlu diperhatikan apakah The Fed menaikkan suku bunganya karena kha
 
 Secara keseluruhan, suku bunga The Fed memainkan peran penting dalam menentukan arah investasi di Indonesia. Para investor di Indonesia harus memahami bagaimana perubahan suku bunga The Fed dapat mempengaruhi nilai tukar rupiah dan lingkungan ekonomi global, serta bagaimana faktor-faktor lokal seperti kondisi ekonomi dan keuangan juga mempengaruhi investasi di negara tersebut. Oleh sebab itu, dalam mengambil keputusan investasi investor  harus mempertimbangkan secara hati-hati faktor-faktor ini agar dapat meminimalkan risiko dan mencapai hasil yang optimal.
 
-**[UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/)**
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-![Pengaruh suku bunga The Fed terhadap investasi di Indonesia](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "Suku bunga The Fed dan investasi di Indonesia")
+![Pengaruh suku bunga The Fed terhadap investasi di Indonesia](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "Suku bunga The Fed dan investasi di Indonesia")

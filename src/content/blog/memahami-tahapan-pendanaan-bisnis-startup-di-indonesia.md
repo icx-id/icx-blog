@@ -11,7 +11,7 @@ intro: Tahap pendanaan merupakan salah satu faktor penting dalam memulai sebuah
   jangka panjang.
 date: 2023-07-26T07:35:30.823Z
 category:
-  - investasi
+  - startup
 featuredImage:
   src: https://images.unsplash.com/photo-1593510987760-2d895bc8109d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80
   alt: tahap pendanaan startup
@@ -39,8 +39,6 @@ Tahapan awal dalam memulai pendanaan startup melibatkan upaya founder untuk menc
 Ketika investor menunjukkan minat yang serius, sebuah presentasi formal akan diadakan untuk memperkenalkan visi dan potensi bisnis startup dalam jangka panjang. Dalam presentasi ini, detail bisnis yang komprehensif disajikan dengan penuh profesionalisme. Investor akan melakukan evaluasi matang sebelum memutuskan apakah mereka ingin menyuntikkan modal mereka ke dalam startup tersebut.
 
 Terdapat beberapa tahapan penting dalam perjalanan pendanaan startup, termasuk pengumpulan modal awal (raising seed capital), peningkatan pendanaan pada Seri A, Seri B, Seri C, serta tahapan strategi keluar (exit strategy). Setiap tahapan ini memiliki karakteristik dan persyaratan yang berbeda, yang akan dijabarkan secara lebih detail di bagian selanjutnya.
-
-
 
 ![Yuk pahami apa itu seed funding](https://lh5.googleusercontent.com/qG68gWcT-bSfQmpn6xyoWpHW3nm4LqhBEwLWE2QeAwrjd4e9y3BklBQKI3CgV4icDDSl25JrmJCcH7g1SMkPjTNS6wAhjTCDM8eUb8yMjPy9rDSc6H9JnCWcqDwod_84F9gYVVzkIXCMt-71czLGwDY "Memahami apa itu pendanaan startup untuk bisnis")
 
@@ -106,6 +104,6 @@ Melalui crowdfunding, founder  startup dapat mengakses modal yang lebih besar d
 
 Oleh sebab itu, sistem ini memberikan kesempatan bagi investor untuk berinvestasi dan memperluas peluang founder untuk mendapatkan pendanaan. Dengan strategi yang efektif, komunikasi yang baik, dan transparansi yang tinggi, crowdfunding dapat menjadi pilihan yang menarik untuk mendorong pertumbuhan bisnis startup di Indonesia.
 
-## [Unlocking Your Next Level Investment](https://icx.id/)
+## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/)**
 
-![](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)

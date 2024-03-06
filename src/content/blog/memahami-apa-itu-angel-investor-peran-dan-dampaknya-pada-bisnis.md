@@ -1,7 +1,7 @@
 ---
 draft: false
 author: Rafa Syawalia R
-title: "Memahami Apa Itu Angel Investor : Peran dan Dampaknya pada Bisnis"
+title: "Memahami Apa Itu Angel Investor: Peran dan Dampaknya pada Bisnis"
 metaTitle: "Mengenal Angel Investor: Mitra Strategis dalam Pengembangan Bisnis"
 metaDescription: Memahami potensi besar Angel Investor sebagai mitra strategis
   dalam pertumbuhan bisnis  serta memberikan dukungan finansial dan pengetahuan
@@ -97,6 +97,6 @@ Dalam membangun ekosistem angel investor yang kuat, penting bagi Indonesia untuk
 
 Oleh sebab itu, angel investor memiliki peran penting terhadap pertumbuhan inovasi-inovasi untuk mendorong pertumbuhan ekonomi Indonesia. 
 
-## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)**
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-![angel investor di indonesia](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "angel investor yang mendukung pertumbuhan perusahaan startup")
+![angel investor di indonesia](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "angel investor yang mendukung pertumbuhan perusahaan startup")

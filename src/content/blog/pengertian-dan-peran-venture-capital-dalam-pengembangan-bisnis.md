@@ -10,9 +10,9 @@ intro: Yuk pahami apa itu venture capital dan perannya terhadap pertumbuhan
   bisnis dan ekonomi suatu negara.
 date: 2023-07-26T08:03:15.859Z
 category:
-  - investasi
+  - investment
 featuredImage:
-  src: https://unsplash.com/photos/44QtHj3fZDY
+  src: https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
   alt: "Memehami apa itu venture capital dan peranya "
   title: Peran penting venture capital dalam pendanaan bisnis
 key: blog-article
@@ -81,4 +81,4 @@ Dengan memahami pentingnya komitmen finansial yang dibutuhkan dalam investasi ve
 
 ## **[UNLOCKING YOUR NEXT LEVEL INVESTMENT](https://icx.id/)**
 
-![berinvestasi lewat venture capital](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "venture capital untuk pendanaan bisnis")
+![berinvestasi lewat venture capital](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "venture capital untuk pendanaan bisnis")

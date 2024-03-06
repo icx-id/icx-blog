@@ -126,10 +126,6 @@ Sama seperti saham di pasar modal, saham di equity crowdfunding juga menawarkan 
 
 Selain membeli saham bisnis, kamu juga bisa menghitung potensi annual return dengan cara mendownload prospektus dari bisnis yang telah listing. Dalam dokumen prospektus, kamu akan mendapatkan informasi bisnis seputar latar belakang bisnis, laporan keuangan, hingga estimasi dividen yang akan didapat selama kurun waktu tertentu sehingga kamu bisa memperhitungkan return dari investasi yang anda lakukan. 
 
-K﻿arena itu, tunggu apalagi... 
+## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
-## Y﻿uk Mulai Tingkatkan Level Investasi Anda Sekarang...
-
-## [Unlocking Your Next Level Investment](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)

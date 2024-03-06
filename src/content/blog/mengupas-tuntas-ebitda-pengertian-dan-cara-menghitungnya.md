@@ -134,12 +134,8 @@ Investor bisa membeli saham project bisnis potensial dari beragam perusahaan yan
 
 Salah satu platform equity crowdfunding yang mempertemukan investor dengan pelaku usaha. Melalui platform ini, anda bisa menemukan berbagai bisnis potensial dan ikut patungan membangun bisnis tersebut. Sebagai return investor akan mendapatkan keuntungan berupa dividen sesuai dari kinerja bisnis. 
 
-K﻿arena itu, 
+## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
-## [Yuk Mulai Kembangkan Investasi Anda Sekarang....](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
-
-<!--StartFragment-->
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
 
 <!--EndFragment-->

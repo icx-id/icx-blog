@@ -1,8 +1,8 @@
 ---
 draft: false
 author: Rafa Syawalia R
-title: 'Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan'
-metaTitle: 'Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan'
+title: "Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan"
+metaTitle: "Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan"
 metaDescription: Akuisisi adalah tindakan penggabungan usaha yang dilakukan oleh
   salah satu perusahaan. Apa alasan dan tujuan akuisisi? Yuk simak!
 intro: Sebagian dari kamu, mungkin pernah mendengar akuisisi. Akuisisi adalah
@@ -13,11 +13,10 @@ category:
   - ekonomi
 featuredImage:
   src: https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2874&q=80
-  alt: 'Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan'
-  title: 'Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan'
+  alt: "Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan"
+  title: "Akuisisi Adalah: Apa Itu Akuisisi dalam Perusahaan? Alasan dan Tujuan"
 key: blog-article
 ---
-
 Istilah akuisisi sering sekali terdengar dalam hubungan bisnis dan juga terjadi antar 2 perusahaan. **Akuisisi adalah** kegiatan untuk memperoleh atau memiliki perusahaan atau aset perusahaan lain.
 
 Untuk perusahaan, kegiatan akuisisi bisa dijadikan salah satu strategi untuk pengembangan bisnis. Tidak sedikit juga, beberapa perusahaan rintisan yang baru berkembang pun sering kali mengakuisisi atau diakuisisi oleh perusahaan lain. Contoh, perusahaan kasir online Moka diakuisisi Gojek pada tahun 2020 lalu.
@@ -46,17 +45,17 @@ Penjelasan mengenai tujuan akuisisi yang dilakukan perusahaan sebagai strategi b
 
 ### Kelebihan akuisisi
 
-- **Meningkatkan skala ekonomi** pada sektor bisnis tertentu. Jika perusahaan melakukan akuisisi pada perusahaan yang berada dalam sektor yang sama, maka bahan serta stok akan tersedia, apalagi jika ketika nilai permintaan terhadap produk sedang tinggi. Dengan demikian, daya beli akan tinggi dan memungkinkan perusahaan dapat meningkatkan skala ekonominya.
-- **Meningkatnya kapasitas distribusi** dalam bisnis secara geografis. Dengan demikian, perusahaan dapat melebarkan distribusi produk atau layanannya lebih luas dan mendapatkan konsumen baru dan memperluas market share.
-- Dari kedua kelebihan akuisisi dibahas sebelumnya, dengan akuisisi perusahaan akan mendapatkan **lebih banyak sumber keuangan.**
+* **Meningkatkan skala ekonomi** pada sektor bisnis tertentu. Jika perusahaan melakukan akuisisi pada perusahaan yang berada dalam sektor yang sama, maka bahan serta stok akan tersedia, apalagi jika ketika nilai permintaan terhadap produk sedang tinggi. Dengan demikian, daya beli akan tinggi dan memungkinkan perusahaan dapat meningkatkan skala ekonominya.
+* **Meningkatnya kapasitas distribusi** dalam bisnis secara geografis. Dengan demikian, perusahaan dapat melebarkan distribusi produk atau layanannya lebih luas dan mendapatkan konsumen baru dan memperluas market share.
+* Dari kedua kelebihan akuisisi dibahas sebelumnya, dengan akuisisi perusahaan akan mendapatkan **lebih banyak sumber keuangan.**
 
 Akuisisi perusahaan berpotensi meningkatkan keuntungan, serta bisnis pun diharapkan dapat bertahan jangka panjang. Namun, adapun kekurangan dari penerapan strategi akuisisi, yaitu:
 
 ### Kekurangan akuisisi
 
-- **Hilangnya lapangan kerja** karena akan ada penumpukan atau terlalu banyak tenaga kerja dalam perusahaan. Penyesuaian dan restrukturisasi 2 perusahaan dapat berdampak pada penyesuaian gaji hingga menyebabkan pemotongan gaji.
-- Proses akuisisi perusahaan biasanya mengeluarkan **biaya dalam proses legalitasnya**. Hal tersebut dapat mengganggu proses produksi dan memungkinkan untuk hilangnya potensi dalam sektor tertentu.
-- **Memerlukan pengawasan dan penetapan sistem yang lebih baik** supaya perusahaan yang telah diakuisisi selaras dengan visi dan misi perusahaan yang melakukan akuisisi.
+* **Hilangnya lapangan kerja** karena akan ada penumpukan atau terlalu banyak tenaga kerja dalam perusahaan. Penyesuaian dan restrukturisasi 2 perusahaan dapat berdampak pada penyesuaian gaji hingga menyebabkan pemotongan gaji.
+* Proses akuisisi perusahaan biasanya mengeluarkan **biaya dalam proses legalitasnya**. Hal tersebut dapat mengganggu proses produksi dan memungkinkan untuk hilangnya potensi dalam sektor tertentu.
+* **Memerlukan pengawasan dan penetapan sistem yang lebih baik** supaya perusahaan yang telah diakuisisi selaras dengan visi dan misi perusahaan yang melakukan akuisisi.
 
 ## Jenis-jenis Akuisisi
 
@@ -96,10 +95,6 @@ Jenis terakhir ini merupakan jenis akuisisi dengan pengambilalihan kepemilikan p
 
 Perusahaan mesti melakukan pertimbangan dalam melakukan akuisisi dan memahami risiko yang mungkin akan ditimbulkan ketika melakukan proses akuisisi, perlunya meninjau kembali hubungan bisnis pada perusahaan yang akan diakuisisi sehingga dapat memperkecil munculnya masalah baru. Sehingga, perusahaan pun dapat mlancarkan strategi ekspansi bisnisnya.
 
-Tahukah Anda...
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-S﻿aat ini anda dapat berinvestasi ke berbagai bisnis potensial yang ingin melakukan ekspansi melalui sistem equity crowdfunding yang membantu mempertemukan investor dan bisnis yang butuh pendanaan. Melalui sistem ini, anda dapat berinvestasi ke berbagai bisnis potensial dan mendapatkan keuntungan berupa dividen sesuai dari kinerja bisnis yang anda danai.
-
-## Y﻿uk Mulai Kembangkan Investasi Anda Sekarang...
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)

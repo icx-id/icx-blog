@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --network-timeout 1000000000
 RUN yarn clean
 RUN yarn build
 

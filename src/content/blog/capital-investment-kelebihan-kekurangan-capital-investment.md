@@ -108,4 +108,4 @@ Dalam menjalankan bisnis, keputusan untuk melakukan capital investment adalah la
 
 ## [UNLOCKING NEXT LEVEL INVESTMENT](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "JENIS-JENIS CAPITAL INVESTMENT")
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "JENIS-JENIS CAPITAL INVESTMENT")

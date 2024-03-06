@@ -13,8 +13,7 @@ intro: Inflasi adalah naiknya harga barang dan jasa secara umum dan
   mendorong terjadinya krisis ekonomi.
 date: 2023-08-01T08:19:22.045Z
 category:
-  - ekonomi
-  - news
+  - investment
 featuredImage:
   src: https://images.unsplash.com/photo-1625605079052-e7fcb98994ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
   alt: "memahami macam-macam inflasi "
@@ -173,18 +172,6 @@ Sederhananya, mengalokasikan sebagian uang untuk berinvestasi, dana tersebut aka
 
 Seiring dengan peningkatan pendapatan dari investasi, semakin leluasa juga kamu dalam memiliki opsi untuk menabung, menyiapkan dana hari tua, atau kebutuhan lainnya.
 
-## Peluang Investasi dengan Skema Equity Crowdfunding
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-Tidak seperti dulu, sekarang instrumen investasi dapat diakses oleh siapa pun dan dimana pun. Dulu investasi identik dengan membutuhkan nominal alokasi dana besar untuk logam mulia, obligasi, properti, saham, atau deposito. Pada era terkini, terdapat opsi untuk investasi menjanjikan dengan modal minim misalnya reksa dana atau equity crowdfunding. 
-
-Misalnya, jika dulu investor hanya bisa membeli saham perusahaan besar (Tbk) di Bursa Efek Indonesia, saat ini badan usaha UMKM seperti CV, NV, Firma, dan lainnya juga dapat listing penawaran saham melalui skema securities crowdfunding (SCF) yang merupakan pengembangan skema Equity Crowdfunding (ECF).
-
-Equity crowdfunding pada dasarnya hanya menerbitkan efek berupa saham yang ditawarkan kepada investor guna pendanaan dan ekspansi bisnis. Sementara dalam securities crowdfunding, instrumen keuangan yang ditawarkan lebih beragam. Mulai dari saham, obligasi, hingga sukuk sehingga investor bisa diversifikasi profil risiko mereka.
-
-K﻿arena itu, instrumen ini bisa jadi pilihan anda untuk diversifikasi portofolio jangka panjang anda. 
-
-## [Yuk, segera siapkan investasi kita dari sekarang!](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
-
-## 
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)

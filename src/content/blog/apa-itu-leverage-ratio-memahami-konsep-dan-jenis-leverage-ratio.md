@@ -10,7 +10,7 @@ intro: Apa itu leverage? Leverage adalah pinjaman dana atau utang yang digunakan
   jenis-jenis leverage dan leverage ratio dalam artikel ini.
 date: 2023-08-09T09:04:54.398Z
 featuredImage:
-  src: blob:https://keen-mestorf-9781e3.netlify.app/67968981-cb5b-4052-9263-2067b9a14441
+  src: https://images.unsplash.com/photo-1616261167032-b16d2df8333b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80
   alt: "Apa itu Leverage: Leverage Ratio, Jenis-jenis Leverage"
   title: "Apa itu Leverage: Leverage Ratio Hingga Jenis-jenis Leverage"
 key: blog-article
@@ -199,6 +199,8 @@ Jika Anda memutuskan berinvestasi menggunakan leverage maka Anda harus mempertim
 
 Maka dari itu, kalau Anda masih bimbang untuk menggunakan leverage dalam berinvestasi karena resikonya tinggi dan prosesnya yang cukup rumit, Anda dapat mulai investasi dengan sistem equity crowdfunding yang memungkinkan anda memiliki berbagai saham dari berbagai bisnis potensial. 
 
-L﻿ewat sistem ini, anda sebagai investor anda mendaptkan keuntungan berupa dividen sesuai dengan kinerja bisnsi sehingga aset ini bisa jadi salah satu pilihan investasi jangka panjang anda. 
+L﻿ewat sistem ini, anda sebagai investor anda mendaptkan keuntungan berupa dividen sesuai dengan kinerja bisnis sehingga aset ini bisa jadi salah satu pilihan investasi jangka panjang anda.
 
-## Y﻿uk Mulai Kembangkan Portofolio Investasi Anda Sekarang
+## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
+
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)

@@ -13,20 +13,16 @@ date: 2023-08-18T08:09:11.832Z
 category:
   - investasi
 featuredImage:
-  src: https://elibrary.ojk.go.id/OJK/assets/frontend/images/logo-ojk.png
+  src: https://upload.wikimedia.org/wikipedia/commons/8/83/OJK_Logo.png
   alt: memahami apa itu ojk dan fungsinya
   title: memahami dengan baik peran dan tugas ojk
 key: blog-article
 ---
-<!--StartFragment-->
-
 Apa itu OJK? OJK adalah lembaga independen yang berperan menyelenggarakan sistem dan pengawasan terhadap seluruh kegiatan di sektor keuangan. Pengawasan yang dilakukan oleh OJK di sektor keuangan meliputi pasar modal, perbankan, hingga sektor Industri Keuangan Non Bank (IKNB) seperti asuransi, dana pensiun, lembaga pembiayaan, dan lembaga jasa keuangan.
 
 Hadirnya OJK sendiri memiliki peranan penting dalam kegiatan investasi. Ini karena OJK memiliki daftar perusahaan di sektor keuangan dan telah mengantongi izin OJK legalitasnya. Jadi jika Anda ingin melakukan investasi di suatu platform atau perusahaan, Anda terlebih dahulu dapat mengecek legalitas izinnya apakah sudah terdaftar di OJK atau belum. Jika sudah, maka seluruh kegiatan investasi kalian akan diawasi langsung oleh OJk dan dinilai lebih aman
 
 Mau tau lebih lanjut seputar apa itu OJK? Anda bisa mengikuti artikel ini. Karena kali ini kita akan membahas seputar OJK, mulai dari pengertian OJK, fungsi OJK, tugas OJK, hingga peranan penting OJK dalam investasi. 
-
-Jadi simak terus artikel ini!
 
 ## Apa Itu OJK?
 
@@ -170,18 +166,6 @@ Bagi calon investor yang ingin melakukan investasi dengan adanya OJK dapat menge
 
 Oleh karena itu, OJK sangat berperan penting dalam investasi. Karena dengan adanya OJK, kegiatan investasi akan selalu diawasi. Jadi investor dapat mengetahui bagaimana pergerakan uang mereka. Juga investor akan merasa aman bila telah mengetahui lembaga-lembaga mana yang telah terdaftar di OJK sehingga dapat terhindar dari segala macam penipuan.
 
-## Investasi Crowdfunding Aman Berizin OJK
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-Nah, kita telah membahas seputar OJK, mulai dari apa itu OJK, tujuan OJK, tugas OJK, hingga peranan OJK dalam investasi. Bagaimana? Sudah lebih tahu seputar OJK? 
-
-OJK memiliki peranan penting terhadap sektor keuangan baik dalam melakukan pengawasan atau penyelenggaraan sistem pengaturannya. Dengan adanya OJK aktivitas keuangan jauh lebih aman karena telah diawasi setiap harinya. Bahkan hadirnya OJK pun sangat berperan penting dalam investasi. Karena investasi yang sedang dijalankan jauh lebih aman karena adanya OJK. Salah satu investasi aman berizin OJK adalah Equity Crowdfuding.
-
-Equity crowdfunding adalah metode investasi melakukan pendanaan dengan skema patungan yang dilakukan oleh banyak investor. Nantinya para investor akan menanamkan dananya terhadap usaha yang sudah tersedia di platform equity crowdfunding. Kemudian, para investor tersebut berkesempatan mendapatkan potensi keuntungan berupa dividen sesuai kinerja dari bisnis anda.
-
-O﻿leh sebab itu, sistem ini bisa jadi pilihan instrumen untuk investasi jangka panjang anda.
-
-## Y﻿uk Mulai Kembangkan Investasi Jangka Panjang Anda Sekarang...
-
-
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg)

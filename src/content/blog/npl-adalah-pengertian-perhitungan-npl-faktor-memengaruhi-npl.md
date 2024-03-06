@@ -110,24 +110,14 @@ Kolektibilitas ini termasuk klasifikasi status pembayaran angsuran dan bunga kre
 
 Dari kelima status kolektibilitas tersebut, yang membedakan NPL dan loan at risk adalah dalam NPL termasuk dalam kolektibilitas 3 sampai 5, karena dikategorikan kredit bermasalah. Dengan demikian, loan at risk termasuk dalam kolektibilitas 1 sampai 2, bisa juga sampai tiga. Hal ini karena, loan at risk tidak hanya menghitung kredit bermasalah, namun kredit dalam status 2 dan 1 sebagai hasil restrukturisasi.
 
-## Potensi Keuntungan Lewat Equity Crowdfunding
+## Penutup
 
-Nah, kita telah membahas mengenai NPL serta faktor yang memengaruhi NPL dan rumus perhitungan NPL itu sendiri. Kepanjangan NPL merupakan **non performing loan** adalah kredit dengan kualitas yang diragukan, kurang lancar dan macet. Karena itu, rasio ini bisa menjadi salah satu cara memperkecil risiko anda dalam memilih investasi jangka panjang.
+Dalam dunia perbankan, pemahaman yang mendalam tentang Non Performing Loan (NPL) adalah kunci untuk menjaga stabilitas dan kinerja keuangan yang sehat. NPL bukan hanya sekadar istilah, melainkan sebuah indikator kritis yang mencerminkan kualitas kinerja bank. Dalam artikel ini, kita telah membahas secara menyeluruh mengenai pengertian, kategori, rumus perhitungan, dan faktor-faktor yang memengaruhi NPL.
 
-Dengan memilih investasi jangka panjang yang terdiversifikasi dengan baik, Anda dapat meningkatkan peluang keuntungan dan mengurangi risiko kerugian yang mungkin terjadi. Jangan ragu untuk mencari informasi lebih lanjut tentang opsi investasi ini dan mempertimbangkan untuk menjadi investor di pasar modal dengan cara yang aman dan terpercaya.
+Pentingnya pemahaman tentang NPL terletak pada kemampuan perbankan untuk mengukur risiko kredit, memitigasi kerugian, dan menjaga keseimbangan antara pendapatan dan pengeluaran. Dengan pemahaman yang tepat tentang NPL, perbankan dapat mengidentifikasi masalah kredit dengan cepat, merancang strategi restrukturisasi yang efektif, dan menjaga kinerja bank yang sehat.
 
-<!--StartFragment-->
+Oleh karena itu, dalam mengelola aset dan risiko kredit, serta dalam pengambilan keputusan bisnis yang bijaksana, pemahaman yang mendalam tentang NPL adalah suatu keharusan. Setiap pemangku kepentingan dalam dunia perbankan harus selalu berusaha untuk memahami konsep ini dengan baik agar dapat menghadapi tantangan dan peluang yang ada di masa depan.
 
-Equity crowdfunding bisa jadi pilihan instrumen investasi yang aman dan terpercaya bagi investor yang ingin melakukan diversifikasi portofolio dengan risiko yang terukur. Dalam equity crowdfunding, investor dapat berinvestasi di perusahaan-perusahaan yang telah melewati tahap screening dan seleksi ketat oleh platform crowdfunding yang terdaftar di Otoritas Jasa Keuangan (OJK). 
+## [T﻿EMUKAN INFORMASI INVESTASI DAN EKONOMI TERKINI DENGAN FOLLOW AKUN RESMI ICX DI INSTAGRAM](https://www.instagram.com/icx.id/)
 
-Selain itu, investor juga dilindungi oleh regulasi yang ada dan memiliki akses pada informasi mengenai perusahaan yang mereka investasikan. Dengan demikian, equity crowdfunding dapat menjadi salah satu pilihan investasi yang menarik dan aman bagi investor yang ingin mendiversifikasi portofolio mereka dengan risiko yang terkendali.
-
-K﻿arena itu, 
-
-## Yuk, Mulai Kembangkan Investasi Anda Sekarang...
-
-Ingin tahu bagaimana caranya? Anda dapat memulai dengan memilih investasi berisiko rendah melalui skema equity crowdfunding. Dalam skema ini, Anda bersama investor lainnya berkolaborasi dalam pendanaan untuk meraih keuntungan berupa dividen sesuai dengan porsi saham yang Anda tanamkan.
-
-Dengan dana yang telah diinvestasikan, bisnis yang Anda dukung akan memiliki peluang untuk tumbuh dan mengembangkan diri, bahkan melakukan ekspansi. Pada akhirnya, investasi Anda bisa menjadi suatu komitmen jangka panjang. Melalui platform equity crowdfunding seperti ICX, yang memiliki pengalaman dalam mendanai bisnis berpotensi serta memiliki reputasi terpercaya, Anda dapat memilih investasi dengan lebih percaya diri. Dengan kontribusi terbesar di Indonesia, ICX telah membuktikan diri sebagai pemimpin di bidangnya.
-
-![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](https://icx.id/img/snapinsta.app_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "investasi jangka panjang lewat equity crowdfunding")
+![CAPITAL INVESTMENT DALAM INVESTASI DAN BISNIS](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "investasi jangka panjang lewat equity crowdfunding")
