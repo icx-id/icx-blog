@@ -21,23 +21,8 @@ const BlogPage: React.FC<PageProps> = () => {
           backgroundPosition: mobileScreen ? 'right' : tabScreen ? '-1000px 0px' : '-500px 0px',
           height: '14rem',
           borderRadius: '0px',
-        }}>
-        <Container sx={{ height: '100%' }} size="ll">
-          <Box
-            sx={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              height: '100%',
-              paddingTop: '50px',
-            }}>
-            <Text color="#FFF" fz={mobileScreen ? 26 : 30} fw="bolder">
-              ICX Blog
-            </Text>
-          </Box>
-        </Container>
-      </Paper>
-
+        }}
+      />
       <BlogArticleListLayout />
     </Box>
   );

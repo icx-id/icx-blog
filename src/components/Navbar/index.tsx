@@ -149,7 +149,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
           height={isMobile ? 64 : 80}
           sx={{ borderBottom: 'initial', backgroundColor: 'initial' }}>
           <Group position="apart" sx={{ height: '100%' }}>
-            <Link to="/" style={{ color: 'initial', textDecoration: 'initial' }}>
+            <Link to="https://icx.id" style={{ color: 'initial', textDecoration: 'initial' }}>
               {isScrolled || isPathIncluded ? (
                 <StaticImage
                   src="../../images/icx-navbar-logo-dark.png"
@@ -180,9 +180,9 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                 </Link>
               ))}
             </Group>
-            {accessToken == null ? (
+            {/* {accessToken == null ? (
               <Group spacing={24} className={classes.hiddenMobile}>
-                {/* <Button
+                <Button
                   component="a"
                   href="/register"
                   variant="outline"
@@ -192,7 +192,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                     borderColor: isScrolled ? '#000' : '#fff',
                   }}>
                   <Text fw={500}>Sign Up</Text>
-                </Button> */}
+                </Button>
                 <Link to="/login" className={classes.unstyledLink}>
                   <Text
                     size={16}
@@ -238,7 +238,7 @@ export const Navbar: FC<PropsWithChildren & NavbarProps> = ({ navbarSolid = fals
                   <Menu.Item onClick={() => onLogout()}>Logout</Menu.Item>
                 </Menu.Dropdown>
               </Menu>
-            )}
+            )} */}
 
             <Menu
               width={260}
