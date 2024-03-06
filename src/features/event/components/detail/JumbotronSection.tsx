@@ -50,7 +50,7 @@ type JumbotronSectionProps = {
 //   'https://via.placeholder.com/600/e9b68',
 // ];
 
-export const JumbotronSection: FC<JumbotronSectionProps> = ({ banners }) => {
+export const JumbotronSection: FC<JumbotronSectionProps> = ({ banners = [] }) => {
   const { classes, theme } = useStyles();
 
   const [activeCarousel, setActiveCarousel] = useState<number>(0);
@@ -77,33 +77,37 @@ export const JumbotronSection: FC<JumbotronSectionProps> = ({ banners }) => {
                 mx="auto"
                 withControls={false}
                 onSlideChange={index => setActiveCarousel(index)}>
-                {banners.map((banner, index) => (
-                  <Carousel.Slide key={index} w="100%">
-                    <AspectRatio ratio={16 / 9} w="700px" maw="100vw">
-                      <Image src={banner.url} withPlaceholder />
-                    </AspectRatio>
-                  </Carousel.Slide>
-                ))}
+                {banners &&
+                  Array.isArray(banners) &&
+                  banners.map((banner, index) => (
+                    <Carousel.Slide key={index} w="100%">
+                      <AspectRatio ratio={16 / 9} w="700px" maw="100vw">
+                        <Image src={banner.url} withPlaceholder />
+                      </AspectRatio>
+                    </Carousel.Slide>
+                  ))}
               </Carousel>
             </Box>
           </Flex>
           <Group mt={{ base: 8, md: 16 }} spacing={8}>
-            {banners.map((_, index) => (
-              <Box
-                key={index}
-                sx={{
-                  width: 12,
-                  height: 12,
-                  borderRadius: '50%',
-                  border: `1px solid #00c48f`,
-                  backgroundColor: index === activeCarousel ? '#00c48f' : 'transparent',
-                  [theme.fn.smallerThan('xs')]: {
-                    width: 8,
-                    height: 8,
-                  },
-                }}
-              />
-            ))}
+            {banners &&
+              Array.isArray(banners) &&
+              banners.map((_, index) => (
+                <Box
+                  key={index}
+                  sx={{
+                    width: 12,
+                    height: 12,
+                    borderRadius: '50%',
+                    border: `1px solid #00c48f`,
+                    backgroundColor: index === activeCarousel ? '#00c48f' : 'transparent',
+                    [theme.fn.smallerThan('xs')]: {
+                      width: 8,
+                      height: 8,
+                    },
+                  }}
+                />
+              ))}
           </Group>
         </Stack>
       </MediaQuery>
