@@ -74,8 +74,7 @@ jobs:
 
     - name: Deploy Image to GKE cluster
       run: |-
-        ./kustomize edit set image asia-southeast2-docker.pkg.dev/landx-id/$REPOSITORY/$IMAGE_NAME:latest
-        ./kustomize build . | kubectl apply -f -
+        kubectl apply -f ./.github/script/deployment.yaml
         kubectl rollout restart deployment/$DEPLOYMENT_NAME -n production
         kubectl rollout status deployment/$DEPLOYMENT_NAME -n production
-        kubectl get services -o wide -n icx-staging
+        kubectl get services -o wide -n production
