@@ -5,3 +5,4 @@ export * from './useInvestasiBlogArticlesQuery';
 export * from './useKeuanganBlogArticlesQuery';
 export * from './useInvestmentBlogArticlesQuery';
 export * from './useStartupBlogArticlesQuery';
+export * from './useFAQBlogArticlesQuery';

@@ -15,6 +15,7 @@ import { NewsArticles } from './article-lists/NewsArticles';
 import { useMediaQuery } from '@mantine/hooks';
 import { InvestmentArticles } from './article-lists/InvestmentArticles';
 import { StartupArticles } from './article-lists/StartupArticles';
+import { FAQArticles } from './article-lists/FAQArticles';
 
 const useStyles = createStyles(theme => ({
   tab: {
@@ -43,6 +44,8 @@ export const BlogArticleListLayout = () => {
         return <StartupArticles />;
       case 'investment':
         return <InvestmentArticles />;
+      case 'FAQ':
+        return <FAQArticles />;
       default:
         return <AllArticles />;
     }
@@ -99,6 +102,9 @@ export const BlogArticleListLayout = () => {
               </Tabs.Tab>
               <Tabs.Tab className={classes.tab} value="investment">
                 Investment
+              </Tabs.Tab>
+              <Tabs.Tab className={classes.tab} value="FAQ">
+                FAQ
               </Tabs.Tab>
             </Tabs>
           </Grid.Col>
