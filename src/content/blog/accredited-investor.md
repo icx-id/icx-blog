@@ -1,7 +1,7 @@
 ---
 draft: true
 author: icx
-title: accredited investor
+title: Accredited Investor
 metaTitle: "Apa Itu Accredited Investor di Indonesia: Syarat, Cara,"
 metaDescription: "Apa Itu Accredited Investor di Indonesia: Syarat, Cara, dan Keuntungan "
 intro: "Apa Itu Accredited Investor di Indonesia: Syarat, Cara, dan Keuntungan "
