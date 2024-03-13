@@ -14,7 +14,7 @@ intro: >-
 
 
   Investor selaku Pemodal Dapat turut memiliki saham pada perusahaan-perusahaan holding yang listing di platform Indonesia Crowdfunding Indonesia.
-isPinned: false
+isPinned: true
 date: 2024-03-13T04:25:36.093Z
 category:
   - FAQ
