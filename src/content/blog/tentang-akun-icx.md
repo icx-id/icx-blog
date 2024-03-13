@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: ICX
 title: Tentang Akun ICX
 metaTitle: ICX - Securities Crowdfunding
