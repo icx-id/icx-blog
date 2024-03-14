@@ -19,7 +19,7 @@ date: 2024-03-13T06:16:56.723Z
 category:
   - FAQ
 featuredImage:
-  src: /img/events-banner-mobile.png
+  src: /img/rsz_345888006_1402056983669571_641072638675443244_n.jpg
   alt: icx
   title: icx
 key: blog-article
