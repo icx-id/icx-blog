@@ -31,8 +31,6 @@ Kelas menengah Indonesia, yang pada tahun 2019 berjumlah 57,33 juta orang, telah
 
 Penyusutan kelas menengah ini melemahkan konsumsi domestik, yang merupakan pilar penting bagi ketahanan ekonomi Indonesia.
 
-
-
 - - -
 
 # **Kenaikan Pajak yang Mencekik Dompet Kelas Menengah**
@@ -47,15 +45,11 @@ Rasio pajak Indonesia terhadap PDB masih tergolong rendah dibandingkan dengan ne
 
 Presiden dan Wakil Presiden terpilih, Prabowo-Gibran, memiliki target rasio pajak 11,2 hingga 12% untuk 2025, dan sebesar 23% dalam lima tahun ke depan, dimulai dengan pembentukan Badan Penerimaan Negara (BPN).
 
-
-
 ## **Bagaimana Kenaikan Ini Mempengaruhi Kelas Menengah?**
 
 Di satu sisi kenaikan tarif PPN dapat meningkatkan penerimaan negara dan meningkatkan rasio pajak, tetapi di sisi lain menjadi trade off terhadap inflasi harga komoditas, dengan demikian akan menurunkan daya beli masyarakat.
 
 Bagi warga kelas menengah yang sedang terhimpit, kenaikan harga barang dan jasa sekecil apa pun akan tetap mempengaruhi isi dompet dan mengurangi belanja. Ditambah dengan kenaikan harga barang, upah yang stagnan, dan tidak ada bantuan negara yang signifikan.
-
-
 
 - - -
 
@@ -75,8 +69,6 @@ Singkatnya, melemahnya permintaan barang dan jasa dari di masyarakat yang cender
 
 Apabila diteliti lebih lanjut, kenaikan upah yang kecil, efek suku bunga yang tinggi, lapangan pekerjaan yang terbatas, adanya wacana kenaikan PPN juga turut berperan dalam kondisi ini.
 
-
-
 ## Bagaimana Deflasi Mempengaruhi Kita?
 
 Salah satu dampak terbesar yang terjadi akibat deflasi adalah PHK. 
@@ -84,8 +76,6 @@ Salah satu dampak terbesar yang terjadi akibat deflasi adalah PHK. 
 Industri tentunya akan menurunkan tingkat produksi apabila situasi terus berlanjut, sehingga mengakibatkan PHK di mana-mana. Kementerian Ketenagakerjaan sendiri mencatat sebanyak 53.993 tenaga kerja terkena pemutusan hubungan kerja (PHK) per 1 Oktober 2024.
 
 Seiring berlanjutnya periode deflasi di Indonesia, pemerintah dan swasta harus bekerja-sama untuk menghidupkan kembali permintaan dan mencegah kemerosotan ekonomi yang berkepanjangan.
-
-
 
 - - -
 
@@ -117,8 +107,6 @@ Namun, dengan pendekatan yang tepat dan strategi yang terencana, karyawan dapat 
 
 Berikut adalah 3 strategi utama yang dapat Anda terapkan untuk menghadapi tantangan ekonomi.
 
-- - -
-
 ## 1. Master Your Money
 
 Kunci untuk bertahan dalam ekonomi yang sulit adalah memiliki kendali penuh atas kondisi keuangan pribadi. Manajemen keuangan yang baik memungkinkan Anda untuk menghadapi situasi mendesak tanpa harus terjebak dalam krisis keuangan.
@@ -134,8 +122,6 @@ Susun anggaran bulanan yang jelas dengan menempatkan kebutuhan pokok di priorita
 ### Fokus pada Pelunasan Hutang
 
 Jika Anda memiliki hutang dengan bunga tinggi, prioritaskan pelunasan hutang tersebut. Hindari mengambil hutang baru jika tidak benar-benar diperlukan. Mengelola hutang dengan bijaksana dapat mencegah kondisi keuangan yang semakin memburuk.
-
-
 
 ## 2. Skill Up and Link Up
 
@@ -229,8 +215,8 @@ Dengan perencanaan yang matang dan adaptasi yang cepat terhadap perubahan pasar,
 
 - - -
 
-#### Anda sudah mengetahui langkah-langkah agar tetap bisa staying afloat di tengah tantangan ekonomi, kini saatnya melindungi masa depan keuangan Anda. 
+Anda sudah mengetahui langkah-langkah agar tetap bisa staying afloat di tengah tantangan ekonomi, kini saatnya melindungi masa depan keuangan Anda. 
 
-#### Dengan ICX PASTI, dapatkan penghasilan melalui investasi berisiko rendah dan hasil yang lebih stabil. 
+Dengan ICX PASTI, dapatkan penghasilan melalui investasi berisiko rendah dan hasil yang lebih stabil. 
 
-### Cari tahu lebih lanjut [di sini](https://icx.id/icx-pasti)
+Cari tahu lebih lanjut [di sini](https://icx.id/icx-pasti)
