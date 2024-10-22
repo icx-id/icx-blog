@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: Gunawan Aldy
 title: "Staying Afloat: Indonesia’s Middle Class Faces Financial Pressures"
 metaTitle: Kelas Menengah Indonesia di Tengah Tekanan Finansial
