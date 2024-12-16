@@ -53,7 +53,7 @@ ICX menerapkan kebijakan Monthly Platform Fee yang akan dibebankan secara bulana
 3. **Nominal Urun Dana diatas Rp6.000.0000.000:**\
    Dikenakan biaya sebesar Rp15.000.000 per bulan. 
 
-***\*(*bahwa biaya ini tidak berlaku untuk Penerbitan Efek Bersifat Utang)**
+**Biaya Platform Bulanan tidak berlaku untuk Penerbitan Efek Bersifat Utang**
 
 **Biaya Manajemen *(Monthly Platform Fee)***
 
@@ -61,7 +61,7 @@ Biaya Manajemen *(Management Fee)* adalah biaya yang dibebankan oleh ICX sesuai 
 
 Perhitungan Biaya Manajemen diterapkan sebesar 2,5% dari jumlah Pendapatan Bersih bisnis *(Net Revenue).* Pendapatan Bersih atau *Net Revenue* telah termasuk ke dalam kategori pendapatan sebuah bisnis yang dikurangi oleh biaya diskon, retur, dan kewajiban pajak.
 
-***\*(*bahwa biaya ini tidak berlaku untuk Penerbitan Efek Bersifat Utang)**
+**Biaya Manajemen tidak berlaku untuk Penerbitan Efek Bersifat Utang**
 
 **Biaya KSEI**
 
