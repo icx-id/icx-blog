@@ -29,9 +29,11 @@ key: blog-article
 
 **Biaya Awal Administrasi Listing (Upfront fee)**
 
-Upfront fee  adalah biaya awal yang dikenakan oleh ICX dalam kerjasama untuk menawarkan listing kepada Pemodal. Upfront fee berlaku sebagai biaya yang akan dikenakan kepada pihak Penerbit setelah proyek usaha yang didaftarkan berhasil ditawarkan (listing) kepada pihak investor atau Pemodal.
+Upfront fee  adalah biaya awal yang dikenakan oleh ICX dalam kerjasama untuk menawarkan listing kepada Penerbit. Upfront fee berlaku sebagai biaya yang akan dikenakan kepada pihak Pemodal setelah proyek usaha yang didaftarkan berhasil ditawarkan (listing) kepada pihak investor atau Pemodal
 
 ICX menerapkan struktur Biaya Upfront (Upfront Fee) dengan beberapa kategori berikut:
+
+**EFEK BERSIFAT SAHAM**
 
 1. **Nominal Urun Dana Rp0-Rp3.000.0000.000:**\
    Dikenakan biaya sebesar 10% dari jumlah nominal urun dana.
@@ -39,6 +41,13 @@ ICX menerapkan struktur Biaya Upfront (Upfront Fee) dengan beberapa kategori ber
    Dikenakan biaya sebesar 7,5% dari jumlah nominal urun dana.
 3. **Nominal Urun Dana diatas Rp6.000.0000.000:**\
    Dikenakan biaya sebesar 5% dari jumlah nominal urun dana.
+
+**EFEK BERSIFAT UTANG**
+
+1. **Nominal Urun Dana Rp 0 - Rp 4.999.999.999,- (nol sampai lima miliar Rupiah):**\
+   Dikenakan biaya sebesar 2,5% (dua koma lima persen)
+2. **Nominal Urun Dana diatas Rp 5.000.000.000,- (lima miliar Rupiah):**\
+   Dikenakan biaya sebesar 3% (tiga persen).
 
 **Biaya Platform Bulanan *(Monthly Platform Fee)***
 
@@ -53,7 +62,7 @@ ICX menerapkan kebijakan Monthly Platform Fee yang akan dibebankan secara bulana
 3. **Nominal Urun Dana diatas Rp6.000.0000.000:**\
    Dikenakan biaya sebesar Rp15.000.000 per bulan. 
 
-**Biaya Platform Bulanan tidak berlaku untuk Penerbitan Efek Bersifat Utang**
+**\*Biaya Platform Bulanan tidak berlaku untuk Penerbitan Efek Bersifat Utang**
 
 **Biaya Manajemen *(Monthly Platform Fee)***
 
@@ -61,7 +70,7 @@ Biaya Manajemen *(Management Fee)* adalah biaya yang dibebankan oleh ICX sesuai 
 
 Perhitungan Biaya Manajemen diterapkan sebesar 2,5% dari jumlah Pendapatan Bersih bisnis *(Net Revenue).* Pendapatan Bersih atau *Net Revenue* telah termasuk ke dalam kategori pendapatan sebuah bisnis yang dikurangi oleh biaya diskon, retur, dan kewajiban pajak.
 
-**Biaya Manajemen tidak berlaku untuk Penerbitan Efek Bersifat Utang**
+**\*Biaya Manajemen tidak berlaku untuk Penerbitan Efek Bersifat Utang**
 
 **Biaya KSEI**
 
