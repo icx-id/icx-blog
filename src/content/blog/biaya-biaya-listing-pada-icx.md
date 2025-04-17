@@ -1,7 +1,7 @@
 ---
 draft: false
 author: ICX
-title: "**LIST BIAYA-BIAYA DI PLATFORM INDONESIA CROWDFUNDING EXCHANGE**"
+title: LIST BIAYA-BIAYA DI PLATFORM INDONESIA CROWDFUNDING EXCHANGE
 metaTitle: ICX - Securities Crowdfunding
 metaDescription: ICX merupakan platform Securities Crowdfunding yang berizin dan
   diawasi oleh Otoritas Jasa Keuangan (OJK).
