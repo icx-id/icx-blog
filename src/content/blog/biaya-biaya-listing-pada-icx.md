@@ -1,7 +1,7 @@
 ---
 draft: false
 author: ICX
-title: LIST BIAYA-BIAYA DI PLATFORM INDONESIA CROWDFUNDING EXCHANGE
+title: List biaya-biaya di platform Indonesia Crowdfunding Exchange
 metaTitle: ICX - Securities Crowdfunding
 metaDescription: ICX merupakan platform Securities Crowdfunding yang berizin dan
   diawasi oleh Otoritas Jasa Keuangan (OJK).
@@ -37,7 +37,7 @@ key: blog-article
 
    1. **Nominal Urun Dana Rp0-Rp2.999.999.999:**\
       Dikenakan biaya sebesar 10% dari jumlah nominal urun dana.
-   2. **Nominal Urun Dana Rp3.000.0000.000-Rp5.999.999:**\
+   2. **Nominal Urun Dana Rp3.000.0000.000-Rp5.999.999.999:**\
       Dikenakan biaya sebesar 7,5% dari jumlah nominal urun dana.
    3. **Nominal Urun Dana diatas Rp6.000.0000.000:**\
       Dikenakan biaya sebesar 5% dari jumlah nominal urun dana.
