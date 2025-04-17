@@ -141,5 +141,3 @@ key: blog-article
 
    1. Untuk nominal <100 juta maka akan dikenakan biaya SKN yaitu IDR 2.900
    2. Untuk nominal >100 juta maka akan dikenakan biaya RTGS yaitu IDR 30.000
-
-   Kebijakan terkait biaya-biaya ini agar dapat dijadikan landasan untuk standar operasional atau perjanjian-perjanjian yang dibuat oleh masing-masing departemen dan dapat dilaksanakan sebagaimana mestinya. Kebijakan biaya-biaya ini berlaku terhitung mulai tanggal ditetapkan.
