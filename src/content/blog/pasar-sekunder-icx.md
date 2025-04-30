@@ -121,18 +121,15 @@ Fee withdraw sebesar Rp 5.000 
 **6. Apa itu Order Book?**\
 Order Book adalah tampilan pesanan pesanan yang menayangkan harga per unit saham. Di dalam order book terdapat list penawaran (unit saham yang akan dijual) dan permintaan (unit saham yang akan dibeli)
 
-\*\*\
-
-7. Apa itu Unit?\*\*\
-   Unit merupakan satuan resmi yang digunakan dalam kegiatan penjualan atau pembelian saham
+**7. Apa itu Unit?**\
+Unit merupakan satuan resmi yang digunakan dalam kegiatan penjualan atau pembelian saham
 
 **8. Apa itu Periode Dividen?**\
 Periode Dividen adalah bagian dari laba bersih perusahaan dan dibagikan kepada para pemegang saham dalam periode waktu tertentu\
 \
 **9. Kenapa order beli/jual saya tidak tereksekusi secara langsung?** 
 
-Berikut beberapa penjelasan yang mempengaruhi apabila  transaksi beli/jual Anda tidak tereksekusi secara langsung:\
-\
+Berikut beberapa penjelasan yang mempengaruhi apabila  transaksi beli/jual Anda tidak tereksekusi secara langsung:
 
 1. Unit Saham yang akan Anda beli/jual belum match secara harga dengan penjual atau pembeli
 
@@ -152,11 +149,9 @@ Order jual/beli unit saham Anda akan berhasil hingga jumlah atau harga yang Anda
 \
 *Kami sarankan untuk menetapkan harga yang masuk akal dan memungkinkan untuk dijangkau oleh market. Anda juga bisa menetapkan harga sesuai harga wajar per unit yang ICX sediakan.
 
-\*\*\
+**11. Kenapa saya tidak bisa menetapkan harga per unit saham yang ingin saya jual/beli lebih besar atau kecil?**Perlu Anda ketahui bahwa ICX mempunyai kebijakan untuk mengatur batas atas dan batas bawah sebesar 10%  untuk menghindari adanya manipulasi harga saham oleh pihak tertentu
 
-11. Kenapa saya tidak bisa menetapkan harga per unit saham yang ingin saya jual/beli lebih besar atau kecil?**\
-    Perlu Anda ketahui bahwa ICX mempunyai kebijakan untuk mengatur batas atas dan batas bawah sebesar 10%  untuk menghindari adanya manipulasi harga saham oleh pihak tertentu**12. Apakah saya bisa membatalkan order jual/beli yang saya buat?**\
-    Anda bisa membatalkan order jual/beli dengan mengakses gambar icon \[*]** “Detail Pemesanan”*Perlu Anda ketahui bahwa pembatalan order jual/beli unit saham ini hanya berlaku bagi yang order jual/belinya belum berhasil. Jika order jual/beli yang Anda lakukan sudah match maka secara sistem tidak bisa dibatalkan.
+**12. Apakah saya bisa membatalkan order jual/beli yang saya buat?**Anda bisa membatalkan order jual/beli dengan mengakses gambar icon \[\*] “Detail Pemesanan”\*Perlu Anda ketahui bahwa pembatalan order jual/beli unit saham ini hanya berlaku bagi yang order jual/belinya belum berhasil. Jika order jual/beli yang Anda lakukan sudah match maka secara sistem tidak bisa dibatalkan.
 
 **13.  Apakah Investor dikenakan biaya untuk transaksi di Pasar Sekunder?**\
 Fee hanya dibebankan untuk transaksi “jual” dan “beli”. Adapun fee yang dikenakan adalah sebesar 1% per transaksi untuk user yang jual dan 0,5% per transaksi untuk user yang beli
@@ -168,7 +163,5 @@ proyek saham yang diperdagangkan di Pasar Sekunder adalah proyek yang sudah terl
 **15. Berapa lama Pasar Sekunder ini berlangsung?**\
 Pasar Sekunder akan berlangsung selama 10 hari dan akan dibuka pada setiap jam kerja (Senin s/d Jumat mulai dari jam 09.00 s/d 16.00 WIB).
 
-\
-**16. Apa itu Estimasi Biaya Transaksi**
-
+**16. Apa itu Estimasi Biaya Transaksi**\
 Estimasi biaya transaksi adalah perkiraan biaya untuk Investor sebesar 1% dari jumlah unit yang akan dijual dan 0,5% dari jumlah unit yang akan dibeli dari setiap penawaran yang berhasil
