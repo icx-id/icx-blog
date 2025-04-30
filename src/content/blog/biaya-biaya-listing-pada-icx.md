@@ -127,11 +127,15 @@ key: blog-article
 
    PEMBELI
 
-   Pembeli dikenakan biaya transaksi atas pembelian efek saham di Pasar Sekunder sebesar 0,1% dari total jumlah saham yang akan dibeli
+   Pembeli dikenakan biaya transaksi atas pembelian efek saham di Pasar Sekunder sebesar 0,5% dari total jumlah saham yang akan dibeli
 
    PENJUAL
 
-   Penjual dikenakan biaya transaksi atas penjualan efek saham di Pasar Sekunder sebesar 0,5% dari total jumlah saham yang akan dijual
+   Penjual dikenakan biaya transaksi atas penjualan efek saham di Pasar Sekunder sebesar 1% dari total jumlah saham yang akan dijual
+
+   **Biaya Pembelian Saham Ketika Penawaran Perdana**
+
+   Biaya ini hanya berlaku untuk pembelian efek saham ketika penawaran perdana yaitu sebesar 0,2% dari total investasi Pemodal.
 
    **Biaya Withdraw**
 
