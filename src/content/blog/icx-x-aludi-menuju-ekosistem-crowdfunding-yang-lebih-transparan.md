@@ -1,12 +1,14 @@
 ---
 draft: false
-author: ICX TEAM
+author: ICX
 title: "ICX x ALUDI: Menuju Ekosistem Crowdfunding yang Lebih Transparan"
 metaTitle: "ICX x ALUDI: Menuju Ekosistem Crowdfunding yang Lebih Transparan"
 metaDescription: "ICX x ALUDI: Menuju Ekosistem Crowdfunding yang Lebih Transparan"
 intro: "ICX x ALUDI: Menuju Ekosistem Crowdfunding yang Lebih Transparan"
 isPinned: true
 date: 2025-06-03T10:07:01.635Z
+category:
+  - ICX News
 featuredImage:
   src: /img/icx.jfif
   alt: CEO ICX bersama Jajaran Pengurus ALUDI
