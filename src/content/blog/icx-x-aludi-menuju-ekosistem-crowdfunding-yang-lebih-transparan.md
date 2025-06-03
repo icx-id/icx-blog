@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: ICX TEAM
 title: "ICX x ALUDI: Menuju Ekosistem Crowdfunding yang Lebih Transparan"
 metaTitle: "ICX x ALUDI: Menuju Ekosistem Crowdfunding yang Lebih Transparan"
