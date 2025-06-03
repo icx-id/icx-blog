@@ -16,7 +16,7 @@ featuredImage:
   title: CEO ICX bersama Jajaran Pengurus ALUDI
 key: blog-article
 ---
-P﻿ada hari Selasa, tanggal 3 Juni 2025, ICX berkesampatan untuk berdiskusi langsung dengan jajaran Pengurus ALUDI terkait langkah integrasi catatan hitam penerbit yang tidak memenuhi kepatuhan terhadap penyelenggara maupun standar industri.\
+P﻿ada hari Selasa, tanggal 3 Juni 2025, ICX berkesempatan untuk berdiskusi langsung dengan jajaran Pengurus ALUDI terkait langkah integrasi catatan hitam penerbit yang tidak memenuhi kepatuhan terhadap penyelenggara maupun standar industri.\
 \
 Pertemuan ini membahas proses lanjutan dalam mendukung inisiatif PUSDALUD (Pusat Data Layanan Urun Dana), sebuah program yang telah diinisiasi oleh Ketua Umum ALUDI sejak 2023. Tujuannya jelas: membangun ekosistem securities crowdfunding yang lebih kredibel, transparan, dan terintegrasi.\
 \
