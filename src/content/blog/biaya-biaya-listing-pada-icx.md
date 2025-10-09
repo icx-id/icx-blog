@@ -135,7 +135,7 @@ key: blog-article
 
    **Biaya Pembelian Efek Saham dan Utang Ketika Penawaran Perdana**
 
-   Biaya ini hanya berlaku untuk pembelian efek saham ketika penawaran perdana yaitu sebesar 0,2% dari total investasi Pemodal.
+   Biaya ini hanya berlaku untuk pembelian efek saham dan utang ketika penawaran perdana yaitu sebesar 0,2% dari total investasi Pemodal.
 
    **Biaya Withdraw**
 
