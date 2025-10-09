@@ -133,7 +133,7 @@ key: blog-article
 
    Penjual dikenakan biaya transaksi atas penjualan efek saham di Pasar Sekunder sebesar 1% dari total jumlah saham yang akan dijual
 
-   **Biaya Pembelian Saham Ketika Penawaran Perdana**
+   **Biaya Pembelian Efek Saham dan Utang Ketika Penawaran Perdana**
 
    Biaya ini hanya berlaku untuk pembelian efek saham ketika penawaran perdana yaitu sebesar 0,2% dari total investasi Pemodal.
 
