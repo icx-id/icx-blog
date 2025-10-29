@@ -62,7 +62,7 @@ content: >-
 
   | 1   | Customer Service Melalui Telepon  | Telepon: (021) 2245-5061 | Jam beroperasi 09.00 WIB – 17.00 WIB (Waktu untuk melakukan trading)                          |
 
-  | 2   | Customer Service Melalui Email    | Email: hello@landx.id    | Email akan dibalas dalam waktu minimal 2 x 24 jam kerja bergantung dari tingkat permasalahan. |
+  | 2   | Customer Service Melalui Email    | Email: hello@icx.id    | Email akan dibalas dalam waktu minimal 2 x 24 jam kerja bergantung dari tingkat permasalahan. |
 
   | 3   | Customer Service Melalui Whatsapp | WA: +62 813-8186-2878    | Jam beroperasi 09.00 WIB – 17.00 WIB (Waktu untuk melakukan trading)                          |
 

@@ -9,9 +9,9 @@ subtitleRight: That’s why we strive to offer the best investment apps and tool
 banner: /img/about-banner.png
 ourStories:
   - year: 2020
-    description: Indonesia Crowdfunding Exchange formerly known as LandX is a
+    description: Indonesia Crowdfunding Exchange formerly known as ICX is a
       securities crowdfunding platform that connects founders and investors.
   - year: 2021
-    description: Indonesia Crowdfunding Exchange formerly known as LandX is a
+    description: Indonesia Crowdfunding Exchange formerly known as ICX is a
       securities crowdfunding platform that connects founders and investors.
 ---

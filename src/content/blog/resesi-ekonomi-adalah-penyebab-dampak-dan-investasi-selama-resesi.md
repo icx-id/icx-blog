@@ -1,7 +1,7 @@
 ---
 draft: false
 author: Della Octavilia
-title: "Resesi Ekonomi Adalah: Penyebab, Dampak, dan Investasi Selama Resesi"
+title: 'Resesi Ekonomi Adalah: Penyebab, Dampak, dan Investasi Selama Resesi'
 metaTitle: Resesi Ekonomi 2023, Mungkinkah Indonesia Terdampak?
 metaDescription: Resesi ekonomi adalah kondisi suatu negara yang mengalami
   penurunan aktivitas ekonomi dalam waktu berbulan-bulan hingga bertahun-tahun.
@@ -16,6 +16,7 @@ featuredImage:
   title: Memahami dampak dan tips investasi untuk menghadapi investasi
 key: blog-article
 ---
+
 Seluruh negara di dunia, termasuk Indonesia, mengalami resesi ekonomi. Resesi ekonomi didefinisikan sebagai penurunan yang signifikan dalam aktivitas ekonomi dalam jangka waktu yang lama, yang dapat berlangsung dari berbulan-bulan hingga bertahun-tahun.
 
 Saat ini, banyak negara di seluruh dunia menghadapi ancaman resesi global. Ini adalah hasil dari pandemi COVID-19 yang berhasil menghentikan pertumbuhan ekonomi global. Banyak industri terkena dampak resesi secara keseluruhan; salah satu yang paling rentan mengalami penurunan selama resesi adalah perekonomian.
@@ -44,7 +45,7 @@ Faktor resesi ekonomi dapat disebabkan oleh hal-hal yang mungkin sudah tidak asi
 
 ### 1. Inflasi
 
-Faktor pertama penyebab resesi ekonomi adalah inflasi. Pasti Anda sudah tidak asing dengan istilah satu ini kan? Inflasi adalah suatu kondisi di mana terjadinya kenaikan pada harga barang dan jasa pada periode tertentu karena terlalu banyak uang yang beredar di masyarakat. 
+Faktor pertama penyebab resesi ekonomi adalah inflasi. Pasti Anda sudah tidak asing dengan istilah satu ini kan? Inflasi adalah suatu kondisi di mana terjadinya kenaikan pada harga barang dan jasa pada periode tertentu karena terlalu banyak uang yang beredar di masyarakat.
 
 Jika suatu negara mengalami inflasi yang tinggi, hal ini akan membuat daya beli masyarakat menurun atau melemah. Di lain sisi hal ini juga menyebabkan produksi barang dan jasa mengalami penurunan.
 
@@ -64,7 +65,7 @@ Guncangan ekonomi terjadi seperti yang kita rasakan saat ini yaitu akibat dari P
 
 ### 4. Tingginya Suku Bunga
 
-Faktor keempat penyebab resesi ekonomi adalah tingginya suku bunga. Kondisi ini terjadi saat negara mengalami inflasi dan membuat bank sentral harus menaikkan suku bunganya. Sebenarnya menaikkan suku bunga berfungsi untuk melindungi nilai mata uang. Namun kondisi ini diperparah dengan melemahnya daya beli masyarakat yang malah akan menjadi penyebab resesi. 
+Faktor keempat penyebab resesi ekonomi adalah tingginya suku bunga. Kondisi ini terjadi saat negara mengalami inflasi dan membuat bank sentral harus menaikkan suku bunganya. Sebenarnya menaikkan suku bunga berfungsi untuk melindungi nilai mata uang. Namun kondisi ini diperparah dengan melemahnya daya beli masyarakat yang malah akan menjadi penyebab resesi.
 
 ### 5. Gelembung Aset Pecah (Asset Bubble)
 
@@ -84,7 +85,7 @@ Berikut ini ciri-ciri resesi ekonomi adalah sebagai berikut:
 
 ### 1. Turunnya Lapangan Pekerjaan
 
-Ciri-ciri pertama resesi ekonomi adalah turunnya lapangan pekerjaan. Kalian pasti akhir-akhir ini kerap mendengar banyak perusahaan yang melakukan pengurangan karyawannya secara besar-besaran kan? 
+Ciri-ciri pertama resesi ekonomi adalah turunnya lapangan pekerjaan. Kalian pasti akhir-akhir ini kerap mendengar banyak perusahaan yang melakukan pengurangan karyawannya secara besar-besaran kan?
 
 Ketika lapangan kerja semakin berkurang, maka secara otomatis jumlah pengangguran akan terus bertambah dan selanjutnya membuat perekonomian negara melemah. Jika hal ini terjadi bisa saja nantinya akan meningkatkan angka kriminalitas. Dengan begitu negara dapat kehilangan rasa kepercayaan dari investor yang ingin menanamkan modalnya, sehingga membuat negara menuju jurang resesi ekonomi.
 
@@ -98,7 +99,7 @@ Jika suatu negara mengalami kondisi impor lebih besar dibanding ekspor, ini pert
 
 ### 4. Jumlah Produksi dan Konsumsi Tidak Seimbang
 
-Jika jumlah produksi dan konsumsi tidak seimbang bisa mendatangkan resesi bagi suatu negara. Jika jumlah produksi jauh lebih banyak dibanding konsumsi, maka akan terjadi penumpukan stok barang. Namun jika jumlah konsumsi lebih banyak dibanding produksi, maka akan mendorong terjadinya impor yang besar. 
+Jika jumlah produksi dan konsumsi tidak seimbang bisa mendatangkan resesi bagi suatu negara. Jika jumlah produksi jauh lebih banyak dibanding konsumsi, maka akan terjadi penumpukan stok barang. Namun jika jumlah konsumsi lebih banyak dibanding produksi, maka akan mendorong terjadinya impor yang besar.
 
 Jika jumlah produksi dan konsumsi tidak seimbang terus-menerus, hal ini akan berdampak pada pengeluaran yang membengkak dan laba perusahaan dalam negeri pun berkurang alias menipis. Kondisi ini tentunya akan menjadi pemicu terjadinya resesi ekonomi.
 
@@ -116,13 +117,13 @@ Ketika pendapatan negara kian merosot, pemerintah terus dituntut untuk menciptak
 
 ### 2. Dampak Resesi Bagi Perusahaan
 
-Selain bagi pemerintah, selanjutnya dari dampak resesi adalah terjadi pada perusahaan. Ketika terjadi resesi ekonomi Indonesia, maka daya beli masyarakat akan terus menurun yang mengakibatkan pendapatan perusahaan pun terus menurun. 
+Selain bagi pemerintah, selanjutnya dari dampak resesi adalah terjadi pada perusahaan. Ketika terjadi resesi ekonomi Indonesia, maka daya beli masyarakat akan terus menurun yang mengakibatkan pendapatan perusahaan pun terus menurun.
 
 Jika kondisi ini terus terjadi, maka akan mengancam arus kas perusahaan. Perusahaan pun akan menutup area bisnis yang kurang menguntungkan hingga memotong biaya operasional.
 
 ### 3. Dampak Resesi Bagi Pekerja
 
-Pihak lain yang terkena dampak resesi ekonomi adalah pekerja. Saat negara terkena resesi maka banyak perusahaan akan memotong biaya operasional hingga mengurangi jumlah karyawannya. Hal ini menyebabkan banyak pekerja yang kehilangan pekerjaannya. 
+Pihak lain yang terkena dampak resesi ekonomi adalah pekerja. Saat negara terkena resesi maka banyak perusahaan akan memotong biaya operasional hingga mengurangi jumlah karyawannya. Hal ini menyebabkan banyak pekerja yang kehilangan pekerjaannya.
 
 Padahal para pekerja yang terkena PHK ini terus dituntut untuk memenuhi kebutuhan sehari-harinya di tengah resesi ekonomi. Di lain sisi, bagi pekerja yang tidak terkena PHK juga masih terkena dampak dari resesi ekonomi. Para pekerja ini akan terkena potongan upah dan hak kerja lainnya di tengah kondisi resesi ekonomi Indonesia.
 
@@ -158,21 +159,21 @@ Salah satu cara mengatasi resesi ekonomi adalah mengembalikan kepercayaan invest
 
 ### 2. Bantuan Usaha Mikro Kecil Menengah (UMKM)
 
-UMKM merupakan salah satu sektor yang terkena dampak dari resesi ekonomi Indonesia. Namun saat terjadi resesi ekonomi usaha ini dinilai memiliki daya tahan yang lebih baik daripada perusahaan besar karena lingkupnya yang kecil. 
+UMKM merupakan salah satu sektor yang terkena dampak dari resesi ekonomi Indonesia. Namun saat terjadi resesi ekonomi usaha ini dinilai memiliki daya tahan yang lebih baik daripada perusahaan besar karena lingkupnya yang kecil.
 
 Oleh karena itu pemerintah dapat memberikan bantuan terhadap UMKM agar kegiatannya terus berjalan di tengah kondisi resesi ekonomi.
 
 ### 3. Belanja Besar-besaran
 
-Cara mengatasi resesi ekonomi ketiga adalah memperkuat daya beli melalui belanja besar-besaran. Pemerintah dapat merencanakan belanja besar-besaran untuk menghadapi ancaman resesi sehingga permintaan dalam negeri pun kian meningkat dan dunia usaha tergerak untuk berinvestasi. 
+Cara mengatasi resesi ekonomi ketiga adalah memperkuat daya beli melalui belanja besar-besaran. Pemerintah dapat merencanakan belanja besar-besaran untuk menghadapi ancaman resesi sehingga permintaan dalam negeri pun kian meningkat dan dunia usaha tergerak untuk berinvestasi.
 
 ## Kebijakan Selama Resesi dari Pemerintah
 
-Jika membicarakan kebijakan selama resesi ekonomi dari pemerintah apakah pernah dilaksanakan di Indonesia? Apakah Indonesia pernah berada di tengah kondisi resesi ekonomi? 
+Jika membicarakan kebijakan selama resesi ekonomi dari pemerintah apakah pernah dilaksanakan di Indonesia? Apakah Indonesia pernah berada di tengah kondisi resesi ekonomi?
 
 Jawabannya untuk keduanya adalah ya. Indonesia pernah berada di tengah kondisi resesi ekonomi dan pemerintah telah melakukan beberapa kebijakan selama resesi ekonomi.
 
-Indonesia pernah berada di tengah ancaman kondisi resesi ekonomi saat wabah Covid-19 sedang merebah di seluruh dunia. Dengan kondisi Covid-19 yang sedang tinggi-tingginya berhasil membuat kondisi ekonomi Indonesia bahkan dunia mengalami kolaps. 
+Indonesia pernah berada di tengah ancaman kondisi resesi ekonomi saat wabah Covid-19 sedang merebah di seluruh dunia. Dengan kondisi Covid-19 yang sedang tinggi-tingginya berhasil membuat kondisi ekonomi Indonesia bahkan dunia mengalami kolaps.
 
 Hal ini membuat beberapa negara di dunia yang perekonomiannya kolaps terkena resesi ekonomi. Bahkan, Indonesia sejak tahun 2020 diprediksi akan mengalami resesi ekonomi.
 
@@ -190,7 +191,7 @@ Selama Pandemi Covid-19 pemerintah Indonesia juga mendorong produktivitas sektor
 
 ### 3. Menjaga Agar Defisit Anggaran Dapat Terjaga
 
-Nah, dengan kebijakan yang dilakukan pemerintah sebelumnya, dengan melakukan skema bantuan sosial, dan mendorong produktivitas sektor pangan, pemerintah juga wajib menjaga agar defisit anggaran tetap terjaga akibat belanja yang dilakukan secara besar-besaran. 
+Nah, dengan kebijakan yang dilakukan pemerintah sebelumnya, dengan melakukan skema bantuan sosial, dan mendorong produktivitas sektor pangan, pemerintah juga wajib menjaga agar defisit anggaran tetap terjaga akibat belanja yang dilakukan secara besar-besaran.
 
 Jika pemerintah bisa menjaga defisit anggaran, pemerintah akan mampu mendorong belanja negara ke sektor produktif serta tepat sasaran dan Indonesia akan terbebas dari resesi ekonomi.
 
@@ -198,13 +199,13 @@ Jika pemerintah bisa menjaga defisit anggaran, pemerintah akan mampu mendorong b
 
 Memasuki akhir tahun 2022, kencangnya isu resesi ekonomi 2023 semakin gempar dibicarakan. Lalu, kenapa 2023 diprediksi akan resesi? Ternyata, ketidakstabilan kondisi ekonomi global setelah perang Rusia-Ukraina yang membuat harga pangan dan energi melonjak di negara-negara pemegang super power seperti Amerika, China, dan Eropa semakin terlihat.
 
-Isu resesi global 2023 ini juga sempat disinggung oleh Menteri Keuangan Indonesia, Sri Mulyani yang memprediksi bahwa akan mulai terjadi karena dipicu oleh kenaikan agresif suku bunga bank sentral di beberapa negara seperti Amerika dan Eropa untuk meredam laju inflasi yang terus melambung. 
+Isu resesi global 2023 ini juga sempat disinggung oleh Menteri Keuangan Indonesia, Sri Mulyani yang memprediksi bahwa akan mulai terjadi karena dipicu oleh kenaikan agresif suku bunga bank sentral di beberapa negara seperti Amerika dan Eropa untuk meredam laju inflasi yang terus melambung.
 
-Namun, meski resesi global 2023 disinyalir akan terjadi, memasuki Q4 pertumbuhan ekonomi Indonesia menunjukkan pertumbuhan positif. Dilansir dari laman data [Badan Pusat Statistik Republik Indonesia](https://www.bps.go.id/pressrelease/2022/11/07/1914/ekonomi-indonesia-triwulan-iii-2022-tumbuh-5-72-persen--y-on-y-.html) menyebutkan bahwa pertumbuhan PDB Indonesia Q3 2022 mencapai 5,72% (yoy) atau tumbuh 1,8% (qoq). 
+Namun, meski resesi global 2023 disinyalir akan terjadi, memasuki Q4 pertumbuhan ekonomi Indonesia menunjukkan pertumbuhan positif. Dilansir dari laman data [Badan Pusat Statistik Republik Indonesia](https://www.bps.go.id/pressrelease/2022/11/07/1914/ekonomi-indonesia-triwulan-iii-2022-tumbuh-5-72-persen--y-on-y-.html) menyebutkan bahwa pertumbuhan PDB Indonesia Q3 2022 mencapai 5,72% (yoy) atau tumbuh 1,8% (qoq).
 
 Selain itu, angka rasio utang Indonesia terhadap PDB per September pun masih tergolong aman, yaitu 39,30%. Artinya, jika mengacu pada Undang-undang Nomor 17 Tahun 2003 tentang Keuangan Negara, rasio utang maksimal sebesar 60%, maka Indonesia dapat dikatakan belum punya utang luar negeri yang berlebihan.
 
-Selain itu, data inflasi bulanan Bank Indonesia yang sebelumnya sempat mencapai angka tertinggi 5,95% pada September pun mengalami [penurunan inflasi ke kisaran 5,71%](https://landx.id/blog/inflasi-indonesia-turun-jadi-5-71-simak-dampaknya/) pada akhir bulan Oktober. 
+Selain itu, data inflasi bulanan Bank Indonesia yang sebelumnya sempat mencapai angka tertinggi 5,95% pada September pun mengalami [penurunan inflasi ke kisaran 5,71%](https://icx.id/blog/inflasi-indonesia-turun-jadi-5-71-simak-dampaknya/) pada akhir bulan Oktober.
 
 Karena itu, isu resesi global 2023 sebenarnya dapat dikatakan tidak akan berdampak terlalu signifikan pada ekonomi Indonesia. Hal ini karena jika resesi ekonomi didefinisikan dengan penurunan PDB setidaknya dua kuartal berturut-turut, maka data-data di atas mematahkan isu resesi ekonomi 2023 akan menggoyahkan Indonesia.
 

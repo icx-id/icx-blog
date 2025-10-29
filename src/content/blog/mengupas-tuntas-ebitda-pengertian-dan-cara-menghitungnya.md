@@ -1,8 +1,8 @@
 ---
 draft: false
 author: Umar Tusin
-title: "Mengupas Tuntas EBITDA: Pengertian dan Cara Menghitungnya"
-metaTitle: "Mendalami Konsep EBITDA: Definisi dan Rumus yang Perlu Diketahui"
+title: 'Mengupas Tuntas EBITDA: Pengertian dan Cara Menghitungnya'
+metaTitle: 'Mendalami Konsep EBITDA: Definisi dan Rumus yang Perlu Diketahui'
 metaDescription: Apa itu EBITDA? EBITDA adalah pendapatan sebelum bunga, pajak
   dan amortisasi. Pelajari mendalam yuk!
 intro: EBITDA adalah pendapatan sebelum bunga, pajak dan amortisasi. Melalui
@@ -18,6 +18,7 @@ featuredImage:
   title: Pengertian dan cara menghitung EBITDA
 key: blog-article
 ---
+
 <!--StartFragment-->
 
 Apa itu EBITDA? EBITDA adalah singkatan dari Earning Before Interest, Taxes, Depreciation, and Amortization yang artinya pendapatan sebelum bunga, pajak dan amortisasi. EBITDA dalam laporan keuangan digunakan sebagai indikator finansial yang digunakan untuk mengetahui profit sebuah perusahaan.
@@ -36,7 +37,7 @@ EBITDA adalah jenis perhitungan yang dapat digunakan sebagai matriks untuk mengg
 
 ### 2. Membandingkan Tingkat Keuntungan
 
-Meskipun belum hasil akhir, fungsi EBITDA adalah alat untuk menganalisis dan membandingkan tingkat pendapatan satu perusahaan dengan perusahaan lainnya. Sebab, perhitungan EBITDA tidak memasukkan dampak keuangan, pajak pemerintah, dan keputusan akuntansi lainnya, sehingga profit mentah perusahaan bisa terlihat. 
+Meskipun belum hasil akhir, fungsi EBITDA adalah alat untuk menganalisis dan membandingkan tingkat pendapatan satu perusahaan dengan perusahaan lainnya. Sebab, perhitungan EBITDA tidak memasukkan dampak keuangan, pajak pemerintah, dan keputusan akuntansi lainnya, sehingga profit mentah perusahaan bisa terlihat.
 
 ### 3. Memperluas Perhitungan Laporan Keuangan
 
@@ -58,7 +59,7 @@ Oleh karena itu, lebih mudah untuk membandingkan kinerja perusahaan dengan menam
 
 ### 2. Tax/Pajak
 
-Pajak adalah iuran yang dibayar oleh wajib pajak baik perorangan maupun sebuah perusahaan kepada negara. Jika pajak tidak disetor/dibayar, wajib pajak akan dikenakan sanksi sesuai ketentuan yang berlaku. Setiap perusahaan memiliki pajak yang berbeda-beda.Hal ini bergantung pada wilayah bisnis tersebut beroperasi. 
+Pajak adalah iuran yang dibayar oleh wajib pajak baik perorangan maupun sebuah perusahaan kepada negara. Jika pajak tidak disetor/dibayar, wajib pajak akan dikenakan sanksi sesuai ketentuan yang berlaku. Setiap perusahaan memiliki pajak yang berbeda-beda.Hal ini bergantung pada wilayah bisnis tersebut beroperasi.
 
 ### 3. Depresiasi
 
@@ -92,7 +93,7 @@ Ada dua cara untuk menghitung EBITDA, yang pertama menggunakan laba bersih sebag
 
 Jika kamu masih bingung dalam menghitung EBITDA, berikut adalah contoh laporan keuangan perusahaan yang memiliki beban depresiasi Rp6.000.000 dan beban amortisasi Rp6.000.000.
 
-![EBITDA dalam laporan keuangan](https://cdn.discordapp.com/attachments/977943413909487668/1040287631319244870/EBITDA.png "EBITDA dalam laporan keuangan")
+![EBITDA dalam laporan keuangan](https://cdn.discordapp.com/attachments/977943413909487668/1040287631319244870/EBITDA.png 'EBITDA dalam laporan keuangan')
 
 Berdasarkan laporan keuangan di atas, berikut adalah cara menghitung EBITDA menggunakan dua rumus.
 
@@ -110,7 +111,7 @@ Berdasarkan laporan keuangan di atas, berikut adalah cara menghitung EBITDA meng
 
 ## Berapa EBITDA yang Bagus?
 
-Tidak ada patokan nilai untuk menentukan EBITDA dikatakan bagus. Namun, melihat fungsinya sebagai salah satu cara untuk mengetahui profit sebuah perusahaan, maka jika nilai EBITDA semakin tinggi, maka akan semakin bagus. 
+Tidak ada patokan nilai untuk menentukan EBITDA dikatakan bagus. Namun, melihat fungsinya sebagai salah satu cara untuk mengetahui profit sebuah perusahaan, maka jika nilai EBITDA semakin tinggi, maka akan semakin bagus.
 
 ## Margin EBITDA
 
@@ -130,9 +131,9 @@ Perhitungan EBITDA penting untuk dipahami para investor. Salah satu tujuan memah
 
 Jika kamu sudah paham dengan EBITDA, kamu bisa mencoba potensi keuntungan melalui investasi equity crowdfunding. Equity crowdfunding adalah sistem mengumpulkan dana dengan skema patungan (urun dana) untuk perusahaan atau pelaku usaha yang memulai atau mengembangkan bisnisnya.
 
-Investor bisa membeli saham project bisnis potensial dari beragam perusahaan yang listing di [platform equity crowdfunding](https://landx.id/). Lewat kepemilikan saham ini, nantinya investor berpotensi mendapatkan passive income berupa dividen dari bisnis yang dimiliki.
+Investor bisa membeli saham project bisnis potensial dari beragam perusahaan yang listing di [platform equity crowdfunding](https://icx.id/). Lewat kepemilikan saham ini, nantinya investor berpotensi mendapatkan passive income berupa dividen dari bisnis yang dimiliki.
 
-Salah satu platform equity crowdfunding yang mempertemukan investor dengan pelaku usaha. Melalui platform ini, anda bisa menemukan berbagai bisnis potensial dan ikut patungan membangun bisnis tersebut. Sebagai return investor akan mendapatkan keuntungan berupa dividen sesuai dari kinerja bisnis. 
+Salah satu platform equity crowdfunding yang mempertemukan investor dengan pelaku usaha. Melalui platform ini, anda bisa menemukan berbagai bisnis potensial dan ikut patungan membangun bisnis tersebut. Sebagai return investor akan mendapatkan keuntungan berupa dividen sesuai dari kinerja bisnis.
 
 ## [U﻿NLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 

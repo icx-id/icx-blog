@@ -23,6 +23,7 @@ featuredImage:
   src: /img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg
 key: blog-article
 ---
+
 **Bagaimana cara login di aplikasi ICX?**
 
 1. Buka aplikasi ICX yang sudah di download
@@ -54,14 +55,14 @@ key: blog-article
 
 **Bagaimana cara merubah data diri di akun ICX?**
 
-Untuk merubah data diri (memperbaharui informasi), silakan mengajukan permohonan via email [hello@icx.id](mailto:hello@landx.id) dengan menyertakan data yang akan diganti.
+Untuk merubah data diri (memperbaharui informasi), silakan mengajukan permohonan via email [hello@icx.id](mailto:hello@icx.id) dengan menyertakan data yang akan diganti.
 
 **Bagaimana cara menghapus (menonaktifkan) akun ICX?**
 
-Untuk permintaan penghapusan akun ICX Anda, ajukan permohonan via email [hello@icx.id](mailto:hello@landx.id) dengan melampirkan
+Untuk permintaan penghapusan akun ICX Anda, ajukan permohonan via email [hello@icx.id](mailto:hello@icx.id) dengan melampirkan
 
 1. Nama lengkap
 2. NIK
 3. Foto selfie dengan KTP
-4. Alamat email 
+4. Alamat email
 5. Alasan penghapusan akun
