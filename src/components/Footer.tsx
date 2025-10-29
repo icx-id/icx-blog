@@ -101,8 +101,8 @@ export const Footer: React.FC = () => {
                   PT ICX bangun Indonesia
                 </Text>
                 <Text className={classes.subtitle} fz={mobileScreen ? 12 : 14} maw={320}>
-                  BEI Tower 1 Lt. 17, Unit 1709 Jl. Jend. Sudirman Kav. 52-53 Senayan, Kby. Baru
-                  Jakarta Selatan 12190
+                  Grand Slipi Tower, Lantai 21 Unit L Jl. Letjend S. Parman Kav. 22–24, Palmerah,
+                  Jakarta Barat 11480
                 </Text>
               </Box>
               <Box>
@@ -120,7 +120,7 @@ export const Footer: React.FC = () => {
                       WhatsApp
                     </Text>
                     <Text className={classes.subtitle} fz={mobileScreen ? 12 : 14}>
-                      +6281381862878
+                      +628111442878
                     </Text>
                   </Col>
                   <Col span="auto">
@@ -315,83 +315,69 @@ export const Footer: React.FC = () => {
               <Text component="span" color="#fff">
                 PT ICX BANGUN INDONESIA
               </Text>
-              &nbsp;(selanjutnya disebut “ICX”) adalah Perusahaan yang didirikan berdasarkan Hukum
-              Indonesia yang bertindak sebagai Penyelenggara Layanan Urun Dana Melalui Penawaran
-              Efek Berbasis Teknologi Informasi yang telah berizin dan diawasi oleh Otoritas Jasa
-              Keuangan (OJK) berdasarkan Keputusan Dewan Komisioner OJK Nomor Kep-068/D.04/2020
-              tentang Pemberian Izin Usaha Penyelenggara Layanan Urun Dana Melalui Penawaran Efek
-              Berbasis Teknologi Informasi PT Numex Teknologi Indonesia. Kegiatan Investasi melalui
-              Layanan Urun Dana memiliki tingkat risiko tinggi, Pemodal diwajibkan telah membaca
-              Syarat dan Ketentuan serta seluruh dokumen yang dipaparkan oleh ICX melalui website
-              dan/atau aplikasi ICX. ICX tidak pernah memaksa Pemodal untuk melakukan pembelian Efek
-              yang sedang ditawarkan. Segala transaksi yang dilakukan oleh Pemodal dilakukan oleh
-              Pemodal dengan kesadaran penuh dan tanpa paksaan dari Pihak manapun. ICX berperan
-              sebagai Penyelenggara Layanan Urun Dana dalam melakukan kegiatan Penawaran Efek
-              Melalui Layanan Urun Dana Berbasis Teknologi Informasi yang mempertemukan antara
-              Penerbit dengan Pemodal. OJK bertindak sebagai regulator dan pemberi izin serta
-              pengawas, tidak sebagai penjamin investasi. Segala risiko menjadi tanggung jawab penuh
-              dari Pemodal. Pemodal telah menyadari secara penuh bahwa terdapat sejumlah risiko
-              dalam melakukan investasi pada layanan urun dana. Oleh karena itu, ICX TIDAK
-              BERTANGGUNG JAWAB terhadap kerugian dan gugatan hukum serta segala bentuk risiko lain
-              yang timbul di kemudian hari. Sejumlah risiko tersebut diantaranya:
+              &nbsp;(selanjutnya disebut “ICX”) adalah badan hukum yang didirikan berdasarkan hukum
+              Republik Indonesia dan bertindak sebagai Penyelenggara Layanan Urun Dana Melalui
+              Penawaran Efek Berbasis Teknologi Informasi yang telah berizin dan diawasi oleh
+              Otoritas Jasa Keuangan (“OJK”) berdasarkan Keputusan Dewan Komisioner OJK Nomor
+              Kep-068/D.04/2020 tentang Pemberian Izin Usaha Penyelenggara Layanan Urun Dana Melalui
+              Penawaran Saham Berbasis Teknologi Informasi (Equity Crowdfunding) PT Numex Teknologi
+              Indonesia. Segala aktivitas investasi melalui Layanan Urun Dana mengandung risiko
+              tingkat tinggi. Oleh karena itu, Pemodal wajib terlebih dahulu membaca dan memahami
+              secara menyeluruh Syarat dan Ketentuan, serta seluruh dokumen yang disampaikan oleh
+              ICX ICX melalui situs web dan/atau aplikasi resmi ICX sebelum melakukan keputusan
+              investasi. ICX tidak pernah memberikan paksaan dalam bentuk apapun kepada Pemodal
+              untuk melakukan pembelian atas Efek yang ditawarkan melalui Layanan Urun Dana. Seluruh
+              investasi dilakukan secara mandiri oleh Pemodal, dengan kesadaran dan tanggung jawab
+              penuh, serta tanpa pengaruh atau tekanan dari pihak mana pun. ICX selaku Penyelenggara
+              Layanan Urun Dana bertindak sebagai fasilitator yang mempertemukan antara Penerbit
+              dengan Pemodal, dan bukan merupakan pihak yang menjalankan kegiatan usaha dari
+              Penerbit. OJK berperan sebagai regulator, pemberi izin, serta pengawas atas kegiatan
+              Penawaran Efek Melalui Layanan Urun Dana Berbasis Teknologi Informasi, namun tidak
+              bertindak sebagai pihak yang menjamin kelangsungan atau hasil dari investasi yang
+              dilakukan. Oleh karena itu, seluruh risiko yang timbul atas keputusan investasi
+              sepenuhnya menjadi tanggung jawab Pemodal. ICX TIDAK BERTANGGUNG JAWAB terhadap
+              kerugian dan gugatan hukum serta segala bentuk risiko lain yang timbul di kemudian
+              hari. Sejumlah risiko tersebut diantaranya:
             </Text>
             <Text className={classes.title} fz={mobileScreen ? 14 : 16} mb="sm">
               Risiko Usaha
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb={mobileScreen ? 28 : 40}>
-              Risiko usaha merupakan hal yang tidak dapat dihindari dalam menjalankan kegiatan
-              usaha. Sejumlah risiko usaha yang mungkin saja terjadi adalah penutupan kegiatan usaha
-              secara sementara sebagai dampak dari adanya bencana alam dan/atau keadaan kahar
-              lainnya.
+              Risiko usaha merupakan risiko yang melekat dalam setiap kegiatan usaha dan tidak dapat
+              dihindari sepenuhnya. Risiko ini mencakup, antara lain, potensi terhentinya atau
+              terganggunya kegiatan usaha Penerbit secara sementara atau permanen yang disebabkan
+              oleh peristiwa di luar kendali, seperti bencana alam, wabah penyakit, kebakaran,
+              dan/atau keadaan kahar (force majeure) lainnya.
             </Text>
             <Text className={classes.title} fz={mobileScreen ? 14 : 16} mb="sm">
-              Risiko Kerugian Investasi
+              Risiko Investasi
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb={mobileScreen ? 28 : 40}>
-              Setiap investasi memiliki tingkat risiko yang beragam, salah satunya adalah tidak
-              terkumpulnya dana investasi sesuai proyeksi yang telah ditetapkan dan/atau proyek yang
-              dijalankan tidak menghasilkan keuntungan sesuai dengan yang ditargetkan.
+              Setiap bentuk investasi mengandung tingkat risiko tertentu, termasuk kemungkinan dana
+              investasi yang dihimpun tidak mencapai target yang ditetapkan dan/atau proyek yang
+              dijalankan oleh Penerbit tidak memberikan hasil atau keuntungan sebagaimana yang
+              diproyeksikan.
             </Text>
             <Text className={classes.title} fz={mobileScreen ? 14 : 16} mb="sm">
-              Risiko Kekurangan Likuiditas
+              Risiko Likuiditas
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb={mobileScreen ? 28 : 40}>
-              Pemodal yang melakukan investasi memungkinkan dalam bentuk tidak likuid karena efek
-              bersifat ekuitas yang ditawarkan tidak terdaftar di bursa efek atau belum dilaksanakan
-              pasar sekunder. Hal ini berarti Pemodal mungkin tidak dapat dengan mudah menjual saham
-              miliknya kepada pihak lain.
-            </Text>
-            <Text className={classes.title} fz={mobileScreen ? 14 : 16} mb="sm">
-              Risiko Kelangkaan Pembagian Dividen dan/atau Dilusi Kepemilikan
-            </Text>
-            <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb={mobileScreen ? 28 : 40}>
-              Saham, Jika Efek Yang Diterbitkan Merupakan Saham Setiap Pemodal yang melakukan
-              investasi pada efek bersifat ekuitas berupa saham, memiliki hak untuk mendapat dividen
-              sesuai dengan jumlah kepemilikan yang dimiliki yang dibagikan oleh Penerbit melalui
-              Penyelenggara secara periodik. Namun, kelangkaan dalam pembagian dividen dimungkinkan
-              terjadi karena kinerja bisnis suatu proyek yang diinvestasikan tidak berjalan
-              sebagaimana mestinya serta berpotensi terdilusi kepemilikan saham karena bertambahnya
-              total saham yang beredar atau ditawarkan.
-            </Text>
-            <Text className={classes.title} fz={mobileScreen ? 14 : 16} mb="sm">
-              Risiko Gagal Bayar
-            </Text>
-            <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb={mobileScreen ? 28 : 40}>
-              Penawaran Efek bersifat utang atau sukuk memiliki risiko dimana Penerbit akan gagal
-              bayar (default). Apabila Penerbit mengalami gagal bayar maka Wali Amanat berdasarkan
-              Surat Kuasa akan mengundang dan mengadakan Rapat Umum Pemegang Obligasi (RUPO), dalam
-              RUPO tersebut akan dibahas mengenai gagal bayar yang terjadi serta skema perpanjangan
-              jatuh tempo kupon ataupun eksekusi jaminan fidusia dan jaminan Penerbit lainnya
-              (apabila ada).
+              Investasi melalui Layanan Urun Dana pada efek bersifat ekuitas dapat memiliki tingkat
+              likuiditas yang rendah, karena efek tersebut tidak tercatat di bursa efek dan/atau
+              belum tersedianya pasar sekunder yang aktif. Dengan demikian, Pemodal mungkin
+              menghadapi kesulitan dalam menjual kembali efek yang dimiliki kepada pihak lain dalam
+              waktu yang cepat atau pada nilai yang diharapkan.
             </Text>
             <Text className={classes.title} fz={mobileScreen ? 14 : 16} mb="sm">
               Risiko Kegagalan Sistem Elektronik
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb={mobileScreen ? 28 : 16}>
-              Sistem pada ICX sudah menerapkan sistem elektronik dan keamanan data yang handal.
-              Namun gangguan sistem teknologi informasi dan kegagalan sistem mungkin saja tetap
-              terjadi. Untuk mencegah hal tersebut terjadi, ICX telah memiliki sejumlah kebijakan
-              keamanan informasi diantaranya:
+              Sistem pada ICX telah dirancang dengan menggunakan teknologi elektronik dan mekanisme
+              perlindungan data yang andal. Meskipun demikian, potensi terjadinya gangguan pada
+              sistem teknologi informasi, termasuk namun tidak terbatas pada gangguan teknis,
+              serangan siber, atau kegagalan sistem, tetap dapat terjadi dan tidak dapat sepenuhnya
+              dihindari. Sebagai bentuk mitigasi terhadap risiko tersebut, ICX telah menerapkan
+              kebijakan dan langkah-langkah pengamanan sistem informasi, antara lain:
             </Text>
             <List sx={{ maxWidth: '90%' }}>
               <List.Item sx={{ color: '#ADB5BD' }}>
@@ -400,7 +386,8 @@ export const Footer: React.FC = () => {
                   color="#ADB5BD"
                   fw={400}
                   mb={mobileScreen ? 'xs' : 'sm'}>
-                  Mengimplementasikan dan menerapkan ISO 27001;
+                  Mengimplementasikan dan memelihara sistem manajemen keamanan informasi yang
+                  mengacu pada standar internasional ISO/IEC 27001;
                 </Text>
               </List.Item>
               <List.Item sx={{ color: '#ADB5BD' }}>
@@ -409,8 +396,8 @@ export const Footer: React.FC = () => {
                   color="#ADB5BD"
                   fw={400}
                   mb={mobileScreen ? 'xs' : 'sm'}>
-                  Menaati segala ketentuan peraturan perundang-undangan terkait keamanan data
-                  pribadi dan informasi yang berlaku di Republik Indonesia;
+                  Mematuhi ketentuan peraturan perundang-undangan yang berlaku di Republik Indonesia
+                  terkait perlindungan data pribadi dan keamanan informasi; dan
                 </Text>
               </List.Item>
               <List.Item sx={{ color: '#ADB5BD' }}>
@@ -419,37 +406,62 @@ export const Footer: React.FC = () => {
                   color="#ADB5BD"
                   fw={400}
                   mb={mobileScreen ? 'xs' : 'sm'}>
-                  Melakukan perbaikan secara berkala terhadap kinerja Sistem Manajemen Keamanan
-                  Informasi.
+                  Melakukan evaluasi dan pemeliharaan secara berkala terhadap kinerja Sistem
+                  Manajemen Keamanan Informasi.
                 </Text>
               </List.Item>
             </List>
+            <Text className={classes.title} fz={mobileScreen ? 14 : 16} mb="sm">
+              Risiko Kelangkaan Pembagian Dividen dan/atau Dilusi Kepemilikan Saham, Jika Efek Yang
+              Diterbitkan Merupakan Saham
+            </Text>
+            <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb={mobileScreen ? 28 : 40}>
+              Pemodal yang berinvestasi pada Efek bersifat ekuitas berupa saham memiliki hak atas
+              dividen sesuai dengan proporsi kepemilikannya, apabila Penerbit menetapkan pembagian
+              dividen. Namun demikian, pembagian dividen tidak selalu dapat dilakukan secara
+              periodik, dan dapat mengalami kelangkaan apabila kinerja usaha Penerbit tidak mencapai
+              target atau mengalami kerugian. Selain itu, Pemodal juga menghadapi risiko dilusi
+              kepemilikan apabila di kemudian hari dilakukan penerbitan saham tambahan, sehingga
+              persentase kepemilikan saham oleh Pemodal dapat berkurang.
+            </Text>
+            <Text className={classes.title} fz={mobileScreen ? 14 : 16} mb="sm">
+              Risiko Gagal Bayar
+            </Text>
+            <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb={mobileScreen ? 28 : 40}>
+              Penawaran Efek bersifat utang memiliki risiko dimana Penerbit akan gagal bayar
+              (default). Apabila Penerbit mengalami gagal bayar maka Penyelenggara berdasarkan Surat
+              Kuasa akan mengundang dan mengadakan Rapat Umum Pemegang Efek Bersifat Utang (“RUP
+              EBU”), dalam RUP EBU tersebut akan dibahas mengenai gagal bayar yang terjadi serta
+              skema restrukturisasi jatuh tempo ataupun eksekusi jaminan fidusia dan jaminan
+              Penerbit lainnya (apabila ada).
+            </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="sm">
-              Sesuai dengan pasal 27 Peraturan Otoritas Jasa Keuangan Nomor 57/POJK.04/2020 tentang
+              Sesuai dengan Pasal 75 Peraturan Otoritas Jasa Keuangan Nomor 17 Tahun 2025 tentang
               Penawaran Efek Melalui Layanan Urun Dana Berbasis Teknologi Informasi (“POJK
-              57/2020”), kami menyatakan bahwa:
+              17/2025”), kami menyatakan bahwa:
             </Text>
             <List sx={{ maxWidth: '90%' }}>
               <List.Item sx={{ color: '#ADB5BD' }}>
                 <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="sm">
-                  OTORITAS JASA KEUANGAN TIDAK MEMBERIKAN PERSETUJUAN TERHADAP PENERBIT DAN TIDAK
+                  “OTORITAS JASA KEUANGAN TIDAK MEMBERIKAN PERSETUJUAN TERHADAP PENERBIT DAN TIDAK
                   MEMBERIKAN PERNYATAAN MENYETUJUI ATAU TIDAK MENYETUJUI EFEK INI, TIDAK JUGA
                   MENYATAKAN KEBENARAN ATAU KECUKUPAN INFORMASI DALAM LAYANAN URUN DANA INI. SETIAP
-                  PERNYATAAN YANG BERTENTANGAN DENGAN HAL TERSEBUT ADALAH PERBUATAN MELANGGAR HUKUM;
+                  PERNYATAAN YANG BERTENTANGAN DENGAN HAL TERSEBUT ADALAH PERBUATAN MELANGGAR
+                  HUKUM.”
                 </Text>
               </List.Item>
               <List.Item sx={{ color: '#ADB5BD' }}>
                 <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="sm">
                   “INFORMASI DALAM LAYANAN URUN DANA INI PENTING DAN PERLU MENDAPAT PERHATIAN
                   SEGERA. APABILA TERDAPAT KERAGUAN PADA TINDAKAN YANG AKAN DIAMBIL, SEBAIKNYA
-                  BERKONSULTASI DENGAN PENYELENGGARA;
+                  BERKONSULTASI DENGAN PENYELENGGARA.”; dan
                 </Text>
               </List.Item>
               <List.Item sx={{ color: '#ADB5BD' }}>
                 <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="sm">
-                  “PENERBIT DAN PENYELENGGARA, BAIK SENDIRI-SENDIRI MAUPUN BERSAMA-SAMA, BERTANGGUNG
-                  JAWAB SEPENUHNYA ATAS KEBENARAN SEMUA INFORMASI YANG TERCANTUM DALAM LAYANAN URUN
-                  DANA INI.
+                  “PENERBIT DAN PENYELENGGARA, BAIK SENDIRI MAUPUN BERSAMA-SAMA, BERTANGGUNG JAWAB
+                  SEPENUHNYA ATAS KEBENARAN SEMUA INFORMASI YANG TERCANTUM DALAM LAYANAN URUN DANA
+                  INI.”.
                 </Text>
               </List.Item>
             </List>
@@ -461,37 +473,36 @@ export const Footer: React.FC = () => {
               Disclaimer
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="md">
-              PT ICX BANGUN INDONESIA(“ICX” atau “Penyelenggara”) hadir dalam rangka mendukung
-              program pemerintah di bidang perumahan dengan mengembangkan bisnis layanan urun dana
-              bersama, dengan mempertemukan Pemodal dan pihak pengembang properti (“Penerbit”)
-              (selanjutnya Pemodal dan Penerbit disebut bersama-sama sebagai “Pengguna”). Pada
-              layanan urun dana ini, timbulnya hubungan perdata terjadi apabila Pemodal sepakat
-              untuk membeli saham yang ditawarkan oleh Penerbit, sehingga segala risiko yang timbul
-              dari hubungan tersebut akan menjadi tanggung jawab masing-masing pihak. Risiko yang
-              timbul dari hak sebagai Pemodal untuk menerima dividen dari Penerbit merupakan risiko
-              yang wajib ditanggung oleh Pemodal sesuai kebijakan dividen Penerbit. ICX hanya
-              bertindak sebagai layanan urun dana yang mempertemukan antara Pemodal dengan Penerbit,
-              dan tidak bertindak sebagai pelaku usaha yang menjalankan usaha untuk mengumpulkan
-              dana terkait atau pengelola investasi (Penerbit). Sesuai dengan Pasal 23 Peraturan
-              Otoritas Jasa Keuangan No. 37 Tahun 2018 tentang Layanan Urun Dana melalui Penawaran
-              Saham Berbasis Teknologi Informasi atau Equity Crowdfunding (“POJK 37/2018”), kami
-              menyatakan bahwa:
+              (“ICX” atau “Penyelenggara”) hadir dalam rangka mendukung program pemerintah di bidang
+              perumahan dengan mengembangkan bisnis layanan urun dana bersama, dengan mempertemukan
+              Pemodal dan pihak pengembang properti (“Penerbit”) (selanjutnya Pemodal dan Penerbit
+              disebut bersama-sama sebagai “Pengguna”). Pada layanan urun dana ini, timbulnya
+              hubungan perdata terjadi apabila Pemodal sepakat untuk membeli saham yang ditawarkan
+              oleh Penerbit, sehingga segala risiko yang timbul dari hubungan tersebut akan menjadi
+              tanggung jawab masing-masing pihak. Risiko yang timbul dari hak sebagai Pemodal untuk
+              menerima dividen dari Penerbit merupakan risiko yang wajib ditanggung oleh Pemodal
+              sesuai kebijakan dividen Penerbit. ICX hanya bertindak sebagai layanan urun dana yang
+              mempertemukan antara Pemodal dengan Penerbit, dan tidak bertindak sebagai pelaku usaha
+              yang menjalankan usaha untuk mengumpulkan dana terkait atau pengelola investasi
+              (Penerbit). Sesuai dengan Pasal 75 Peraturan Otoritas Jasa Keuangan Nomor 17 Tahun
+              2025 tentang Penawaran Efek Melalui Layanan Urun Dana Berbasis Teknologi Informasi
+              (“POJK 17/2025”), kami menyatakan bahwa:
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="md">
-              a. OTORITAS JASA KEUANGAN TIDAK MEMBERIKAN PERNYATAAN MENYETUJUI ATAU TIDAK MENYETUJUI
-              EFEK INI, TIDAK JUGA MENYATAKAN KEBENARAN ATAU KECUKUPAN INFORMASI DALAM LAYANAN URUN
-              DANA INI. SETIAP PERNYATAAN YANG BERTENTANGAN DENGAN HAL TERSEBUT ADALAH PERBUATAN
-              MELANGGAR HUKUM.
+              a. “OTORITAS JASA KEUANGAN TIDAK MEMBERIKAN PERSETUJUAN TERHADAP PENERBIT DAN TIDAK
+              MEMBERIKAN PERNYATAAN MENYETUJUI ATAU TIDAK MENYETUJUI EFEK INI, TIDAK JUGA MENYATAKAN
+              KEBENARAN ATAU KECUKUPAN INFORMASI DALAM LAYANAN URUN DANA INI. SETIAP PERNYATAAN YANG
+              BERTENTANGAN DENGAN HAL TERSEBUT ADALAH PERBUATAN MELANGGAR HUKUM.”
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="md">
-              b. INFORMASI DALAM LAYANAN URUN DANA INI PENTING DAN PERLU MENDAPAT PERHATIAN SEGERA.
+              b. “INFORMASI DALAM LAYANAN URUN DANA INI PENTING DAN PERLU MENDAPAT PERHATIAN SEGERA.
               APABILA TERDAPAT KERAGUAN PADA TINDAKAN YANG AKAN DIAMBIL, SEBAIKNYA BERKONSULTASI
-              DENGAN PENYELENGGARA.
+              DENGAN PENYELENGGARA.”; dan
             </Text>
             <Text fz={mobileScreen ? 10 : 16} color="#ADB5BD" fw={400} mb="md">
-              c. PENERBIT SAHAM DAN PENYELENGGARA, BAIK SENDIRI-SENDIRI MAUPUN BERSAMA-SAMA,
-              BERTANGGUNG JAWAB SEPENUHNYA ATAS KEBENARAN SEMUA INFORMASI YANG TERCANTUM DALAM
-              LAYANAN URUN DANA INI.
+              c. “PENERBIT DAN PENYELENGGARA, BAIK SENDIRI MAUPUN BERSAMA-SAMA, BERTANGGUNG JAWAB
+              SEPENUHNYA ATAS KEBENARAN SEMUA INFORMASI YANG TERCANTUM DALAM LAYANAN URUN DANA
+              INI.”.
             </Text>
           </Box>
         </MediaQuery>
@@ -500,9 +511,9 @@ export const Footer: React.FC = () => {
         <Container size="ll">
           <Text fz={mobileScreen ? 8 : 14} fw={400} color="#FFF">
             {mobileScreen ? (
-              <Center>© 2023 PT ICX bangun Indonesia. All Rights Reserved.</Center>
+              <Center>© 2025 PT ICX bangun Indonesia. All Rights Reserved.</Center>
             ) : (
-              '© 2023 PT ICX bangun Indonesia. All Rights Reserved.'
+              '© 2025 PT ICX bangun Indonesia. All Rights Reserved.'
             )}
           </Text>
         </Container>

@@ -16,6 +16,7 @@ featuredImage:
   title: Kenapa Startup Bakar Uang? Burn Rate Bahayakan Startup Unicorn
 key: blog-article
 ---
+
 **Mengungkap Rahasia Strategi "Bakar Uang" Startup: Apa yang Perlu Anda Ketahui Sebagai Investor**
 
 Dalam dunia yang semakin akrab dengan istilah startup, dimana beberapa di antaranya bahkan mencapai prestasi unicorn dan decacorn, kita sering kali bertanya-tanya mengapa startup-startup yang terlihat mewah ini tampaknya terus memompa banyak uang ke dalam promosi, seperti sedang 'membakar uang.' Strategi ini kadang-kadang terasa berlebihan, dan ini pasti membuat para investor bertanya, "Apakah semua ini sepadan? Apakah startup ini benar-benar menguntungkan?"
@@ -72,7 +73,7 @@ Singkatnya, dumping adalah praktik memberikan harga yang jauh di bawah harga pas
 
 Jika para konsumen mulai tertarik dan beralih ke produk dari satu perusahaan, kompetitor yang memiliki produk serupa akan merasa tertantang. Salah satu opsi yang paling kuat bagi mereka adalah menawarkan promosi serupa, termasuk potongan harga dan bonus lainnya. Akibatnya, 'politik dumping' terus berlanjut.
 
-3. **Endless Dumping dan Tanpa Profit** 
+3. **Endless Dumping dan Tanpa Profit**
 
 Ketika perusahaan startup melakukan dumping, terutama jika diikuti oleh kompetitor, ini dapat mengarah pada "endless dumping." Praktik ini berarti perusahaan terus menjual dengan harga di bawah margin tanpa mencapai profit.
 
@@ -112,6 +113,6 @@ Karena itu, sistem crowdfunding dapat menjadi pilihan yang menarik untuk investa
 
 ## [UNLOCKING YOUR NEXT LEVEL INVESTMENT WITH ICX](https://icx.id/?utm_source=content_blog&utm_medium=blog&utm_campaign=blog&utm_id=content_blog&utm_content=blog_content)
 
-![Funding Lending untuk investasi](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg "sistem funding dan lending untuk pendanaan bisnis dan investasi")
+![Funding Lending untuk investasi](/img/rsz_snapinstaapp_346119647_1435083573982006_484823168912654359_n_1080-1-.jpg 'sistem funding dan lending untuk pendanaan bisnis dan investasi')
 
-<!--EndFragment-->\[](https://landx.id/?utm_source=Blog&utm_medium=organic+keyword&utm_campaign=blog&utm_id=Blog)
+<!--EndFragment-->\[](https://icx.id/?utm_source=Blog&utm_medium=organic+keyword&utm_campaign=blog&utm_id=Blog)

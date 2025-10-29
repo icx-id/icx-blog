@@ -70,7 +70,7 @@ investmentSection:
       image: /img/investment-icon4.webp
 investorSection:
   title: We Have Been Empowering Businesses That Contributes to Indonesia’s Economy
-  subtitle: Previously known as LandX, ICX have successfully help to
+  subtitle: Previously known as ICX, ICX have successfully help to
     bring  projects to life, increasing employment opportunities and contributed
     to Indonesia’s economy
   fundraising:
