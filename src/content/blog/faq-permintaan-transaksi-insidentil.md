@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: ICX
 title: FAQ Permintaan Transaksi Insidentil
 metaTitle: ICX - Securities Crowdfunding
