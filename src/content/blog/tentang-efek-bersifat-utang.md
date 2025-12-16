@@ -18,7 +18,7 @@ date: 2025-07-24T07:55:16.246Z
 category:
   - FAQ
 featuredImage:
-  src: /img/gradient-green.png
+  src: /img/investor-flowchart-surat-dan-utang.png
   alt: icx
   title: icx
 key: blog-article
