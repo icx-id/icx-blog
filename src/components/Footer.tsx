@@ -52,13 +52,13 @@ export const Footer: React.FC = () => {
         <MediaQuery largerThan="md" styles={{ display: 'none' }}>
           <Grid mt="lg" pb={64} fz="sm" sx={{ color: 'white', textAlign: 'center' }}>
             <Col span={6} mb={-24}>
-              <Text mb="sm">Berizin dan Diawasi Oleh</Text>
+              <Text mb="sm">Didukung Oleh</Text>
             </Col>
             <Col span={6} mb={-24}>
               <Text mb="sm">Telah Terdaftar Oleh</Text>
             </Col>
             <Col span={6}>
-              <Image src="/img/ojk-logo.png" height={55} sx={{ cursor: 'pointer' }} fit="contain" />
+              <Image src="/img/iso-logo.png" height={55} sx={{ cursor: 'pointer' }} fit="contain" />
             </Col>
             <Col span={6}>
               <Image
@@ -68,16 +68,10 @@ export const Footer: React.FC = () => {
                 fit="contain"
               />
             </Col>
-            <Col span={6} mb={-24} mt={16}>
-              <Text mb="sm">Didukung Oleh</Text>
-            </Col>
-            <Col span={6} mb={-24} mt={16}>
+            <Col span={12} mb={-24} mt={16}>
               <Text mb="sm">Anggota Dari</Text>
             </Col>
-            <Col span={6}>
-              <Image src="/img/iso-logo.png" height={55} sx={{ cursor: 'pointer' }} fit="contain" />
-            </Col>
-            <Col span={6}>
+            <Col span={12}>
               <Image
                 src="/img/aludi-logo.png"
                 height={55}
@@ -94,11 +88,14 @@ export const Footer: React.FC = () => {
           <Grid gutter={2}>
             <Col span={mobileScreen ? 12 : 5}>
               <Box maw={380}>
+                <Text className={classes.title} mb="sm" fz={mobileScreen ? 14 : 16}>
+                  PT ICX bangun Indonesia
+                </Text>
                 <Text
                   className={classes.title}
                   mb={mobileScreen ? 'md' : 'lg'}
                   fz={mobileScreen ? 14 : 16}>
-                  PT ICX bangun Indonesia
+                  Berizin dan Diawasi Otoritas Jasa Keuangan
                 </Text>
                 <Text className={classes.subtitle} fz={mobileScreen ? 12 : 14} maw={320}>
                   Grand Slipi Tower, Lantai 21 Unit L Jl. Letjend S. Parman Kav. 22–24, Palmerah,
@@ -256,18 +253,10 @@ export const Footer: React.FC = () => {
                   <MediaQuery smallerThan="md" styles={{ display: 'none' }}>
                     <Grid mt="lg" sx={{ color: 'white' }} fz="xs" ta="center">
                       <Col span={6} mb={-24}>
-                        <Text mb="sm">Berizin dan Diawasi Oleh</Text>
-                      </Col>
-                      <Col span={6} mb={-24}>
                         <Text mb="sm">Telah Terdaftar Oleh</Text>
                       </Col>
-                      <Col span={6}>
-                        <Image
-                          src="/img/ojk-logo.png"
-                          height={55}
-                          sx={{ cursor: 'pointer' }}
-                          fit="contain"
-                        />
+                      <Col span={6} mb={-24}>
+                        <Text mb="sm">Didukung Oleh</Text>
                       </Col>
                       <Col span={6}>
                         <Image
@@ -277,12 +266,6 @@ export const Footer: React.FC = () => {
                           fit="contain"
                         />
                       </Col>
-                      <Col span={6} mb={-24} mt={16}>
-                        <Text mb="sm">Didukung Oleh</Text>
-                      </Col>
-                      <Col span={6} mb={-24} mt={16}>
-                        <Text mb="sm">Anggota Dari</Text>
-                      </Col>
                       <Col span={6}>
                         <Image
                           src="/img/iso-logo.png"
@@ -291,7 +274,10 @@ export const Footer: React.FC = () => {
                           fit="contain"
                         />
                       </Col>
-                      <Col span={6}>
+                      <Col span={12} mb={-24} mt={16}>
+                        <Text mb="sm">Anggota Dari</Text>
+                      </Col>
+                      <Col span={12}>
                         <Image
                           src="/img/aludi-logo.png"
                           height={55}
