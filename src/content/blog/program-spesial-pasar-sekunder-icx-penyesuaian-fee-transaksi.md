@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: ICX
 title: "Program Spesial Pasar Sekunder ICX: Penyesuaian Fee Transaksi"
 metaTitle: ICX - Securities Crowdfunding
