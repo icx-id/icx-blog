@@ -137,7 +137,11 @@ key: blog-article
 
    Biaya ini hanya berlaku untuk pembelian efek saham dan utang ketika penawaran perdana yaitu sebesar 0,2% dari total investasi Pemodal.
 
-   **Biaya Withdraw**
+   **Biaya Pembagian Bunga Efek Bersifat Utang**
+
+   Tidak ada pemotongan biaya dalam hal pembagian bunga.
+
+   **B﻿iaya Withdraw**
 
    Pemodal akan dikenakan biaya withdraw sebesar Rp 5.000 (lima ribu rupiah) untuk penarikan manual.
 
