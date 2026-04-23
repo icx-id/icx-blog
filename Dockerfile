@@ -1,4 +1,5 @@
-FROM node:18-slim AS builder
+#FROM node:18-slim AS builder
+FROM mirror.gcr.io/library/node:18-slim AS builder
 
 RUN apt-get update && apt-get install -y nginx
 
